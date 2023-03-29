@@ -1,0 +1,21 @@
+
+body {
+  background-color: #212121;
+  color: white;
+}
+
+.topBar {
+  background-color: #111111;
+}
+
+.topBarInner {
+  margin-bottom: -20px;
+}
+
+#topBarLinks, #topBarLinks:link, #topBarLinks:visited, #topBarLinks:active {
+  color: white;
+}
+
+#topBarLinks:hover {
+  color: green;
+}
