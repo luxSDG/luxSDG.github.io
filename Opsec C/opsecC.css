@@ -19,3 +19,11 @@ body {
 #topBarLinks:hover {
   color: green;
 }
+
+.noSpaceHR {
+  margin-bottom: 0%;
+}
+
+.topBar2 {
+  background-color: #171717;
+}
