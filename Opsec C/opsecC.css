@@ -27,3 +27,7 @@ body {
 .topBar2 {
   background-color: #171717;
 }
+
+.leftAligned {
+  text-align: left;
+}
