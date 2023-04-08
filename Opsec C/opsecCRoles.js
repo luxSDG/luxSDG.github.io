@@ -17,8 +17,8 @@ for (let i = 0; i < data.length; i++)
 		var role = roleList[j];
 		var roleName = role["Name"];
 		var roleSummary = role["Summary"];
-		content.innerHTML += "&emsp;<span style=\"color:" + categoryColor + "\"><a href=\"opsecCRoleSpecific.html\" style=\"color:"
-		 + categoryColor + "\">" + roleName + "</a> - " + roleSummary + "</span><br>";
+		content.innerHTML += "&emsp;<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "\" style=\"color:"
+		 + categoryColor + "\">" + roleName + "</a><span class=\"enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
 	}
 	content.innerHTML += "<br>";
 }

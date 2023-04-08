@@ -7,12 +7,12 @@ data =
 				"Name":"Netsec",
 				"Color": "lime",
 				"Summary":"The majority faction that wants to eliminate all other factions",
-				"Image": "",
-				"Description": "",
-				"Win Condition": "",
-				"Day": "",
-				"Night": "",
-				"Passives": ""
+				"Image": "netsec.png",
+				"Description": "“We’re here to hack to the final target. Surely everyone here is here for hacking right?”",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).<br><br>Note the difference in win condition. You cannot hack to win anymore.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
 			}
 		]
 	},
@@ -23,34 +23,52 @@ data =
 				"Name":"Operation Leader",
 				"Color": "lime",
 				"Summary":"Broadcast in real channel and root",
-				"Image": "",
-				"Description": "",
-				"Win Condition": "",
-				"Day": "",
-				"Night": "",
-				"Passives": ""
+				"Image": "operationleader.png",
+				"Description": "This role is unique (one Operation Leader should spawn).<br>“It’s time to lead this OPSEC to victory, Operation Leader.”",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": ["Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
+					"0-Day Exploit (1 charge) - Select a white node and instantly hack it. Leaves a log.",
+					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
+				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
+					"Emergency Extraction (N1 -> N3 cooldown, 3 charges) - Select an operative to escort, does not occupy them and makes them immune to everything unless otherwise stated."],
+				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
+					"Operation Leader - You are one of the leading roles and should spawn every operation."]
 			},
 			{
 				"Name":"Former Agent Leader",
 				"Color": "lime",
 				"Summary":"Weaker abilities but ability to see entire topology, cannot reveal to others",
-				"Image": "",
-				"Description": "",
-				"Win Condition": "",
-				"Day": "",
-				"Night": "",
-				"Passives": ""
+				"Image": "agentleader.png",
+				"Description": "This role is unique (one Operation Leader should spawn).<br><br>“That fucking bastard stole your job! You’ve risen up the ranks of Netsec for one purpose, revenge, here’s your chance Former Agent Leader.”",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": ["Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
+					"Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
+					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
+				"Night": ["Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
+					"Investigation (N1 -> N3 cooldown) - Select a target operative. Learn between three subclasses. One is the real subclass, which pierces any cover and frame. Visit them."],
+				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
+					"Operation Leader - You are one of the leading roles and should spawn every operation.",
+					"Topology Access - You can access the full topology and connection logs as if you were an agent.",
+					"Agent Scum - Any doxx attempts on you doxx you as Agent."]
 			},
 			{
 				"Name":"Hack God",
 				"Color": "lime",
 				"Summary":"Incredible hacking potential",
-				"Image": "",
-				"Description": "",
-				"Win Condition": "",
-				"Day": "",
-				"Night": "",
-				"Passives": ""
+				"Image": "hackgod.png",
+				"Description": "This role is unique (one Operation Leader should spawn).<br><br>“They worship you for your hacking ability, Hack God.”",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": ["0-Day Exploit - Select a white node and instantly hack it. Infinite charges. Leaves a log.",
+					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
+				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
+					"Gift Computer (2 charges) - Select a target operative. Permanently grants target operative High hack chance, even if it lowers their hack chance. Visit them."],
+				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+					"Ghost in the System - You can choose whether or not to leave connection logs upon hacking.",
+					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
+					"Operation Leader - You are one of the leading roles and should spawn every operation.",
+					"Worship Me - Upon arrest or murder (not from vote), every operative gets a hacking chance increase by one stage."]
 			}
 		]
 	},
@@ -61,12 +79,15 @@ data =
 				"Name":"Enforcer",
 				"Color": "lime",
 				"Summary":"Keeps Interrogate",
-				"Image": "",
-				"Description": "",
-				"Win Condition": "",
-				"Day": "",
-				"Night": "",
-				"Passives": ""
+				"Image": "enforcer.png",
+				"Description": "“You don’t mind being arrested again as long as you can keep your friends safe, Enforcer.”",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Desperate Measures (1 charge) - Turn into an Improvised Hacker."],
+				"Night": ["Escort - Escort a target operative, protecting the operative from arrests and murders. Arrest attempts will arrest this operative instead, and anyone attempting to murder the protected operative will be killed. Visit and occupy them.",
+					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send.",
+					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
+				"Passives": ["None."]
 			}
 		]
 	},
@@ -77,12 +98,12 @@ data =
 				"Name":"Agent",
 				"Color": "orange",
 				"Summary":"The minority faction that has raw kill power, communication, and information",
-				"Image": "",
-				"Description": "",
-				"Win Condition": "",
-				"Day": "",
-				"Night": "",
-				"Passives": ""
+				"Image": "agent.png",
+				"Description": "“We need to shut this hacking operation down.”",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).<br><br>Agents have more ways to directly arrest and kill than other factions. Agents have access to the topology and a unique chat (ASC).<br><br>Note that Agents cannot win on a single root from Netsec, instead moles turn into a Blackmailed Leader, and other roles turn into an agent with broadcast access and authority.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
 			}
 		]
 	},
@@ -93,12 +114,18 @@ data =
 				"Name":"Blackmailed Leader",
 				"Color": "orange",
 				"Summary":"Agent OL",
-				"Image": "",
-				"Description": "",
-				"Win Condition": "",
-				"Day": "",
-				"Night": "",
-				"Passives": ""
+				"Image": "blackmailedleader.png",
+				"Description": "This role is unique (one Operation Leader should spawn).<br><br>“Agents caught up to you before the Opsec even started, Blackmailed Leader.”",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": ["Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
+					"Harden Node (D1 -> D3 cooldown, 2 charges) - Select a white node. Decreasing hacking chances of getting this node. Strongest hacking chance nerf. Leaves a log.",
+					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
+				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
+					"Fake Emergency Extraction (N1 -> N3 cooldown, 3 charges) - Select an operative to fake escort, does not occupy them and doesn’t actually do anything except leaving escort text.",
+					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
+				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
+					"Operation Leader - You are one of the leading roles and should spawn every operation."]
 			}
 		]
 	}

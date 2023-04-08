@@ -31,3 +31,11 @@ body {
 .leftAligned {
   text-align: left;
 }
+
+.enabled {
+  display: inline;
+}
+
+.disabled {
+  display: none;
+}
