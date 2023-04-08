@@ -1,0 +1,89 @@
+data = 
+[
+	{
+		"Netsec": 
+		[
+			{
+				"Name":"Netsec",
+				"Color": "Light Green",
+				"Summary":"The majority faction that wants to eliminate all other factions",
+				"Image": "",
+				"Description": "",
+				"Win Condition": "",
+				"Day": "",
+				"Night": "",
+				"Passives": ""
+			}
+		]
+	},
+	{
+		"Netsec Special": 
+		[
+			{
+				"Name":"Operation Leader",
+				"Color": "Light Green",
+				"Summary":"Broadcast in real channel and root",
+				"Image": "",
+				"Description": "",
+				"Win Condition": "",
+				"Day": "",
+				"Night": "",
+				"Passives": ""
+			},
+			{
+				"Name":"Former Agent Leader",
+				"Color": "Light Green",
+				"Summary":"Weaker abilities but ability to see entire topology, cannot reveal to others",
+				"Image": "",
+				"Description": "",
+				"Win Condition": "",
+				"Day": "",
+				"Night": "",
+				"Passives": ""
+			},
+			{
+				"Name":"Hack God",
+				"Color": "Light Green",
+				"Summary":"Incredible hacking potential",
+				"Image": "",
+				"Description": "",
+				"Win Condition": "",
+				"Day": "",
+				"Night": "",
+				"Passives": ""
+			}
+		]
+	},
+	{
+		"Netsec Field Operations": 
+		[
+			{
+				"Name":"Enforcer",
+				"Color": "Light Green",
+				"Summary":"Keeps Interrogate",
+				"Image": "",
+				"Description": "",
+				"Win Condition": "",
+				"Day": "",
+				"Night": "",
+				"Passives": ""
+			}
+		]
+	},
+	{
+		"Core Agent Special": 
+		[
+			{
+				"Name":"Blackmailed Leader",
+				"Color": "Orange",
+				"Summary":"Agent OL",
+				"Image": "",
+				"Description": "",
+				"Win Condition": "",
+				"Day": "",
+				"Night": "",
+				"Passives": ""
+			}
+		]
+	}
+];
