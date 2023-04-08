@@ -26,14 +26,14 @@ for (let i = 0; i < data.length; i++)
 				content.style.color = role["Color"];
 				imagePic.src = "opsecCImages/" + role["Image"];
 				head.innerHTML += roleSearched;
-				content.innerHTML += categorySearched;
-				content.innerHTML += "<br><br>" + role["Description"];
+				content.innerHTML += "<h5>" + categorySearched + "</h5>";
+				content.innerHTML += "<br>" + role["Description"];
 				content.innerHTML += "<br><br> Win Condition: " + role["Win Condition"] + "<br><br>";
 
 				var day = role["Day"];
 				if (day.length > 0)
 				{				
-					content.innerHTML += "Day: <br><br>";
+					content.innerHTML += "<h5>Day: </h5><br>";
 					for (let k = 0; k < day.length; k++)
 					{
 						content.innerHTML += day[k] + "<br><br>";
@@ -43,7 +43,7 @@ for (let i = 0; i < data.length; i++)
 				var night = role["Night"];
 				if (night.length > 0)
 				{
-					content.innerHTML += "Night: <br><br>";
+					content.innerHTML += "<h5>Night: </h5><br>";
 					for (let k = 0; k < night.length; k++)
 					{
 						content.innerHTML += night[k] + "<br><br>";
@@ -53,7 +53,7 @@ for (let i = 0; i < data.length; i++)
 				var passives = role["Passives"];
 				if (passives.length > 0)
 				{
-					content.innerHTML += "Passives: <br><br>";
+					content.innerHTML += "<h5>Passives: </h5><br>";
 					for (let k = 0; k < passives.length; k++)
 					{
 						content.innerHTML += passives[k] + "<br><br>";
