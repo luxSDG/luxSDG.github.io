@@ -1,11 +1,11 @@
 data = 
 [
 	{
-		"Netsec": 
+		"The Bad Guys": 
 		[
 			{
 				"Name":"Netsec",
-				"Color": "Light Green",
+				"Color": "lime",
 				"Summary":"The majority faction that wants to eliminate all other factions",
 				"Image": "",
 				"Description": "",
@@ -21,7 +21,7 @@ data =
 		[
 			{
 				"Name":"Operation Leader",
-				"Color": "Light Green",
+				"Color": "lime",
 				"Summary":"Broadcast in real channel and root",
 				"Image": "",
 				"Description": "",
@@ -32,7 +32,7 @@ data =
 			},
 			{
 				"Name":"Former Agent Leader",
-				"Color": "Light Green",
+				"Color": "lime",
 				"Summary":"Weaker abilities but ability to see entire topology, cannot reveal to others",
 				"Image": "",
 				"Description": "",
@@ -43,7 +43,7 @@ data =
 			},
 			{
 				"Name":"Hack God",
-				"Color": "Light Green",
+				"Color": "lime",
 				"Summary":"Incredible hacking potential",
 				"Image": "",
 				"Description": "",
@@ -59,8 +59,24 @@ data =
 		[
 			{
 				"Name":"Enforcer",
-				"Color": "Light Green",
+				"Color": "lime",
 				"Summary":"Keeps Interrogate",
+				"Image": "",
+				"Description": "",
+				"Win Condition": "",
+				"Day": "",
+				"Night": "",
+				"Passives": ""
+			}
+		]
+	},
+	{
+		"The Good Guys": 
+		[
+			{
+				"Name":"Agent",
+				"Color": "orange",
+				"Summary":"The minority faction that has raw kill power, communication, and information",
 				"Image": "",
 				"Description": "",
 				"Win Condition": "",
@@ -75,7 +91,7 @@ data =
 		[
 			{
 				"Name":"Blackmailed Leader",
-				"Color": "Orange",
+				"Color": "orange",
 				"Summary":"Agent OL",
 				"Image": "",
 				"Description": "",
