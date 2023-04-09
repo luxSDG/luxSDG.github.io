@@ -373,17 +373,105 @@ data =
 				"Day": [],
 				"Night": [],
 				"Passives": []
-			},
+			}
 		]
 	},
 	{
 		"Netsec Utility": 
 		[
 			{
-				"Name":"",
+				"Name":"Inside Man (Assistant)",
 				"Color": "lime",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"The OG Inside Man",
+				"Image": "insidemanassistant.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Hacking Instructor",
+				"Color": "lime",
+				"Summary":"Buff hackers and check for moles",
+				"Image": "hackinginstructor.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Spearphisher",
+				"Color": "lime",
+				"Summary":"Can see if next node has intel",
+				"Image": "spearphisher.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Loan Shark",
+				"Color": "lime",
+				"Summary":"Jack of all trades buying different abilities role",
+				"Image": "loanshark.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Propagandist",
+				"Color": "lime",
+				"Summary":"Find/shoot mole without becoming the mole",
+				"Image": "propagandist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Maintenance Man",
+				"Color": "lime",
+				"Summary":"Janitor but for Netsec, also can clean and modify topology",
+				"Image": "maintenanceman.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Malware Programmer",
+				"Color": "lime",
+				"Summary":"Jam network and reducing node strength",
+				"Image": "malwareprogrammer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Sympathetic Reporter",
+				"Color": "lime",
+				"Summary":"Utility role around Global Intel",
+				"Image": "sympatheticreporter.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Drug Dealer",
+				"Color": "lime",
+				"Summary":"Utility role that can buff other operatives",
+				"Image": "drugdealer.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": [],
@@ -396,16 +484,82 @@ data =
 		"Netsec Social": 
 		[
 			{
-				"Name":"",
+				"Name":"Disgraced Loyalist",
 				"Color": "lime",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Can sacrifice himself to save another, doxxed as neutral",
+				"Image": "disgracedloyalist.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
-			}
+			},
+			{
+				"Name":"Double Agent",
+				"Color": "lime",
+				"Summary":"Doxxed as agent, has frame and arrest too",
+				"Image": "doubleagent.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Hacking Advocate",
+				"Color": "lime",
+				"Summary":"Can increase or decrease votes on operatives",
+				"Image": "hackingadvocate.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Technical Recruiter",
+				"Color": "lime",
+				"Summary":"Similar to Noble from ToL, force vote",
+				"Image": "technicalrecruiter.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Silenced Investigator",
+				"Color": "lime",
+				"Summary":"Egg’s role, Canadian, wants to get arrested",
+				"Image": "silencedinvestigator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"NFT Scammer",
+				"Color": "lime",
+				"Summary":"Alter Logs, Frame, Impersonate on a Netsec role",
+				"Image": "nftscammer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Rookie Assassin",
+				"Color": "lime",
+				"Summary":"Nice Guesser, can shoot people based on roles",
+				"Image": "rookieassassin.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
 		]
 	},
 	{
