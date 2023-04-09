@@ -9,6 +9,7 @@ const content = document.getElementById("content");
 const imagePic = document.getElementById("imagePic");
 const sideBar = document.getElementById("sideBar");
 
+//For main page
 for (let i = 0; i < data.length; i++)
 {
 	var category = data[i];
@@ -66,6 +67,7 @@ for (let i = 0; i < data.length; i++)
 }
 
 
+//For Sidebar
 for (let i = 0; i < data.length; i++)
 {
 	var category = data[i];
@@ -82,7 +84,7 @@ for (let i = 0; i < data.length; i++)
 		var roleName = role["Name"];
 		var categoryColor = role["Color"];
 		sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-		"\"class=\"list-group-item list-group-item-action py-3 lh-tight bg-dark\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:" + categoryColor + "\">"
-		 + roleName + "</small></div></a>"
+		"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
+		 + categoryColor + "\">" + roleName + "</small></div></a>"
 	}
 }
