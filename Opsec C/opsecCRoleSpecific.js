@@ -12,6 +12,10 @@ const imagePic = document.getElementById("imagePic");
 const sideBar = document.getElementById("sideBar");
 const backLink = document.getElementById("backLink");
 const nextLink = document.getElementById("nextLink");
+const searchBox = document.getElementById("searchBox");
+
+//For search
+var searchList = [];
 
 //For main page
 for (let i = 0; i < data.length; i++)
@@ -92,6 +96,9 @@ for (let i = 0; i < data.length; i++)
 		"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
 		 + categoryColor + "\">" + roleName + "</small></div></a>";
 
+		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index;
+		searchList.push([roleName, link]);
+
 		if (index === indexSearched-1)
 		{
 			backLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
@@ -105,3 +112,18 @@ for (let i = 0; i < data.length; i++)
 		index += 1;
 	}
 }
+
+document.onkeypress = function (event) {
+	if (event.keyCode === 13)
+	{
+		var value = searchBox.value;
+		for (let i = 0; i < searchList.length; i++)
+		{
+			if (value === searchList[i][0])
+			{
+				location.href = searchList[i][1];
+				return;
+			}
+		}
+	}
+};

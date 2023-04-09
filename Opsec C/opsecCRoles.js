@@ -1,4 +1,8 @@
 const content = document.getElementById("content");
+const searchBox = document.getElementById("searchBox");
+
+//For search
+var searchList = [];
 
 //For list
 var index = 0;
@@ -21,6 +25,10 @@ for (let i = 0; i < data.length; i++)
 		var roleSummary = role["Summary"];
 		content.innerHTML += "&emsp;<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + "\" style=\"color:"
 		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
+		
+		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index;
+		searchList.push([roleName, link]);
+
 		index += 1;
 	}
 	content.innerHTML += "<br>";
@@ -47,3 +55,18 @@ function switchSummary() {
   	}
   }
 }
+
+document.onkeypress = function (event) {
+	if (event.keyCode === 13)
+	{
+		var value = searchBox.value;
+		for (let i = 0; i < searchList.length; i++)
+		{
+			if (value === searchList[i][0])
+			{
+				location.href = searchList[i][1];
+				return;
+			}
+		}
+	}
+};
