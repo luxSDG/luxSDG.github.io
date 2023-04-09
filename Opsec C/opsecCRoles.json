@@ -88,6 +88,17 @@ data =
 					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
 				"Passives": ["None."]
+			},
+			{
+				"Name":"",
+				"Color": "lime",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
 			}
 		]
 	},
