@@ -56,6 +56,11 @@ body {
   justify-content: space-between;
 }
 
+.searchBar2 {
+  display: flex;
+  justify-content: center;
+}
+
 .leftAligned {
   text-align: left;
 }

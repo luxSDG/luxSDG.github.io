@@ -1,8 +1,10 @@
 const url = window.location.href;
 const indexStart = url.indexOf("?") + 10;
 const indexMid = url.indexOf("&") + 4;
+const indexEnd = url.indexOf("|") + 7;
 const categorySearched = url.slice(indexStart, indexMid-4).replace(/%20/g, " ");
-const roleSearched = url.slice(indexMid, url.length).replace(/%20/g, " ");
+const roleSearched = url.slice(indexMid, indexEnd-7).replace(/%20/g, " ");
+const indexSearched = parseInt(url.slice(indexEnd, url.length).replace(/%20/g, " "));
 
 const head = document.getElementById("head");
 const content = document.getElementById("content");
@@ -70,6 +72,7 @@ for (let i = 0; i < data.length; i++)
 
 
 //For Sidebar
+var index = 0;
 for (let i = 0; i < data.length; i++)
 {
 	var category = data[i];
@@ -85,14 +88,20 @@ for (let i = 0; i < data.length; i++)
 		var role = roleList[j];
 		var roleName = role["Name"];
 		var categoryColor = role["Color"];
-		sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+		sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + 
 		"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
 		 + categoryColor + "\">" + roleName + "</small></div></a>";
 
-		
-		backLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "\"style=\"color:"
-		 + categoryColor + "\">" + roleName + "</a>";
-		nextLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "\"style=\"color:"
-		 + categoryColor + "\">" + roleName + "</a>";
+		if (index === indexSearched-1)
+		{
+			backLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+			"|index=" + index + "\"style=\"color:"+ categoryColor + "\">" + roleName + "</a>";
+		}
+		if (index === indexSearched+1)
+		{
+			nextLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+			"|index=" + index + "\"style=\"color:" + categoryColor + "\">" + roleName + "</a>";
+		}
+		index += 1;
 	}
 }

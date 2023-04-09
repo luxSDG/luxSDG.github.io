@@ -1,6 +1,7 @@
 const content = document.getElementById("content");
 
 //For list
+var index = 0;
 for (let i = 0; i < data.length; i++)
 {
 	var category = data[i];
@@ -18,8 +19,9 @@ for (let i = 0; i < data.length; i++)
 		var role = roleList[j];
 		var roleName = role["Name"];
 		var roleSummary = role["Summary"];
-		content.innerHTML += "&emsp;<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "\" style=\"color:"
+		content.innerHTML += "&emsp;<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + "\" style=\"color:"
 		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
+		index += 1;
 	}
 	content.innerHTML += "<br>";
 }
