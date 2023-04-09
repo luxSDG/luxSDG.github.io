@@ -92,7 +92,7 @@ data =
 			{
 				"Name":"CCTV Specialist",
 				"Color": "lime",
-				"Summary":"",
+				"Summary":"Perform CCTV is passive, also CCTVs can’t communicate to each other",
 				"Image": "cctvspecialist.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
@@ -101,10 +101,65 @@ data =
 				"Passives": []
 			},
 			{
-				"Name":"",
+				"Name":"Rookie Hacker",
 				"Color": "lime",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Insider knowledge changed to Follow, small amounts of utility",
+				"Image": "rookiehacker.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Improvised Hacker",
+				"Color": "lime",
+				"Summary":"Same",
+				"Image": "improvisedhacker.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Nightclub Guard",
+				"Color": "lime",
+				"Summary":"Has ways to set misdirect on other operatives",
+				"Image": "nightclubguard.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Hardware Hacker",
+				"Color": "lime",
+				"Summary":"Disable both day and night actions to topology",
+				"Image": "hardwarehacker.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Brothel Owner",
+				"Color": "lime",
+				"Summary":"Loan Shark previous concept without move/emergency",
+				"Image": "brothelowner.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Getaway Driver",
+				"Color": "lime",
+				"Summary":"Transporter + Setup + Suicide/kill",
+				"Image": "getawaydriver.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": [],
@@ -117,10 +172,98 @@ data =
 		"Netsec Investigative": 
 		[
 			{
-				"Name":"",
+				"Name":"Analyst",
 				"Color": "lime",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"ARTQ can find hack chance",
+				"Image": "analyst.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Social Engineer",
+				"Color": "lime",
+				"Summary":"Impersonate added back, keeps throw + misdirect and buffs doxx (unironically need it for C)",
+				"Image": "socialengineer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Computer Technician",
+				"Color": "lime",
+				"Summary":"Has a way to upload intel and check subclass",
+				"Image": "computertechnician.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Inside Man (Detective)",
+				"Color": "lime",
+				"Summary":"Niche of intelling cover",
+				"Image": "insidemandetective.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Dark Web Contact",
+				"Color": "lime",
+				"Summary":"Has doxx and wireshark, no impersonate",
+				"Image": "darkwebcontact.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Natural Linguist",
+				"Color": "lime",
+				"Summary":"Maid from ToL, can compare two operatives’ win condition",
+				"Image": "naturallinguist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Computer Vision Engineer",
+				"Color": "lime",
+				"Summary":"Takes pictures and gets intel the next day on them",
+				"Image": "computervisionengineer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Technical Project Manager",
+				"Color": "lime",
+				"Summary":"Setup on a Netsec role, and can figure out who hacks a node",
+				"Image": "technicalprojectmanager.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Search Engine Optimizer",
+				"Color": "lime",
+				"Summary":"Background Search and some significant topology actions",
+				"Image": "searchengineoptimizer.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": [],
@@ -133,16 +276,104 @@ data =
 		"Netsec Offensive": 
 		[
 			{
-				"Name":"",
+				"Name":"Network Specialist",
 				"Color": "lime",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Review Spec prevents getting ISP’d next day",
+				"Image": "networkspecialist.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
-			}
+			},
+			{
+				"Name":"Blackhat",
+				"Color": "lime",
+				"Summary":"Sprint allows 2 actions a single day",
+				"Image": "blackhat.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Prodigy",
+				"Color": "lime",
+				"Summary":"Hacker with DDOS and hideouts",
+				"Image": "prodigy.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Laptop Specialist",
+				"Color": "lime",
+				"Summary":"% chances on override is gone and root is attainable all game",
+				"Image": "laptopspecialist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Steadfast Student",
+				"Color": "lime",
+				"Summary":"Gains more power over time, has kill later",
+				"Image": "steadfaststudent.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Network Architect",
+				"Color": "lime",
+				"Summary":"Add route and remove route",
+				"Image": "networkarchitect.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Graph Theorist",
+				"Color": "lime",
+				"Summary":"Predict the next nodes and intel",
+				"Image": "graphtheorist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Inside Man (Software Engineer)",
+				"Color": "lime",
+				"Summary":"Replace servers with laptops",
+				"Image": "insidemansoftwareengineer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Reverse Cryptographer",
+				"Color": "lime",
+				"Summary":"Download intel without connecting to the node, and decrease difficulty on all nodes",
+				"Image": "reversecryptographer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
 		]
 	},
 	{
@@ -183,10 +414,10 @@ data =
 			{
 				"Name":"Neutral",
 				"Color": "white",
-				"Summary":"",
+				"Summary":"Interlopers on their own agenda, do your own win condition specified",
 				"Image": "neutral.png",
-				"Description": "",
-				"Win Condition": "",
+				"Description": "“I’m here for a specific purpose on my own agenda.”",
+				"Win Condition": "Do your particular objective.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -309,12 +540,12 @@ data =
 		"The Really Bad Guys": 
 		[
 			{
-				"Name":"",
+				"Name":"Neutral Killing",
 				"Color": "red",
-				"Summary":"",
+				"Summary":"Powerful interlopers that have incredible power but are solo for the entire game",
 				"Image": "neutralkilling.png",
-				"Description": "",
-				"Win Condition": "",
+				"Description": "“I’m here to kill everyone, you all wronged me and I will get my revenge.”",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).<br><br>These roles have significant power, given that they are basically entirely alone. They are singly stronger than most roles in the game. All these roles are designed to be unique, depending on the ruleset.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -539,12 +770,12 @@ data =
 		"The Really Really Bad Guys": 
 		[
 			{
-				"Name":"",
+				"Name":"W3C",
 				"Color": "magenta",
-				"Summary":"",
-				"Image": ".png",
-				"Description": "",
-				"Win Condition": "",
+				"Summary":"The minority faction that has indirect kill power and scale to become stronger later",
+				"Image": "w3c.png",
+				"Description": "“We are here to get rid of NETSEC scum. Let’s get rid of these guys, and let’s get rid of agents or we’ll have problems later.”",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).<br><br>Main difference from Agent is that Agent has more direct ways of killing (singular killer/FA usually), whereas W3C needs to kill sporadically using specific niche ways to kill. W3C also doesn’t have topology access, but still maintains a connected chat. W3C gains more power the less operatives they have, or gains power with more kills.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -651,12 +882,12 @@ data =
 		"The GREAT Guys": 
 		[
 			{
-				"Name":"",
+				"Name":"Paragon",
 				"Color": "cyan",
-				"Summary":"",
-				"Image": ".png",
-				"Description": "",
-				"Win Condition": "",
+				"Summary":"A group of interlopers that want to play with the minority faction to win",
+				"Image": "paragon.png",
+				"Description": "“We’re here to establish a presence and assert dominance on the dark web as the biggest hacking team.”",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.<br><br>Paragon is sorta a neutral faction that needs to kill off half of every faction. Can win with any faction and will lose if all other factions besides one lose before they win. This faction should spawn with SOME kill power, not necessarily a ton, but enough to be able to force a 50% on all other factions. Paragon will be notified if a faction reaches under 50% of their total operatives.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
