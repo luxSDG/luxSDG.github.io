@@ -7,6 +7,7 @@ const roleSearched = url.slice(indexMid, url.length).replace(/%20/g, " ");
 const head = document.getElementById("head");
 const content = document.getElementById("content");
 const imagePic = document.getElementById("imagePic");
+const sideBar = document.getElementById("sideBar");
 
 for (let i = 0; i < data.length; i++)
 {
@@ -61,5 +62,27 @@ for (let i = 0; i < data.length; i++)
 				}
 			}
 		}
+	}
+}
+
+
+for (let i = 0; i < data.length; i++)
+{
+	var category = data[i];
+
+	//Categories for each opsec C role, e.g. faction and/or subclass
+	var categoryName = Object.keys(category);
+
+	//Specific roles per category
+	var roleList = Object.values(category)[0];
+
+	for (let j = 0; j < roleList.length; j++)
+	{
+		var role = roleList[j];
+		var roleName = role["Name"];
+		var categoryColor = role["Color"];
+		sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+		"\"class=\"list-group-item list-group-item-action py-3 lh-tight bg-dark\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:" + categoryColor + "\">"
+		 + roleName + "</small></div></a>"
 	}
 }
