@@ -90,12 +90,247 @@ data =
 				"Passives": ["None."]
 			},
 			{
+				"Name":"CCTV Specialist",
+				"Color": "lime",
+				"Summary":"",
+				"Image": "cctvspecialist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
 				"Name":"",
 				"Color": "lime",
 				"Summary":"",
 				"Image": ".png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Netsec Investigative": 
+		[
+			{
+				"Name":"",
+				"Color": "lime",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Netsec Offensive": 
+		[
+			{
+				"Name":"",
+				"Color": "lime",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Netsec Utility": 
+		[
+			{
+				"Name":"",
+				"Color": "lime",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Netsec Social": 
+		[
+			{
+				"Name":"",
+				"Color": "lime",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"The Decent Guys": 
+		[
+			{
+				"Name":"Neutral",
+				"Color": "white",
+				"Summary":"",
+				"Image": "neutral.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Special": 
+		[
+			{
+				"Name":"",
+				"Color": "white",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Field Operations": 
+		[
+			{
+				"Name":"",
+				"Color": "white",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Investigative": 
+		[
+			{
+				"Name":"",
+				"Color": "white",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Offensive": 
+		[
+			{
+				"Name":"",
+				"Color": "white",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Utility": 
+		[
+			{
+				"Name":"",
+				"Color": "white",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Social": 
+		[
+			{
+				"Name":"",
+				"Color": "white",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Special": 
+		[
+			{
+				"Name":"",
+				"Color": "white",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"The Really Bad Guys": 
+		[
+			{
+				"Name":"",
+				"Color": "red",
+				"Summary":"",
+				"Image": "neutralkilling.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Neutral Killing": 
+		[
+			{
+				"Name":"",
+				"Color": "red",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -139,5 +374,389 @@ data =
 					"Operation Leader - You are one of the leading roles and should spawn every operation."]
 			}
 		]
-	}
+	},
+	{
+		"Core Agent Field Operations": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Core Agent Investigative": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Core Agent Offensive": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Core Agent Utility": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Core Agent Social": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Mole Agent Field Operations": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Mole Agent Investigative": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Mole Agent Offensive": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Mole Agent Utility": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Mole Agent Social": 
+		[
+			{
+				"Name":"",
+				"Color": "orange",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"The Really Really Bad Guys": 
+		[
+			{
+				"Name":"",
+				"Color": "magenta",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"W3C Special": 
+		[
+			{
+				"Name":"",
+				"Color": "magenta",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"W3C Field Operations": 
+		[
+			{
+				"Name":"",
+				"Color": "magenta",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"W3C Investigative": 
+		[
+			{
+				"Name":"",
+				"Color": "magenta",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"W3C Offensive": 
+		[
+			{
+				"Name":"",
+				"Color": "magenta",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"W3C Utility": 
+		[
+			{
+				"Name":"",
+				"Color": "magenta",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"W3C Social": 
+		[
+			{
+				"Name":"",
+				"Color": "magenta",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"The GREAT Guys": 
+		[
+			{
+				"Name":"",
+				"Color": "cyan",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Paragon Special": 
+		[
+			{
+				"Name":"",
+				"Color": "cyan",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Paragon Field Operations": 
+		[
+			{
+				"Name":"",
+				"Color": "cyan",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Paragon Investigative": 
+		[
+			{
+				"Name":"",
+				"Color": "cyan",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Paragon Offensive": 
+		[
+			{
+				"Name":"",
+				"Color": "cyan",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Paragon Utility": 
+		[
+			{
+				"Name":"",
+				"Color": "cyan",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Paragon Social": 
+		[
+			{
+				"Name":"",
+				"Color": "cyan",
+				"Summary":"",
+				"Image": ".png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			}
+		]
+	},
 ];
