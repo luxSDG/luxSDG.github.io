@@ -43,6 +43,19 @@ body {
   background-color: #171717;
 }
 
+.summaryBox {
+  padding: 0px;
+}
+
+.searchBox {
+  max-width: 30%;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .leftAligned {
   text-align: left;
 }

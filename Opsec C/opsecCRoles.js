@@ -1,5 +1,6 @@
 const content = document.getElementById("content");
 
+//For list
 for (let i = 0; i < data.length; i++)
 {
 	var category = data[i];
@@ -18,7 +19,29 @@ for (let i = 0; i < data.length; i++)
 		var roleName = role["Name"];
 		var roleSummary = role["Summary"];
 		content.innerHTML += "&emsp;<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "\" style=\"color:"
-		 + categoryColor + "\">" + roleName + "</a><span class=\"enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
+		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
 	}
 	content.innerHTML += "<br>";
+}
+
+//For checkbox
+function switchSummary() {
+  var checkbox = document.getElementById("flexCheckDefault");
+  var roleList = document.getElementsByClassName("roleSummary");
+  if (checkbox.checked)
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("enabled");
+  		roleList[i].classList.remove("disabled");
+  	}
+  } 
+  else 
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("disabled");
+  		roleList[i].classList.remove("enabled");
+  	}
+  }
 }

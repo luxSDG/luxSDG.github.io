@@ -8,6 +8,8 @@ const head = document.getElementById("head");
 const content = document.getElementById("content");
 const imagePic = document.getElementById("imagePic");
 const sideBar = document.getElementById("sideBar");
+const backLink = document.getElementById("backLink");
+const nextLink = document.getElementById("nextLink");
 
 //For main page
 for (let i = 0; i < data.length; i++)
@@ -85,6 +87,12 @@ for (let i = 0; i < data.length; i++)
 		var categoryColor = role["Color"];
 		sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
 		"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-		 + categoryColor + "\">" + roleName + "</small></div></a>"
+		 + categoryColor + "\">" + roleName + "</small></div></a>";
+
+		
+		backLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "\"style=\"color:"
+		 + categoryColor + "\">" + roleName + "</a>";
+		nextLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "\"style=\"color:"
+		 + categoryColor + "\">" + roleName + "</a>";
 	}
 }
