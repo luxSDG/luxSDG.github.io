@@ -559,7 +559,7 @@ data =
 				"Day": [],
 				"Night": [],
 				"Passives": []
-			},
+			}
 		]
 	},
 	{
@@ -582,10 +582,65 @@ data =
 		"Neutral Special": 
 		[
 			{
-				"Name":"",
+				"Name":"Neutral Leader",
 				"Color": "white",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"OL but neutral",
+				"Image": "operationleader.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Gambling Leader",
+				"Color": "white",
+				"Summary":"OL that can gamble his win condition",
+				"Image": "gamblingleader.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Cheeseburger Technician",
+				"Color": "white",
+				"Summary":"Alex’s role, journalist OL",
+				"Image": "cheeseburgertechnician.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Sociopath",
+				"Color": "white",
+				"Summary":"Kills OL to become Neut leader with same win condition, or sociopath leader to kill everyone",
+				"Image": "sociopath.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Resentful Criminal",
+				"Color": "white",
+				"Summary":"Has a double kill to kill AL and OL",
+				"Image": "resentfulcriminal.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"The Employer",
+				"Color": "white",
+				"Summary":"Baguette’s special role, serious firepower with murder",
+				"Image": "theemployer.png",
 				"Description": "",
 				"Win Condition": "",
 				"Day": [],
@@ -598,10 +653,54 @@ data =
 		"Neutral Field Operations": 
 		[
 			{
-				"Name":"",
+				"Name":"Loose Cannon",
 				"Color": "white",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Get randomed 3 win conditions",
+				"Image": "loosecannon.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Bounty Hunter",
+				"Color": "white",
+				"Summary":"Can spill beans both day and night",
+				"Image": "bountyhunter.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Criminal Freelancer",
+				"Color": "white",
+				"Summary":"Can give lots of utility with sell arms and blackmail, needs to get stacks of money",
+				"Image": "criminalfreelancer.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Insane Officer",
+				"Color": "white",
+				"Summary":"Role that needs to kill a mole and become mole",
+				"Image": "insaneofficer.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Political Campaigner",
+				"Color": "white",
+				"Summary":"Alex Jones, can frame people and give intel to agents, needs to get stacks of money",
+				"Image": "politicalcampaigner.png",
 				"Description": "",
 				"Win Condition": "",
 				"Day": [],
@@ -614,10 +713,65 @@ data =
 		"Neutral Investigative": 
 		[
 			{
-				"Name":"",
+				"Name":"Journalist",
 				"Color": "white",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Shorter objective (2 articles) and Background Check",
+				"Image": "journalist.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Double Crosser",
+				"Color": "white",
+				"Summary":"Suicide Guesser, find out someone’s role, guess, and arrest both of yourselves",
+				"Image": "doublecrosser.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Shamed Journalist",
+				"Color": "white",
+				"Summary":"Needs to do more to achieve 3 articles with murder journalist",
+				"Image": "shamedjournalist.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Amateur Investigator",
+				"Color": "white",
+				"Summary":"Shorter objective (5 pieces of intel without having to sell), can get lots of intel",
+				"Image": "amateurinvestigator.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Repressed Refugee",
+				"Color": "white",
+				"Summary":"Make sure at least one other operative survives, can learn from dead players and push Global Intel.",
+				"Image": "repressedrefugee.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Vengeful Assassin",
+				"Color": "white",
+				"Summary":"Evil Guesser + Inquisitor",
+				"Image": "vengefulassassin.png",
 				"Description": "",
 				"Win Condition": "",
 				"Day": [],
@@ -630,10 +784,65 @@ data =
 		"Neutral Offensive": 
 		[
 			{
-				"Name":"",
+				"Name":"Script Kiddie",
 				"Color": "white",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Can turn into PB night 1, needs to hack or survive",
+				"Image": "scriptkiddie.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Panicked Blabbermouth",
+				"Color": "white",
+				"Summary":"Easier to turn into, needs to kill and leave",
+				"Image": "panickedblabbermouth.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Rival Hacker",
+				"Color": "white",
+				"Summary":"Gains wiretap again",
+				"Image": "rivalhacker.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Hacknet Hacker",
+				"Color": "white",
+				"Summary":"Needs to hack nodes to win",
+				"Image": "hacknethacker.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Connection Specialist",
+				"Color": "white",
+				"Summary":"Attempt to both hack some targets and slow the hack",
+				"Image": "connectionspecialist.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Discord Manager",
+				"Color": "white",
+				"Summary":"SK but more memes",
+				"Image": "discordmanager.png",
 				"Description": "",
 				"Win Condition": "",
 				"Day": [],
@@ -646,10 +855,65 @@ data =
 		"Neutral Utility": 
 		[
 			{
-				"Name":"",
+				"Name":"W.P.P. Member",
 				"Color": "white",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"SK with more steps and arrest visitors",
+				"Image": "wppmember.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Former Bodyguard",
+				"Color": "white",
+				"Summary":"Gains bait, angel",
+				"Image": "formerbodyguard.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Insane Drug Dealer",
+				"Color": "white",
+				"Summary":"Baguette’s Walter role, needs to do a few different tasks and overdose some people",
+				"Image": "drugdealer.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Retired Hacker",
+				"Color": "white",
+				"Summary":"Help 5 operatives hack or not by adjusting their hack chances",
+				"Image": "hackinginstructor.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Disconnected Paragon Operative",
+				"Color": "white",
+				"Summary":"Wins only if Paragon wins, doesn’t spawn with Paragon",
+				"Image": "disconnectedparagonoperative.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Abandoned Agent",
+				"Color": "white",
+				"Summary":"Wins only if Agent wins, doesn’t spawn with Agent (or W3C, or NK, or Netsec)",
+				"Image": "abandonedagent.png",
 				"Description": "",
 				"Win Condition": "",
 				"Day": [],
@@ -662,26 +926,65 @@ data =
 		"Neutral Social": 
 		[
 			{
-				"Name":"",
+				"Name":"Corrupt Detective",
 				"Color": "white",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Executioner",
+				"Image": "corruptdetective.png",
 				"Description": "",
 				"Win Condition": "",
 				"Day": [],
 				"Night": [],
 				"Passives": []
-			}
-		]
-	},
-	{
-		"Neutral Special": 
-		[
+			},
 			{
-				"Name":"",
+				"Name":"Waxmart Manager",
 				"Color": "white",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"wins based on X’s win condition",
+				"Image": "waxmartmanager.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Corrupt Lawyer",
+				"Color": "white",
+				"Summary":"Lawyer, make sure X wins",
+				"Image": "corruptlawyer.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Reminiscing Amnesiac",
+				"Color": "white",
+				"Summary":"Amnesiac",
+				"Image": "scriptkiddie.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"King of Trolls",
+				"Color": "white",
+				"Summary":"Jester",
+				"Image": "kingoftrolls.png",
+				"Description": "",
+				"Win Condition": "",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Wildcard",
+				"Color": "white",
+				"Summary":"Choose win condition from host (suggested by Egg)",
+				"Image": "wildcard.png",
 				"Description": "",
 				"Win Condition": "",
 				"Day": [],
@@ -710,12 +1013,89 @@ data =
 		"Neutral Killing": 
 		[
 			{
-				"Name":"",
+				"Name":"Sociopath Leader",
 				"Color": "red",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"killer OL",
+				"Image": "sociopath.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Rogue Mastermind",
+				"Color": "red",
+				"Summary":"Killer around infected/hacker priority",
+				"Image": "roguemastermind.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"F/A-18 Super Hornet Pilot",
+				"Color": "red",
+				"Summary":"Loud killer that leaks lots of information",
+				"Image": "fa18superhornetpilot.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Psychopath",
+				"Color": "red",
+				"Summary":"Possessor",
+				"Image": "psychopath.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Bombardier",
+				"Color": "red",
+				"Summary":"Arsonist",
+				"Image": "bombardier.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Rogue Assassin",
+				"Color": "red",
+				"Summary":"Evil Guesser",
+				"Image": "rogueassassin.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Underground Ring Fighter",
+				"Color": "red",
+				"Summary":"Forces people into an arena and fights them",
+				"Image": "undergroundringfighter.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Italian Mafia",
+				"Color": "red",
+				"Summary":"Duplicated operatives that all kill",
+				"Image": "italianmafia.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
