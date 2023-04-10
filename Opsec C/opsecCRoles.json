@@ -1309,7 +1309,7 @@ data =
 				"Summary":"The minority faction that has indirect kill power and scale to become stronger later",
 				"Image": "w3c.png",
 				"Description": "“We are here to get rid of NETSEC scum. Let’s get rid of these guys, and let’s get rid of agents or we’ll have problems later.”",
-				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).<br><br>Main difference from Agent is that Agent has more direct ways of killing (singular killer/FA usually), whereas W3C needs to kill sporadically using specific niche ways to kill. W3C also doesn’t have topology access, but still maintains a connected chat. W3C gains more power the less operatives they have, or gains power with more kills.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).<br><br>Main difference from Agent is that Agent has more direct ways of killing (singular killer/FA usually), whereas W3C needs to kill sporadically using specific niche ways to kill. W3C also doesn’t have topology access, but still maintains a connected chat. W3C gains more power the less operatives they have, or gains power with more kills.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1320,12 +1320,23 @@ data =
 		"W3C Special": 
 		[
 			{
-				"Name":"",
+				"Name":"W3C Operation Leader",
 				"Color": "magenta",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"W3C OL, power through sacrificing",
+				"Image": "operationleader.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"W3C Leader",
+				"Color": "magenta",
+				"Summary":"powerful role that gains power off of sacrificing",
+				"Image": "w3cleader.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1336,12 +1347,23 @@ data =
 		"W3C Field Operations": 
 		[
 			{
-				"Name":"",
+				"Name":"W3C Enforcer",
 				"Color": "magenta",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"killing and defensive",
+				"Image": "enforcer.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},		
+			{
+				"Name":"W3C Blackmailer",
+				"Color": "magenta",
+				"Summary":"blackmail focused, has kill",
+				"Image": "w3cblackmailer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1352,12 +1374,34 @@ data =
 		"W3C Investigative": 
 		[
 			{
-				"Name":"",
+				"Name":"W3C Stalker",
 				"Color": "magenta",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"typical investigative",
+				"Image": "w3cstalker.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"W3C Forger",
+				"Color": "magenta",
+				"Summary":"frame heavy, kill later",
+				"Image": "w3cforger.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"W3C Ambusher",
+				"Color": "magenta",
+				"Summary":"set up traps and sell illicit arms",
+				"Image": "w3cambusher.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1368,12 +1412,34 @@ data =
 		"W3C Offensive": 
 		[
 			{
-				"Name":"",
+				"Name":"W3C Blackhat",
 				"Color": "magenta",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"hack heavy, firewall and other actions",
+				"Image": "blackhat.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"W3C Disruptor",
+				"Color": "magenta",
+				"Summary":"pull people and hack, kill",
+				"Image": "w3cdisruptor.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"W3C Graph Theorist",
+				"Color": "magenta",
+				"Summary":"predict next nodes and intel, mass occupation",
+				"Image": "graphtheorist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1384,12 +1450,34 @@ data =
 		"W3C Utility": 
 		[
 			{
-				"Name":"",
+				"Name":"W3C Lab Technician",
 				"Color": "magenta",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"drug dealer, buff others",
+				"Image": "w3clabtechnician.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"W3C Insider",
+				"Color": "magenta",
+				"Summary":"server/laptop replacer, has possible kill power with using dead operative abilities and other operative abilities",
+				"Image": "insidemanassistant.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"W3C Janitor",
+				"Color": "magenta",
+				"Summary":"clean up and killing",
+				"Image": "maintenanceman.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1400,12 +1488,23 @@ data =
 		"W3C Social": 
 		[
 			{
-				"Name":"",
+				"Name":"W3C Technical Recruiter",
 				"Color": "magenta",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"vote control, paid assassin later",
+				"Image": "technicalrecruiter.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"W3C Assassin",
+				"Color": "magenta",
+				"Summary":"evil guesser, murder later",
+				"Image": "w3cassassin.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1432,12 +1531,23 @@ data =
 		"Paragon Special": 
 		[
 			{
-				"Name":"",
+				"Name":"Paragon Operation Leader",
 				"Color": "cyan",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Paragon OL",
+				"Image": "operationleader.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Paragon Leader",
+				"Color": "cyan",
+				"Summary":"Paragon AL, kill power",
+				"Image": "paragonleader.png",
+				"Description": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1448,12 +1558,23 @@ data =
 		"Paragon Field Operations": 
 		[
 			{
-				"Name":"",
+				"Name":"Paragon Scout",
 				"Color": "cyan",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"uses other operative abilities and uses abilities of arrested operative",
+				"Image": "paragonscout.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},	
+			{
+				"Name":"Paragon Ex-Mercenary",
+				"Color": "cyan",
+				"Summary":"sell illicit arms",
+				"Image": "paragonexmercenary.png",
+				"Description": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1464,12 +1585,23 @@ data =
 		"Paragon Investigative": 
 		[
 			{
-				"Name":"",
+				"Name":"Paragon Journalist",
 				"Color": "cyan",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"fake ddos and rollback",
+				"Image": "paragonjournalist.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Paragon Informant",
+				"Color": "cyan",
+				"Summary":"agent intel and snitch",
+				"Image": "rookieinformant.png",
+				"Description": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1480,12 +1612,34 @@ data =
 		"Paragon Offensive": 
 		[
 			{
-				"Name":"",
+				"Name":"Paragon Prodigy",
 				"Color": "cyan",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"track hackers to arrest",
+				"Image": "prodigy.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Paragon Security Specialist",
+				"Color": "cyan",
+				"Summary":"defend the topology",
+				"Image": "agentdatabasemanager.png",
+				"Description": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Paragon Search Engine Optimizer",
+				"Color": "cyan",
+				"Summary":"buff others by giving day charges of abilities",
+				"Image": "searchengineoptimizer.png",
+				"Description": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1496,12 +1650,23 @@ data =
 		"Paragon Utility": 
 		[
 			{
-				"Name":"",
+				"Name":"Paragon Head of Personnel",
 				"Color": "cyan",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"buff others by giving night charges of abilities",
+				"Image": "shamedjournalist.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},			
+			{
+				"Name":"Paragon Ex-Mole",
+				"Color": "cyan",
+				"Summary":"utility around agent doxx and mole fake claim",
+				"Image": "specialist.png",
+				"Description": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1512,12 +1677,12 @@ data =
 		"Paragon Social": 
 		[
 			{
-				"Name":"",
+				"Name":"Paragon Assassin",
 				"Color": "cyan",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"vote sacrifice and some kill power",
+				"Image": "paragonassassin.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
