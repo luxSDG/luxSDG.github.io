@@ -92,9 +92,18 @@ for (let i = 0; i < data.length; i++)
 		var role = roleList[j];
 		var roleName = role["Name"];
 		var categoryColor = role["Color"];
-		sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + 
-		"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-		 + categoryColor + "\">" + roleName + "</small></div></a>";
+		if (index === indexSearched)
+		{
+			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + 
+			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
+			 + categoryColor + "\">" + roleName + "</small></div></a>";
+		}
+		else
+		{
+			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + 
+			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
+			 + categoryColor + "\">" + roleName + "</small></div></a>";
+		}
 
 		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index;
 		searchList.push([roleName, link]);
@@ -112,6 +121,7 @@ for (let i = 0; i < data.length; i++)
 		index += 1;
 	}
 }
+document.getElementById("activeSideBar").scrollIntoView();
 
 document.onkeypress = function (event) {
 	if (event.keyCode === 13)
