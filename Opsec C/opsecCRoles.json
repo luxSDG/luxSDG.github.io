@@ -1137,6 +1137,17 @@ data =
 				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Operation Leader - You are one of the leading roles and should spawn every operation."]
+			},
+			{
+				"Name":"Runaway Snitch",
+				"Color": "orange",
+				"Summary":"Way more utility including midnight meet and follow",
+				"Image": "runawaysnitch.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
 			}
 		]
 	},
@@ -1144,12 +1155,45 @@ data =
 		"Core Agent Field Operations": 
 		[
 			{
-				"Name":"",
+				"Name":"Field Agent",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Can pick extra ability instead of randomed",
+				"Image": "fieldagent.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Determined Deputy",
+				"Color": "orange",
+				"Summary":"More focused on raw arrest power and day arrests",
+				"Image": "determineddeputy.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Drone Operator",
+				"Color": "orange",
+				"Summary":"More focused on delayed watched -> arrest, along with sacrificial gameplay",
+				"Image": "droneoperator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"K-9 Unit",
+				"Color": "orange",
+				"Summary":"RS’ role, protects team with dog, buffs team",
+				"Image": "k9unit.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1160,12 +1204,45 @@ data =
 		"Core Agent Investigative": 
 		[
 			{
-				"Name":"",
+				"Name":"Forensic Specialist",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"More on cameras, framing other players",
+				"Image": "forensicspecialist.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Jail Warden",
+				"Color": "orange",
+				"Summary":"Jailor, can choose arrest or not",
+				"Image": "jailwarden.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Cybercrime Investigator",
+				"Color": "orange",
+				"Summary":"Shark’s role, more intel on FA role",
+				"Image": "cybercrimeinvestigator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Rookie Informant",
+				"Color": "orange",
+				"Summary":"Stronger combined investigative role",
+				"Image": "rookieinformant.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1176,12 +1253,45 @@ data =
 		"Core Agent Offensive": 
 		[
 			{
-				"Name":"",
+				"Name":"Agent Leader",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"replace mole with other abilities",
+				"Image": "agentleader.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Cipher Lord",
+				"Color": "orange",
+				"Summary":"lots of topology and global intel related utility",
+				"Image": "cipherlord.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Robocop",
+				"Color": "orange",
+				"Summary":"Multiple forms, can change between hacking, investigative, and arresting",
+				"Image": "robocop.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Expert Whitehat",
+				"Color": "orange",
+				"Summary":"Stronger Blackhat",
+				"Image": "blackhat.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1192,12 +1302,56 @@ data =
 		"Core Agent Utility": 
 		[
 			{
-				"Name":"",
+				"Name":"Criminal Psychologist",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Has special moles",
+				"Image": "criminalpsychologist.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Commissary Officer",
+				"Color": "orange",
+				"Summary":"Mostly focused on DD’s original kit for utility",
+				"Image": "commissaryofficer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Master Manipulator",
+				"Color": "orange",
+				"Summary":"Lots of control/utility to control other operatives not owned by you",
+				"Image": "mastermanipulator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Police Chief",
+				"Color": "orange",
+				"Summary":"Multiple actions at night, more utility focused",
+				"Image": "policechief.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Animal Tamer",
+				"Color": "orange",
+				"Summary":"Uses animals as utility, similar to K-9 Unit",
+				"Image": "animaltamer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1208,12 +1362,34 @@ data =
 		"Core Agent Social": 
 		[
 			{
-				"Name":"",
+				"Name":"District Attorney",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Hacking Advocate but for agent, controls vote",
+				"Image": "districtattorney.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Vigilante Decipherer",
+				"Color": "orange",
+				"Summary":"Evil Guesser, guesses roles to arrest",
+				"Image": "vigilantedecipherer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Elusive Framer",
+				"Color": "orange",
+				"Summary":"Frames and uses lynch to kill people",
+				"Image": "elusiveframer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1224,12 +1400,45 @@ data =
 		"Mole Agent Field Operations": 
 		[
 			{
-				"Name":"",
+				"Name":"Agent Enforcer",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"fake escort/kill pressure",
+				"Image": "enforcer.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent CCTV Specialist",
+				"Color": "orange",
+				"Summary":"cameras",
+				"Image": "cctvspecialist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Hardware Hacker",
+				"Color": "orange",
+				"Summary":"disable hardware/isp",
+				"Image": "hardwarehacker.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Specialist",
+				"Color": "orange",
+				"Summary":"Crim Psych fops mole",
+				"Image": "specialist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1240,12 +1449,45 @@ data =
 		"Mole Agent Investigative": 
 		[
 			{
-				"Name":"",
+				"Name":"Agent Data Scientist",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"can change intel to your liking",
+				"Image": "analyst.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Social Engineer",
+				"Color": "orange",
+				"Summary":"defensive mole with frame",
+				"Image": "socialengineer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Ethical Hacker",
+				"Color": "orange",
+				"Summary":"Plant agent docs and investigative abilities",
+				"Image": "hacknethacker.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Initiator",
+				"Color": "orange",
+				"Summary":"Crim Psych invest mole",
+				"Image": "initiator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1256,12 +1498,45 @@ data =
 		"Mole Agent Offensive": 
 		[
 			{
-				"Name":"",
+				"Name":"Whitehat",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"high hack chance",
+				"Image": "blackhat.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Network Specialist",
+				"Color": "orange",
+				"Summary":"Block denial of service",
+				"Image": "networkspecialist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Network Architect",
+				"Color": "orange",
+				"Summary":"Add and remove routes",
+				"Image": "networkarchitect.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Operator",
+				"Color": "orange",
+				"Summary":"Crim Psych offensive mole",
+				"Image": "operator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1272,12 +1547,34 @@ data =
 		"Mole Agent Utility": 
 		[
 			{
-				"Name":"",
+				"Name":"Agent Company Man",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"Wiretap is back on field ops mole, setup",
+				"Image": "insidemanassistant.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Graph Theorist",
+				"Color": "orange",
+				"Summary":"know where downloadable intel is overall",
+				"Image": "graphtheorist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Database Manager",
+				"Color": "orange",
+				"Summary":"replace laptops and servers with each other",
+				"Image": "agentdatabasemanager.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1288,12 +1585,23 @@ data =
 		"Mole Agent Social": 
 		[
 			{
-				"Name":"",
+				"Name":"Agent Amateur Investigator",
 				"Color": "orange",
-				"Summary":"",
-				"Image": ".png",
+				"Summary":"doxxed neutral, mostly intel",
+				"Image": "amateurinvestigator.png",
 				"Description": "",
-				"Win Condition": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": [],
+				"Night": [],
+				"Passives": []
+			},
+			{
+				"Name":"Agent Technical Recruiter",
+				"Color": "orange",
+				"Summary":"Mostly new, but has Final Gambit, can also control votes",
+				"Image": "technicalrecruiter.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": [],
 				"Night": [],
 				"Passives": []
