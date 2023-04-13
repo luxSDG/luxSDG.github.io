@@ -2626,22 +2626,37 @@ data =
 				"Color": "cyan",
 				"Summary":"Paragon OL",
 				"Image": "operationleader.png",
-				"Description": "",
+				"Description": "This role is unique (one Operation Leader should spawn).<br>“Paragon needs you before you are retired and gone, Paragon Operation Leader.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
+					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
+				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
+					"Cover Your Tracks (2 charges) - Move your hideout, protecting yourself unless you are occupied. Arrest attempts will show a result similar to a target that is immune to arrest, like No Dirt On Me.",
+					"Paragon Goons (1 charge) - Select a target operative to escort, does not occupy them and makes them immune to everything unless otherwise stated. This ability is toggleable, once you have selected a target operative, you must Redirect Goons to leave the operative before sending them out again. Grants a charge of Redirect Goons.",
+					"Redirect Goons (0 charges) - Stops the Paragon Goons from escorting tonight. Grants a charge of Paragon Goons."],
+				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
+					"Operation Leader - You are one of the leading roles and should spawn every operation."]
 			},			
 			{
 				"Name":"Paragon Leader",
 				"Color": "cyan",
 				"Summary":"Paragon AL, kill power",
 				"Image": "paragonleader.png",
-				"Description": "",
+				"Description": "This role is supposed to be unique, depending on the ruleset.<br>“Time to command Paragon to victory in this Opsec, Paragon Leader.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
+					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
+					"Computer Forensics Background (Pick 1)<br>=======================================================================<br>Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
+					"Harden Node (D1 -> D3 cooldown, 2 charges) - Select a white node. Decreasing hacking chances of getting this node. Strongest hacking chance nerf. Leaves a log.",
+					"Probe Node - Select a white node, increasing hacking chances of getting this node. Strongest hacking chance buff. Leaves a log."],
+				"Night": ["Cover Your Tracks (2 charges) - Move your hideout, protecting yourself unless you are occupied. Arrest attempts will show a result similar to a target that is immune to arrest, like No Dirt On Me.",
+					"Paragon Informant (N1 -> N4 cooldown) - Select a target operative. Choose to visit or not, and reveal their faction and subclass to you.",
+					"Assault and Battery - Select an operative and attempt to murder them. Visit the target."],
+				"Passives": ["Computer Forensics Background - Pick one of the three abilities between Denial of Service, Harden Node, and Probe Node.",
+					"Cover Checks Out - You can pick a Netsec class to frame yourself as until Day 4. Can be arrested after Rent Free is triggered.",
+					"Rent Free - Avoid the first arrest attempt and murder attempt on you."]
 			}
 		]
 	},
@@ -2653,22 +2668,27 @@ data =
 				"Color": "cyan",
 				"Summary":"uses other operative abilities and uses abilities of arrested operative",
 				"Image": "paragonscout.png",
-				"Description": "",
+				"Description": "“Fresh new talent has been spotted here, Paragon Scout.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log."],
+				"Night": ["Offer Job (N1 -> N3 cooldown) - Select a target operative and hold them hostage tonight. Choose a night ability the next day to use from the operative’s role for the next phases. Occupy and visit them like a Midnight Meet.",
+					"Scout Dead Operative (2 charges) - Select a murdered or arrested operative. Choose an ability from the operative to use from the operative’s role, and use it this phase. Do not visit them."],
+				"Passives": ["None."]
 			},	
 			{
 				"Name":"Paragon Ex-Mercenary",
 				"Color": "cyan",
 				"Summary":"sell illicit arms",
 				"Image": "paragonexmercenary.png",
-				"Description": "",
+				"Description": "“You’ve given up the mercenary life to help Paragon, Paragon Ex-mercenary.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Hack Target (Very Low) - Select a white node and attempt to hack it. Leaves a log.",
+					"Jam Network (2 charges) - Select a target operative and disable all day actions related to the topology done by them."],
+				"Night": ["Sell Illicit Arms (N1 -> N3 cooldown) - Select a target operative. If they do not have access to the skill Disorganized Murder, give them 1 charge of Disorganized Murder the following night. This charge of Disorganized Murder is removed if it is not used the night it is given. Visit them.",
+					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
+				"Passives": ["None."]
 			}
 		]
 	},
@@ -2680,22 +2700,28 @@ data =
 				"Color": "cyan",
 				"Summary":"fake ddos and rollback",
 				"Image": "paragonjournalist.png",
-				"Description": "",
+				"Description": "“Your investigative journalism skills will shine through today, Paragon Journalist.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Fake Denial of Service (2 charges) - Select a green or white node and fake blocking all connections to the node this day. Do not leave a log.",
+					"Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail."],
+				"Night": ["Get Scoop (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them. Find if the target is not neutral.",
+					"Uplift Paragon - Select a Paragon operative. For tonight, they are immune to occupation. Visit them."],
+				"Passives": ["Not Netsec - Any doxx attempts on you doxx you as Neutral."]
 			},
 			{
 				"Name":"Paragon Informant",
 				"Color": "cyan",
 				"Summary":"agent intel and snitch",
 				"Image": "rookieinformant.png",
-				"Description": "",
+				"Description": "“Your work undercover has led you to Paragon, Paragon Informant.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Hack Target (Very Low) - Select a white node and attempt to hack it. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Leaves a log."],
+				"Night": ["Deductive Reasoning (N1 -> N3 cooldown) - Select a target operative. You will learn their faction, and their subclass. Do not go through frames or cover. Visit them.",
+					"Snitch to Cops (N1 -> N4 cooldown) - Select a target operative. Attempt to arrest the operative with local cops. Do not visit them."],
+				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent."]
 			}
 		]
 	},
@@ -2707,33 +2733,43 @@ data =
 				"Color": "cyan",
 				"Summary":"track hackers to arrest",
 				"Image": "prodigy.png",
-				"Description": "",
+				"Description": "“You are a student aspiring to become the greatest hacker at Paragon, Paragon Prodigy.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
+					"Exploit Vulnerability (2 charges) - Select a white node and attempt to hack it with a low hack chance and increasing hacking chances of getting this node.",
+					"Hit the Books (D1 -> D3 cooldown, 2 charges) - Increases your hacking stage by one, permanently."],
+				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
+					"Study (N1 -> N3 cooldown) - Increases your hacking stage by one the following day.",
+					"Track Connection Assist (2 charges) - Select a green node. Attempt to arrest the target operative that hacked the node with local cops. Do not visit them."],
+				"Passives": ["None."]
 			},
 			{
 				"Name":"Paragon Security Specialist",
 				"Color": "cyan",
 				"Summary":"defend the topology",
 				"Image": "agentdatabasemanager.png",
-				"Description": "",
+				"Description": "“You know both how to increase and decrease the security of a node, Paragon Security Specialist.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
+					"Firewall Layer (D1 -> D3 cooldown, 2 charges) - Select a layer, decreasing hacking chances of getting any node on this layer. Do not leave a log.",
+					"Overload Node (1 charge) - Select a white node. All connections and DDOS to this node will fail. Leaves a log."],
+				"Night": ["Check Maintenance Logs - Select a green or white node. Check if there were any difficulty decreasing or increasing actions done on this node, telling you separately if the node security had been increased or decreased.",
+					"Backup Access Logs (2 charges) - Select a white node. Prevent this node from being wiped using the Wipe skill."],
+				"Passives": ["None."]
 			},
 			{
 				"Name":"Paragon Search Engine Optimizer",
 				"Color": "cyan",
 				"Summary":"buff others by giving day charges of abilities",
 				"Image": "searchengineoptimizer.png",
-				"Description": "",
+				"Description": "“You know how to spread the word of Paragon to make the team’s presence known, Paragon Search Engine Optimizer.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
+					"Optimize Clickbait (N1 -> N4 cooldown, 2 charges) - Select a Paragon operative. Give that operative some motivation by getting more site views, granting them a charge of a day action tomorrow.",
+					"Overload Website (2 charges) - Select a green node, increasing hacking chances of getting this node permanently. Strongest hacking chance buff. Do not leave a log."],
+				"Night": ["Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
+				"Passives": ["Linear Runtime - You are extremely optimized, you know how to optimize your code. If you hack or download intel you can do another action."]
 			}
 		]
 	},
@@ -2745,22 +2781,28 @@ data =
 				"Color": "cyan",
 				"Summary":"buff others by giving night charges of abilities",
 				"Image": "shamedjournalist.png",
-				"Description": "",
+				"Description": "“I’m relying on you to keep your fellow operatives in check, Paragon Head of Personnel.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a (non-unique) random skill that they have, either day or night. Do not go through frames or cover."],
+				"Night": ["Paragon Inspiration (N1 -> N3 cooldown, 2 charges) - Select a Paragon operative and choose a skill they have to give them a skill charge. Visit them.",
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them."],
+				"Passives": ["None."]
 			},			
 			{
 				"Name":"Paragon Ex-Mole",
 				"Color": "cyan",
 				"Summary":"utility around agent doxx and mole fake claim",
 				"Image": "specialist.png",
-				"Description": "",
+				"Description": "“You were on the run till you were picked up by Paragon, Paragon Ex-mole.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Hack Target (Very Low) - Select a white node and attempt to hack it. Leaves a log.",
+					"Redirection (1 charge) - Select two target operatives, all skills used on the first operative will be used on the second operative, works similar to Throw Under the Bus."],
+				"Night": ["Plant Agent Documentation (3 charges) - Select a target operative. If the operative is doxxed this round, they will be seen as an agent. If the operative is specialization reviewed, they will be seen as special. If the operative is asked the right question, they will be seen as unable to hack. If the operative is speech analyzed, they will be seen as unable to win with anyone. Visit them.",
+					"Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied."],
+				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent.",
+					"Moled - For the Cause will pin you as a mole."]
 			}
 		]
 	},
@@ -2772,11 +2814,15 @@ data =
 				"Color": "cyan",
 				"Summary":"vote sacrifice and some kill power",
 				"Image": "paragonassassin.png",
-				"Description": "",
+				"Description": "“Back to your job of wetwork, Paragon Assassin.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.",
-				"Day": [],
-				"Night": [],
-				"Passives": []
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
+					"Prepare Murder (1 charge) - Gives you one charge of murder.",
+					"Redirect Assassin (1 charge) - Select a target operative. For the rest of the game, if the target operative was voted off, you will die in their place."],
+				"Night": ["Disorganized Murder - Select an operative and attempt to murder them. Visit the target.",
+					"Murder (0 charges) - Select an operative and murder them. Cannot be dodged in any way. Occupies and visits the target."],
+				"Passives": ["Working with Death - Every vote kill increases your chances of success in disorganized murder."]
 			}
 		]
 	},
