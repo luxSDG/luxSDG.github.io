@@ -26,7 +26,7 @@ for (let i = 0; i < data.length; i++)
 		content.innerHTML += "&emsp;<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + "\" style=\"color:"
 		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
 		
-		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index;
+		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
 		searchList.push([roleName, link]);
 
 		index += 1;
