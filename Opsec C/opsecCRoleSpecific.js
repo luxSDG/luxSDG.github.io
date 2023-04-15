@@ -1,7 +1,7 @@
 const url = window.location.href;
 const indexStart = url.indexOf("?") + 10;
 const indexMid = url.indexOf("&") + 4;
-const indexEnd = url.indexOf("|") + 7;
+const indexEnd = url.lastIndexOf("&") + 7;
 const categorySearched = url.slice(indexStart, indexMid-4).replace(/%20/g, " ");
 const roleSearched = url.slice(indexMid, indexEnd-7).replace(/%20/g, " ");
 const indexSearched = parseInt(url.slice(indexEnd, url.length).replace(/%20/g, " "));
@@ -94,13 +94,13 @@ for (let i = 0; i < data.length; i++)
 		var categoryColor = role["Color"];
 		if (index === indexSearched)
 		{
-			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + 
+			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
 			 + categoryColor + "\">" + roleName + "</small></div></a>";
 		}
 		else
 		{
-			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index + 
+			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
 			 + categoryColor + "\">" + roleName + "</small></div></a>";
 		}
@@ -111,12 +111,12 @@ for (let i = 0; i < data.length; i++)
 		if (index === indexSearched-1)
 		{
 			backLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"|index=" + index + "\"style=\"color:"+ categoryColor + "\">" + roleName + "</a>";
+			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + roleName + "</a>";
 		}
 		if (index === indexSearched+1)
 		{
 			nextLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"|index=" + index + "\"style=\"color:" + categoryColor + "\">" + roleName + "</a>";
+			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + roleName + "</a>";
 		}
 		index += 1;
 	}
