@@ -105,7 +105,7 @@ for (let i = 0; i < data.length; i++)
 			 + categoryColor + "\">" + roleName + "</small></div></a>";
 		}
 
-		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "|index=" + index;
+		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
 		searchList.push([roleName, link]);
 
 		if (index === indexSearched-1)
