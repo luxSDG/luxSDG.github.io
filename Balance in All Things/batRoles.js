@@ -14,20 +14,22 @@ for (let i = 0; i < data.length; i++)
 	var roleList = Object.values(category)[0];
 	var categoryColor = roleList[0]["Color"];
 
-	//Categories for each opsec C role, e.g. faction and/or subclass
+	//Categories for each BAT role, e.g. faction and/or subclass
 	var categoryName = Object.keys(category);
 	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName[0] + "</span><br>";
 
+	//We need a way to do search bar better
 	for (let j = 0; j < roleList.length; j++)
 	{
 		var role = roleList[j];
 		var roleName = role["Name"];
-		var roleSummary = role["Summary"];
-		content.innerHTML += "&emsp;<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + "\" style=\"color:"
-		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
+		var roleSummary = role["Description"];
+		var roleDifficulty = role["Difficulty"];
+		content.innerHTML += "&emsp;<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + "\" style=\"color:"
+		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> (" + roleDifficulty + ") - " + roleSummary + "</span><br>";
 		
-		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
-		searchList.push([roleName, link]);
+		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
+		searchList.push([categoryName[0], link]);
 
 		index += 1;
 	}

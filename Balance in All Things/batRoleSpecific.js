@@ -34,29 +34,21 @@ for (let i = 0; i < data.length; i++)
 			{
 				head.style.color = role["Color"];
 				content.style.color = role["Color"];
-				imagePic.src = "opsecCImages/" + role["Image"];
-				head.innerHTML += roleSearched;
-				content.innerHTML += "<h5>" + categorySearched + "</h5>";
+				imagePic.src = "../GeneralImages/bat.png"; // + role["Image"];
+				head.innerHTML += categorySearched;
+				content.innerHTML += "<h5>" + roleSearched + "</h5>";
 				content.innerHTML += "<br>" + role["Description"];
-				content.innerHTML += "<br><br> Win Condition: " + role["Win Condition"] + "<br><br>";
+				content.innerHTML += "<br>HP: " + role["HP"];
+				content.innerHTML += "<br>Difficulty: " + role["Difficulty"];
+				content.innerHTML += "<br>Tags: " + role["Tags"];
 
-				var day = role["Day"];
-				if (day.length > 0)
+				var abilities = role["Abilities"];
+				if (abilities.length > 0)
 				{				
-					content.innerHTML += "<h5>Day: </h5><br>";
-					for (let k = 0; k < day.length; k++)
+					content.innerHTML += "<h5>Abilities: </h5><br>";
+					for (let k = 0; k < abilities.length; k++)
 					{
-						content.innerHTML += day[k] + "<br><br>";
-					}
-				}
-
-				var night = role["Night"];
-				if (night.length > 0)
-				{
-					content.innerHTML += "<h5>Night: </h5><br>";
-					for (let k = 0; k < night.length; k++)
-					{
-						content.innerHTML += night[k] + "<br><br>";
+						content.innerHTML += abilities[k] + "<br><br>";
 					}
 				}
 
@@ -81,7 +73,7 @@ for (let i = 0; i < data.length; i++)
 {
 	var category = data[i];
 
-	//Categories for each opsec C role, e.g. faction and/or subclass
+	//Categories for each BAT role, e.g. faction and/or subclass
 	var categoryName = Object.keys(category);
 
 	//Specific roles per category
@@ -94,29 +86,29 @@ for (let i = 0; i < data.length; i++)
 		var categoryColor = role["Color"];
 		if (index === indexSearched)
 		{
-			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
+			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + roleName + "</small></div></a>";
+			 + categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</small></div></a>";
 		}
 		else
 		{
-			sideBar.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
+			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + roleName + "</small></div></a>";
+			 + categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</small></div></a>";
 		}
 
-		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
-		searchList.push([roleName, link]);
+		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
+		searchList.push([categoryName[0], link]);
 
 		if (index === indexSearched-1)
 		{
-			backLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + roleName + "</a>";
+			backLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</a>";
 		}
 		if (index === indexSearched+1)
 		{
-			nextLink.innerHTML += "<a href=\"opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + roleName + "</a>";
+			nextLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</a>";
 		}
 		index += 1;
 	}

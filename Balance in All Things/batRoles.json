@@ -1,0 +1,19 @@
+data = 
+[
+	{
+		"Alchemist": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Mix a bunch of materials together to destroy your enemy.",
+				"HP": "10",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Abilities": [],
+				"Passives": []
+			}
+		]
+	},
+]
