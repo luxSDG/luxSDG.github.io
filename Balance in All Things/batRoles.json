@@ -234,12 +234,17 @@ data =
 				"Name":"Professional",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
+				"Description": "Pinpoint weak points in your enemies and dodge everything to gain power.",
+				"HP": "10 HP",
+				"Difficulty": "Easy",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Lunge (1 day cooldown) - Stab someone for 5 damage.",
+					"Parry (2 day cooldown) - Parry all damage incoming today from single target damage, all attacks targeting you directly will be dodged.",
+					"Riposte (2 day cooldown) - Anyone who attacks you today will be attacked right back for 5 damage.",
+					"Feint (1 day cooldown) - Fake an attack on someone, not dealing any damage, but visiting them.",
+					"Posture Check (3 charges) - Identify someone’s posture, knowing their tags.",
+					"Pressure Point (3 charges) - Identify someone’s weak points, knowing their HP."],
+				"Passives": ["None."]
 			}
 		]
 	},
@@ -250,12 +255,18 @@ data =
 				"Name":"Operation Leader",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
+				"Description": "A refugee from the Untrusted universe, now you are here to get revenge on the sociopaths who have killed you.",
+				"HP": "10 HP",
+				"Difficulty": "Medium",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Download Intel (1 day cooldown) - Get a random piece of information about the game state.",
+					"Spearphishing Execution (1 day cooldown) - Hack someone’s computer, dealing 1 damage to them and making all damage to them deal an extra 1 damage.",
+					"Denial of Service (2 charges) - Occupy anyone who visits someone of your choice.",
+					"Rollback (1 charge) - Pick someone, rollbacking every single action that happened yesterday to them, including HP.",
+					"0 Day Exploit (1 charge) - Hack someone’s computer with a powerful hack, dealing 5 damage to them. Cannot be dodged.",
+					"Midnight Meet (1 day cooldown) - Occupy someone, discussing life and your ability to hack.",
+					"Misdirection (2 charges) - Occupy anyone who tries to visit you today."],
+				"Passives": ["Topology Knowledge - Know what abilities are used today on anyone you use an ability on."]
 			}
 		]
 	},
@@ -266,12 +277,18 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
+				"Description": "Use your versatile heads to cause chaos, combining elements to swing the game in your favor.",
+				"HP": "20 HP",
 				"Difficulty": "Hard",
-				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Tags": "Creature",
+				"Actives": ["Multi-headed Attack (1 day cooldown) - Bite someone, dealing 1 damage per head, and inflicting 2 statuses of choice based on the heads biting.",
+					"Flame Breath (1 day cooldown, singular head) - Breathe fire and deal 2 damage to someone for today and tomorrow, dealing double damage to Humans and Creatures.",
+					"Cold Breath (1 day cooldown, singular head) - Freeze someone and deal 2 damage to someone, occupying them today and dealing double damage to Air units.",
+					"Electrifying Shock (1 day cooldown, singular head) - Electrify someone and deal 3 damage to someone, dealing double damage to Mechanical targets.",
+					"Regrowth (1 day cooldown, singular head) - Heal for 4 HP, gaining back a head.",
+					"Earthquake (1 day cooldown, singular head) - Create an earthquake, damaging all enemies by 2 damage that are not Air units."],
+				"Passives": ["5 Headed - Every 4 HP you take will remove a head of your choice. Healing back the 4 HP will add the head back. You have a fire head, an ice head, an electric head, a natural head, and an earth head. You can only use one ability with a singular head a day.",
+					"Using your Head - Every time you are allowed to, you can inflict a status of choice between burning them for 1 damage today and tomorrow, freezing them to occupy their last action of the day, electrifying them to occupy their first action of the day, regrowing and healing yourself for 2 HP, and shaking the ground to deal 1 damage to all non-allied visitors to the target."]
 			}
 		]
 	},
@@ -282,12 +299,16 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
-				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Description": "Ride the mammoth into battle and crush anyone who opposes you, literally.",
+				"HP": "20 HP",
+				"Difficulty": "Easy",
+				"Tags": "Creature",
+				"Actives": ["Tusks of Pain (1 day cooldown) - Ram your tusks into someone, dealing 7 damage to them.",
+					"Trample (2 day cooldown) - Trample someone, making them unvisitable, but deal 3 damage to them. They cannot do anything today.",
+					"Charge! (2 charges) - Run through 3 players, dealing 3 damage to all of them in consecutive order.",
+					"Mammoth’s Bellow (1 day cooldown, 3 charges) - Bellow loudly, demoralizing all enemies, making any damage they do 2 lesser today."],
+				"Passives": ["Ice Age Skin - Avoid damage over time effects and only take the initial damage.",
+					"Imposing Presence - Make all allies stronger with your presence, giving them 2 max HP and 2 damage to all attacks."]
 			}
 		]
 	},
@@ -298,12 +319,23 @@ data =
 				"Name":"Combat",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
-				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Description": "Build your weapons pre-game in order to be versatile for any situation.",
+				"HP": "15 HP",
+				"Difficulty": "Medium",
+				"Tags": "Mechanical",
+				"Actives": ["Light Punch (1 day cooldown) - Punch someone for 3 damage.",
+					"Fire Right Arm (1 day cooldown) - Fire your weapon on your right arm.",
+					"Fire Left Arm (1 day cooldown) - Fire your weapon on your left arm.",
+					"Armored Core (2 charges) - Shield yourself for 5 HP today.",
+					"Computerized Scan (2 charges) - Check what win condition someone has."],
+				"Passives": ["Into the Mechlab - Build a loadout before the game. Possible weapons of choice are below- you can outfit your right arm and left arm with one of any weapon.",
+					"=======================================================================",
+					"Minigun - Spray your minigun at someone, dealing 5 damage.",
+					"Rocket Launcher - Shoot a rocket at someone, dealing 3 damage to them and anyone who visits.",
+					"Laser Rifle - Shoot a laser at someone, identifying their role and dealing 2 damage.",
+					"Power Sword - Increase your melee damage by 2 and shield yourself for 2 HP today.",
+					"Flamethrower - Burn someone, dealing 3 damage for today and tomorrow.",
+					"Cryo Gun - Freeze someone, dealing 1 damage and preventing them from visiting anyone today."]
 			}
 		]
 	},
@@ -314,12 +346,17 @@ data =
 				"Name":"Jet Fighter",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
-				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Description": "Time to kick the tires and light the fires.",
+				"HP": "10 HP",
+				"Difficulty": "Medium",
+				"Tags": "Air",
+				"Actives": ["Missile Fire (1 day cooldown, 1 missile) - Launch your missiles at someone, dealing 3 damage to them. Deal double damage to Air units.",
+					"Strafe (3 charges, 2 missiles) - Pick two players to strafe, hitting a missile into both of them, dealing 3 damage to both.",
+					"Dogfighting (2 charges, 2 missiles) - Dogfight someone, deal 3 damage to them today and tomorrow and only allow that player to attack you tomorrow.",
+					"Electronic Countermeasures (3 day cooldown) - Dodge all attacks and negative actions against you today.",
+					"Fly Over (2 day cooldown) - Fly over someone, knowing who visits them and who they visit today.",
+					"Rearm (1 day cooldown) - Rearm your missiles to fire again, be unable to do anything else today."],
+				"Passives": ["Payload - You can fire a maximum of 4 missiles until you need to reload."]
 			}
 		]
 	},
@@ -330,12 +367,14 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
+				"Description": "Steal people’s abilities, and minds.",
+				"HP": "10 HP",
 				"Difficulty": "Hard",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Possess (1 day cooldown) - Possess someone, occupying them and play with their role card today.",
+					"Mimic (3 charges) - Steal an ability from someone permanently.",
+					"Juxtapose (1 charge) - Steal a passive from someone permanently."],
+				"Passives": ["Cover - Any role revealing abilities will make you look like the Possessed player’s role."]
 			}
 		]
 	},
@@ -346,12 +385,16 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
+				"Description": "Burn everyone to the ground, just like any Arsonist would.",
+				"HP": "10 HP",
+				"Difficulty": "Medium",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Douse (1 day cooldown) - Douse someone, making any role revealing abilities show that the player is a Pyromaniac.",
+					"Fire Senses (3 charges) - See a doused player’s real role.",
+					"Ignite (1 day cooldown) - Set all doused players on fire, dealing 3 damage, removing doused from all doused players.",
+					"Oil Leak (1 charge) - Douse all living players.",
+					"Napalm Strike (2 day cooldown) - Launch napalm at someone, burning them for 3 days, dealing 2 damage per day."],
+				"Passives": ["Fight Fire with Fire - Burning yourself heals you for 3 HP."]
 			}
 		]
 	},
@@ -362,12 +405,17 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
+				"Description": "Protecc and attacc, but also is a chadcc.",
+				"HP": "15 HP",
+				"Difficulty": "Easy",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Shield Bash (1 day cooldown) - Bash someone with your shield, dealing 3 damage.",
+					"Shieldwall (1 day cooldown, 3 charges) - Protect someone, reducing 50% of all damage dealt to them.",
+					"Escort (1 day cooldown) - Protect someone, tanking any damage done to them.",
+					"On Guard (2 charges) - Be on guard, dealing 1 damage to anyone who attacks you today if you are escorting someone."],
+				"Passives": ["Assertive - Refuse to be occupied by people.",
+					"Protected - Cannot be reduced in max HP or have buffs removed.",
+					"Hunker Down - Protect yourself on the first attack per day, negating the first attack."]
 			}
 		]
 	},
@@ -378,12 +426,30 @@ data =
 				"Name":"Chaos",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
+				"Description": "Summon demons of hell, and of whatever chaos gods you believe in.",
+				"HP": "10 HP",
 				"Difficulty": "Hard",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Demon Spawn (1 day cooldown) - Summon a demon of your choice today. Each demon has their own abilities.",
+					"Absorb Power - Kill your own demon and heal 5 HP.",
+					"Fire of Hell (1 day cooldown) - Throw a cursed fireball at someone, dealing 3 damage."],
+				"Passives": ["None.",
+					"=======================================================================",
+					"Summonable Demons:",
+					"Imp - 5 HP<br>A weak but spammable demon. Create two every time you choose to make one.",
+					"Passive:<br>Portal of Hell - Spawn 2 every time you spawn 1.",
+					"Bloodletter - 10 HP<br>A standard blood god’s demon.",
+					"Abilities:<br>Bloodletting (2 day cooldown) - Stab someone, dealing 2 damage today and 2 damage tomorrow.",
+					"Passive:<br>Blood for the Blood God - Attacks make the person weaker, increasing all damage done to the target by 1 damage each attack.",
+					"Void Guard - 10 HP<br>A tank of a demon.",
+					"Abilities:<br>Guard of Hell (1 day cooldown) - Protect someone, tanking all damage done to them today.",
+					"Unclean One - 10 HP<br>A gassy demon with control.",
+					"Abilities:<br>Gas Extrusion (1 day cooldown) - Plant a gas bomb on someone, dealing 2 damage to anyone who visits that player.",
+					"Passive:<br>Poison Gas - Taking damage will deal back 2 damage to the attacker.",
+					"Shadow Demon - 10 HP<br>A tricky demon with many niche utilities.",
+					"Abilities:<br>Illusion (2 charges) - Create an illusion of someone, making attacks to that player have a 50% chance to hit them.",
+					"Shadowy Cloak (1 charge) - Become unvisitable for today.",
+					"Shadow’s Wisdom (2 charges) - Find someone’s tags."]
 			}
 		]
 	},
@@ -394,12 +460,22 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
+				"Description": "Predict every possible weather condition and planet change in the near future.",
+				"HP": "10 HP",
 				"Difficulty": "Hard",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Sunny Day (1 day cooldown, weather) - Make the weather sunny, revealing a win condition or role of a player of your choice globally.",
+					"Drizzle (1 day cooldown, weather) - Drop a healing drizzle, healing everyone for 2 HP.",
+					"Thunderstorm (1 day cooldown, weather) - Create a thunderstorm, damaging everyone for 2 damage.",
+					"Snowy Days (2 day cooldown, weather) - Make it snow, not allowing them to leave their houses, occupying them today.",
+					"Suns Out, Guns Out (2 day cooldown, weather) - Make the sun disappear today, making all intel abilities not reveal any information.",
+					"Volcano (1 day cooldown, planet) - A volcano spawns on someone, burning them for 2 damage today and 2 damage tomorrow.",
+					"Meteorite Strike (1 day cooldown, planet) - Drop a meteorite on someone, dealing 5 damage after they have done their actions today.",
+					"Black Hole (2 day cooldown, planet) - Pull everyone to a single player, making them all target that player today.",
+					"Planet Movement (2 day cooldown, planet) - Move everyone’s targets today to a random player, each target unique.",
+					"Supernova (2 day cooldown, planet) - Melt everyone with the power of a star, making them all burn for 1 damage for today and 1 damage tomorrow."],
+				"Passives": ["Weatherman - Globally reveal whenever the weather or planet changes. Can only change the weather once a day.", 
+					"Mr. Worldwide - Can only affect the planet once a day."]
 			}
 		]
 	},
@@ -410,12 +486,16 @@ data =
 				"Name":"Longsword",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
+				"Description": "Walk tall and carry a big sword.",
+				"HP": "10 HP",
+				"Difficulty": "Easy",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Striking Blow (1 day cooldown) - Stab someone for 5 damage.",
+					"Empowered Strike (2 charges) - The next damaging ability you use will deal double damage.",
+					"Cleave (2 day cooldown) - Strike a powerful blow, hitting 3 people of your choice for 5 damage.",
+					"Power Attack (1 charge) - Charge up a powerful attack today, doing nothing else. Tomorrow, choose someone of your choice and attack for 10 damage."],
+				"Passives": ["Melee Expertise - Take 2 less damage from melee attacks. You’ll know when damage was done by a melee attack.",
+					"Honorable Duel - You will not attack people who are occupied. You will not be attacked when occupied."]
 			}
 		]
 	},
@@ -426,12 +506,17 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
-				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Description": "You are a beary good boy, gotta go get some food.",
+				"HP": "15 HP",
+				"Difficulty": "Easy",
+				"Tags": "Creature",
+				"Actives": ["Maul (1 day cooldown) - Claw through someone, dealing 5 damage.",
+					"Amplified Roar (1 day cooldown) - Roar loudly at someone, stunning them today and occupying them.",
+					"Warcry (1 day cooldown) - Roar loudly, bolstering you and all allies to do an extra 1 damage per attack.",
+					"Eat Honey (1 charge) - Eat a bunch of honey, becoming invulnerable for today.",
+					"Devour - Choose someone, if they are down to their last 10% HP, eat them whole and kill them instantly, no matter what they are."],
+				"Passives": ["Armored Plating - Take 1 less damage from any attack.",
+					"The Flesh is Weak - Deal 1 extra damage to all Human and Creature enemies."]
 			}
 		]
 	},
@@ -442,12 +527,17 @@ data =
 				"Name":"Kirov",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
-				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Description": "A huge airship with a big payload, time to drop that payload all over your foes.",
+				"HP": "30 HP",
+				"Difficulty": "Medium",
+				"Tags": "Air",
+				"Actives": ["Bomb Dropping (1 day cooldown) - Drop bombs on someone, dealing 8 damage to them. Cannot damage Air units.",
+					"Mine Dropping (2 charges) - Drop mines on someone, anyone visiting them that isn’t allied will take 2 damage.",
+					"Ramming Speed (1 day cooldown) - Ram into someone, dealing 10 damage to both of you. If they aren’t an Air unit, cancel this attack.",
+					"Gastroburners (2 day cooldown) - Activate 10 damage to yourself and avoid all damage done to yourself today."],
+				"Passives": ["Propellers - You are extra slow and will be revealed that a War Blimp went to the players you went to.",
+					"Extended Vision - You can see who else visits who you visit today.",
+					"Anti-Air Gun - Air units deal double damage to you, but take 2 damage whenever they attack you."]
 			}
 		]
 	},
@@ -458,12 +548,17 @@ data =
 				"Name":"Classic",
 				"Color": "white",
 				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
+				"Description": "Just a normal zombie on your way to infect some people, nothing to see here.",
+				"HP": "15 HP",
+				"Difficulty": "Medium",
 				"Tags": "Human",
-				"Actives": [],
-				"Passives": []
+				"Actives": ["Bite (1 day cooldown) - Bite someone, dealing 3 damage to them, choosing whether to infect them or not. If you infect them, infect will be on cooldown.",
+					"Infect (1 day cooldown) - Infect someone, allowing you to control their max HP. Infected people can infect other people by visiting them with any ability. They won’t be told about this.",
+					"Infected Spit (2 charges) - Deal 1 damage to an infected player. They take 2 damage once tomorrow, and again the day after.",
+					"Infected Gas (2 charges) - Heal an infected player for 3 HP.",
+					"Zombie Dance (2 day cooldown) - Taunt someone to you, any abilities used by them will target you today."],
+				"Passives": ["Rotting Aura - All infected can either be increased by 2 max HP or reduced by 2 max HP.",
+					"Corrosive Skin - People dealing damage to you will take 1 damage back."]
 			}
 		]
 	}
