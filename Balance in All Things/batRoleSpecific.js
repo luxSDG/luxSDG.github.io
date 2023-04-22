@@ -40,15 +40,15 @@ for (let i = 0; i < data.length; i++)
 				content.innerHTML += "<br>" + role["Description"];
 				content.innerHTML += "<br>HP: " + role["HP"];
 				content.innerHTML += "<br>Difficulty: " + role["Difficulty"];
-				content.innerHTML += "<br>Tags: " + role["Tags"];
+				content.innerHTML += "<br>Tags: " + role["Tags"] + "<br><br>";
 
-				var abilities = role["Abilities"];
-				if (abilities.length > 0)
+				var actives = role["Actives"];
+				if (actives.length > 0)
 				{				
-					content.innerHTML += "<h5>Abilities: </h5><br>";
-					for (let k = 0; k < abilities.length; k++)
+					content.innerHTML += "<h5>Actives: </h5><br>";
+					for (let k = 0; k < actives.length; k++)
 					{
-						content.innerHTML += abilities[k] + "<br><br>";
+						content.innerHTML += actives[k] + "<br><br>";
 					}
 				}
 

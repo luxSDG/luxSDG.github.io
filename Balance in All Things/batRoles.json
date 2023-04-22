@@ -8,12 +8,463 @@ data =
 				"Color": "white",
 				"Image": "",
 				"Description": "Mix a bunch of materials together to destroy your enemy.",
-				"HP": "10",
+				"HP": "10 HP",
 				"Difficulty": "Hard",
 				"Tags": "Human",
-				"Abilities": [],
+				"Actives": ["Gather Materials (1 day cooldown, 2 charges a day) - Gather 2 materials of your choice between Strange Gems (G), Strange Herbs (H), and Strange Liquids (L).",
+					"Create Potion - Choose a potion and create it based on the materials you have.",
+					"=======================================================================",
+					"List of Potions: Combine the materials as listed above to create that potion. You can basically combine 2 potions of any kind a day.",
+					"Stoneskin Potion (G G) - Give someone a potion to shield them for 10 HP for today.",
+					"Explosive Potion (G H) - Give someone a potion that explodes, dealing 3 damage to them and anyone that visits them today (avoiding friendly fire unless you want it).",
+					"Revealing Potion (G L) - Give someone a potion to find out what role and faction they are.",
+					"Pain Potion (H G) - Give someone a potion that deals 5 damage to them.",
+					"Power Potion (H H) - Give someone a potion to have their next damaging ability deal 3 more damage.",
+					"Healing Potion (H L) - Give someone a potion to heal them for 5 HP.",
+					"Detection Potion (L G) - Give someone a potion to find out who they visit for today.",
+					"Poison Potion (L H) - Give someone a potion to make them poisoned, dealing 1 damage for every action they do today.",
+					"Invisibility Potion (L L) - Give someone a potion to make them unvisitable for today."],
+				"Passives": ["None."]
+			}
+		],
+	},
+	{
+		"Angry Mob": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Apes together strong, and apes together very very angry.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": ["Riot (2 day cooldown) - Riot and attack someone, dealing damage increased by the number of mob members you have. If you have 5 HP, you deal 5 damage. Lose half your mob members (HP).",
+					"Arm the Mob (1 day cooldown, 3 charges) - Add arms to the mob, increasing their violence and damage, giving 3 HP to you (therefore giving 3 damage).",
+					"Angry Protest (2 day cooldown) - Occupy 3 people today, and gain 3 HP.",
+					"Twitter Mob (1 day cooldown) - Rant on twitter, gaining 1 HP.",
+					"Suicidal Mob (2 day cooldown) - Have 3 mob members suicide onto someone, dealing 3 damage to both of you, but gaining 1 HP.",
+					"Stampede (3 day cooldown) - Create a stampede at someone’s house, trampling anyone that visits and deal 5 damage to both you and anyone that visits.",
+					"Incite Violence (2 charges) - Incite violence at home, gaining 2 HP and dealing 1 damage to anyone who comes to your house, including allies."],
+				"Passives": ["Mob Mentality - You must grow the mob by inciting violence and chaos, each mob member counts as 1 HP and you must constantly grow the mob. You take double damage to everything. If you don’t do something each day, you lose 2 mob members (2 HP). Cannot be healed by others."]
+			}
+		]
+	},
+	{
+		"Biker": 
+		[
+			{
+				"Name":"From Hell",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Mechanical",
+				"Actives": ["Hellish Burns (1 day cooldown) - Drive into someone with burning wheels, dealing 2 damage to them today and tomorrow.",
+					"Catch a Ride (2 charges) - Drive on the Road to Hell with someone of choice, making them unvisitable today. You still need time to refuel, making yourself vulnerable. Cannot be used with Road to Hell.",
+					"Road to Hell (2 charges) - Drive on the Road to Hell and become unvisitable today. Cannot be used with Catch a Ride.",
+					"Wheels of Hell (3 charges) - Give yourself a 50% chance to dodge any attack today. Cannot be used with Catch a Ride.",
+					"Wall of Hell (1 charge) - Create a wall at your house and all allies for 2 days, burning anyone who isn’t allied, dealing 2 damage to them today and tomorrow."],
+				"Passives": ["To Hell and Back (1 charge) - The first time you die, occupy yourself for 1 whole day, and then respawn with 3 HP. Unable to be healed or granted HP."]
+			}
+		]
+	},
+	{
+		"Battle Drone": 
+		[
+			{
+				"Name":"Combat",
+				"Color": "white",
+				"Image": "",
+				"Description": "Take the air and decimate your enemies with your powerful AI.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Mechanical, Air",
+				"Actives": ["Single Shot (1 day cooldown) - Shoot someone and deal 3 damage. Deal 5 damage to Air targets.",
+					"Targeting Laser (1 day cooldown) - Mark someone, making all attacks on the target unable to be dodged.",
+					"Data Collection (2 charges) - Collect data on someone, taking pictures of them. Gives a charge of Reinforcement Learning.",
+					"Reinforcement Learning (0 charges) - Gain significant intel on someone, allowing you to ask a question to get some useful intel on that player.",
+					"Drone Bomb (1 day cooldown, 2 charges) - Bomb someone, dealing 8 damage to that player but deal 4 damage to yourself.",
+					"Drone Repairs (1 day cooldown, 2 charges) - Occupy yourself and block any other abilities done today, but heal to full HP and make small hitbox have a 100% chance to dodge abilities."],
+				"Passives": ["Targeting Computer - Cannot miss any attacks.",
+					"Small Hitbox - Have a 50% chance to dodge any damaging and negative abilities used on you."]
+			}
+		]
+	},
+	{
+		"Battle Tank": 
+		[
+			{
+				"Name":"Double Barreled",
+				"Color": "white",
+				"Image": "",
+				"Description": "One of the finest pieces of military equipment ever to be created.",
+				"HP": "20 HP",
+				"Difficulty": "Medium",
+				"Tags": "Mechanical",
+				"Actives": ["Double Barreled (2 day cooldown) - Shoot both cannons at someone, dealing 8 damage.",
+					"Ramming Speed (1 day cooldown) - Ram someone, crushing them with your enlarged tank tracks, dealing 5 damage. Does not work on Air units.",
+					"Sandbags (1 day cooldown, 2 charges) - Place sandbags down, protecting yourself and reducing damage by 50% today. Be unable to visit others.",
+					"Repair Kit (3 charges) - Occupy yourself for the rest of the day and heal yourself for 5 HP."],
+				"Passives": ["Armored Shell - Take 1 less damage from attacks that do not increase damage to Mechanical units.",
+					"Grinder Threads - Anyone that tries to occupy you or control you will take 3 damage."]
+			}
+		]
+	},
+	{
+		"Combat Medic": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Time to heal your allies and kill your enemies.",
+				"HP": "10 HP",
+				"Difficulty": "Easy",
+				"Tags": "Human",
+				"Actives": ["Combat Scalpel (1 day cooldown) - Stab someone for 2 damage.",
+					"First Aid (3 charges) - Heal someone for 5 HP.",
+					"Extended Surgery (2 charges) - Heal someone for 3 HP each of the next 3 days.",
+					"Vaccinate (2 charges) - Vaccinate someone, making them immune to occupation for this day."],
+				"Passives": ["Human Anatomy – Healing humans will increase that healing by 2 HP. Damaging humans will increase that damage by 2 damage.",
+					"Vital Sign Sensors - Know what everyone’s HP is."]
+			}
+		]
+	},
+	{
+		"Commando": 
+		[
+			{
+				"Name":"Soldier",
+				"Color": "white",
+				"Image": "",
+				"Description": "Armed to the teeth, with as many guns as you can possibly carry.",
+				"HP": "10 HP",
+				"Difficulty": "Medium",
+				"Tags": "Human",
+				"Actives": ["Assault Rifle Fire (10 Ammo) - Fire your assault rifle at someone, dealing 5 damage.",
+					"Machine Gun Suppression (10 Ammo) - Fire your machine gun at someone, preventing them from visiting anyone today.",
+					"Rocket Launch (10 Ammo) - Fire your rocket launcher at someone, dealing 3 damage to them and all visitors. Deal double damage to anyone that is Mechanical.",
+					"Shotgun Blast (10 Ammo) - Fire your shotgun at someone, dealing 3 damage to them today and 3 damage to them tomorrow.",
+					"Sniper Tagging (5 Ammo) - Fire your sniper at someone, revealing who visits them and deal 1 damage to them.",
+					"Blank Shots (5 Ammo) - Shoot blanks into the air, occupying anyone who visits you today.",
+					"Reload (2 charges) - Reload your ammunition."],
+				"Passives": ["Limited Ammo - Don’t have cooldowns, but have a limited amount of ammunition every day (10 per day)."]
+			}
+		]
+	},
+	{
+		"Dinosaur": 
+		[
+			{
+				"Name":"T-Rex",
+				"Color": "white",
+				"Image": "",
+				"Description": "Send your enemies into the prehistoric times, ripping and tearing them apart.",
+				"HP": "15 HP",
+				"Difficulty": "Medium",
+				"Tags": "Creature",
+				"Actives": ["Ferocious Bite (1 day cooldown) - Bite someone for 5 damage. Does 2 extra damage to Humans and Creatures.",
+					"Extinction (1 charge) - Drop a meteorite on everyone, dealing 5 damage to everyone. Deal 7 damage to yourself.",
+					"Apex Predator (1 charge) - With your powerful form, globally assert dominance on everyone, making them want to avoid visiting you today and tomorrow.",
+					"Carnivorous (2 charges) - Eat a dead player, healing yourself for 5 HP.",
+					"Scavenge (3 charges) - Check a dead player, checking what role and win condition they had."],
+				"Passives": ["Strong Skeleton - Take 2 reduced damage from attacks. Attacks must at least deal 1 damage to you. Any damage that deals only 1 damage to you will allow you to figure out who attacked you.",
+					"Grounded - Deal 3 less damage to Air units. Avoid occupation from Air units."]
+			}
+		]
+	},
+	{
+		"Druid": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Shapeshift into many creatures and bend nature to your will.",
+				"HP": "10 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human, Creature",
+				"Actives": ["Switch Form (1 day cooldown) - Choose a form of your choice. Each form has their own HP. Keep your previous buffs from your previous forms.",
+					"=======================================================================",
+					"Eagle Form (Air)",
+					"Abilities:<br>Claw (1 day cooldown) - Claw someone, dealing 2 damage.",
+					"Eagle Eye (2 charges) - Scout above someone’s house, knowing who visits them today.",
+					"Bird Eye View (2 charges) - Know who attacked who today.",
+					"Tiger Form",
+					"Abilities<br>Bite (1 day cooldown) - Bite someone, dealing 3 damage.",
+					"Apex Predator (1 day cooldown, 2 charges) - Assert dominance, preventing them from doing their next action today.",
+					"Cat’s Mobility (2 charges) - Hide in a place where no one can reach for today. Be unable to attack others today.",
+					"Rhino Form",
+					"Abilities<br>Ram (1 day cooldown) - Ram someone, dealing 5 damage.",
+					"Hardened Skin (2 charges) - Shield yourself for 3 HP permanently.",
+					"Unstoppable (2 charges) - Be immune to occupation today."],
+				"Passives": ["None."]
+			}
+		]
+	},
+	{
+		"Dragon": 
+		[
+			{
+				"Name":"Celestial",
+				"Color": "white",
+				"Image": "",
+				"Description": "Control time and space, bending it in any direction.",
+				"HP": "20 HP",
+				"Difficulty": "Hard",
+				"Tags": "Creature",
+				"Actives": ["Fast Aging (1 day cooldown) - Force someone to age faster, dealing 1 damage to them. ",
+					"Time Return (2 charges) - Cleanse someone of all negative effects done in the past day and make them immune to negative effects today.",
+					"Time Loop (2 charges) - Redo any effects and damage done to someone yesterday for today.",
+					"Speed Up Clock (2 charges) - Damage over time effects applied on someone will immediately happen today.",
+					"Slow Down Clock (2 charges) - Damage over time effects applied on someone will be delayed for one day.",
+					"Speed of Light (2 charges) - Put a blessing on someone, allowing them to reset any cooldown for tomorrow.",
+					"Time Revival (1 charge) - Put a blessing on someone, reviving someone for half their HP if they die today.",
+					"Time Freeze (1 charge) - Freeze an entire day, processing that entire day’s actions immediately, such as damage over time, and then play the game from that game state."],
+				"Passives": ["None."]
+			}
+		]
+	},
+	{
+		"Fencer": 
+		[
+			{
+				"Name":"Professional",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
 				"Passives": []
 			}
 		]
 	},
+	{
+		"Hacker": 
+		[
+			{
+				"Name":"Operation Leader",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Hydra": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Mammoth Rider": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Mech": 
+		[
+			{
+				"Name":"Combat",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Military Plane": 
+		[
+			{
+				"Name":"Jet Fighter",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Possessor": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Pyromaniac": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Shieldmaiden": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Sorcerer": 
+		[
+			{
+				"Name":"Chaos",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Stargazer": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Swordmaster": 
+		[
+			{
+				"Name":"Longsword",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"War Bear": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"War Blimp": 
+		[
+			{
+				"Name":"Kirov",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	},
+	{
+		"Zombie": 
+		[
+			{
+				"Name":"Classic",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Human",
+				"Actives": [],
+				"Passives": []
+			}
+		]
+	}
 ]
