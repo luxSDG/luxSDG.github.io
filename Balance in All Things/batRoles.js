@@ -18,7 +18,6 @@ for (let i = 0; i < data.length; i++)
 	var categoryName = Object.keys(category);
 	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName[0] + "</span><br>";
 
-	//We need a way to do search bar better
 	for (let j = 0; j < roleList.length; j++)
 	{
 		var role = roleList[j];
@@ -29,7 +28,7 @@ for (let i = 0; i < data.length; i++)
 		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> (" + roleDifficulty + ") - " + roleSummary + "</span><br>";
 		
 		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
-		searchList.push([categoryName[0], link]);
+		searchList.push([roleName, link]);
 
 		index += 1;
 	}

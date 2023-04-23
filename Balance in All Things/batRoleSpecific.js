@@ -87,27 +87,27 @@ for (let i = 0; i < data.length; i++)
 		{
 			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</small></div></a>";
+			 + categoryColor + "\">" + roleName + "</small></div></a>";
 		}
 		else
 		{
 			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</small></div></a>";
+			 + categoryColor + "\">" + roleName + "</small></div></a>";
 		}
 
 		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
-		searchList.push([categoryName[0], link]);
+		searchList.push([roleName, link]);
 
 		if (index === indexSearched-1)
 		{
 			backLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</a>";
+			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + roleName + "</a>";
 		}
 		if (index === indexSearched+1)
 		{
 			nextLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + categoryName + " (" + roleName + ")" + "</a>";
+			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + roleName + "</a>";
 		}
 		index += 1;
 	}
