@@ -34,7 +34,12 @@ for (let i = 0; i < data.length; i++)
 			{
 				head.style.color = role["Color"];
 				content.style.color = role["Color"];
-				imagePic.src = "../GeneralImages/bat.png"; // + role["Image"];
+				var imageSource = role["Image"];
+				if (imageSource === "")
+				{
+					imageSource = "../GeneralImages/bat.png";
+				}
+				imagePic.src = role["Image"];
 				head.innerHTML += roleSearched;
 				content.innerHTML += "<br>" + role["Description"];
 				content.innerHTML += "<br>HP: " + role["HP"];

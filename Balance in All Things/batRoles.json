@@ -44,21 +44,6 @@ data =
 				"Passives": ["Mob Mentality - You must grow the mob by inciting violence and chaos, each mob member counts as 1 HP and you must constantly grow the mob. You take double damage to everything. If you don’t do something each day, you lose 2 mob members (2 HP). Cannot be healed by others."]
 			},
 			{
-				"Name":"Biker From Hell",
-				"Color": "white",
-				"Image": "",
-				"Description": "Driving right through hell, and back, and back to hell.",
-				"HP": "5 HP",
-				"Difficulty": "Hard",
-				"Tags": "Mechanical",
-				"Actives": ["Hellish Burns (1 day cooldown) - Drive into someone with burning wheels, dealing 2 damage to them today and tomorrow.",
-					"Catch a Ride (2 charges) - Drive on the Road to Hell with someone of choice, making them unvisitable today. You still need time to refuel, making yourself vulnerable. Cannot be used with Road to Hell.",
-					"Road to Hell (2 charges) - Drive on the Road to Hell and become unvisitable today. Cannot be used with Catch a Ride.",
-					"Wheels of Hell (3 charges) - Give yourself a 50% chance to dodge any attack today. Cannot be used with Catch a Ride.",
-					"Wall of Hell (1 charge) - Create a wall at your house and all allies for 2 days, burning anyone who isn’t allied, dealing 2 damage to them today and tomorrow."],
-				"Passives": ["To Hell and Back (1 charge) - The first time you die, occupy yourself for 1 whole day, and then respawn with 3 HP. Unable to be healed or granted HP."]
-			},
-			{
 				"Name":"Battle Drone",
 				"Color": "white",
 				"Image": "",
@@ -74,6 +59,40 @@ data =
 					"Drone Repairs (1 day cooldown, 2 charges) - Occupy yourself and block any other abilities done today, but heal to full HP and make small hitbox have a 100% chance to dodge abilities."],
 				"Passives": ["Targeting Computer - Cannot miss any attacks.",
 					"Small Hitbox - Have a 50% chance to dodge any damaging and negative abilities used on you."]
+			},
+			{
+				"Name":"Biker From Hell",
+				"Color": "white",
+				"Image": "",
+				"Description": "Driving right through hell, and back, and back to hell.",
+				"HP": "5 HP",
+				"Difficulty": "Hard",
+				"Tags": "Mechanical",
+				"Actives": ["Hellish Burns (1 day cooldown) - Drive into someone with burning wheels, dealing 2 damage to them today and tomorrow.",
+					"Catch a Ride (2 charges) - Drive on the Road to Hell with someone of choice, making them unvisitable today. You still need time to refuel, making yourself vulnerable. Cannot be used with Road to Hell.",
+					"Road to Hell (2 charges) - Drive on the Road to Hell and become unvisitable today. Cannot be used with Catch a Ride.",
+					"Wheels of Hell (3 charges) - Give yourself a 50% chance to dodge any attack today. Cannot be used with Catch a Ride.",
+					"Wall of Hell (1 charge) - Create a wall at your house and all allies for 2 days, burning anyone who isn’t allied, dealing 2 damage to them today and tomorrow."],
+				"Passives": ["To Hell and Back (1 charge) - The first time you die, occupy yourself for 1 whole day, and then respawn with 3 HP. Unable to be healed or granted HP."]
+			},
+			{
+				"Name":"Bloodzerker",
+				"Color": "white",
+				"Image": "batImages/bloodzerker.png",
+				"Description": "A powerful berzerker with the biggest of swords, was last seen defending a group of mages using their last spell. Credit to Rafi for this role.",
+				"HP": "10 HP",
+				"Difficulty": "Medium",
+				"Tags": "Human",
+				"Actives": ["Sword Slam (1 HP) - Use a huge sword to attack someone with, dealing 3 damage.",
+					"Blood Rush (3 HP) - Charge forward at a random enemy, stunning them for this day and dealing 5 damage.",
+					"Whirlwind (5 HP) - Spin like a beyblade, dealing 3 damage to everyone hostile.",
+					"Death Beam (8 HP) - Use a secret scroll, shooting a beam of death, dealing 7 damage to everyone hostile.",
+					"Defensive Stance (2 charges) - Steel yourself against attacks and your own blood magic, becoming 50% resistant to all damage.",
+					"Potion of Immunity (2 charges) - Make someone immune to damage today. Does not make you immune to blood magic."],
+				"Passives": ["Blood Magic - Abilities cost health. Cannot kill yourself.",
+					"Vampirism - Whenever you kill someone, gain 5 HP.",
+					"Human Ballista - Use your pocket ballista, shooting a random enemy for 2 damage at the end of every day that avoids all counterattacks.",
+					"Nimbleness - Have a 25% chance to dodge each attack."]
 			},
 			{
 				"Name":"Celestial Dragon",
