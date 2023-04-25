@@ -39,7 +39,7 @@ for (let i = 0; i < data.length; i++)
 				{
 					imageSource = "../GeneralImages/bat.png";
 				}
-				imagePic.src = role["Image"];
+				imagePic.src = imageSource;
 				head.innerHTML += roleSearched;
 				content.innerHTML += "<br>" + role["Description"];
 				content.innerHTML += "<br>HP: " + role["HP"];
