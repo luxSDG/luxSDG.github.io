@@ -30,7 +30,7 @@ data =
 				"Name":"Angry Mob",
 				"Color": "white",
 				"Image": "",
-				"Description": "Apes together strong, and apes together very very angry.",
+				"Description": "Apes together strong, and apes together extremely angry.",
 				"HP": "5 HP",
 				"Difficulty": "Hard",
 				"Tags": "Human",
@@ -87,9 +87,9 @@ data =
 					"Blood Rush (3 HP) - Charge forward at a random enemy, stunning them for this day and dealing 5 damage.",
 					"Whirlwind (5 HP) - Spin like a beyblade, dealing 3 damage to everyone hostile.",
 					"Death Beam (8 HP) - Use a secret scroll, shooting a beam of death, dealing 7 damage to everyone hostile.",
-					"Defensive Stance (2 charges) - Steel yourself against attacks and your own blood magic, becoming 50% resistant to all damage.",
+					"Defensive Stance (2 charges) - Steel yourself against attacks and your own blood magic, reducing all damage by 50%.",
 					"Potion of Immunity (2 charges) - Make someone immune to damage today. Does not make you immune to blood magic."],
-				"Passives": ["Blood Magic - Abilities cost health. Cannot kill yourself.",
+				"Passives": ["Blood Magic - Abilities cost health.",
 					"Vampirism - Whenever you kill someone, gain 5 HP.",
 					"Human Ballista - Use your pocket ballista, shooting a random enemy for 2 damage at the end of every day that avoids all counterattacks.",
 					"Nimbleness - Have a 25% chance to dodge each attack."]
@@ -121,7 +121,7 @@ data =
 				"Difficulty": "Hard",
 				"Tags": "Human",
 				"Actives": ["Demon Spawn (1 day cooldown) - Summon a demon of your choice today. Each demon has their own abilities.",
-					"Absorb Power - Kill your own demon and heal 5 HP.",
+					"Absorb Demon - Kill your own demon and heal 5 HP.",
 					"Fire of Hell (1 day cooldown) - Throw a cursed fireball at someone, dealing 3 damage."],
 				"Passives": ["None.",
 					"=======================================================================",
@@ -130,8 +130,8 @@ data =
 					"Passive:<br>Portal of Hell - Spawn 2 every time you spawn 1.",
 					"Bloodletter - 10 HP<br>A standard blood god’s demon.",
 					"Abilities:<br>Bloodletting (2 day cooldown) - Stab someone, dealing 2 damage today and 2 damage tomorrow.",
-					"Passive:<br>Blood for the Blood God - Attacks make the person weaker, increasing all damage done to the target by 1 damage each attack.",
-					"Void Guard - 10 HP<br>A tank of a demon.",
+					"Passive:<br>Blood for the Blood God - Attacks make the person weaker, increasing all damage done to the target by 1 damage for each attack.",
+					"Void Guard - 10 HP<br>A sturdy, meat shield of a demon.",
 					"Abilities:<br>Guard of Hell (1 day cooldown) - Protect someone, tanking all damage done to them today.",
 					"Unclean One - 10 HP<br>A gassy demon with control.",
 					"Abilities:<br>Gas Extrusion (1 day cooldown) - Plant a gas bomb on someone, dealing 2 damage to anyone who visits that player.",
@@ -139,7 +139,7 @@ data =
 					"Shadow Demon - 10 HP<br>A tricky demon with many niche utilities.",
 					"Abilities:<br>Illusion (2 charges) - Create an illusion of someone, making attacks to that player have a 50% chance to hit them.",
 					"Shadowy Cloak (1 charge) - Become unvisitable for today.",
-					"Shadow’s Wisdom (2 charges) - Find someone’s tags."]
+					"Shadow’s Wisdom (2 charges) - Find out someone’s tags."]
 			},
 			{
 				"Name":"Combat Medic",
@@ -152,8 +152,8 @@ data =
 				"Actives": ["Combat Scalpel (1 day cooldown) - Stab someone for 2 damage.",
 					"First Aid (3 charges) - Heal someone for 5 HP.",
 					"Extended Surgery (2 charges) - Heal someone for 3 HP each of the next 3 days.",
-					"Vaccinate (2 charges) - Vaccinate someone, making them immune to occupation for this day."],
-				"Passives": ["Human Anatomy – Healing humans will increase that healing by 2 HP. Damaging humans will increase that damage by 2 damage.",
+					"Vaccinate (2 charges) - Vaccinate someone, making them immune to occupation and damage over time for this day."],
+				"Passives": ["Human Anatomy – Healing humans will increase healing done by 2 HP. Damaging humans will increase damage done by 2 damage.",
 					"Vital Sign Sensors - Know what everyone’s HP is."]
 			},
 			{
@@ -167,7 +167,7 @@ data =
 				"Actives": ["Assault Rifle Fire (10 Ammo) - Fire your assault rifle at someone, dealing 5 damage.",
 					"Machine Gun Suppression (10 Ammo) - Fire your machine gun at someone, preventing them from visiting anyone today.",
 					"Rocket Launch (10 Ammo) - Fire your rocket launcher at someone, dealing 3 damage to them and all visitors. Deal double damage to anyone that is Mechanical.",
-					"Shotgun Blast (10 Ammo) - Fire your shotgun at someone, dealing 3 damage to them today and 3 damage to them tomorrow.",
+					"Shotgun Blast (10 Ammo) - Fire your shotgun at someone, inflicting a bleed with scattershot, dealing 3 damage to them today and 3 damage to them tomorrow.",
 					"Sniper Tagging (5 Ammo) - Fire your sniper at someone, revealing who visits them and deal 1 damage to them.",
 					"Blank Shots (5 Ammo) - Shoot blanks into the air, occupying anyone who visits you today.",
 					"Reload (2 charges) - Reload your ammunition."],
@@ -360,6 +360,20 @@ data =
 				"Passives": ["Fight Fire with Fire - Burning yourself heals you for 3 HP."]
 			},
 			{
+				"Name":"Regular Dude with Banjo and Kazoo",
+				"Color": "white",
+				"Image": "",
+				"Description": "Just a dude with a banjo and kazoo playing some music. Credits to Lobster for making this role.",
+				"HP": "3 HP",
+				"Difficulty": "Easy",
+				"Tags": "Human",
+				"Actives": ["Banjo Smash - Do 1 damage. Your banjo breaks.",
+					"Kazoo Throw - Do 1 damage. Your kazoo goes missing."],
+				"Passives": ["I Play Music Because I Cannot Speak - You are muted for the duration of the game, but definitely not because you want to be even more afk in an already chill game and basically be a spectator.",
+					"Ouch - Your action is canceled this turn if you lose hp for any reason.",
+					"I’m Going Home - If your hp falls to or below 1, you retire and live the rest of your days cursed with dreams about a bear and a bird for some reason."]
+			},
+			{
 				"Name":"Shieldmaiden",
 				"Color": "white",
 				"Image": "",
@@ -374,6 +388,23 @@ data =
 				"Passives": ["Assertive - Refuse to be occupied by people.",
 					"Protected - Cannot be reduced in max HP or have buffs removed.",
 					"Hunker Down - Protect yourself on the first attack per day, negating the first attack."]
+			},
+			{
+				"Name":"Sniper",
+				"Color": "white",
+				"Image": "",
+				"Description": "A veteran with marksman skills that are unparalleled. Made for Neon.",
+				"HP": "10 HP",
+				"Difficulty": "Medium",
+				"Tags": "Human",
+				"Actives": ["Snipe (1 ammo) - Snipe someone from afar, dealing 5 damage.",
+					"Tagger Shot (1 ammo) - Snipe someone with your tagger ammo, dealing 1 damage and finding out who visits them.",
+					"Wounding Shot (1 ammo) - Snipe someone from afar targeting the legs, dealing 1 damage and occupying them.",
+					"Overwatch (2 ammo) - Snipe the first person who visits someone that you choose to overwatch today, dealing 5 damage to them and occupying them.",
+					"Supporting Fire (1 ammo) - Support someone, firing at who they visit next, dealing 5 damage.",
+					"Reload (2 charges) - Reload your ammunition."],
+				"Passives": ["Limited Ammo - Don’t have cooldowns, but have a limited amount of ammunition every day (2 per day).",
+					"Sniper Elite - Take double damage from melee attacks, but don’t get attacked back by passives or reflection damage when attacking others. Don’t visit using abilities."]
 			},
 			{
 				"Name":"Stargazer",
