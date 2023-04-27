@@ -84,7 +84,7 @@ data =
 				"Difficulty": "Medium",
 				"Tags": "Human",
 				"Actives": ["Sword Slam (1 HP) - Use a huge sword to attack someone with, dealing 3 damage.",
-					"Blood Rush (3 HP) - Charge forward at a random enemy, stunning them for this day and dealing 5 damage.",
+					"Blood Rush (3 HP) - Charge forward at two people, stunning them for this day and dealing 3 damage.",
 					"Whirlwind (5 HP) - Spin like a beyblade, dealing 3 damage to everyone hostile.",
 					"Death Beam (8 HP) - Use a secret scroll, shooting a beam of death, dealing 7 damage to everyone hostile.",
 					"Defensive Stance (2 charges) - Steel yourself against attacks and your own blood magic, reducing all damage by 50%.",
