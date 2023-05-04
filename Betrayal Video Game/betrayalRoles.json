@@ -1,0 +1,24 @@
+data = 
+[
+	{
+		"Good": 
+		[
+			{
+				"Name": "Agent",
+				"HP": "5 HP",
+				"AP": "1 AP",
+				"Description": "Your whole life, you've been watching others. Your scouting skills have stayed intact and led you to prepare for a life-threatening moment like this.",
+				"Abilities": ["Follow - x3 - Common - 1000 - You will know everything your target does for 1 day from use. Does not include perk-based actions.",
+					"Spy - x3 - Common - 1000 - You will know everything that happens to your target 1 day from use.",
+					"Hidden - x2 - Uncommon - 1500 - For 1 day from the usage of the ability, anything done on you will be reflected back to the user."],
+				"Perks": ["Hawkeye - If someone steals from you, you will know who did it.",
+					"Organized - Your attack cannot be blocked or tampered with in any way.",
+					"Tracker - If anyone does a positive action to your allies, you will know who gave who and what it was."],
+				"Achievements": ["[Master Agent] - Obtain all Agent achievements",
+					"[Pro Hider] - Successfully reflect 4 actions with Hidden",
+					"[Stalker] - See 3 abilities or items used out of Follow",
+					"[Observer] - See 3 abilities or items used out of Spy"]
+			}
+		]
+	}
+]
