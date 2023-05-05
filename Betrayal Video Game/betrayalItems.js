@@ -4,6 +4,7 @@ const content = document.getElementById("content");
 for (let i = 0; i < items.length; i++)
 {
 	var category = items[i];
+	console.log(category);
 	var itemList = Object.values(category)[0];
 	var categoryName = Object.keys(category);
 	var categoryColor = "white";
@@ -37,7 +38,7 @@ for (let i = 0; i < items.length; i++)
 	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName + "</span><br><br>";
 	for (let j = 0; j < itemList.length; j++)
 	{
-		content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + itemList[0]["Description"] + "</span><br>";
+		content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + itemList[j]["Description"] + "</span><br>";
 	}
 	content.innerHTML += "<br>";
 }

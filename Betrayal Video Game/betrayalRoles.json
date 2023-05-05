@@ -20,6 +20,45 @@ roles =
 					"[Pro Hider] - Successfully reflect 4 actions with Hidden",
 					"[Stalker] - See 3 abilities or items used out of Follow",
 					"[Observer] - See 3 abilities or items used out of Spy"]
+			},
+			{
+				"Name": "",
+				"HP": "5 HP",
+				"AP": "1 AP",
+				"Color": "lime",
+				"Image": "https://upload.wikimedia.org/wikipedia/en/6/62/Agent_47_in_Hitman_Absolution.png",
+				"Description": "",
+				"Abilities": [],
+				"Perks": [],
+				"Achievements": []
+			}
+		],
+		"Neutral": 
+		[
+			{
+				"Name": "",
+				"HP": "5 HP",
+				"AP": "1 AP",
+				"Color": "yellow",
+				"Image": "https://upload.wikimedia.org/wikipedia/en/6/62/Agent_47_in_Hitman_Absolution.png",
+				"Description": "",
+				"Abilities": [],
+				"Perks": [],
+				"Achievements": []
+			}
+		],
+		"Evil": 
+		[
+			{
+				"Name": "",
+				"HP": "5 HP",
+				"AP": "1 AP",
+				"Color": "red",
+				"Image": "https://upload.wikimedia.org/wikipedia/en/6/62/Agent_47_in_Hitman_Absolution.png",
+				"Description": "",
+				"Abilities": [],
+				"Perks": [],
+				"Achievements": []
 			}
 		]
 	}

@@ -5,6 +5,277 @@ items =
 		[
 			{
 				"Description": "Cursed Shadow - 1000 - Inflict a player of your choice with Cursed."
+			},
+			{
+				"Description": "Ice Wand - 1000 - Inflict a player of your choice with Frozen."
+			},
+			{
+				"Description": "Lightning Wand - 1000 - Inflict a player of your choice with Paralyzed."
+			},
+			{
+				"Description": "Flint & Steel - 1000 - Inflict a player of your choice with Burned."
+			},
+			{
+				"Description": "Doggo Treat - 400 - If you feed your Doggo a treat, it will be more loyal and give more useful information more often. You can also consume it yourself which gives you 200 coins."
+			},
+			{
+				"Description": "Beer - 1000 - Inflict a player of your choice with Drunk."
+			},
+			{
+				"Description": "Seed - 500 - Plant a seed, every day you'll gain a 5% coin bonus for every seed planted."
+			},
+			{
+				"Description": "Money Bag - 500 - Gives you 500 coins."
+			},
+			{
+				"Description": "Role Scanner - 1000 - Receive seven roles your target could be, with one being their actual role. The other six roles are selected by how that player has been acting throughout the game."
+			},
+			{
+				"Description": "Immunity Scanner - 1500 - Tells you any and all immunities your target currently has."
+			},
+			{
+				"Description": "Tip - 200 - Gives you a relatively useful piece of information you may find useful."
+			},
+			{
+				"Description": "Status Scanner - 1000 - Tells you any and all status effects your target currently has."
+			},
+			{
+				"Description": "Hangover Pills - 750 - Removes one stack of the Drunk status effect on use."
+			},
+			{
+				"Description": "Cheque - 500 - Allows you to transfer coins to another player."
+			},
+			{
+				"Description": "Aura Veil - 1000 - Choose a negative status effect to become immune to. When inflicted or attempted to be inflicted with a negative status effect, this effect wears off."
+			}
+		]
+	},
+	{
+		"Uncommon": 
+		[
+			{
+				"Description": "Decurse - 750 - Removes the Cursed status effect on use."
+			},
+			{
+				"Description": "Thaw Claw - 750 - Removes the Frozen status effect on use."
+			},
+			{
+				"Description": "Nerve Master - 750 - Removes the Paralyzed status effect on use."
+			},
+			{
+				"Description": "Fertilizer - 1500 - Double all seed giving % in alliance. If 0%, add 10%."
+			},
+			{
+				"Description": "Holy Water - 750 - Removes the Burned status effect on use. Cannot be burnt."
+			},
+			{
+				"Description": "Jailbreaking Device - 750 - Removes the Disabled status effect on use."
+			},
+			{
+				"Description": "Lillie’s Blood - 1200 - Makes you immune to a chosen status effect for 1 day. Does not cure any current effects."
+			},
+			{
+				"Description": "Vortex Liquid - 1500 - Heals you for 3 HP."
+			},
+			{
+				"Description": "Iron Ball - 750 - Does absolutely nothing but takes up an item slot and cannot be used. Removes after 2 days."
+			},
+			{
+				"Description": "Down Syndrome - 1200 - Inflict a player of your choice with Disabled."
+			},
+			{
+				"Description": "Imprisoning Key - 1500 - Inflict a player of your choice with Restrained."
+			},
+			{
+				"Description": "Sad Story - 1500 - Inflict a player of your choice with Despaired."
+			},
+			{
+				"Description": "Duct Tape - 1000 - Inflict a player of your choice with Blackmailed."
+			},
+			{
+				"Description": "Catapult - 2500 - Fire an item of choice at someone else - will destroy the item and an item of same rarity in their inventory, if not present, destroys the next closest tier item that is lower."
+			},
+			{
+				"Description": "Magnetic Cuffs - 2500 - Select 2 people, actions done to one player will be done to the other for half a day. Can be removed with a Jailbreaking device."
+			},
+			{
+				"Description": "Ankh - 750 - Give yourself or someone else a spell of bad luck, giving them Unlucky."
+			},
+			{
+				"Description": "Four-Leaf-Clover - 750 - Give yourself or someone else immense luck, giving them Lucky."
+			},
+			{
+				"Description": "Scarlet Potion - 1500 - If you use this on someone, remove a chosen immunity on them. If you use it on yourself, you will deal 3 damage to yourself."
+			},
+			{
+				"Description": "Weak Energizer - 1500 - Allow one extra use for any one of yourself or an ally's abilities, must be Common or Uncommon."
+			}
+		]
+	},
+	{
+		"Rare": 
+		[
+			{
+				"Description": "Freedom Ring - 1000 - Removes the Restrained status effect on use."
+			},
+			{
+				"Description": "Magic Mirror - 1200 - Choose a negative status effect. Next time you're inflicted by that status you will reflect it back upon the inflictor."
+			},
+			{
+				"Description": "Hope Antenna - 1200 - Removes the Despaired status effect on use."
+			},
+			{
+				"Description": "Blessed Light - 3200 - Removes the Death Curse status effect on use."
+			},
+			{
+				"Description": "Energizer - 3000 - Allow one extra use for any one of yourself or an ally's abilities."
+			},
+			{
+				"Description": "Refresher Orb - 3000 - Reset all cooldowns that you have."
+			},
+			{
+				"Description": "Doggo - 2000 - Gives you a pet doggo which gives you useless information. The more you feed it, the more useful it becomes. Can be released which gives 500 coins on release."
+			},
+			{
+				"Description": "Light Eye - 3000 - Publicly shows who attacked who last day."
+			},
+			{
+				"Description": "Unreliable Wish - 2000 - Gain a random AA ability upon use."
+			},
+			{
+				"Description": "Storage Box - 2400 - Gain 3 max HP permanently, can only be used once per person."
+			},
+			{
+				"Description": "Liquid Nitrogen Grenade - 2500 - Gives your target and any of their allies Frozen."
+			},
+			{
+				"Description": "Shock Grenade - 2500 - Gives your target and any of their allies Paralyzed."
+			},
+			{
+				"Description": "Incendiary Grenade - 2500 - Gives your target and any of their allies Burned."
+			},
+			{
+				"Description": "Cannon - 2500 - Can fire any item into other players inventories."
+			},
+			{
+				"Description": "Steel Ball - 1500 - Does absolutely nothing but takes up an item slot and cannot be used. Cannot be removed unless stolen or burned."
+			},
+			{
+				"Description": "Seed Gun - 1000 - Fire a seed you have at someone of choice, reducing target coin % by double what the seed is giving you for a day. Can go under 0%. If held, you can buy seeds that can only be used to fire for 250 coins."
+			},
+			{
+				"Description": "Cursed Relic - 2500 - Gives your target and any of their allies Cursed."
+			}
+		]
+	},
+	{
+		"Epic": 
+		[
+			{
+				"Description": "Depower - 2000 - Removes the Empowered status effect on use. When held, it notifies you every time someone becomes Empowered."
+			},
+			{
+				"Description": "Immunity Card - 4500 - Makes you Death Immune for 1 day on use."
+			},
+			{
+				"Description": "Fake Card - 2500 - Allows you to attack twice for 1 day."
+			},
+			{
+				"Description": "Awful Orb - 2500 - Inflict a player of your choice with any negative status effect."
+			},
+			{
+				"Description": "Spirit Cage - 4500 - Inflict a player of your choice with a special Cursed which can only be cured by a blessing."
+			},
+			{
+				"Description": "Dark Eye - 3200 - Publicly shows the exact role of a player to everyone, cannot be used on yourself."
+			},
+			{
+				"Description": "Six Point Bomb - 4000 - A bomb with six numbered switches. Whoever is in possession of the bomb has to pull a switch within 1 day or explode. Once they pull one they can pass the bomb to another player. One of the switches will blow it up, dealing 3 damage."
+			},
+			{
+				"Description": "Military Vest - 3600 - Gain 5 max HP permanently, can only be used once per person."
+			},
+			{
+				"Description": "Beer Barrel - 2000 - Gives your target and any of their allies Drunk."
+			},
+			{
+				"Description": "Velvet Glove - 4000 - Pick a player, you will see their inventory and will steal an item of your choice from them."
+			},
+			{
+				"Description": "Roulette Wheel - 4500 - When this item is used, there is multiple results that can occur:<br>1/5 - You gain an extra ability charge of choice<br>1/5 - You gain 2500 coins<br>1/5 - You get a random item<br>1/5 - You get to shoot another player for 3 damage<br>1/5 - You gain a random AA Ability"
+			}
+		]
+	},
+	{
+		"Legendary": 
+		[
+			{
+				"Description": "Poly - 6200 - Transform into a random role which isn't currently in the game."
+			},
+			{
+				"Description": "Platinum Crown - 6200 - Inflict a player of your choice with Empowered."
+			},
+			{
+				"Description": "Rebound Card - 3500 - Reflect damage done to you to another player for 1 day."
+			},
+			{
+				"Description": "Gold Card - 3500 - Allows you to attack 3 times for 1 day when used."
+			},
+			{
+				"Description": "Danger Zone - 4500 - Your target and their allies will have double damage applied to them for 1 day."
+			},
+			{
+				"Description": "Dusk Eye - 3200 - Publicly shows who visited who for 1 day. Doesn't show self-visits."
+			},
+			{
+				"Description": "Dawn Eye - 3200 - On use, publicly reveals all alliances and players in each alliance."
+			},
+			{
+				"Description": "Reliable Wish - 7000 - On use, get an Any Ability of your choice."
+			},
+			{
+				"Description": "Reliable Learning - 7000 - On use, get a perk of your choice."
+			},
+			{
+				"Description": "Russian Revolver - 4500 - A crazy gun that you can attempt to shoot someone with. <br>1/3 chance to deal 3 damage to them<br>1/3 chance to deal 2 damage to them<br>1/3 chance to deal 1 damage to them"
+			},
+			{
+				"Description": "Flamethrower - 4000 - Completely destroys the inventory of a player of your choice and gives them Burned."
+			}
+		]
+	},
+	{
+		"Mythic": 
+		[
+			{
+				"Description": "Accurate Poly - 8000 - Transform into a role of choice which isn't currently in the game."
+			},
+			{
+				"Description": "Reset Card - 8000 - Reset your entire rolecard’s charges and cooldowns entirely."
+			},
+			{
+				"Description": "Excalibur - 10000 - This item will kill someone instantly; bypassing protection when used on somebody. If both players have Excalibur, it will be an epic duel to death."
+			},
+			{
+				"Description": "Doggo v2 - 8000 - This mythical doggo will tell you accurate information twice a day!"
+			},
+			{
+				"Description": "Magic Triangle - 6200 - You and two other players of your choice get +50% coins value and a better chance of getting more and better items during an Item Rain. The more items effect is reversing item drop chance. 1 item is 1/6, 2 is 2/6 and 3 is 3/6."
+			},
+			{
+				"Description": "Angel Wings - 8000 - On use, cures you and any of your alliance members of ANY negative status effect if they have them, for every negative status effect you cure, you gain an Unreliable Wish, if you cure at least three which may include yourself, you get an additional Reliable Wish."
+			},
+			{
+				"Description": "Hellforge - 10000 - Sacrifice an item into the hellforge. Common worth 1 point going up 1 per rarity, with mythical as 6. At 200% of an item's value, you can create one of that kind. Max 2 mythical, 3 legendary and 4 epic. RW and 6PB take up 2 creation slots. Hellforge takes different times to melt items down. Common - half a day. -1/12 a day every rarity up, with mythical being 0."
+			},
+			{
+				"Description": "Lucky Charm - 8000 - As long as this item is in your inventory, you will know exactly what your luck is, and it will be +3 of that. You will be guaranteed at least +1 more item in an item rain making maxing out at 4. If this charm is stolen you will know who did it."
+			},
+			{
+				"Description": "Wishing Star - 8000 - Choose 3 people including yourself, you will all receive at least a rare and another random AA. Along with this, you will be able to gain an extra AA every power drop from time of use."
+			},
+			{
+				"Description": "Lucky Coin - 3200 - Someone receives this from their Care Package, increasing their Luck value by 4 when holding. You may pass this item to someone else and have to pass it to someone else when you die. If you're killed, the person who kills you gets the item."
 			}
 		]
 	}
