@@ -6,9 +6,9 @@ var searchList = [];
 
 //For list
 var index = 0;
-for (let i = 0; i < data.length; i++)
+for (let i = 0; i < roles.length; i++)
 {
-	var category = data[i];
+	var category = roles[i];
 
 	//Specific roles per category
 	var roleList = Object.values(category)[0];
@@ -23,11 +23,10 @@ for (let i = 0; i < data.length; i++)
 		var role = roleList[j];
 		var roleName = role["Name"];
 		var roleSummary = role["Description"];
-		var roleDifficulty = role["Difficulty"];
-		content.innerHTML += "&emsp;<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + "\" style=\"color:"
-		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> (" + roleDifficulty + ") - " + roleSummary + "</span><br>";
+		content.innerHTML += "&emsp;<a href=\"betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + "\" style=\"color:"
+		 + categoryColor + "\">" + roleName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + roleSummary + "</span><br>";
 		
-		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
+		var link = "betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
 		searchList.push([roleName, link]);
 
 		index += 1;
