@@ -14,7 +14,7 @@ for (let i = 0; i < roles.length; i++)
 	var roleList = Object.values(category)[0];
 	var categoryColor = roleList[0]["Color"];
 
-	//Categories for each BAT role, e.g. faction and/or subclass
+	//Categories for each role, e.g. faction and/or subclass
 	var categoryName = Object.keys(category);
 	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName[0] + "</span><br>";
 

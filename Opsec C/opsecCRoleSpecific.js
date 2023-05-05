@@ -81,7 +81,7 @@ for (let i = 0; i < data.length; i++)
 {
 	var category = data[i];
 
-	//Categories for each opsec C role, e.g. faction and/or subclass
+	//Categories for each role, e.g. faction and/or subclass
 	var categoryName = Object.keys(category);
 
 	//Specific roles per category

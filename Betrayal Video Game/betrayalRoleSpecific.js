@@ -83,7 +83,7 @@ for (let i = 0; i < roles.length; i++)
 {
 	var category = roles[i];
 
-	//Categories for each BAT role, e.g. faction and/or subclass
+	//Categories for each role, e.g. faction and/or subclass
 	var categoryName = Object.keys(category);
 
 	//Specific roles per category
