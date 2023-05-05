@@ -18,9 +18,9 @@ const searchBox = document.getElementById("searchBox");
 var searchList = [];
 
 //For main page
-for (let i = 0; i < data.length; i++)
+for (let i = 0; i < roles.length; i++)
 {
-	var category = data[i];
+	var category = roles[i];
 
 	//Check category name
 	var categoryName = Object.keys(category)[0];
@@ -35,34 +35,40 @@ for (let i = 0; i < data.length; i++)
 				head.style.color = role["Color"];
 				content.style.color = role["Color"];
 				var imageSource = role["Image"];
-				if (imageSource === "")
-				{
-					imageSource = "../GeneralImages/bat.png";
-				}
 				imagePic.src = imageSource;
 				head.innerHTML += roleSearched;
+				content.innerHTML += "<br>" + categorySearched;
 				content.innerHTML += "<br>" + role["Description"];
 				content.innerHTML += "<br>HP: " + role["HP"];
-				content.innerHTML += "<br>Difficulty: " + role["Difficulty"];
-				content.innerHTML += "<br>Tags: " + role["Tags"] + "<br><br>";
+				content.innerHTML += "<br>AP: " + role["AP"] + "<br><br>";
 
-				var actives = role["Actives"];
-				if (actives.length > 0)
+				var abilities = role["Abilities"];
+				if (abilities.length > 0)
 				{				
-					content.innerHTML += "<h5>Actives: </h5><br>";
-					for (let k = 0; k < actives.length; k++)
+					content.innerHTML += "<h5>Abilities: </h5><br>";
+					for (let k = 0; k < abilities.length; k++)
 					{
-						content.innerHTML += actives[k] + "<br><br>";
+						content.innerHTML += abilities[k] + "<br><br>";
 					}
 				}
 
-				var passives = role["Passives"];
-				if (passives.length > 0)
+				var perks = role["Perks"];
+				if (perks.length > 0)
 				{
-					content.innerHTML += "<h5>Passives: </h5><br>";
-					for (let k = 0; k < passives.length; k++)
+					content.innerHTML += "<h5>Perks: </h5><br>";
+					for (let k = 0; k < perks.length; k++)
 					{
-						content.innerHTML += passives[k] + "<br><br>";
+						content.innerHTML += perks[k] + "<br><br>";
+					}
+				}
+
+				var achievements = role["Achievements"];
+				if (achievements.length > 0)
+				{
+					content.innerHTML += "<h5>Achievements: </h5><br>";
+					for (let k = 0; k < achievements.length; k++)
+					{
+						content.innerHTML += achievements[k] + "<br><br>";
 					}
 				}
 			}
@@ -73,9 +79,9 @@ for (let i = 0; i < data.length; i++)
 
 //For Sidebar
 var index = 0;
-for (let i = 0; i < data.length; i++)
+for (let i = 0; i < roles.length; i++)
 {
-	var category = data[i];
+	var category = roles[i];
 
 	//Categories for each BAT role, e.g. faction and/or subclass
 	var categoryName = Object.keys(category);
@@ -90,28 +96,28 @@ for (let i = 0; i < data.length; i++)
 		var categoryColor = role["Color"];
 		if (index === indexSearched)
 		{
-			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
+			sideBar.innerHTML += "<a href=\"betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
 			 + categoryColor + "\">" + roleName + "</small></div></a>";
 		}
 		else
 		{
-			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
+			sideBar.innerHTML += "<a href=\"betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
 			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
 			 + categoryColor + "\">" + roleName + "</small></div></a>";
 		}
 
-		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
+		var link = "betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
 		searchList.push([roleName, link]);
 
 		if (index === indexSearched-1)
 		{
-			backLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+			backLink.innerHTML += "<a href=\"betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
 			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + roleName + "</a>";
 		}
 		if (index === indexSearched+1)
 		{
-			nextLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
+			nextLink.innerHTML += "<a href=\"betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
 			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + roleName + "</a>";
 		}
 		index += 1;

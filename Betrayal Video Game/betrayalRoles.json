@@ -8,6 +8,7 @@ roles =
 				"HP": "5 HP",
 				"AP": "1 AP",
 				"Color": "lime",
+				"Image": "https://upload.wikimedia.org/wikipedia/en/6/62/Agent_47_in_Hitman_Absolution.png",
 				"Description": "Your whole life, you've been watching others. Your scouting skills have stayed intact and led you to prepare for a life-threatening moment like this.",
 				"Abilities": ["Follow - x3 - Common - 1000 - You will know everything your target does for 1 day from use. Does not include perk-based actions.",
 					"Spy - x3 - Common - 1000 - You will know everything that happens to your target 1 day from use.",
