@@ -1,10 +1,6 @@
 const content = document.getElementById("content");
 
-var commonList = [];
-var uncommonList = [];
-var rareList = [];
-var epicList = [];
-var legendaryList = [];
+var itemList = [[],[],[],[],[]];
 
 //For list
 for (let i = 0; i < roles.length; i++)
@@ -33,70 +29,51 @@ for (let i = 0; i < roles.length; i++)
 
 				if (abilitySplit[2] === " Common ")
 				{
-					commonList.push(abilityTup);
+					itemList[0].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Uncommon ")
 				{
-					uncommonList.push(abilityTup);
+					itemList[1].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Rare ")
 				{
-					rareList.push(abilityTup);
+					itemList[2].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Epic ")
 				{
-					epicList.push(abilityTup);
+					itemList[3].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Legendary ")
 				{
-					legendaryList.push(abilityTup);
+					itemList[4].push(abilityTup);
 				}
 			}
 		}
 	}
 }
 
-var categoryName = "Common";
-var categoryColor = "lime";
-content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName + "</span><br><br>";
-for (let i = 0; i < commonList.length; i++)
+function alphabetSort(a, b)
 {
-	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + commonList[i][0] + " - " + commonList[i][1] + " - " + commonList[i][2] + "</span><br>";
+	if (a[0] > b[0])
+	{
+		return 1;
+	}
+	else if (a[0] < b[0])
+	{
+		return -1;
+	}
+	return 0;
 }
-content.innerHTML += "<br>";
 
-var categoryName = "Uncommon";
-var categoryColor = "cyan";
-content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName + "</span><br><br>";
-for (let i = 0; i < uncommonList.length; i++)
+var categoryNames = ["Common", "Uncommon", "Rare", "Epic", "Legendary"];
+var categoryColors = ["lime", "cyan", "CornflowerBlue", "red", "magenta"];
+for (let i = 0; i < itemList.length; i++)
 {
-	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + commonList[i][0] + " - " + commonList[i][1] + " - " + commonList[i][2] + "</span><br>";
+	itemList[i].sort(alphabetSort);
+	content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + categoryNames[i] + "</span><br><br>";
+	for (let j = 0; j < itemList[i].length; j++)
+	{
+		content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + itemList[i][j][0] + " - " + itemList[i][j][1] + " - " + itemList[i][j][2] + "</span><br>";
+	}
+	content.innerHTML += "<br>";
 }
-content.innerHTML += "<br>";
-
-var categoryName = "Rare";
-var categoryColor = "CornflowerBlue";
-content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName + "</span><br><br>";
-for (let i = 0; i < rareList.length; i++)
-{
-	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + commonList[i][0] + " - " + commonList[i][1] + " - " + commonList[i][2] + "</span><br>";
-}
-content.innerHTML += "<br>";
-
-var categoryName = "Epic";
-var categoryColor = "red";
-content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName + "</span><br><br>";
-for (let i = 0; i < epicList.length; i++)
-{
-	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + commonList[i][0] + " - " + commonList[i][1] + " - " + commonList[i][2] + "</span><br>";
-}
-content.innerHTML += "<br>";
-
-var categoryName = "Legendary";
-var categoryColor = "magenta";
-content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName + "</span><br><br>";
-for (let i = 0; i < legendaryList.length; i++)
-{
-	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + commonList[i][0] + " - " + commonList[i][1] + " - " + commonList[i][2] + "</span><br>";
-}
-content.innerHTML += "<br>";

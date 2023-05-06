@@ -22,17 +22,27 @@ roles =
 					"[Observer] - See 3 abilities or items used out of Spy"]
 			},
 			{
-				"Name": "",
+				"Name": "Analyst",
 				"HP": "5 HP",
 				"AP": "1 AP",
 				"Color": "lime",
 				"Image": "https://upload.wikimedia.org/wikipedia/en/6/62/Agent_47_in_Hitman_Absolution.png",
-				"Description": "",
-				"Abilities": [],
-				"Perks": [],
-				"Achievements": []
-			}
+				"Description": "You're a street smart person, capable of using signs and signals to see past the surface. You might just be the smartest there ever was, or at least you think so.",
+				"Abilities": ["Chemistry - x3 - Common - 500 - Select 2 people by name, if they are allies, you will be told, and can select another person, this loops multiple times.",
+					"Vibe Check - x5 - Common - 750 - Select 2 people, you will know if they are the same alignment. You cannot select the same person more than twice.",
+					"Subtraction - x3 - Uncommon - 1000 - Select someone, view their alliance’s items. These items will be shown combined with each other. You also find out about any inventory affecting effects on the player you chose.",
+					"Inspection Zone - x1 - Uncommon - 1500 - Upon use, you will know everything to affect you within the next day, and who did it. If someone tries to attack you, you will dodge it. If someone tries to inflict you with a negative status, it will reflect back onto them."],
+				"Perks": ["Face Reader - If an ally gains info feedback from anything, you will be told the information as well.",
+					"That Much Smarter - Information items can be upgraded freely by you, or, have 2 uses. Info AAs can be upgraded by you as well.",
+					"X-Ray Vision - Any form of investigation done by you cannot be affected by perks or abilities, assuming the target is visitable."],
+				"Achievements": ["[Master Analyst] - Obtain all Analyst achievements",
+					"[Full View] - Use Subtraction to see a legendary or greater item or 4 or more items",
+					"[Well Connected] - Use chemistry 2 times with one charge",
+					"[Inspected] - View at least 3 visits via inspection zone"]
+			},
 		],
+	},
+	{
 		"Neutral": 
 		[
 			{
@@ -47,6 +57,8 @@ roles =
 				"Achievements": []
 			}
 		],
+	},
+	{
 		"Evil": 
 		[
 			{

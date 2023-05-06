@@ -28,6 +28,7 @@ for (let i = 0; i < data.length; i++)
 		
 		var link = "opsecCRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
 		searchList.push([roleName, link]);
+		searchList.push([roleName.toLowerCase(), link]);
 
 		index += 1;
 	}

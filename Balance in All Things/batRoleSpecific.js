@@ -103,6 +103,7 @@ for (let i = 0; i < data.length; i++)
 
 		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
 		searchList.push([roleName, link]);
+		searchList.push([roleName.toLowerCase(), link]);
 
 		if (index === indexSearched-1)
 		{

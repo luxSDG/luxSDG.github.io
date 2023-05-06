@@ -109,6 +109,7 @@ for (let i = 0; i < roles.length; i++)
 
 		var link = "betrayalRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
 		searchList.push([roleName, link]);
+		searchList.push([roleName.toLowerCase(), link]);
 
 		if (index === indexSearched-1)
 		{
