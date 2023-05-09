@@ -99,3 +99,15 @@ body {
 .active2 {
   background-color: #1D1D1D;
 }
+
+.btn {
+  background-color: #191919;
+}
+
+.btn:hover {
+  background-color: #111111;
+}
+
+.card {
+  background-color: #1B1B1B;
+}

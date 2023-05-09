@@ -40,8 +40,53 @@
     <div class="px-4 py-2 my-5 text-center">
       <h1 class="display-5 fw-bold">Tools</h1>
       <div class="col-lg-8 mx-auto">
-        <p class="lead mb-4 leftAligned" id="content"><small>
-        </small></p>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="fw-bold">Role Randomizing</h5>
+            <button type="button" class="btn btn-dark" id="random">Random Role</button>
+            <button type="button" class="btn btn-dark" id="decept">Decept's Choice</button>
+            <br>
+            <br>
+            <p class="lead mb-4" id="roleResults"><small>You are Agent. :)
+            </small></p>
+          </div>
+        </div>
+        <br>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="fw-bold">Care Packages and Items/AAs</h5>
+            <input type="search" class="form-control" id="luckBox" placeholder="Luck">
+            <br>
+            <input type="search" class="form-control" id="amountBox" placeholder="Amount of Added Inventory">
+            <br>
+            <button type="button" class="btn btn-dark" id="submitCarePackages">Care Packages</button>
+            <button type="button" class="btn btn-dark" id="submitItems">Items</button>
+            <button type="button" class="btn btn-dark" id="submitAAs">AAs</button>
+            <br>
+            <br>
+            <p class="lead mb-4" id="inventoryResults"><small>You get Cheque and Allure. Have fun voting yourself!
+            </small></p>
+          </div>
+        </div>
+        <br>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="fw-bold">Coin Bonuses</h5>
+            <input type="search" class="form-control" id="coinBox" placeholder="Coins Increased">
+            <br>
+            <input type="search" class="form-control" id="percentageBox" placeholder="Percentage">
+            <br>
+            <button type="button" class="btn btn-dark" id="submitCoins">Coins</button>
+            <br>
+            <br>
+            <p class="lead mb-4" id="coinResults"><small>You gain 0 coins!
+            </small></p>
+          </div>
+        </div>
+
       </div>
     </div>
 
