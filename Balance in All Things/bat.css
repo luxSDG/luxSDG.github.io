@@ -48,7 +48,14 @@ body {
 }
 
 .searchBox {
+  color: white;
+  background-color: #111111;
   max-width: 30%;
+}
+
+.searchBox:focus {
+  color: white;
+  background-color: #303030;
 }
 
 .searchBar {
