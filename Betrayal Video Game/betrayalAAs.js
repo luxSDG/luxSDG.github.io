@@ -73,7 +73,29 @@ for (let i = 0; i < itemList.length; i++)
 	content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + categoryNames[i] + "</span><br><br>";
 	for (let j = 0; j < itemList[i].length; j++)
 	{
-		content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + itemList[i][j][0] + " - " + itemList[i][j][1] + " - " + itemList[i][j][2] + "</span><br>";
+		content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + itemList[i][j][0] + " - " + itemList[i][j][1] + "</span><span class=\"roleSummary enabled\" style=\"color:" + categoryColors[i] + "\"> - " + itemList[i][j][2] + "</span><br>";
 	}
 	content.innerHTML += "<br>";
+}
+
+//For checkbox
+function switchSummary() {
+  var checkbox = document.getElementById("flexCheckDefault");
+  var roleList = document.getElementsByClassName("roleSummary");
+  if (checkbox.checked)
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("enabled");
+  		roleList[i].classList.remove("disabled");
+  	}
+  } 
+  else 
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("disabled");
+  		roleList[i].classList.remove("enabled");
+  	}
+  }
 }

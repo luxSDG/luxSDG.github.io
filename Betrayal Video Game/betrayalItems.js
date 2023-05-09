@@ -4,7 +4,6 @@ const content = document.getElementById("content");
 for (let i = 0; i < items.length; i++)
 {
 	var category = items[i];
-	console.log(category);
 	var itemList = Object.values(category)[0];
 	var categoryName = Object.keys(category);
 	var categoryColor = "white";
@@ -38,7 +37,31 @@ for (let i = 0; i < items.length; i++)
 	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName + "</span><br><br>";
 	for (let j = 0; j < itemList.length; j++)
 	{
-		content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + itemList[j]["Description"] + "</span><br>";
+		var itemSplit = itemList[j]["Description"].split("-");
+		var desc = itemSplit.slice(2).join("-");
+		content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + itemSplit[0] + " - " + itemSplit[1] + "</span><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + desc + "</span><br>";
 	}
 	content.innerHTML += "<br>";
+}
+
+//For checkbox
+function switchSummary() {
+  var checkbox = document.getElementById("flexCheckDefault");
+  var roleList = document.getElementsByClassName("roleSummary");
+  if (checkbox.checked)
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("enabled");
+  		roleList[i].classList.remove("disabled");
+  	}
+  } 
+  else 
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("disabled");
+  		roleList[i].classList.remove("enabled");
+  	}
+  }
 }
