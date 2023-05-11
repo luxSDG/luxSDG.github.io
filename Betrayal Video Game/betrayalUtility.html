@@ -44,11 +44,11 @@
         <div class="card">
           <div class="card-body">
             <h5 class="fw-bold">Role Randomizing</h5>
-            <button type="button" class="btn btn-dark" id="random">Random Role</button>
-            <button type="button" class="btn btn-dark" id="decept">Decept's Choice</button>
+            <button type="button" class="btn btn-dark" id="random" onclick="randomPick()">Random Role</button>
+            <button type="button" class="btn btn-dark" id="decept" onclick="deceptPick()">Decept's Choice</button>
             <br>
             <br>
-            <p class="lead mb-4" id="roleResults"><small>You are Agent. :)
+            <p class="lead mb-4" id="roleResults"><small>
             </small></p>
           </div>
         </div>
@@ -61,12 +61,14 @@
             <br>
             <input type="search" class="form-control toolSearch" id="amountBox" placeholder="Amount of Added Inventory">
             <br>
-            <button type="button" class="btn btn-dark" id="submitCarePackages">Care Packages</button>
-            <button type="button" class="btn btn-dark" id="submitItems">Items</button>
-            <button type="button" class="btn btn-dark" id="submitAAs">AAs</button>
+            <button type="button" class="btn btn-dark" id="submitCarePackages" onclick="submitCarePackages()">Care Packages</button>
+            <button type="button" class="btn btn-dark" id="submitItems" onclick="submitItems()">Items</button>
+            <button type="button" class="btn btn-dark" id="submitAAs" onclick="submitAAs()">AAs</button>
             <br>
             <br>
-            <p class="lead mb-4" id="inventoryResults"><small>You get Cheque and Allure. Have fun voting yourself!
+            <p class="lead mb-4" id="itemResults"><small>
+            </small></p>
+            <p class="lead mb-4" id="aaResults"><small>
             </small></p>
           </div>
         </div>
@@ -75,14 +77,19 @@
         <div class="card">
           <div class="card-body">
             <h5 class="fw-bold">Coin Bonuses</h5>
-            <input type="search" class="form-control toolSearch" id="coinBox" placeholder="Coins Increased">
+            <input type="search" class="form-control toolSearch" id="initialBox" placeholder="Initial Coins">
+            <br>
+            <input type="search" class="form-control toolSearch" id="increaseBox" placeholder="Coins Increased">
             <br>
             <input type="search" class="form-control toolSearch" id="percentageBox" placeholder="Percentage">
             <br>
-            <button type="button" class="btn btn-dark" id="submitCoins">Coins</button>
+            <p class="lead mb-4"><small>The coin bonus calculation is: initial + increased + (increased * percentage)
+            </small></p>
+            <br>
+            <button type="button" class="btn btn-dark" id="submitCoins" onclick="submitCoins()">Coins</button>
             <br>
             <br>
-            <p class="lead mb-4" id="coinResults"><small>You gain 0 coins!
+            <p class="lead mb-4" id="coinResults"><small>
             </small></p>
           </div>
         </div>
