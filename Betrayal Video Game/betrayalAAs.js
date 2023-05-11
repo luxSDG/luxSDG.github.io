@@ -1,6 +1,6 @@
 const content = document.getElementById("content");
 
-var itemList = [[],[],[],[],[]];
+var aaList = [[],[],[],[],[]];
 
 //For list
 for (let i = 0; i < roles.length; i++)
@@ -29,23 +29,23 @@ for (let i = 0; i < roles.length; i++)
 
 				if (abilitySplit[2] === " Common ")
 				{
-					itemList[0].push(abilityTup);
+					aaList[0].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Uncommon ")
 				{
-					itemList[1].push(abilityTup);
+					aaList[1].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Rare ")
 				{
-					itemList[2].push(abilityTup);
+					aaList[2].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Epic ")
 				{
-					itemList[3].push(abilityTup);
+					aaList[3].push(abilityTup);
 				}
 				else if (abilitySplit[2] === " Legendary ")
 				{
-					itemList[4].push(abilityTup);
+					aaList[4].push(abilityTup);
 				}
 			}
 		}
@@ -67,13 +67,13 @@ function alphabetSort(a, b)
 
 var categoryNames = ["Common", "Uncommon", "Rare", "Epic", "Legendary"];
 var categoryColors = ["lime", "cyan", "CornflowerBlue", "red", "magenta"];
-for (let i = 0; i < itemList.length; i++)
+for (let i = 0; i < aaList.length; i++)
 {
-	itemList[i].sort(alphabetSort);
+	aaList[i].sort(alphabetSort);
 	content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + categoryNames[i] + "</span><br><br>";
-	for (let j = 0; j < itemList[i].length; j++)
+	for (let j = 0; j < aaList[i].length; j++)
 	{
-		content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + itemList[i][j][0] + " - " + itemList[i][j][1] + "</span><span class=\"roleSummary enabled\" style=\"color:" + categoryColors[i] + "\"> - " + itemList[i][j][2] + "</span><br>";
+		content.innerHTML += "<span style=\"color:" + categoryColors[i] + "\">" + aaList[i][j][0] + " - " + aaList[i][j][1] + "</span><span class=\"roleSummary enabled\" style=\"color:" + categoryColors[i] + "\"> - " + aaList[i][j][2] + "</span><br>";
 	}
 	content.innerHTML += "<br>";
 }

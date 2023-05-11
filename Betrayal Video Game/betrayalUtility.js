@@ -11,7 +11,6 @@ const increaseBox = document.getElementById("increaseBox");
 const percentageBox = document.getElementById("percentageBox");
 const coinResults = document.getElementById("coinResults");
 
-
 //For rolelist
 var roleList = [[],[],[]]
 for (let i = 0; i < roles.length; i++)
@@ -24,10 +23,57 @@ for (let i = 0; i < roles.length; i++)
 }
 
 //For itemlist
-
+var itemList = [[],[],[],[],[],[]];
+for (let i = 0; i < items.length; i++)
+{
+	var category = items[i];
+	var itemInner = Object.values(category)[0];
+	for (let j = 0; j < itemInner.length; j++)
+	{
+		var itemSplit = itemInner[j]["Description"].split("-");
+		itemList[i].push(itemSplit[0].trim());
+	}
+}
 
 //For AAlist
-
+var aaList = [[],[],[],[],[]];
+for (let i = 0; i < roles.length; i++)
+{
+	var category = roles[i];
+	var roleList = Object.values(category)[0];
+	for (let j = 0; j < roleList.length; j++)
+	{
+		var role = roleList[j];
+		var abilities = role["Abilities"];
+		if (abilities.length > 0)
+		{				
+			for (let k = 0; k < abilities.length; k++)
+			{
+				var abilitySplit = abilities[k].split("-");
+				if (abilitySplit[2] === " Common ")
+				{
+					aaList[0].push(abilitySplit[0].trim());
+				}
+				else if (abilitySplit[2] === " Uncommon ")
+				{
+					aaList[1].push(abilitySplit[0].trim());
+				}
+				else if (abilitySplit[2] === " Rare ")
+				{
+					aaList[2].push(abilitySplit[0].trim());
+				}
+				else if (abilitySplit[2] === " Epic ")
+				{
+					aaList[3].push(abilitySplit[0].trim());
+				}
+				else if (abilitySplit[2] === " Legendary ")
+				{
+					aaList[4].push(abilitySplit[0].trim());
+				}
+			}
+		}
+	}
+}
 
 function randomPick()
 {
@@ -131,32 +177,168 @@ function getLuckTable()
 
 function submitCarePackages()
 {
-	var luckValues = getLuckTable();
-	luckResults.innerHTML = "";
-	for (let key in luckValues)
-	{
-		luckResults.innerHTML += key + ": " + luckValues[key] + "<br>";
-	}
+	submitItems();
+	submitAAs();
 }
 
 function submitItems()
 {
-	var luckValues = getLuckTable();
+	var luckValues = getLuckTable(); //luckBox value is inside this function
+	var amount = amountBox.value;
+	if (amount == "")
+	{
+		amount = 1;
+	}
+	amount = parseInt(amount);
+	if (amount > 10)
+	{
+		amount = 10;
+	}
+
+	var luckArr = [];
+	var total = 0;
 	luckResults.innerHTML = "";
 	for (let key in luckValues)
 	{
 		luckResults.innerHTML += key + ": " + luckValues[key] + "<br>";
+		luckArr.push(total + luckValues[key]);
+		total += luckValues[key];
 	}
+
+	var itemArr = [];
+	for (let i = 0; i < amount; i++)
+	{
+		var rand = Math.random() * 101;
+		if (rand <= luckArr[0])
+		{
+			var randomItem = itemList[0][Math.floor(Math.random() * itemList[0].length)];
+			itemArr.push(randomItem);
+		}
+		else if (rand > luckArr[0] && rand <= luckArr[1])
+		{
+			var randomItem = itemList[1][Math.floor(Math.random() * itemList[1].length)];
+			itemArr.push(randomItem);
+		}
+		else if (rand > luckArr[1] && rand <= luckArr[2])
+		{
+			var randomItem = itemList[2][Math.floor(Math.random() * itemList[2].length)];
+			itemArr.push(randomItem);
+		}
+		else if (rand > luckArr[2] && rand <= luckArr[3])
+		{
+			var randomItem = itemList[3][Math.floor(Math.random() * itemList[3].length)];
+			itemArr.push(randomItem);
+		}
+		else if (rand > luckArr[3] && rand <= luckArr[4])
+		{
+			var randomItem = itemList[4][Math.floor(Math.random() * itemList[4].length)];
+			itemArr.push(randomItem);
+		}
+		else if (rand > luckArr[4] && rand <= luckArr[5])
+		{
+			var randomItem = itemList[5][Math.floor(Math.random() * itemList[5].length)];
+			itemArr.push(randomItem);
+		}
+	}
+
+	itemResults.innerHTML = "You got the following items: ";
+	for (let i = 0; i < itemArr.length; i++)
+	{
+		if (i == itemArr.length - 1 && i != 0)
+		{
+			itemResults.innerHTML += "and " + itemArr[i];
+		}
+		else if (i == itemArr.length - 1 && i == 0)
+		{
+			itemResults.innerHTML += itemArr[i];
+		}
+		else
+		{
+			itemResults.innerHTML += itemArr[i] + ", ";
+		}
+	}
+	itemResults.innerHTML += "!";
 }
 
 function submitAAs()
 {
-	var luckValues = getLuckTable();
+	var luckValues = getLuckTable(); //luckBox value is inside this function
+	var amount = amountBox.value;
+	if (amount == "")
+	{
+		amount = 1;
+	}
+	amount = parseInt(amount);
+	if (amount > 10)
+	{
+		amount = 10;
+	}
+
+	var luckArr = [];
+	var total = 0;
 	luckResults.innerHTML = "";
 	for (let key in luckValues)
 	{
 		luckResults.innerHTML += key + ": " + luckValues[key] + "<br>";
+		if (key == "Mythical")
+		{
+			luckArr[4] += luckValues[key];
+		}
+		else
+		{
+			luckArr.push(total + luckValues[key]);
+			total += luckValues[key];
+		}
 	}
+
+	var aaArr = [];
+	for (let i = 0; i < amount; i++)
+	{
+		var rand = Math.random() * 101;
+		if (rand <= luckArr[0])
+		{
+			var randomAA = aaList[0][Math.floor(Math.random() * aaList[0].length)];
+			aaArr.push(randomAA);
+		}
+		else if (rand > luckArr[0] && rand <= luckArr[1])
+		{
+			var randomAA = aaList[1][Math.floor(Math.random() * aaList[1].length)];
+			aaArr.push(randomAA);
+		}
+		else if (rand > luckArr[1] && rand <= luckArr[2])
+		{
+			var randomAA = aaList[2][Math.floor(Math.random() * aaList[2].length)];
+			aaArr.push(randomAA);
+		}
+		else if (rand > luckArr[2] && rand <= luckArr[3])
+		{
+			var randomAA = aaList[3][Math.floor(Math.random() * aaList[3].length)];
+			aaArr.push(randomAA);
+		}
+		else if (rand > luckArr[3] && rand <= luckArr[4])
+		{
+			var randomAA = aaList[4][Math.floor(Math.random() * aaList[4].length)];
+			aaArr.push(randomAA);
+		}
+	}
+
+	aaResults.innerHTML = "You got the following AAs: ";
+	for (let i = 0; i < aaArr.length; i++)
+	{
+		if (i == aaArr.length - 1 && i != 0)
+		{
+			aaResults.innerHTML += "and " + aaArr[i];
+		}
+		else if (i == aaArr.length - 1 && i == 0)
+		{
+			aaResults.innerHTML += aaArr[i];
+		}
+		else
+		{
+			aaResults.innerHTML += aaArr[i] + ", ";
+		}
+	}
+	aaResults.innerHTML += "!";
 }
 
 function submitCoins()
