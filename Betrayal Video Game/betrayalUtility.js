@@ -11,14 +11,51 @@ const increaseBox = document.getElementById("increaseBox");
 const percentageBox = document.getElementById("percentageBox");
 const coinResults = document.getElementById("coinResults");
 
+
+//For rolelist
+var roleList = [[],[],[]]
+for (let i = 0; i < roles.length; i++)
+{
+	var roleInner = Object.values(roles[i])[0];
+	for (let j = 0; j < roleInner.length; j++)
+	{
+		roleList[i].push(roleInner[j]["Name"]);
+	}
+}
+
+//For itemlist
+
+
+//For AAlist
+
+
 function randomPick()
 {
-
+	var rand = Math.floor(Math.random() * 60);
+	var ind = 0;
+	if (rand > 39)
+	{
+		ind = 2;
+		rand -= 40;
+	}
+	else if (rand > 19)
+	{
+		ind = 1;
+		rand -= 20;
+	}
+	var rolePicked = roleList[ind][rand];
+	roleResults.innerHTML = "You got " + rolePicked + "!";
 }
 
 function deceptPick()
 {
-
+	var randG = Math.floor(Math.random() * 20);
+	var randN = Math.floor(Math.random() * 20);
+	var randE = Math.floor(Math.random() * 20);
+	var rolePicked0 = roleList[0][randG];
+	var rolePicked1 = roleList[1][randN];
+	var rolePicked2 = roleList[2][randE];
+	roleResults.innerHTML = "You can pick between " + rolePicked0 + ", " + rolePicked1 + ", and " + rolePicked2 + "!";
 }
 
 function getLuckTable()
