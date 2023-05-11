@@ -40,10 +40,10 @@ var aaList = [[],[],[],[],[]];
 for (let i = 0; i < roles.length; i++)
 {
 	var category = roles[i];
-	var roleList = Object.values(category)[0];
-	for (let j = 0; j < roleList.length; j++)
+	var roleListAb = Object.values(category)[0];
+	for (let j = 0; j < roleListAb.length; j++)
 	{
-		var role = roleList[j];
+		var role = roleListAb[j];
 		var abilities = role["Abilities"];
 		if (abilities.length > 0)
 		{				
