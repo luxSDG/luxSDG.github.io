@@ -2,6 +2,7 @@ const roleResults = document.getElementById("roleResults");
 
 const luckBox = document.getElementById("luckBox");
 const amountBox = document.getElementById("amountBox");
+const luckResults = document.getElementById("luckResults");
 const itemResults = document.getElementById("itemResults");
 const aaResults = document.getElementById("aaResults");
 
@@ -20,19 +21,105 @@ function deceptPick()
 
 }
 
+function getLuckTable()
+{
+	var luck = luckBox.value;
+	if (luck == "")
+	{
+		luck = 0;
+	}
+	luck = parseInt(luck);
+    var luckCap = 398;
+
+    if (luck > luckCap) 
+    {
+        luck = luckCap;
+    }
+    var commonOdds = 8000 - 500 * luck;
+    if (commonOdds < 0) 
+    {
+        commonOdds = 0;
+    }
+
+    var uncommonOdds = 1500 + 300 * luck;
+    if (luck > 16) 
+    {
+        uncommonOdds -= 500 * (luck - 16);
+    }
+    if (uncommonOdds < 0) 
+    {
+        uncommonOdds = 0;
+    }
+
+    var rareOdds = 200 + luck * 100;
+    if (luck >= 48) 
+    {
+        rareOdds -= 100 * (luck - 47);
+    }
+    if (luck > 48) 
+    {
+        rareOdds -= 100 * (luck - 48);
+    }
+    if (rareOdds < 0) {
+        rareOdds = 0;
+    }
+
+    var epicOdds = 150 + luck * 50;
+    if (luck > 97) 
+    {
+        epicOdds -= 100 * (luck - 97);
+    }
+    if (epicOdds < 0) 
+    {
+        epicOdds = 0;
+    }
+
+    var legendaryOdds = 100 + luck * 25;
+    if (luck > 197) 
+    {
+        legendaryOdds -= 50 * (luck - 197);
+    }
+
+    var mythicalOdds = 50 + luck * 25;
+
+    return {
+        Common: commonOdds / 100,
+        Uncommon: uncommonOdds / 100,
+        Rare: rareOdds / 100,
+        Epic: epicOdds / 100,
+        Legendary: legendaryOdds / 100,
+        Mythical: mythicalOdds / 100,
+    };
+}
+
 function submitCarePackages()
 {
-
+	var luckValues = getLuckTable();
+	luckResults.innerHTML = "";
+	for (let key in luckValues)
+	{
+		luckResults.innerHTML += key + ": " + luckValues[key] + "<br>";
+	}
 }
 
 function submitItems()
 {
-
+	var luckValues = getLuckTable();
+	luckResults.innerHTML = "";
+	for (let key in luckValues)
+	{
+		luckResults.innerHTML += key + ": " + luckValues[key] + "<br>";
+	}
 }
 
 function submitAAs()
 {
-
+	var luckValues = getLuckTable();
+	luckResults.innerHTML = "";
+	for (let key in luckValues)
+	{
+		luckResults.innerHTML += key + ": " + luckValues[key] + "<br>";
+	}
 }
 
 function submitCoins()
