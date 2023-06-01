@@ -1,0 +1,103 @@
+chars = 
+[
+	{
+		"Assault Rifle":
+		{
+			"Description": "Aya, Isol<br>Late game carries that are usually focused on basic attacks or basic attack weaving, needing to survive till late game to do their job.<br>Always gains this ability at level 4:<br> Overheat (1 day cooldown) - Reload your gun, resetting your basic attack cooldown, allowing another basic attack.",
+			"CharList":
+			[
+				{
+					"Name": "Aya",
+					"Summary": "A police officer with serious firepower and a sense of justice in putting down criminals.",
+					"Color": "#FFFF66",
+					"Image": "",
+					"Lore": "For my light, for my justice.<br>Aya was born with an innate longing for justice, and employed this longing to become a police officer. However, her world and confidence in her job was shaken after her family were victims of a murder case.<br>She became obsessed with her vision of justice, beginning to think that only she was able to bring justice to the world.<br>Aya grew repulsed at the sight of corpses. When her job requires the occasional inspection of an animal corpse, it takes a toll on her psyche.<br>She has a brother named Suzuki Hikaru, who lost both of his legs.",
+					"Description": "Assault Rifle Aya wants to hold a zone down and constantly apply sustain damage on other players. Aya has some intel abilities to know who to avoid. This weapon is very susceptible to blinds.",
+					"Role": "Ranger",
+					"Difficulty": "Easy",
+					"Power Spike": "Mid-Late Game",
+					"HP": "100",
+					"Basic Attack": "10 + (attack power) damage",
+					"Basic Attack Cooldown": "1/2th day cooldown",
+					"Level 1": ["Double Shot (1/2th day cooldown) - Shoot someone, dealing 5 damage twice to a target.",
+						"Steady Shot (1 day cooldown) - Shoot someone multiple times, dealing 5 damage 3 times to a target in 1/10th day intervals.",
+						"Moving Turn (1 day cooldown) - Dash to an adjacent zone.",
+						"Investigation (1 day cooldown) - Give a random piece of information that is useful related to the overall game state."],
+					"Level 4": ["Blank Cartridge (2 day cooldown) - Put an arrest warrant on enemies in the zone, silencing all enemies in the current zone for 1/5th of a day, deal 20 damage.",
+						"Overheat (1 day cooldown) - Reload your gun, resetting your basic attack cooldown, allowing another basic attack."],
+					"Level 7": ["Unlock Tireless.",
+						"Unlock Aya’s Justice."],
+					"Level 10": ["Duty Calls (3 day cooldown) - Fire an explosive round that deals heavy damage, which deals 25 damage to all enemies in the current zone. Heal for the damage done.",
+						"Unlock Explosive Ammo."],
+					"Passives": ["Bulletproof Vest (1 day cooldown) - Shield 10 HP.",
+						"Tireless (Level 7) - Immune to Slows and Roots.",
+						"Aya’s Justice (Level 7, 1 day cooldown) - The first ability used on a target will deal 5% max HP.",
+						"Explosive Ammo (Level 10) - Future ammo will be explosive, doing area of effect damage on basic attacks."]
+				},
+				{
+					"Name": "Isol",
+					"Summary": "A terrorist with guerilla warfare knowledge, using cunning strategies like traps and radar manipulation.",
+					"Color": "#D3D3D3",
+					"Image": "",
+					"Lore": "I can't stop here.<br>Isol, known as Marcelo at the time, escaped his orphanage at the age of 12 at the suggestion of his trusted friend, Francisco.<br>Following his escape, he joined the terrorist group known as MOK. Isol is the sole survivor among the several child soldiers who joined the group around then.<br>He tended to devolve to unnecessarily cruel ways of murder.<br>Isol is overly disinterested in learning about others as he hates unnecessarily forming close relationships.",
+					"Description": "Assault Rifle Isol wants to hold a zone down and constantly apply sustain damage on other players, even more so with the traps that he can provide. This weapon is very susceptible to evasion and disruption effects.",
+					"Role": "Ranger",
+					"Difficulty": "Easy",
+					"Power Spike": "Mid-Late Game",
+					"HP": "100",
+					"Basic Attack": "10 + (attack power) damage",
+					"Basic Attack Cooldown": "1/2th day cooldown",
+					"Level 1": ["Semtex Bomb (1 day cooldown) - Attach a bomb to a target, dealing 5 damage and rooting them for 1/8th of the day after a delay of 1/8th of the day.",
+						"Rebel Assault (1 day cooldown) - Spray suppressing fire down in the current or adjacent zone, dealing 5 damage 3 times to all enemies there with 1/10th of a day separations, slowing them and increasing their cooldowns by 10%.",
+						"Camouflage (1 day cooldown) - Dash to an adjacent zone and turn invisible for next day or until an ability is used."],
+					"Level 4": ["MOK Operational Mine (2 day cooldown) - Set a trap down, enemies stepping on it will trigger the trap over the entire zone, be slowed with an increase of 20% cooldown, and take 20 damage.",
+						"Overheat (1 day cooldown) - Reload your gun, resetting your basic attack cooldown, allowing another basic attack."],
+					"Level 7": ["Learn from the Dead (3 day cooldown) - Check a corpse’s character and learn a unique passive from the character or the character’s gear, even passives that are not unlocked by the player.",
+						"Radar Tampering (3 day cooldown) - Mess with your location tracking, immediately becoming invisible, lasts for 1 day.",
+						"Unlock Urban Assault."],
+					"Level 10": ["Venus Fly Trap (2 day cooldown) - Set a trap down, enemies stepping on it will trigger the trap over the zone, be stunned for 1/4th of the day, and take 10 damage.",
+						"Unlock Armor Piercing Traps."],
+					"Passives": ["Guerilla Warfare - You can see other traps that aren’t yours in adjacent zones. You know who steps on your traps and which player and character did.",
+						"Urban Assault (Level 7) - Basic attacks deal 10 extra damage to trapped targets.",
+						"Armor Piercing Traps (Level 10) - Trap damage ignores damage reduction, including MOK Mines and Venus Fly Traps."]
+				}
+			]
+		}
+	},
+	{
+		"Pistol":
+		{
+			"Description": "Aya, Isol, Jenny<br>Mobile characters with some potential for range, decent damage, and generally are somewhat durable or survivable. Jack of all trades.<br>Always gains this ability at level 4:<br> Moving Reload (2 day cooldown) - Reload your gun, reducing cooldowns by 25%.",
+			"CharList":
+			[
+				{
+					"Name": "Aya",
+					"Summary": "A police officer with serious firepower and a sense of justice in putting down criminals.",
+					"Color": "#FFFF66",
+					"Image": "",
+					"Lore": "For my light, for my justice.<br>Aya was born with an innate longing for justice, and employed this longing to become a police officer. However, her world and confidence in her job was shaken after her family were victims of a murder case. <br>She became obsessed with her vision of justice, beginning to think that only she was able to bring justice to the world.<br>Aya grew repulsed at the sight of corpses. When her job requires the occasional inspection of an animal corpse, it takes a toll on her psyche.<br>She has a brother named Suzuki Hikaru, who lost both of his legs.",
+					"Description": "Pistol Aya wants to play very quickly, build an early weapon and do significant damage with many abilities. Aya with a pistol is scary in the early game and should be avoided early. Aya also has some intel abilities to gain intel on who to pick off early first.",
+					"Role": "Ranger",
+					"Difficulty": "Easy",
+					"Power Spike": "Early Game",
+					"HP": "100",
+					"Basic Attack": "10 damage",
+					"Basic Attack Cooldown": "1 day cooldown",
+					"Level 1": ["Double Shot (1/4th day cooldown) - Shoot someone, dealing 10 damage twice to a target.",
+						"Steady Shot (1/2th day cooldown) - Shoot someone multiple times, dealing 0 + (attack power) damage 3 times to a target in 1/10th day intervals.",
+						"Moving Turn (1 day cooldown) - Dash to an adjacent zone.",
+						"Investigation (1 day cooldown) - Give a random piece of information that is useful related to the overall game state."],
+					"Level 4": ["Blank Cartridge (2 day cooldown) - Put an arrest warrant on enemies in the zone, silencing all enemies in the current zone for 1/5th of a day, deal 20 damage.",
+						"Moving Reload (2 day cooldown) - Reload your gun, reducing cooldowns by 25%.",
+						"Pinning Shot (1/2th day cooldown) - Shot someone in the leg, dealing 5 damage and slowing a target, increasing their cooldowns by 10%."],
+					"Level 7": ["Retreating Fire (1 day cooldown) - Fire at a target for 5 damage, running to an adjacent zone. Must choose to run to some adjacent zone.",
+						"Unlock Aya’s Justice.",
+						"Steady Shot becomes an area of effect, dealing damage to all enemies in the zone. Steady Shot can target any adjacent zone too."],
+					"Level 10": ["Duty Calls (2 day cooldown) - Fire an explosive round that deals heavy damage, which deals 25 damage to all enemies in the current zone. Heal for the damage done."],
+					"Passives": ["Bulletproof Vest (1 day cooldown) - Shield 10 HP.",
+						"Aya’s Justice (Level 7, 1 day cooldown) - The first ability used on a target will deal 5% max HP."]
+				}
+			]
+		}
+	}
+]

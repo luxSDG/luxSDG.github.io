@@ -1,0 +1,54 @@
+items =
+[
+	{
+		"Weapons":
+		{
+			"Description": "Damage dealing items that are specific per character. Can only swap between different weapon classes if the character can do so, and will always keep the original weapon’s abilities and charges. Only way to gain attack power of all items.",
+			"ItemList": []
+		},
+		"Arcana":
+		{
+			"Description": "A more complex support focused weapon that provides significant utility and sustain damage.",
+			"ItemList": 
+			[
+				{
+					"Name": "The Moon",
+					"Rarity": "Legendary",
+					"Description": "",
+					"Image": "",
+					"Build Path": ["Mirror Core (Glass Bead + Alcohol)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Temporal Refraction (1 day cooldown) - Block the first spell that deals damage done to you entirely."]
+				},
+				{
+					"Name": "The Empress",
+					"Rarity": "Legendary",
+					"Description": "",
+					"Image": "",
+					"Build Path": ["Frigid Pearl (Glass Bead + Ice)",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				}
+			]
+		},
+		"Assault Rifle":
+		{
+			"Description": "A more straightforward raw damage/stand your ground weapon.",
+			"ItemList":
+			[
+				{
+					"Name": "Judgment",
+					"Rarity": "Legendary",
+					"Description": "",
+					"Image": "",
+					"Build Path": ["STG-44 (Fedorova + Gunpowder)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Armor-Piercing - Basic attacks ignore any damage resistance."]
+				}
+			]
+		}
+	}
+]

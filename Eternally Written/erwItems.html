@@ -40,14 +40,22 @@
       <hr>
     </div>
 
+    <div class="px-4 col-lg-8 mx-auto searchBar">
+      <p>Summary <input class="form-check-input summaryBox" type="checkbox" checked="true" id="flexCheckDefault" onclick="switchSummary()"></p>
+      <input type="search" class="form-control searchBox" id="searchBox" placeholder="Search...">
+    </div>
+
     <div class="px-4 py-2 my-5 text-center">
-      <h1 class="display-5 fw-bold">Eternally Written</h1>
+      <h1 class="display-5 fw-bold">Item List</h1>
       <div class="col-lg-8 mx-auto">
-        <p class="lead mb-4"><small>Work In Progress!
+        <p>This is split into a multitude of categories, including equipable items and consumables. Each character may equip 1 weapon, 1 chest, 1 head, 1 arm, 1 legs, and 1 accessory. Each character has at least 10 inventory slots. Characters can constantly swap items equipped with non-equipped items.</p>
+        <p class="lead mb-4 leftAligned" id="content"><small>
         </small></p>
       </div>
     </div>
 
+    <script type="text/javascript" src="erwItems.json"></script>
+    <script type="text/javascript" src="erwItems.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
