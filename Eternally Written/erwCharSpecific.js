@@ -2,6 +2,7 @@ const url = window.location.href;
 const indexStart = url.indexOf("?") + 10;
 const indexMid = url.indexOf("&") + 4;
 
+//For mid index
 var urlMid = 0;
 var count = 0;
 for (let i = 0; i < url.length; i++)
@@ -31,9 +32,68 @@ const sideBar = document.getElementById("sideBar");
 const backLink = document.getElementById("backLink");
 const nextLink = document.getElementById("nextLink");
 const searchBox = document.getElementById("searchBox");
+const linkWeapons = document.getElementById("linkWeapons");
 
 //For search
 var searchList = [];
+
+//For Sidebar
+var index = 0;
+for (let i = 0; i < chars.length; i++)
+{
+	var category = chars[i];
+	var categoryName = Object.keys(category)[0];
+	var charList = Object.values(category)[0]["CharList"];
+
+	for (let j = 0; j < charList.length; j++)
+	{
+		var char = charList[j];
+		var charName = char["Name"];
+		var categoryColor = char["Color"];
+		var charMain = char["Main"];
+		if (index === indexSearched)
+		{
+			sideBar.innerHTML += "<a href=\"erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index + "&main=" + charMain +
+			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
+			 + categoryColor + "\">" + categoryName + " " + charName + "</small></div></a>";
+		}
+		else
+		{
+			sideBar.innerHTML += "<a href=\"erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index + "&main=" + charMain +
+			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
+			 + categoryColor + "\">" + categoryName + " " + charName + "</small></div></a>";
+		}
+
+		var link = "erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index + "&main=" + charMain;
+		searchList.push([categoryName.toString() + " " + charName, link]);
+		searchList.push([categoryName.toString() + " " + charName.toLowerCase(), link]);
+		searchList.push([categoryName.toString().toLowerCase() + " " + charName, link]);
+		searchList.push([categoryName.toString().toLowerCase() + " " + charName.toLowerCase(), link]);
+		if (charMain)
+		{
+			searchList.push([charName, link]);
+			searchList.push([charName.toLowerCase(), link]);
+		}
+		if (charName === roleSearched)
+		{
+			linkWeapons.innerHTML += "<a href=\"erwCharSpecific.html?category=" + categoryName + "&id=" + charName + 
+			"&index=" + index + "&main=" + charMain + "\"style=\"color:"+ categoryColor + "\">" + categoryName + " " + charName + "</a><br>";
+		}
+
+		if (index === indexSearched-1)
+		{
+			backLink.innerHTML += "<a href=\"erwCharSpecific.html?category=" + categoryName + "&id=" + charName + 
+			"&index=" + index + "&main=" + charMain + "\"style=\"color:"+ categoryColor + "\">" + categoryName + " " + charName + "</a>";
+		}
+		if (index === indexSearched+1)
+		{
+			nextLink.innerHTML += "<a href=\"erwCharSpecific.html?category=" + categoryName + "&id=" + charName + 
+			"&index=" + index + "&main=" + charMain + "\"style=\"color:" + categoryColor + "\">" + categoryName + " " + charName + "</a>";
+		}
+		index += 1;
+	}
+}
+document.getElementById("activeSideBar").scrollIntoView();
 
 //For main page
 for (let i = 0; i < chars.length; i++)
@@ -55,7 +115,7 @@ for (let i = 0; i < chars.length; i++)
 				var imageSource = char["Image"];
 				imagePic.src = imageSource;
 				head.innerHTML += roleSearched;
-				content.innerHTML += "<h5>" + categoryName + "</h5>";
+				content.innerHTML += "<h5>" + categoryName + "</h5><br>";
 				content.innerHTML += "<br>Lore: <br>" + char["Lore"];
 				content.innerHTML += "<br><br>Description: <br>" + char["Description"];
 				content.innerHTML += "<br><br>Role: " + char["Role"];
@@ -118,56 +178,6 @@ for (let i = 0; i < chars.length; i++)
 		}
 	}
 }
-
-
-//For Sidebar
-var index = 0;
-for (let i = 0; i < data.length; i++)
-{
-	var category = data[i];
-
-	//Categories for each BAT role, e.g. faction and/or subclass
-	var categoryName = Object.keys(category);
-
-	//Specific roles per category
-	var roleList = Object.values(category)[0];
-
-	for (let j = 0; j < roleList.length; j++)
-	{
-		var role = roleList[j];
-		var roleName = role["Name"];
-		var categoryColor = role["Color"];
-		if (index === indexSearched)
-		{
-			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
-			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + roleName + "</small></div></a>";
-		}
-		else
-		{
-			sideBar.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index + 
-			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + roleName + "</small></div></a>";
-		}
-
-		var link = "batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + "&index=" + index;
-		searchList.push([roleName, link]);
-		searchList.push([roleName.toLowerCase(), link]);
-
-		if (index === indexSearched-1)
-		{
-			backLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + roleName + "</a>";
-		}
-		if (index === indexSearched+1)
-		{
-			nextLink.innerHTML += "<a href=\"batRoleSpecific.html?category=" + categoryName + "&id=" + roleName + 
-			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + roleName + "</a>";
-		}
-		index += 1;
-	}
-}
-document.getElementById("activeSideBar").scrollIntoView();
 
 document.onkeypress = function (event) {
 	if (event.keyCode === 13)
