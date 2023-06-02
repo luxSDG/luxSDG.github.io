@@ -5,7 +5,9 @@ items =
 		{
 			"Description": "Damage dealing items that are specific per character. Can only swap between different weapon classes if the character can do so, and will always keep the original weapon’s abilities and charges. Only way to gain attack power of all items.",
 			"ItemList": []
-		},
+		}
+	},
+	{
 		"Arcana":
 		{
 			"Description": "A more complex support focused weapon that provides significant utility and sustain damage.",
@@ -32,7 +34,9 @@ items =
 					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
 				}
 			]
-		},
+		}
+	},
+	{
 		"Assault Rifle":
 		{
 			"Description": "A more straightforward raw damage/stand your ground weapon.",

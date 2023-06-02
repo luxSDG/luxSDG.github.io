@@ -31,8 +31,6 @@ for (let i = 0; i < chars.length; i++)
 		
 		var link = "erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index + "&main=" + charMain;
 		searchList.push([categoryName.toString() + " " + charName, link]);
-		searchList.push([categoryName.toString() + " " + charName.toLowerCase(), link]);
-		searchList.push([categoryName.toString().toLowerCase() + " " + charName, link]);
 		searchList.push([categoryName.toString().toLowerCase() + " " + charName.toLowerCase(), link]);
 		if (charMain)
 		{
