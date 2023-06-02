@@ -3,15 +3,16 @@ chars =
 	{
 		"Assault Rifle":
 		{
-			"Description": "Aya, Isol<br>Late game carries that are usually focused on basic attacks or basic attack weaving, needing to survive till late game to do their job.<br>Always gains this ability at level 4:<br> Overheat (1 day cooldown) - Reload your gun, resetting your basic attack cooldown, allowing another basic attack.",
+			"Description": "Late game carries that are usually focused on basic attacks or basic attack weaving, needing to survive till late game to do their job.",
 			"CharList":
 			[
 				{
 					"Name": "Aya",
 					"Summary": "A police officer with serious firepower and a sense of justice in putting down criminals.",
 					"Color": "#FFFF66",
-					"Image": "",
-					"Lore": "For my light, for my justice.<br>Aya was born with an innate longing for justice, and employed this longing to become a police officer. However, her world and confidence in her job was shaken after her family were victims of a murder case.<br>She became obsessed with her vision of justice, beginning to think that only she was able to bring justice to the world.<br>Aya grew repulsed at the sight of corpses. When her job requires the occasional inspection of an animal corpse, it takes a toll on her psyche.<br>She has a brother named Suzuki Hikaru, who lost both of his legs.",
+					"Main": false,
+					"Image": "erwimages/chars/Aya.png",
+					"Lore": "For my light, for my justice.<br><br>Aya was born with an innate longing for justice, and employed this longing to become a police officer. However, her world and confidence in her job was shaken after her family were victims of a murder case.<br><br>She became obsessed with her vision of justice, beginning to think that only she was able to bring justice to the world.<br><br>Aya grew repulsed at the sight of corpses. When her job requires the occasional inspection of an animal corpse, it takes a toll on her psyche.<br><br>She has a brother named Suzuki Hikaru, who lost both of his legs.",
 					"Description": "Assault Rifle Aya wants to hold a zone down and constantly apply sustain damage on other players. Aya has some intel abilities to know who to avoid. This weapon is very susceptible to blinds.",
 					"Role": "Ranger",
 					"Difficulty": "Easy",
@@ -38,11 +39,12 @@ chars =
 					"Name": "Isol",
 					"Summary": "A terrorist with guerilla warfare knowledge, using cunning strategies like traps and radar manipulation.",
 					"Color": "#D3D3D3",
-					"Image": "",
-					"Lore": "I can't stop here.<br>Isol, known as Marcelo at the time, escaped his orphanage at the age of 12 at the suggestion of his trusted friend, Francisco.<br>Following his escape, he joined the terrorist group known as MOK. Isol is the sole survivor among the several child soldiers who joined the group around then.<br>He tended to devolve to unnecessarily cruel ways of murder.<br>Isol is overly disinterested in learning about others as he hates unnecessarily forming close relationships.",
+					"Main": true,
+					"Image": "erwimages/chars/Isol.png",
+					"Lore": "I can't stop here.<br><br>Isol, known as Marcelo at the time, escaped his orphanage at the age of 12 at the suggestion of his trusted friend, Francisco.<br><br>Following his escape, he joined the terrorist group known as MOK. Isol is the sole survivor among the several child soldiers who joined the group around then.<br><br>He tended to devolve to unnecessarily cruel ways of murder.<br><br>Isol is overly disinterested in learning about others as he hates unnecessarily forming close relationships.",
 					"Description": "Assault Rifle Isol wants to hold a zone down and constantly apply sustain damage on other players, even more so with the traps that he can provide. This weapon is very susceptible to evasion and disruption effects.",
 					"Role": "Ranger",
-					"Difficulty": "Easy",
+					"Difficulty": "Medium",
 					"Power Spike": "Mid-Late Game",
 					"HP": "100",
 					"Basic Attack": "10 + (attack power) damage",
@@ -67,15 +69,16 @@ chars =
 	{
 		"Pistol":
 		{
-			"Description": "Aya, Isol, Jenny<br>Mobile characters with some potential for range, decent damage, and generally are somewhat durable or survivable. Jack of all trades.<br>Always gains this ability at level 4:<br> Moving Reload (2 day cooldown) - Reload your gun, reducing cooldowns by 25%.",
+			"Description": "Mobile characters with some potential for range, decent damage, and generally are somewhat durable or survivable. Jack of all trades.",
 			"CharList":
 			[
 				{
 					"Name": "Aya",
 					"Summary": "A police officer with serious firepower and a sense of justice in putting down criminals.",
 					"Color": "#FFFF66",
-					"Image": "",
-					"Lore": "For my light, for my justice.<br>Aya was born with an innate longing for justice, and employed this longing to become a police officer. However, her world and confidence in her job was shaken after her family were victims of a murder case. <br>She became obsessed with her vision of justice, beginning to think that only she was able to bring justice to the world.<br>Aya grew repulsed at the sight of corpses. When her job requires the occasional inspection of an animal corpse, it takes a toll on her psyche.<br>She has a brother named Suzuki Hikaru, who lost both of his legs.",
+					"Main": true,
+					"Image": "erwimages/chars/Aya.png",
+					"Lore": "For my light, for my justice.<br><br>Aya was born with an innate longing for justice, and employed this longing to become a police officer. However, her world and confidence in her job was shaken after her family were victims of a murder case.<br><br>She became obsessed with her vision of justice, beginning to think that only she was able to bring justice to the world.<br><br>Aya grew repulsed at the sight of corpses. When her job requires the occasional inspection of an animal corpse, it takes a toll on her psyche.<br><br>She has a brother named Suzuki Hikaru, who lost both of his legs.",
 					"Description": "Pistol Aya wants to play very quickly, build an early weapon and do significant damage with many abilities. Aya with a pistol is scary in the early game and should be avoided early. Aya also has some intel abilities to gain intel on who to pick off early first.",
 					"Role": "Ranger",
 					"Difficulty": "Easy",

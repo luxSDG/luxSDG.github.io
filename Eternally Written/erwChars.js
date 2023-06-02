@@ -9,26 +9,36 @@ var index = 0;
 for (let i = 0; i < chars.length; i++)
 {
 	var category = chars[i];
-
-	//Specific chars per category
-	var charList = Object.values(category)[0];
-	var categoryColor = charList[0]["Color"];
-
-	//Categories for each char
 	var categoryName = Object.keys(category);
-	content.innerHTML += "<span style=\"color:" + categoryColor + "\">" + categoryName[0] + "</span><br>";
 
-	for (let j = 1; j < charList.length; j++)
+	//Restructured to fit the new json structure (description per category)
+	var innerDetails = Object.values(category)[0];
+	var categoryDesc = innerDetails["Description"];
+	var charList = innerDetails["CharList"];
+	content.innerHTML += "<span style=\"color: white\">" + categoryName[0] + "</span><span class=\"roleSummary enabled\"> - " + categoryDesc + "</span><br><br>";
+
+	for (let j = 0; j < charList.length; j++)
 	{
 		var char = charList[j];
 		var charName = char["Name"];
-		var charSummary = char["Description"];
-		content.innerHTML += "&emsp;<a href=\"erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index + "\" style=\"color:"
-		 + categoryColor + "\">" + charName + "</a><span class=\"roleSummary enabled\" style=\"color:" + categoryColor + "\"> - " + charSummary + "</span><br>";
+		var charSummary = char["Summary"];
+		var charColor = char["Color"];
+		var charMain = char["Main"];
+		var charRole = char["Role"];
+		var charDiff = char["Difficulty"];
+		content.innerHTML += "&emsp;<a href=\"erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index + "&main=" + charMain + "\" style=\"color:"
+		 + charColor + "\">" + charName + "</a><span class=\"roleSummary enabled\" style=\"color:" + charColor + "\">  (" + charDiff + ", " + charRole + ") - " + charSummary + "</span><br>";
 		
-		var link = "erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index;
-		searchList.push([charName, link]);
-		searchList.push([charName.toLowerCase(), link]);
+		var link = "erwCharSpecific.html?category=" + categoryName + "&id=" + charName + "&index=" + index + "&main=" + charMain;
+		searchList.push([categoryName.toString() + " " + charName, link]);
+		searchList.push([categoryName.toString() + " " + charName.toLowerCase(), link]);
+		searchList.push([categoryName.toString().toLowerCase() + " " + charName, link]);
+		searchList.push([categoryName.toString().toLowerCase() + " " + charName.toLowerCase(), link]);
+		if (charMain)
+		{
+			searchList.push([charName, link]);
+			searchList.push([charName.toLowerCase(), link]);
+		}
 
 		index += 1;
 	}

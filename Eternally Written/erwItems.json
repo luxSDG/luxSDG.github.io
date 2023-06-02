@@ -14,8 +14,8 @@ items =
 				{
 					"Name": "The Moon",
 					"Rarity": "Legendary",
-					"Description": "",
-					"Image": "",
+					"Description": "Spell Shield Arcana",
+					"Image": "erwimages/items/arcana/TheMoon.png",
 					"Build Path": ["Mirror Core (Glass Bead + Alcohol)",
 						"Moonstone (Meteorite + Stone)"],
 					"Statistics": ["25 Attack Power"],
@@ -24,8 +24,8 @@ items =
 				{
 					"Name": "The Empress",
 					"Rarity": "Legendary",
-					"Description": "",
-					"Image": "",
+					"Description": "Slowing Arcana",
+					"Image": "erwimages/items/arcana/TheEmpress.png",
 					"Build Path": ["Frigid Pearl (Glass Bead + Ice)",
 						"Glacial Ice (Tree of Life + Ice)"],
 					"Statistics": ["25 Attack Power"],
@@ -41,8 +41,8 @@ items =
 				{
 					"Name": "Judgment",
 					"Rarity": "Legendary",
-					"Description": "",
-					"Image": "",
+					"Description": "Armor Piercing Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/Judgment.png",
 					"Build Path": ["STG-44 (Fedorova + Gunpowder)",
 						"Force Core (Meteorite + Tree of Life)"],
 					"Statistics": ["30 Attack Power"],
