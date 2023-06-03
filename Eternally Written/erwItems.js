@@ -4,8 +4,32 @@ const searchBox = document.getElementById("searchBox");
 //For search
 var searchList = [];
 
+//For separate item sections
+function categoryEnabled(categoryN) {
+	categoryN = 2;
+  var checkbox = document.getElementById("checkbox-" + categoryN);
+  var roleList = document.getElementsByClassName(categoryN);
+  if (checkbox.checked)
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("enabled");
+  		roleList[i].classList.remove("disabled");
+  	}
+  } 
+  else 
+  {
+  	for (let i = 0; i < roleList.length; i++)
+  	{
+  		roleList[i].classList.add("disabled");
+  		roleList[i].classList.remove("enabled");
+  	}
+  }
+}
+
 //For list
 var index = 0;
+var categoryCount = 0;
 for (let i = 0; i < items.length; i++)
 {
 	var category = items[i];
@@ -15,7 +39,11 @@ for (let i = 0; i < items.length; i++)
 	var innerDetails = Object.values(category)[0];
 	var categoryDesc = innerDetails["Description"];
 	var itemList = innerDetails["ItemList"];
-	content.innerHTML += "<span style=\"color: white\">" + categoryName[0] + "</span><span class=\"roleSummary enabled\"> - " + categoryDesc + "</span><br><br>";
+	if (itemList.length != 0)
+	{
+		content.innerHTML += "<p>Category Enabled <input class=\"form-check-input categoryBox\" type=\"checkbox\" id=" + "checkbox-" + categoryCount + " onclick=\"categoryEnabled(\'' + categoryCount + '\')\"></p>";
+	}
+	content.innerHTML += "<span style=\"color: white\">" + categoryName + "</span><span class=\"roleSummary enabled\"> - " + categoryDesc + "</span><br><br>";
 
 	for (let j = 0; j < itemList.length; j++)
 	{
@@ -46,9 +74,8 @@ for (let i = 0; i < items.length; i++)
 			itemColor = "white";
 		}
 
-
-		content.innerHTML += "&emsp;<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index + "\" style=\"color:"
-		 + itemColor + "\">" + itemName + "</a><span class=\"roleSummary enabled\" style=\"color:" + itemColor + "\"> - " + itemSummary + "</span><br>";
+		content.innerHTML += "&emsp;<a class=\"" + categoryCount + " disabled\" href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index + "\" style=\"color:"
+		 + itemColor + "\">" + itemName + "</a><span class=\"roleSummary " + categoryCount + " disabled\" style=\"color:" + itemColor + "\"> - " + itemSummary + "</span><br class=\"" + categoryCount + " disabled\">";
 		
 		var link = "erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index;
 		searchList.push([itemName, link]);
@@ -56,6 +83,7 @@ for (let i = 0; i < items.length; i++)
 
 		index += 1;
 	}
+	categoryCount += 1;
 	content.innerHTML += "<br>";
 }
 
