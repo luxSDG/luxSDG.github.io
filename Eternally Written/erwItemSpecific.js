@@ -132,33 +132,38 @@ for (let i = 0; i < items.length; i++)
 			categoryColor = "white";
 		}
 
-		if (index === indexSearched)
+		if (categoryName === categorySearched)
 		{
-			sideBar.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index +
-			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + itemName + "</small></div></a>";
-		}
-		else
-		{
-			sideBar.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index +
-			"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
-			 + categoryColor + "\">" + itemName + "</small></div></a>";
+			if (index === indexSearched)
+			{
+				sideBar.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index +
+				"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0 active2\" id=\"activeSideBar\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
+				 + categoryColor + "\">" + itemName + "</small></div></a>";
+			}
+			else
+			{
+				sideBar.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index +
+				"\"class=\"list-group-item list-group-item-action darker py-3 lh-tight border-0\"><div class=\"d-flex w-100 align-items-center justify-content-between\"><small style=\"color:"
+				 + categoryColor + "\">" + itemName + "</small></div></a>";
+			}
+
+
+			if (index === indexSearched-1)
+			{
+				backLink.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + 
+				"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + itemName + "</a>";
+			}
+			if (index === indexSearched+1)
+			{
+				nextLink.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + 
+				"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + itemName + "</a>";
+			}
 		}
 
 		var link = "erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index;
 		searchList.push([itemName, link]);
 		searchList.push([itemName.toLowerCase(), link]);
 
-		if (index === indexSearched-1)
-		{
-			backLink.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + 
-			"&index=" + index + "\"style=\"color:"+ categoryColor + "\">" + itemName + "</a>";
-		}
-		if (index === indexSearched+1)
-		{
-			nextLink.innerHTML += "<a href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + 
-			"&index=" + index + "\"style=\"color:" + categoryColor + "\">" + itemName + "</a>";
-		}
 		index += 1;
 	}
 }

@@ -56,7 +56,7 @@ for (let i = 0; i < items.length; i++)
 
 		index += 1;
 	}
-	content.innerHTML += "</p><br>";
+	content.innerHTML += "<br>";
 }
 
 //For checkbox
