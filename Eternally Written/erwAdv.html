@@ -41,9 +41,305 @@
     </div>
 
     <div class="px-4 py-2 my-5 text-center">
-      <h1 class="display-5 fw-bold">Eternally Written</h1>
+      <h1 class="display-5 fw-bold">Detailed Info</h1>
       <div class="col-lg-8 mx-auto">
-        <p class="lead mb-4"><small>Work In Progress!
+        <p class="lead mb-4 text-start"><small>
+          <span style="font-weight: bold;">General Flow:</span>
+          <br>
+          Each player will play using a map that updates dynamically based on what the player does. The game flow requires players to choose actions every day. The concept is to make the game turn based.
+          <br>
+          <br>
+          Basic game flow is: pick a character, either team up with someone if it is duo or trio mode or not, choose a zone to start at, immediately start searching/crafting/setting up a particular build path, go for objectives once you have a few items and some foods and drinks, fight and hunt other players, while killing any animals in your path, level up significantly, try to make legendary items and stock up on foods and drinks, move towards the final zone and avoid red zones, and try to reach first as a player or team. (Or realize you are too weak and escape).
+          <br>
+          <br>
+          Where does the social deduction or strategy come in then? A big part of the social aspect is trying to figure out who is playing what character (as many may fake claim to seem less threatening), who is allied with one another (if it isn’t revealed to all), trying to ceasefire with others, trying to give food and items to another player or team for survival, escaping together, and more.
+          <br>
+          <br>
+          <span style="font-weight: bold;">House Rules:</span>
+          <br>
+          -Select Map, PvP (turn based long form) vs PvP (real time short form) vs PvE (real time either form). Default PvP (turn based long form)
+          <br>
+          >>>There is one map for now, Lumia Island, and 3 or so modes, in which PvP combat can be turn based or real time depending on availability, and PvE combat can be done in real time as it is to fight versus the host. However, I am open to making more maps and more designs.
+          <br>
+          -Solos, Duos, Trios, More; random or chosen allies. Depends on the number of players in game, and can be flexible to fit any kind of format (e.g. offset team numbers). Default Duos
+          <br>
+          >>>Solos can only win solo or escape, Duos can win together with a teammate, Squads/Trios can win with 2 others, etc.
+          <br>
+          -Character Selection: pick between 5, all random, all pick, draft, anything in between; Unique vs non-unique picks; Default pick between 5 and unique
+          <br>
+          >>>Pick between 5 allows each player to pick between 5 characters, starting from a random player. All random gives each player a random character. All picks allow every character to pick any character. Draft mode allows picks and bans of characters
+          <br>
+          -Warnings on the map upon fighting (y/n) and death callouts upon players dying (X killed Y, X has died, or no notification at all), along with continuing to be social with others or not after death (y/n), Default no, X has died, and yes
+          <br>
+          -Number of materials gained per search (1-3); Default 3
+          <br>
+          -Character revealed (y/n); Default not revealed
+          <br>
+          <br>
+          <span style="font-weight: bold;">Character Card:</span>
+          <br>
+          Character Name
+          <br>
+          -Location: Where the character is currently.
+          <br>
+          -Active Abilities: List of active abilities.
+          <br>
+          -Passives: List of passives.
+          <br>
+          -Statuses: List of statuses.
+          <br>
+          -Equipped Items: Set of items for armor and weapons. Maximum 1 weapon, 1 chest, 1 head, 1 arm, 1 legs, and 1 accessory.
+          <br>
+          -Inventory: Up to 10 items, any of consumables, materials, and unequipped weapons or other items. Consumables include items like food, drink, wards, traps. Materials include items that can be assembled or disassembled into something else.
+          <br>
+          -Health: Health count (HP).
+          <br>
+          -Attack Power: Attack Power count, used to increase the amount of damage per ability or basic attack.
+          <br>
+          -Basic Attack: Damage of a basic attack.
+          <br>
+          -Credits: Currency to buy items. Passively gain 10 credits a day.
+          <br>
+          -Additional Stats: Extra stats on items or other stats in character kits.
+          <br>
+          -Level: Level count and experience, used to determine what abilities are up and whatnot. Level 10 is the maximum, and players gain a passive level per day/night cycle; level 4, 7, and 10 are power spikes. 5 experience points are needed to level up each time.
+          <br>
+          <br>
+          <span style="font-weight: bold;">General Actions and Mechanics:</span>
+          <br>
+          Every character can do a set of actions no matter what class they are. Every player can choose an unlimited set of actions per day, but some actions, such as moving, resting, and searching are limited.
+          <br>
+          <br>
+          Moving: This can only be done twice a day, barring movement abilities. Select any zone on the map to move into.
+          <br>
+          <br>
+          Resting: Rest for 1/4th of a day in order to regain full HP.
+          <br>
+          <br>
+          Searching: Grant 3 to 5 random (or pseudorandom, or pick between 3 per 5 times) materials or items from the zone and consumables of common, uncommon, and rare rarity. 1 Rare, 2 Uncommon, 2 Common are guaranteed every time in the first 2 days. 1 Uncommon and 2 Common on any other day. Can only be done once per day.
+          <br>
+          <br>
+          Credit Buying: Spend credits to buy items. Common items cost 10 currency. Uncommon items are 20 currency. Rare items are 30 currency. Epic items are 40 currency. Meteorite, Tree of Life, and Mithril cost 40 currency. Force Core is 50 currency. VF Blood Sample is 60 currency. Escape Cuff is 30 currency. Code of Knowledge is 40 currency. First Aid Kit is 30 currency.
+          <br>
+          <br>
+          Crafting (and disassembling): Combine or disassemble materials unlimitedly depending on what materials you have to make any sort of item that you want. This can happen immediately during any day after searching/looting bodies/etc. You can craft and disassemble items that are equipped or unequipped too. Can exceed the 10 item inventory limit, but may not exceed 10 items after the day is done, and will be forced to choose items to drop.
+          <br>
+          <br>
+          Basic Attacks: Every character has a basic attack that can be used once per day unless otherwise modified. This attack can be significantly modified and might be the main damage source that a specific character may use.
+          <br>
+          <br>
+          Spells/Abilities: Every ability other than the basic attack is a spell unless otherwise stated. These include damaging abilities or other abilities in general.
+          <br>
+          <br>
+          Collect rare material: Collect the Tree of Life or Meteorite. Takes 1/5th of a day. Each can cancel each other’s take of the material through stuns, knockbacks, and pulls.
+          <br>
+          <br>
+          Escape: If you have an Escape Cuff, go to a zone with a teleporter and use the escape cuff. Upon escaping using the kit, they simply escape from the game. Only 3 players or teams can escape, and they must do so before day 6.
+          <br>
+          <br>
+          Swap Equipped Items: Equipped items can be swapped at any point, which changes the stats, passives, and active abilities available at that action slot, even with multiple weapon types. Cooldowns and charges follow the starting weapon.
+          <br>
+          <br>
+          Trade Items: At any point, items can be traded and unequipped or equipped of any kind, food, armor, weapons, etc. Will be processed once the day is done.
+          <br>
+          <br>
+          Drop Items: At any point, items can be dropped, destroying them forever after the day is done.
+          <br>
+          <br>
+          Targeting: You can pick any target with single target abilities or basic abilities between wild animals/enemies and other players (including allies) in the zone (or in other zones if specified in the ability). Area of Effect abilities can affect any set number of enemies, whether it be all enemies, allies and enemies, or enemies including animals.
+          <br>
+          <br>
+          Leveling: Automatically gain a full level per day. Every 5% of another player’s HP that you deal damage to, you gain a single XP point. Animals give a certain amount of XP per kill of each enemy. If on 12 hour phases, gain 2.5 XP points per phase.
+          <br>
+          <br>
+          Red Zone: Take significant 50% max HP damage in a red zone every time the player ends a day in a red zone.
+          <br>
+          <br>
+          Corpse Looting: You can take items inside corpses of players from the same zone (or any distance in PvE).
+          <br>
+          <br>
+          Dying and Reviving: Before you die, you have a day of “Death’s Door” where you will be set to 10% HP and stunned for the day. If you die during this day, you are 100% dead, otherwise you will be unstunned and have 10% HP after. An ally can spend 1/4th of a day to revive you, making you invulnerable to any damage in that duration, but forcing the ally to spend that time to revive you.
+          <br>
+          <br>
+          <span style="font-weight: bold;">Statuses, Stats, and general terminology:</span>
+          <br>
+          There will be crowd control and similar effects to force enemies to have to think around instead of comboing every single time in the same way. All statuses affect the opposition either in the middle of their chain of actions, or as soon as they start using actions.
+          <br>
+          <br>
+          <span style="font-weight: bold;">Statuses:</span>
+          <br>
+          Stun: Cannot use abilities or basic attack, cannot move for some duration. Actions are done after the effect wears off.
+          <br>
+          Slow: Increase cooldowns of someone.
+          <br>
+          Root: Cannot move or use mobility abilities for some duration. Actions are done after the effect wears off.
+          <br>
+          Knockback: Gets pushed into a target zone.
+          <br>
+          Pull: Gets pulled into a target zone.
+          <br>
+          Silence: Cannot use abilities for some duration. Actions are done after the effect wears off.
+          <br>
+          Disarm: Cannot use basic attacks for some duration. Actions are done after the effect wears off.
+          <br>
+          Disrupt: Miss basic attacks and abilities for some duration. Doesn't affect area of effect abilities.
+          <br>
+          Blind: Cannot see anything in the same zone for some duration unless vision has been granted.
+          <br>
+          Stasis: Cannot be interacted with for some duration.
+          <br>
+          DoT (Bleed, burn, poisoned, etc): Take some damage over some duration.
+          <br>
+          Evasion: Dodge all basic attacks for some duration.
+          <br>
+          Invisible: Cannot be seen unless vision has been granted for some duration.
+          <br>
+          <br>
+          <span style="font-weight: bold;">Stats:</span>
+          <br>
+          Basic Attack Cooldown Reduction: Reduce cooldown of basic attack
+          <br>
+          Cooldown Reduction: Reduce cooldown of all abilities
+          <br>
+          Healing Power: Increase amount healed per healing ability
+          <br>
+          First Basic Attack Damage: Increase damage of the first basic attack done this day
+          <br>
+          First Spell Damage: Increase damage of the first spell done this day
+          <br>
+          Basic Attack Reduction: Reduce damage of the first basic attack taken this day
+          <br>
+          Spell Damage Reduction: Reduce damage of the first spell taken this day
+          <br>
+          Lifesteal: Percent of damage healed from every basic attack
+          <br>
+          <br>
+          <span style="font-weight: bold;">Wild Animals:</span>
+          <br>
+          There are some wild animals to gain experience and gather materials by killing them.
+          <br>
+          <br>
+          Chicken:
+          <br>
+          1 HP
+          <br>
+          1 attack power
+          <br>
+          2 XP
+          <br>
+          1 credit
+          <br>
+          1 random common item
+          <br>
+          <br>
+          Bat:
+          <br>
+          1 HP
+          <br>
+          1 attack power
+          <br>
+          2 XP
+          <br>
+          1 credit
+          <br>
+          1 random common item
+          <br>
+          <br>
+          Wild Dog:
+          <br>
+          10 HP
+          <br>
+          5 attack power
+          <br>
+          4 XP
+          <br>
+          3 credits
+          <br>
+          1 random common item
+          <br>
+          <br>
+          Boar:
+          <br>
+          20 HP
+          <br>
+          5 attack power
+          <br>
+          4 XP
+          <br>
+          5 Credits
+          <br>
+          1 random common/uncommon item
+          <br>
+          <br>
+          Wolf:
+          <br>
+          20 HP
+          <br>
+          10 attack power
+          <br>
+          4 XP
+          <br>
+          5 Credits
+          <br>
+          1 random common/uncommon item
+          <br>
+          1 vf blood sample/force core/meteorite/tree of life/mithril/escape cuff/code of knowledge (random chance)
+          <br>
+          <br>
+          Bear:
+          <br>
+          40 HP
+          <br>
+          20 attack power
+          <br>
+          5 XP
+          <br>
+          10 credits
+          <br>
+          1 random rare/uncommon/common item
+          <br>
+          1 vf blood sample/force core/meteorite/tree of life/mithril/escape cuff/code of knowledge (random chance)
+          <br>
+          <br>
+          Alpha:
+          <br>
+          100 HP
+          <br>
+          30 attack power
+          <br>
+          5 XP
+          <br>
+          1 mithril
+          <br>
+          1 random meteorite/tree of life
+          <br>
+          <br>
+          Omega:
+          <br>
+          100 HP
+          <br>
+          40 attack power
+          <br>
+          5 XP
+          <br>
+          1 force core
+          <br>
+          1 random meteorite/tree of life/mithril
+          <br>
+          <br>
+          Wickeline:
+          <br>
+          200 HP
+          <br>
+          50 attack power
+          <br>
+          5 XP
+          <br>
+          1 vf blood sample
+          <br>
+          1 random force core/meteorite/tree of life/mithril
+          <br>
+          <br>
         </small></p>
       </div>
     </div>
