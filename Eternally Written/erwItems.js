@@ -6,9 +6,10 @@ var searchList = [];
 
 //For separate item sections
 function categoryEnabled(categoryN) {
-	categoryN = 2;
-  var checkbox = document.getElementById("checkbox-" + categoryN);
-  var roleList = document.getElementsByClassName(categoryN);
+	var intIndex = categoryN.indexOf("-");
+	var intCategory = categoryN.slice(intIndex + 1);
+  var checkbox = document.getElementById(categoryN);
+  var roleList = document.getElementsByClassName(intCategory);
   if (checkbox.checked)
   {
   	for (let i = 0; i < roleList.length; i++)
@@ -41,9 +42,9 @@ for (let i = 0; i < items.length; i++)
 	var itemList = innerDetails["ItemList"];
 	if (itemList.length != 0)
 	{
-		content.innerHTML += "<p>Category Enabled <input class=\"form-check-input categoryBox\" type=\"checkbox\" id=" + "checkbox-" + categoryCount + " onclick=\"categoryEnabled(\'' + categoryCount + '\')\"></p>";
+		content.innerHTML += "<p>Category Enabled <input class=\"form-check-input categoryBox\" type=\"checkbox\" id=" + "checkbox-" + categoryCount + " onclick=\"categoryEnabled(\'' + this.id + '\')\"></p>";
 	}
-	content.innerHTML += "<span style=\"color: white\">" + categoryName + "</span><span class=\"roleSummary enabled\"> - " + categoryDesc + "</span><br><br>";
+	content.innerHTML += "<span class=\"roleLink enabled\" style=\"color: white\">" + categoryName + "</span><span class=\"roleSummary enabled\"> - " + categoryDesc + "</span><br><br>";
 
 	for (let j = 0; j < itemList.length; j++)
 	{
@@ -74,7 +75,7 @@ for (let i = 0; i < items.length; i++)
 			itemColor = "white";
 		}
 
-		content.innerHTML += "&emsp;<a class=\"" + categoryCount + " disabled\" href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index + "\" style=\"color:"
+		content.innerHTML += "&emsp;<a class=\"roleLink " + categoryCount + " disabled\" href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index + "\" style=\"color:"
 		 + itemColor + "\">" + itemName + "</a><span class=\"roleSummary " + categoryCount + " disabled\" style=\"color:" + itemColor + "\"> - " + itemSummary + "</span><br class=\"" + categoryCount + " disabled\">";
 		
 		var link = "erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index;
@@ -88,23 +89,32 @@ for (let i = 0; i < items.length; i++)
 }
 
 //For checkbox
+//This summary checkbox specifically checks whether rolelink is enabled or not (category name)
+//This is due to being able to remove and add what is visible using category enabled
 function switchSummary() {
   var checkbox = document.getElementById("flexCheckDefault");
   var roleList = document.getElementsByClassName("roleSummary");
+  var roleLinks = document.getElementsByClassName("roleLink");
   if (checkbox.checked)
   {
   	for (let i = 0; i < roleList.length; i++)
   	{
-  		roleList[i].classList.add("enabled");
-  		roleList[i].classList.remove("disabled");
+  		if (roleLinks[i].classList.contains("enabled"))
+  		{
+	  		roleList[i].classList.add("enabled");
+	  		roleList[i].classList.remove("disabled");
+	  	}
   	}
   } 
   else 
   {
   	for (let i = 0; i < roleList.length; i++)
   	{
-  		roleList[i].classList.add("disabled");
-  		roleList[i].classList.remove("enabled");
+  		if (roleLinks[i].classList.contains("enabled"))
+  		{
+	  		roleList[i].classList.add("disabled");
+	  		roleList[i].classList.remove("enabled");
+	  	}
   	}
   }
 }
