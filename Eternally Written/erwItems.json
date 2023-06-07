@@ -32,7 +32,114 @@ items =
 						"Glacial Ice (Tree of Life + Ice)"],
 					"Statistics": ["25 Attack Power"],
 					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
-				}
+				},
+				{
+					"Name": "The Hermit",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Arcana",
+					"Image": "erwimages/items/arcana/TheHermit.png",
+					"Build Path": ["Staff of Reliance (Mirror Core (Glass Bead + Alcohol) + Short Rod)",
+						"Saint’s Relic (Cross + Holy Grail)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "The Hierophant",
+					"Rarity": "Epic",
+					"Description": "HP Arcana",
+					"Image": "erwimages/items/arcana/TheHierophant.png",
+					"Build Path": ["Frigid Pearl Blade (Frigid Pearl (Glass Bead + Ice) + Kitchen Knife)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Temperance",
+					"Rarity": "Epic",
+					"Description": "Healing Power Arcana",
+					"Image": "erwimages/items/arcana/Temperance.png",
+					"Build Path": ["Sensibility (Mirror Core (Glass Bead + Alcohol) + Holy Grail)",
+						"Purified Water (Boiling Water (Lighter + Water) + Ice)"],
+					"Statistics": ["20 Attack Power",
+						"10 Healing Power"],
+					"Passives": []
+				},
+				{
+					"Name": "The Star",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Arcana",
+					"Image": "erwimages/items/arcana/TheStar.png",
+					"Build Path": ["Possession Pentacle (Frigid Pearl (Glass Bead + Ice) + Stallion Medal)",
+						"Barbed Wire (Piano Wire + Hammer)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Staff of Reliance",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Arcana",
+					"Image": "erwimages/items/arcana/StaffOfReliance.png",
+					"Build Path": ["Mirror Core (Glass Bead + Alcohol) + Short Rod"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Sensibility",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Arcana",
+					"Image": "erwimages/items/arcana/Sensibility.png",
+					"Build Path": ["Mirror Core (Glass Bead + Alcohol) + Holy Grail"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Frigid Pearl Blade",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Arcana",
+					"Image": "erwimages/items/arcana/FrigidPearlBlade.png",
+					"Build Path": ["Frigid Pearl (Glass Bead + Ice) + Kitchen Knife"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Possession Pentacle",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Arcana",
+					"Image": "erwimages/items/arcana/PossessionPentacle.png",
+					"Build Path": ["Frigid Pearl (Glass Bead + Ice) + Stallion Medal"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Mirror Core",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive and utility Arcana",
+					"Image": "erwimages/items/arcana/MirrorCore.png",
+					"Build Path": ["Glass Bead + Alcohol"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Frigid Pearl",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive and utility Arcana",
+					"Image": "erwimages/items/arcana/FrigidPearl.png",
+					"Build Path": ["Glass Bead + Ice"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Glass Bead",
+					"Rarity": "Common",
+					"Description": "Starting Arcana",
+					"Image": "erwimages/items/arcana/GlassBead.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				},
 			]
 		}
 	},
