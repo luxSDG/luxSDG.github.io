@@ -271,5 +271,156 @@ items =
 				}
 			]
 		}
+	},
+	{
+		"Axe":
+		{
+			"Description": "An aggressive weapon that prioritizes life drain effects and brawling up close.",
+			"ItemList":
+			[
+				{
+					"Name": "Axe of Pangu",
+					"Rarity": "Legendary",
+					"Description": "Crowd Control Resistant Axe",
+					"Image": "erwimages/items/axe/AxeOfPangu.png",
+					"Build Path": ["Battle Axe (Hatchet + Bamboo)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power",
+						"25% Lifesteal"],
+					"Passives": ["Tenacity - Reduce all statuses inflicted on you by 50% duration."]
+				},
+				{
+					"Name": "Paradise Lost",
+					"Rarity": "Legendary",
+					"Description": "Slowing Axe",
+					"Image": "erwimages/items/axe/ParadiseLost.png",
+					"Build Path": ["Chain Scythe (Pickaxe + Steel Chain)",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				},
+				{
+					"Name": "Beam Axe",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Axe",
+					"Image": "erwimages/items/axe/BeamAxe.png",
+					"Build Path": ["Gigantic Axe (Battle Axe (Hatchet + Bamboo) + Scrap Metal)",
+						"Laser Pointer"],
+					"Statistics": ["15 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Santa Muerte",
+					"Rarity": "Epic",
+					"Description": "HP Axe",
+					"Image": "erwimages/items/axe/SantaMuerte.png",
+					"Build Path": ["Reaper’s Scythe (Chain Scythe (Pickaxe + Steel Chain) + Short Rod)",
+						"Ruby (Hammer + Gemstone)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Scythe",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Axe",
+					"Image": "erwimages/items/axe/Scythe.png",
+					"Build Path": ["Reaper’s Scythe (Chain Scythe (Pickaxe + Steel Chain) + Short Rod)",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Parashu",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Axe",
+					"Image": "erwimages/items/axe/Parashu.png",
+					"Build Path": ["Light Hatchet (Battle Axe (Hatchet + Bamboo) + Feather)",
+						"Flower of Fate (Flower + Playing Cards)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Harpe",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Axe",
+					"Image": "erwimages/items/axe/Harpe.png",
+					"Build Path": ["Gigantic Axe (Battle Axe (Hatchet + Bamboo) + Scrap Metal)",
+						"Feather Duster (Short Rod + Feather)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "The Juggernaut",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Axe",
+					"Image": "erwimages/items/axe/TheJuggernaut.png",
+					"Build Path": ["Light Hatchet (Battle Axe (Hatchet + Bamboo) + Feather)",
+						"Motor (Electronic Parts (Battery + Piano Wire) + Scrap Metal)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Light Hatchet",
+					"Rarity": "Rare",
+					"Description": "Builds into Basic Attack Axes",
+					"Image": "erwimages/items/axe/LightHatchet.png",
+					"Build Path": ["Battle Axe (Hatchet + Bamboo) + Feather"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Reaper's Scythe",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Axes",
+					"Image": "erwimages/items/axe/ReapersScythe.png",
+					"Build Path": ["Chain Scythe (Pickaxe + Steel Chain) + Short Rod"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Gigantic Axe",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Axes",
+					"Image": "erwimages/items/axe/GiganticAxe.png",
+					"Build Path": ["Battle Axe (Hatchet + Bamboo) + Scrap Metal"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Chain Scythe",
+					"Rarity": "Uncommon",
+					"Description": "Buidls into utility Axes",
+					"Image": "erwimages/items/axe/ChainScythe.png",
+					"Build Path": ["Pickaxe + Steel Chain"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Battle Axe",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive and defensive Axes",
+					"Image": "erwimages/items/axe/BattleAxe.png",
+					"Build Path": ["Hatchet + Bamboo"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Hatchet",
+					"Rarity": "Common",
+					"Description": "Starter Axe",
+					"Image": "erwimages/items/axe/Hatchet.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
 	}
 ]

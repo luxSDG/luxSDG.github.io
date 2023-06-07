@@ -3,7 +3,7 @@ const indexStart = url.indexOf("?") + 10;
 const indexMid = url.indexOf("&") + 4;
 const indexEnd = url.lastIndexOf("&") + 7;
 const categorySearched = url.slice(indexStart, indexMid-4).replace(/%20/g, " ");
-const roleSearched = url.slice(indexMid, indexEnd-7).replace(/%20/g, " ");
+var roleSearched = url.slice(indexMid, indexEnd-7).replace(/%20/g, " ");
 const indexSearched = parseInt(url.slice(indexEnd, url.length).replace(/%20/g, " "));
 
 const head = document.getElementById("head");
@@ -13,6 +13,8 @@ const sideBar = document.getElementById("sideBar");
 const backLink = document.getElementById("backLink");
 const nextLink = document.getElementById("nextLink");
 const searchBox = document.getElementById("searchBox");
+
+roleSearched = roleSearched.replace(/%27/g, "'");
 
 //For search
 var searchList = [];
