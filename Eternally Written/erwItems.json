@@ -139,7 +139,7 @@ items =
 					"Build Path": [],
 					"Statistics": ["1 Attack Power"],
 					"Passives": []
-				},
+				}
 			]
 		}
 	},
@@ -158,6 +158,116 @@ items =
 						"Force Core (Meteorite + Tree of Life)"],
 					"Statistics": ["30 Attack Power"],
 					"Passives": ["Armor-Piercing - Basic attacks ignore any damage resistance."]
+				},
+				{
+					"Name": "Black Widow",
+					"Rarity": "Legendary",
+					"Description": "Damage over time Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/BlackWidow.png",
+					"Build Path": ["M16A1 (STG-44 (Fedorova + Gunpowder) + Leather)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Smolder (1/2th day cooldown) - Basic attacks inflict a DoT that lasts for 1/4th day, burning the target’s HP by 5% max HP for every 1/8th of a day."]
+				},
+				{
+					"Name": "Type 95",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/Type95.png",
+					"Build Path": ["AK-47 (STG-44 (Fedorova + Gunpowder) + Piano Wire)",
+						"Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Ak-12",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/Ak-12.png",
+					"Build Path": ["AK-47 (STG-44 (Fedorova + Gunpowder) + Piano Wire)",
+						"Glass Panel (Glass Pieces (Glass Bottle + Stone) + Glue)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "XCR",
+					"Rarity": "Epic",
+					"Description": "HP Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/XCR.png",
+					"Build Path": ["M16A1 (STG-44 (Fedorova + Gunpowder) + Leather)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Gold Rush",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/GoldRush.png",
+					"Build Path": ["Gatling Gun (STG-44 (Fedorova + Gunpowder) + Electronic Parts (Battery + Piano Wire))",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Agni",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/Agni.png",
+					"Build Path": ["Gatling Gun (STG-44 (Fedorova + Gunpowder) + Electronic Parts (Battery + Piano Wire))",
+						"Heated Oil (Lighter + Oil)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Ak-47",
+					"Rarity": "Rare",
+					"Description": "Builds into damage Assault Rifles",
+					"Image": "erwimages/items/assaultrifle/Ak-47.png",
+					"Build Path": ["STG-44 (Fedorova + Gunpowder) + Piano Wire"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "M16A1",
+					"Rarity": "Rare",
+					"Description": "Builds into sustain Assault Rifles",
+					"Image": "erwimages/items/assaultrifle/M16A1.png",
+					"Build Path": ["STG-44 (Fedorova + Gunpowder) + Leather"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Gatling Gun",
+					"Rarity": "Rare",
+					"Description": "Builds into damage Assault Rifles",
+					"Image": "erwimages/items/assaultrifle/GatlingGun.png",
+					"Build Path": ["STG-44 (Fedorova + Gunpowder) + Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "STG-44",
+					"Rarity": "Uncommon",
+					"Description": "Builds into all Assault Rifles",
+					"Image": "erwimages/items/assaultrifle/STG-44.png",
+					"Build Path": ["Fedorova + Gunpowder"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Fedorova",
+					"Rarity": "Common",
+					"Description": "Starter Assault Rifle",
+					"Image": "erwimages/items/assaultrifle/Fedorova.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
 				}
 			]
 		}
