@@ -281,7 +281,7 @@ items =
 				{
 					"Name": "Axe of Pangu",
 					"Rarity": "Legendary",
-					"Description": "Crowd Control Resistant Axe",
+					"Description": "Tenacity Axe",
 					"Image": "erwimages/items/axe/AxeOfPangu.png",
 					"Build Path": ["Battle Axe (Hatchet + Bamboo)",
 						"Force Core (Meteorite + Tree of Life)"],
@@ -416,6 +416,346 @@ items =
 					"Rarity": "Common",
 					"Description": "Starter Axe",
 					"Image": "erwimages/items/axe/Hatchet.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Bat":
+		{
+			"Description": "Weapon that plays with utility and defense heavily and allows for versatile builds.",
+			"ItemList":
+			[
+				{
+					"Name": "Magic Stick",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Bat",
+					"Image": "erwimages/items/bat/MagicStick.png",
+					"Build Path": ["Long Rod (Short Rod + Bamboo)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": ["Omnisyphon - Heal for 5 HP per basic attack or ability use."]
+				},
+				{
+					"Name": "Monkey King Bar",
+					"Rarity": "Legendary",
+					"Description": "Tenacity Bat",
+					"Image": "erwimages/items/bat/MonkeyKingBar.png",
+					"Build Path": ["Long Rod (Short Rod + Bamboo)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Fail Not - Immune to blinds, disrupt, disarm, and evasion.",
+						"Tenacity - Reduce all statuses inflicted on you by 50% duration."]
+				},
+				{
+					"Name": "Ghost Hand",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Bat",
+					"Image": "erwimages/items/bat/GhostHand.png",
+					"Build Path": ["Branch",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["25 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Vajra",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Bat",
+					"Image": "erwimages/items/bat/Vajra.png",
+					"Build Path": ["Reinforced Club (Short Rod + Steel (Scrap Metal + Iron Ore))",
+						"Glass Panel (Glass Pieces (Glass Bottle + Stone) + Glue)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Pakua Chang",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Bat",
+					"Image": "erwimages/items/bat/PakuaChang.png",
+					"Build Path": ["Reinforced Club (Short Rod + Steel (Scrap Metal + Iron Ore))",
+						"Turtle Dobok (Monk’s Robe + Turtle Shell)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Statue of Soteria",
+					"Rarity": "Epic",
+					"Description": "HP Bat",
+					"Image": "erwimages/items/bat/StatueOfSoteria.png",
+					"Build Path": ["Torch (Short Rod + Oil Cloth (Oil + Bandage))",
+						"Doll (Ribbon + Cloth)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Mallet",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Bat",
+					"Image": "erwimages/items/bat/Mallet.png",
+					"Build Path": ["Goblin Bat (Long Rod (Short Rod + Bamboo) + Nail)",
+						"Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Spy Umbrella",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Bat",
+					"Image": "erwimages/items/bat/SpyUmbrella.png",
+					"Build Path": ["Umbrella (Long Rod (Short Rod + Bamboo) + Fan)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Goblin Bat",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Bats",
+					"Image": "erwimages/items/bat/GoblinBat.png",
+					"Build Path": ["Long Rod (Short Rod + Bamboo) + Nail"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Umbrella",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Bats",
+					"Image": "erwimages/items/bat/Umbrella.png",
+					"Build Path": ["Long Rod (Short Rod + Bamboo) + Fan"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Torch",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Bats",
+					"Image": "erwimages/items/bat/Torch.png",
+					"Build Path": ["Short Rod + Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Reinforced Club",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Bats",
+					"Image": "erwimages/items/bat/ReinforcedClub.png",
+					"Build Path": ["Short Rod + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Long Rod",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Bats",
+					"Image": "erwimages/items/bat/LongRod.png",
+					"Build Path": ["Short Rod + Bamboo"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Short Rod",
+					"Rarity": "Common",
+					"Description": "Starter Bat",
+					"Image": "erwimages/items/bat/ShortRod.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Bow":
+		{
+			"Description": "A longer ranged weapon that can attack enemies from far away.",
+			"ItemList":
+			[
+				{
+					"Name": "Artemis",
+					"Rarity": "Legendary",
+					"Description": "Spell Damage Bow",
+					"Image": "erwimages/items/bow/Artemis.png",
+					"Build Path": ["Wooden Bow (Bow + Piano Wire)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Red Sprite (1 day cooldown) - Shoot lightning along with a damaging ability and deal 10 damage to the enemy."]
+				},
+				{
+					"Name": "Failnaught",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Bow",
+					"Image": "erwimages/items/bow/Failnaught.png",
+					"Build Path": ["Bow",
+						"VF Blood Sample"],
+					"Statistics": ["30 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Fail Not - Immune to blinds, disrupt, disarm, and evasion.",
+						"Omnisyphon - Heal for 5 HP per basic attack or ability use."]
+				},
+				{
+					"Name": "Argyrotoxus",
+					"Rarity": "Legendary",
+					"Description": "Range Bow",
+					"Image": "erwimages/items/bow/Argyrotoxus.png",
+					"Build Path": ["Long Bow (Bow + Rubber)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": ["Sniper Elite - Basic attacks can reach adjacent zones."]
+				},
+				{
+					"Name": "Crimson Bow",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Bow",
+					"Image": "erwimages/items/bow/CrimsonBow.png",
+					"Build Path": ["Long Bow (Bow + Rubber)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Vigor (1/2th day cooldown) - Your basic attack deals 5% max HP."]
+				},
+				{
+					"Name": "Ancient Bow",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Bow",
+					"Image": "erwimages/items/bow/AncientBow.png",
+					"Build Path": ["Stallion Bow ((Mighty Bow (Long Bow (Bow + Rubber) + Gunpowder) + Stallion Medal)",
+						"Bamboo"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Golden-Ratio Bow",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Bow",
+					"Image": "erwimages/items/bow/GoldenRatioBow.png",
+					"Build Path": ["Pellet Bow (Wooden Bow (Bow + Piano Wire) + Heated Stone (Lighter + Stone))",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Twinbow",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Bow",
+					"Image": "erwimages/items/bow/Twinbow.png",
+					"Build Path": ["Strong Bow (Wooden Bow (Bow + Piano Wire) + Oil)",
+						"Composite Bow (Long Bow (Bow + Rubber) + Nail)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Jebe's Altered Bow",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Bow",
+					"Image": "erwimages/items/bow/JebesAlteredBow.png",
+					"Build Path": ["Mighty Bow (Long Bow (Bow + Rubber) + Gunpowder)",
+						"Laced Quiver (Quiver (Feather + Bamboo) + Short Rod)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Elemental Bow",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Bow",
+					"Image": "erwimages/items/bow/ElementalBow.png",
+					"Build Path": ["Scorchbow (Long Bow (Bow + Rubber) + Lighter)",
+						"White Crane Fan (Gilded Quilt Fan (Fan + Nail) + Feather)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Composite Bow",
+					"Rarity": "Rare",
+					"Description": "Builds into basic attack Bows",
+					"Image": "erwimages/items/bow/CompositeBow.png",
+					"Build Path": ["Long Bow (Bow + Rubber) + Nail"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Strong Bow",
+					"Rarity": "Rare",
+					"Description": "Builds into basic attack Bows",
+					"Image": "erwimages/items/bow/StrongBow.png",
+					"Build Path": ["Wooden Bow (Bow + Piano Wire) + Oil"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Stallion Bow",
+					"Rarity": "Rare",
+					"Description": "Builds into basic attack Bows",
+					"Image": "erwimages/items/bow/StallionBow.png",
+					"Build Path": ["Mighty Bow (Long Bow (Bow + Rubber) + Gunpowder) + Stallion Medal"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Mighty Bow",
+					"Rarity": "Rare",
+					"Description": "Builds into basic attack Bows",
+					"Image": "erwimages/items/bow/MightyBow.png",
+					"Build Path": ["Long Bow (Bow + Rubber) + Gunpowder"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Pellet Bow",
+					"Rarity": "Rare",
+					"Description": "Builds into spell damage Bows",
+					"Image": "erwimages/items/bow/PelletBow.png",
+					"Build Path": ["Wooden Bow (Bow + Piano Wire) + Heated Stone (Lighter + Stone)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Scorchbow",
+					"Rarity": "Rare",
+					"Description": "Builds into spell damage Bows",
+					"Image": "erwimages/items/bow/Scorchbow.png",
+					"Build Path": ["Long Bow (Bow + Rubber) + Lighter"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Wooden Bow",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Bows",
+					"Image": "erwimages/items/bow/WoodenBow.png",
+					"Build Path": ["Bow + Piano Wire"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Longbow",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Bows",
+					"Image": "erwimages/items/bow/Longbow.png",
+					"Build Path": ["Bow + Rubber"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Bow",
+					"Rarity": "Common",
+					"Description": "Starter Bow",
+					"Image": "erwimages/items/bow/Bow.png",
 					"Build Path": [],
 					"Statistics": ["1 Attack Power"],
 					"Passives": []
