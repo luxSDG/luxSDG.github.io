@@ -762,5 +762,263 @@ items =
 				}
 			]
 		}
+	},
+	{
+		"Camera":
+		{
+			"Description": "A unique supportive weapon that focuses on vision and zone control over the map.",
+			"ItemList":
+			[
+				{
+					"Name": "Cannon Camera",
+					"Rarity": "Legendary",
+					"Description": "Range Camera",
+					"Image": "erwimages/items/camera/CannonCamera.png",
+					"Build Path": ["Carbine Camera (Lens + Fedorova)",
+						"Tree of Life"],
+					"Statistics": ["25 Attack Power",
+						"20 HP"],
+					"Passives": ["Sniper Elite - Basic attacks can reach adjacent zones."]
+				},
+				{
+					"Name": "Ultraviolet",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Camera",
+					"Image": "erwimages/items/camera/Ultraviolet.png",
+					"Build Path": ["Pistol Camera (Lens + Walther PPK)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["25 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": ["Biotic Infusion (1 day cooldown) - After using an ability, the next basic attack deals 10% of the enemy’s max HP as damage."]
+				},
+				{
+					"Name": "Mirrorless",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Camera",
+					"Image": "erwimages/items/camera/Mirrorless.png",
+					"Build Path": ["Compact Camera (Ion Battery (Battery + Carbonated Water) + Lens)",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Laser Designator",
+					"Rarity": "Epic",
+					"Description": "Defensive Camera",
+					"Image": "erwimages/items/camera/LaserDesignator.png",
+					"Build Path": ["Rangefinder (Sniper Scope (Laser Pointer + Binoculars) + Broken Watch (Watch + Glue))",
+						"Flower"],
+					"Statistics": ["10 Attack Power",
+						"10 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "V.I.C.G.",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Camera",
+					"Image": "erwimages/items/camera/V.I.C.G..png",
+					"Build Path": ["Cell Phone (Blueprint (Fountain Pen + Paper) + Electronic Parts (Battery + Piano Wire))",
+						"Pistol Camera (Lens + Walther PPK)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Instant Camera",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Camera",
+					"Image": "erwimages/items/camera/InstantCamera.png",
+					"Build Path": ["Compact Camera (Ion Battery (Battery + Carbonated Water) + Lens)",
+						"Barbed Wire (Piano Wire + Hammer)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Compact Camera",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Cameras",
+					"Image": "erwimages/items/camera/CompactCamera.png",
+					"Build Path": ["Ion Battery (Battery + Carbonated Water) + Lens"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Rangefinder",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Cameras",
+					"Image": "erwimages/items/camera/Rangefinder.png",
+					"Build Path": ["Sniper Scope (Laser Pointer + Binoculars) + Broken Watch (Watch + Glue)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Pistol Camera",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Cameras",
+					"Image": "erwimages/items/camera/PistolCamera.png",
+					"Build Path": ["Lens + Walther PPK"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Carbine Camera",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Cameras",
+					"Image": "erwimages/items/camera/CarbineCamera.png",
+					"Build Path": ["Lens + Fedorova"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Lens",
+					"Rarity": "Common",
+					"Description": "Starter Camera",
+					"Image": "erwimages/items/camera/Lens.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Crossbow":
+		{
+			"Description": "A safer damage dealing weapon that attacks enemies closer, but can peel off enemies easily.",
+			"ItemList":
+			[
+				{
+					"Name": "The Golden Ghost",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Crossbow",
+					"Image": "erwimages/items/crossbow/TheGoldenGhost.png",
+					"Build Path": ["Long Crossbow (Short Crossbow + Piano Wire)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Swift Strides (1 day cooldown) - Reduce cooldowns by 10% upon moving or using a movement ability."]
+				},
+				{
+					"Name": "Sharanga",
+					"Rarity": "Legendary",
+					"Description": "Basic Attack Crossbow",
+					"Image": "erwimages/items/crossbow/Sharanga.png",
+					"Build Path": ["Crossbow (Short Crossbow + Bamboo)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["25 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Focused Impact (2 day cooldown) - Deal double damage on your next basic attack."]
+				},
+				{
+					"Name": "The Legend of the General",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Crossbow",
+					"Image": "erwimages/items/crossbow/TheLegendOfTheGeneral.png",
+					"Build Path": ["Steel Bow (Crossbow (Short Crossbow + Bamboo) + Iron Sheet (Scrap Metal + Hammer))",
+						"Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Ballista",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Crossbow",
+					"Image": "erwimages/items/crossbow/Ballista.png",
+					"Build Path": ["Heavy Crossbow (Long Crossbow (Short Crossbow + Piano Wire) + Steel (Scrap Metal + Iron Ore))",
+						"Short Spear"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": [],
+				},
+				{
+					"Name": "Sniper Crossbow",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Crossbow",
+					"Image": "erwimages/items/crossbow/SniperCrossbow.png",
+					"Build Path": ["Laser Crossbow (Crossbow (Short Crossbow + Bamboo) + Laser Pointer)",
+						"Sniper Scope (Laser Pointer + Binoculars)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Poisoned Crossbow",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Crossbow",
+					"Image": "erwimages/items/crossbow/PoisonedCrossbow.png",
+					"Build Path": ["Steel Bow (Crossbow (Short Crossbow + Bamboo) + Iron Sheet (Scrap Metal + Hammer))",
+						"Poison (Ash (Paper + Lighter) + Water)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Power Crossbow",
+					"Rarity": "Rare",
+					"Description": "Fast Crossbow",
+					"Image": "erwimages/items/crossbow/PowerCrossbow.png",
+					"Build Path": ["Long Crossbow (Short Crossbow + Piano Wire) + Rubber"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Laser Crossbow",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Crossbows",
+					"Image": "erwimages/items/crossbow/LaserCrossbow.png",
+					"Build Path": ["Crossbow (Short Crossbow + Bamboo) + Laser Pointer"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Heavy Crossbow",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Crossbows",
+					"Image": "erwimages/items/crossbow/HeavyCrossbow.png",
+					"Build Path": ["Long Crossbow (Short Crossbow + Piano Wire) + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Steel Bow",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Crossbows",
+					"Image": "erwimages/items/crossbow/SteelBow.png",
+					"Build Path": ["Crossbow (Short Crossbow + Bamboo) + Iron Sheet (Scrap Metal + Hammer)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Long Crossbow",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Crossbows",
+					"Image": "erwimages/items/crossbow/LongCrossbow.png",
+					"Build Path": ["Short Crossbow + Piano Wire"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Crossbow",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Crossbows",
+					"Image": "erwimages/items/crossbow/Crossbow.png",
+					"Build Path": ["Short Crossbow + Bamboo"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Short Crossbow",
+					"Rarity": "Common",
+					"Description": "Starter Crossbow",
+					"Image": "erwimages/items/crossbow/ShortCrossbow.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
 	}
 ]
