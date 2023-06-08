@@ -1020,5 +1020,184 @@ items =
 				}
 			]
 		}
+	},
+	{
+		"Dagger":
+		{
+			"Description": "A fast weapon that requires utilizing mobility and timings to get the best results.",
+			"ItemList":
+			[
+				{
+					"Name": "Fragarach",
+					"Rarity": "Legendary",
+					"Description": "Basic Attack Dagger",
+					"Image": "erwimages/items/dagger/Fragarach.png",
+					"Build Path": ["Army Knife (Kitchen Knife + Branch)",
+						"Mithril"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Focused Impact (2 day cooldown) - Deal double damage on your next basic attack."]
+				},
+				{
+					"Name": "Eclipse",
+					"Rarity": "Legendary",
+					"Description": "Attack Power Dagger",
+					"Image": "erwimages/items/dagger/Eclipse.png",
+					"Build Path": ["Jamadhar (Kitchen Knife + Brass Knuckles)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Nightfall (2 day cooldown) - Every other day, have an extra 10 attack power."]
+				},
+				{
+					"Name": "Soul Reaper",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Dagger",
+					"Image": "erwimages/items/dagger/SoulReaper.png",
+					"Build Path": ["Scalpel (Fountain Pen + Razor)",
+						"Tree of Life"],
+					"Statistics": ["25 Attack Power",
+						"20 HP"],
+					"Passives": ["Streamlined (1 day cooldown) - Hitting 3 basic attacks and abilities on a single target reduces cooldowns by 10%."]
+				},
+				{
+					"Name": "Carnwennan",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Dagger",
+					"Image": "erwimages/items/dagger/Carnwennan.png",
+					"Build Path": ["Rose Knife (Army Knife (Kitchen Knife + Branch) + Flower)",
+						"Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Mount Slicer",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Dagger",
+					"Image": "erwimages/items/dagger/MountSlicer.png",
+					"Build Path": ["Rose Knife (Army Knife (Kitchen Knife + Branch) + Flower)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["10 Attack Power",
+						"20% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Vibroblade",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Dagger",
+					"Image": "erwimages/items/dagger/Vibroblade.png",
+					"Build Path": ["Scalpel (Fountain Pen + Razor)",
+						"Motor (Electronic Parts (Battery + Piano Wire) + Scrap Metal)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Damascus Steel Thorn",
+					"Rarity": "Epic",
+					"Description": "HP Dagger",
+					"Image": "erwimages/items/dagger/DamascusSteelThorn.png",
+					"Build Path": ["Swiss Army Knife (Scalpel (Fountain Pen + Razor) + Scissors)",
+						"Spiked Plank (Mousetrap + Nail)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Maharaja",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Dagger",
+					"Image": "erwimages/items/dagger/Maharaja.png",
+					"Build Path": ["Carapace Katar (Jamadhar (Kitchen Knife + Brass Knuckles) + Turtle Shell)",
+						"Aether Fringe (Feather + Flower of Fate (Flower + Playing Cards))"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Highlander Dirk",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Dagger",
+					"Image": "erwimages/items/dagger/HighlanderDirk.png",
+					"Build Path": ["Swiss Army Knife (Scalpel (Fountain Pen + Razor) + Scissors)",
+						"Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["15 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Rose Knife",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Daggers",
+					"Image": "erwimages/items/dagger/RoseKnife.png",
+					"Build Path": ["Army Knife (Kitchen Knife + Branch) + Flower"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Swiss Army Knife",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Daggers",
+					"Image": "erwimages/items/dagger/SwissArmyKnife.png",
+					"Build Path": ["Scalpel (Fountain Pen + Razor) + Scissors"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Carapace Katar",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Daggers",
+					"Image": "erwimages/items/dagger/CarapaceKatar.png",
+					"Build Path": ["Jamadhar (Kitchen Knife + Brass Knuckles) + Turtle Shell"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Army Knife",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Daggers",
+					"Image": "erwimages/items/dagger/ArmyKnife.png",
+					"Build Path": ["Kitchen Knife + Branch"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Scalpel",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Daggers",
+					"Image": "erwimages/items/dagger/Scalpel.png",
+					"Build Path": ["Fountain Pen + Razor"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Jamadhar",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Daggers",
+					"Image": "erwimages/items/dagger/Jamadhar.png",
+					"Build Path": ["Kitchen Knife + Brass Knuckles"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Scissors",
+					"Rarity": "Common",
+					"Description": "Starter Dagger",
+					"Image": "erwimages/items/dagger/Scissors.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Kitchen Knife",
+					"Rarity": "Common",
+					"Description": "Starter Dagger",
+					"Image": "erwimages/items/dagger/KitchenKnife.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
 	}
 ]
