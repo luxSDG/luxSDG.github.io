@@ -805,7 +805,7 @@ items =
 				{
 					"Name": "Laser Designator",
 					"Rarity": "Epic",
-					"Description": "Defensive Camera",
+					"Description": "HP Camera",
 					"Image": "erwimages/items/camera/LaserDesignator.png",
 					"Build Path": ["Rangefinder (Sniper Scope (Laser Pointer + Binoculars) + Broken Watch (Watch + Glue))",
 						"Flower"],
@@ -1524,6 +1524,606 @@ items =
 					"Rarity": "Common",
 					"Description": "Starter Glove",
 					"Image": "erwimages/items/glove/CottonGloves.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Guitar":
+		{
+			"Description": "A supportive weapon that can apply statuses to enemies in a multitude of ways.",
+			"ItemList":
+			[
+				{
+					"Name": "Wonderful Tonight",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Guitar",
+					"Image": "erwimages/items/guitar/WonderfulTonight.png",
+					"Build Path": ["Single Coil Pickup (Starter Guitar + Battery)",
+						"Meteorite"],
+					"Statistics": ["25 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Vigor (1/2th day cooldown) - Your basic attack deals 5% max HP."]
+				},
+				{
+					"Name": "Cpt. Pepper",
+					"Rarity": "Legendary",
+					"Description": "Spell Shield Guitar",
+					"Image": "erwimages/items/guitar/CptPepper.png",
+					"Build Path": ["Starter Guitar",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": ["Temporal Refraction (1 day cooldown) - Block the first spell that deals damage done to you entirely."]
+				},
+				{
+					"Name": "Bohemian",
+					"Rarity": "Epic",
+					"Description": "HP Guitar",
+					"Image": "erwimages/items/guitar/Bohemian.png",
+					"Build Path": ["Ruby Special (Single Coil Pickup (Starter Guitar + Battery) + Ruby (Hammer + Gemstone))",
+						"Playing Cards"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Stairway to Heaven",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Guitar",
+					"Image": "erwimages/items/guitar/StairwayToHeaven.png",
+					"Build Path": ["Humbucker Pickup (Golden Bridge (Starter Guitar + Gold (Pickaxe + Gemstone)) + Sniper Scope (Laser Pointer + Binoculars))",
+						"Cross"],
+					"Statistics": ["10 Attack Power",
+						"20% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Purple Haze",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Guitar",
+					"Image": "erwimages/items/guitar/PurpleHaze.png",
+					"Build Path": ["King-V (Golden Bridge (Starter Guitar + Gold (Pickaxe + Gemstone)) + Scissors)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Satisfaction",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Guitar",
+					"Image": "erwimages/items/guitar/Satisfaction.png",
+					"Build Path": ["Nocaster (Single Coil Pickup (Starter Guitar + Battery) + Blueprint (Fountain Pen + Paper))",
+						"Stallion Medal"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "The Wall",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Guitar",
+					"Image": "erwimages/items/guitar/TheWall.png",
+					"Build Path": ["Superstrat (Single Coil Pickup (Starter Guitar + Battery) + Bamboo)",
+						"Chalk Powder (Chalk + Stone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Teen Spirit",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Guitar",
+					"Image": "erwimages/items/guitar/TeenSpirit.png",
+					"Build Path": ["Wild Horse (Single Coil Pickup (Starter Guitar + Battery) + Oil)",
+						"Buddha Sarira (Buddhist Scripture + Monk’s Robe)"],
+					"Statistics": ["15 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Ruby Special",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Guitars",
+					"Image": "erwimages/items/guitar/RubySpecial.png",
+					"Build Path": ["Single Coil Pickup (Starter Guitar + Battery) + Ruby (Hammer + Gemstone)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Humbucker Pickup",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Guitars",
+					"Image": "erwimages/items/guitar/HumbuckerPickup.png",
+					"Build Path": ["Golden Bridge (Starter Guitar + Gold (Pickaxe + Gemstone)) + Sniper Scope (Laser Pointer + Binoculars)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "King-V",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Guitars",
+					"Image": "erwimages/items/guitar/King-V.png",
+					"Build Path": ["Golden Bridge (Starter Guitar + Gold (Pickaxe + Gemstone)) + Scissors"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Nocaster",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Guitars",
+					"Image": "erwimages/items/guitar/Nocaster.png",
+					"Build Path": ["Single Coil Pickup (Starter Guitar + Battery) + Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Superstrat",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Guitars",
+					"Image": "erwimages/items/guitar/Superstrat.png",
+					"Build Path": ["Single Coil Pickup (Starter Guitar + Battery) + Bamboo"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Wild Horse",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Guitars",
+					"Image": "erwimages/items/guitar/WildHorse.png",
+					"Build Path": ["Single Coil Pickup (Starter Guitar + Battery) + Oil"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Golden Bridge",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Guitars",
+					"Image": "erwimages/items/guitar/GoldenBridge.png",
+					"Build Path": ["Starter Guitar + Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Single Coil Pickup",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Guitars",
+					"Image": "erwimages/items/guitar/SingleCoilPickup.png",
+					"Build Path": ["Starter Guitar + Battery"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Starter Guitar",
+					"Rarity": "Common",
+					"Description": "Starter Guitar",
+					"Image": "erwimages/items/guitar/StarterGuitar.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Hammer":
+		{
+			"Description": "A tankier weapon designed to be in the frontlines and remove buffs from enemies.",
+			"ItemList":
+			[
+				{
+					"Name": "Evening Star",
+					"Rarity": "Legendary",
+					"Description": "Spell Damage Hammer",
+					"Image": "erwimages/items/hammer/EveningStar.png",
+					"Build Path": ["Warhammer (Hammer + Short Rod)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": ["Red Sprite (1 day cooldown) - Shoot lightning along with a damaging ability and deal 10 damage to the enemy."]
+				},
+				{
+					"Name": "Peacebringer",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Hammer",
+					"Image": "erwimages/items/hammer/Peacebringer.png",
+					"Build Path": ["Black Stag Hammer (Warhammer (Hammer + Short Rod) + Leather)",
+						"VF Blood Sample"],
+					"Statistics": ["25 Attack Power",
+						"25% Lifesteal"],
+					"Passives": ["Omnisyphon - Heal for 5 HP per basic attack or ability use."]
+				},
+				{
+					"Name": "Squeaky Hammer",
+					"Rarity": "Legendary",
+					"Description": "Basic Attack Hammer",
+					"Image": "erwimages/items/hammer/SqueakyHammer.png",
+					"Build Path": ["Warhammer (Hammer + Short Rod)",
+						"Tree of Life"],
+					"Statistics": ["25 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Magnetic Might (1 day cooldown) - Charge up two powerful slowing basic attacks, dealing 5 damage and slowing the target, increasing their cooldown by 10%."]
+				},
+				{
+					"Name": "Fang Mace",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Hammer",
+					"Image": "erwimages/items/hammer/FangMace.png",
+					"Build Path": ["Morning Star (Warhammer (Hammer + Short Rod) + Iron Ball)",
+						"Heated Stone (Lighter + Stone)"],
+					"Statistics": ["15 Attack Power",
+						"10 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Hammer of Dagda",
+					"Rarity": "Epic",
+					"Description": "HP Hammer",
+					"Image": "erwimages/items/hammer/HammerOfDagda.png",
+					"Build Path": ["Morning Star (Warhammer (Hammer + Short Rod) + Iron Ball)",
+						"Saint’s Relic (Cross + Holy Grail)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Hammer of Thor",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Hammer",
+					"Image": "erwimages/items/hammer/HammerOfThor.png",
+					"Build Path": ["Black Stag Hammer (Warhammer (Hammer + Short Rod) + Leather)",
+						"Ion Battery (Battery + Carbonated Water)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Weight of the World",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Hammer",
+					"Image": "erwimages/items/hammer/WeightOfTheWorld.png",
+					"Build Path": ["Forged Destiny (Hammer + Flower of Fate (Flower + Playing Cards))",
+						"Glass Pieces (Glass Bottle + Stone)"],
+					"Statistics": ["15 Attack Power",
+					"5 Basic Attack Reduction",
+					"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Bookmaster",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Hammer",
+					"Image": "erwimages/items/hammer/Bookmaster.png",
+					"Build Path": ["Forged Destiny (Hammer + Flower of Fate (Flower + Playing Cards))",
+						"Hardcover (Paper + Leather)"],
+					"Statistics": ["15 Attack Power",
+					"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Morning Star",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Hammers",
+					"Image": "erwimages/items/hammer/MorningStar.png",
+					"Build Path": ["Warhammer (Hammer + Short Rod) + Iron Ball"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Black Stag Hammer",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Hammers",
+					"Image": "erwimages/items/hammer/BlackStagHammer.png",
+					"Build Path": ["Warhammer (Hammer + Short Rod) + Leather"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Forged Destiny",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Hammers",
+					"Image": "erwimages/items/hammer/ForgedDestiny.png",
+					"Build Path": ["Hammer + Flower of Fate (Flower + Playing Cards)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Warhammer",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Hammers",
+					"Image": "erwimages/items/hammer/Warhammer.png",
+					"Build Path": ["Hammer + Short Rod"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Hammer",
+					"Rarity": "Common",
+					"Description": "Starter Hammer",
+					"Image": "erwimages/items/hammer/Hammer.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Nunchaku":
+		{
+			"Description": "A unique versatile weapon created to allow for some range with tankiness and damage.",
+			"ItemList":
+			[
+				{
+					"Name": "Cerberus",
+					"Rarity": "Legendary",
+					"Description": "Burst Damage Nunchaku",
+					"Image": "erwimages/items/nunchaku/Cerberus.png",
+					"Build Path": ["Nunchaku (Steel Chain + Steel Metal)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Double Headed - Every 2nd basic attack or ability deals 10 damage."]
+				},
+				{
+					"Name": "Hydra",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Nunchaku",
+					"Image": "erwimages/items/nunchaku/Hydra.png",
+					"Build Path": ["Steel Chain",
+						"VF Blood Sample"],
+					"Statistics": ["30 Attack Power",
+						"25% Lifesteal"],
+					"Passives": ["Queen’s Gift - Reduce all cooldowns by 1 day permanently."]
+				},
+				{
+					"Name": "Crimson Red Lovers",
+					"Rarity": "Legendary",
+					"Description": "Anti Heal Nunchaku",
+					"Image": "erwimages/items/nunchaku/CrimsonRedLovers.png",
+					"Build Path": ["Nunchaku (Steel Chain + Steel Metal)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Anti Heal - Upon damaging someone, reduce all healing effects by 25%."]
+				},
+				{
+					"Name": "The Smiting Dragon",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Nunchaku",
+					"Image": "erwimages/items/nunchaku/TheSmitingDragon.png",
+					"Build Path": ["Sharper (Nunchaku (Steel Chain + Steel Metal) + Nail)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Vibro Nunchaku",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Nunchaku",
+					"Image": "erwimages/items/nunchaku/VibroNunchaku.png",
+					"Build Path": ["Bleeder (Nunchaku (Steel Chain + Steel Metal) + Razor)",
+						"Motor (Electronic Parts (Battery + Piano Wire) + Scrap Metal)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Blue 3",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Nunchaku",
+					"Image": "erwimages/items/nunchaku/Blue3.png",
+					"Build Path": ["Sharper (Nunchaku (Steel Chain + Steel Metal) + Nail)",
+						"Flower of Fate (Flower + Playing Cards)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Sharper",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Nunchaku",
+					"Image": "erwimages/items/nunchaku/Sharper.png",
+					"Build Path": ["Nunchaku (Steel Chain + Steel Metal) + Nail"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Bleeder",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Nunchaku",
+					"Image": "erwimages/items/nunchaku/Bleeder.png",
+					"Build Path": ["Nunchaku (Steel Chain + Steel Metal) + Razor"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Nunchaku",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Nunchaku",
+					"Image": "erwimages/items/nunchaku/Nunchaku.png",
+					"Build Path": ["Steel Chain + Steel Metal"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Steel Chain",
+					"Rarity": "Common",
+					"Description": "Starter Nunchaku",
+					"Image": "erwimages/items/nunchaku/SteelChain.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Pistol":
+		{
+			"Description": "Fast mobility weapon that can go either direction, ability casting, or basic attack spam.",
+			"ItemList":
+			[
+				{
+					"Name": "Kelte",
+					"Rarity": "Legendary",
+					"Description": "Armor Piercing Pistol",
+					"Image": "erwimages/items/pistol/Kelte.png",
+					"Build Path": ["Beretta M92F (Walther PPK + Leather)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Armor-Piercing - Basic attacks ignore any damage resistance."]
+				},
+				{
+					"Name": "Devil's Marksman",
+					"Rarity": "Legendary",
+					"Description": "Burst Damage Pistol",
+					"Image": "erwimages/items/pistol/DevilsMarksman.png",
+					"Build Path": ["Magnum-Python (Walther PPK + Oil)",
+						"Meteorite"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Conclusion - Every 3rd basic attack or ability deals 15 damage."]
+				},
+				{
+					"Name": "Altair",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Pistol",
+					"Image": "erwimages/items/pistol/Altair.png",
+					"Build Path": ["Magnum-Python (Walther PPK + Oil)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Elegance",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Pistol",
+					"Image": "erwimages/items/pistol/Elegance.png",
+					"Build Path": ["FN57 (Beretta M92F (Walther PPK + Leather) + Laser Pointer)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Electron Blaster",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Pistol",
+					"Image": "erwimages/items/pistol/ElectronBlaster.png",
+					"Build Path": ["Beretta M92F (Walther PPK + Leather)",
+						"Cell Phone (Blueprint (Fountain Pen + Paper) + Electronic Parts (Battery + Piano Wire))"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Magnum Boa",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Pistol",
+					"Image": "erwimages/items/pistol/MagnumBoa.png",
+					"Build Path": ["Magnum-Anaconda (Blueprint (Fountain Pen + Paper) + Magnum-Python (Walther PPK + Oil))",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Glock 48",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Pistol",
+					"Image": "erwimages/items/pistol/Glock48.png",
+					"Build Path": ["FN57 (Beretta M92F (Walther PPK + Leather) + Laser Pointer)",
+						"Feather Duster (Short Rod + Feather)"],
+					"Statistics": ["15 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Stampede",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Pistol",
+					"Image": "erwimages/items/pistol/Stampede.png",
+					"Build Path": ["Derringer (Walther PPK + Dynamite (Gunpowder + Piano Wire))",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Molten Malachite",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Pistol",
+					"Image": "erwimages/items/pistol/MoltenMalachite.png",
+					"Build Path": ["Double Revolver SP (Magnum-Python (Walther PPK + Oil) + Walther PPK)",
+						"Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "FN57",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Pistols",
+					"Image": "erwimages/items/pistol/FN57.png",
+					"Build Path": ["Beretta M92F (Walther PPK + Leather) + Laser Pointer"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Double Revolver SP",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Pistols",
+					"Image": "erwimages/items/pistol/DoubleRevolverSP.png",
+					"Build Path": ["Magnum-Python (Walther PPK + Oil) + Walther PPK"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Magnum-Anaconda",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Pistols",
+					"Image": "erwimages/items/pistol/Magnum-Anaconda.png",
+					"Build Path": ["Blueprint (Fountain Pen + Paper) + Magnum-Python (Walther PPK + Oil)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Derringer",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Pistols",
+					"Image": "erwimages/items/pistol/Derringer.png",
+					"Build Path": ["Walther PPK + Dynamite (Gunpowder + Piano Wire)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Magnum-Python",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Pistols",
+					"Image": "erwimages/items/pistol/Magnum-Python.png",
+					"Build Path": ["Walther PPK + Oil"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Beretta M92F",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Pistols",
+					"Image": "erwimages/items/pistol/BerettaM92F.png",
+					"Build Path": ["Walther PPK + Leather"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Walther PPK",
+					"Rarity": "Common",
+					"Description": "Starter Pistol",
+					"Image": "erwimages/items/pistol/WaltherPPK.png",
 					"Build Path": [],
 					"Statistics": ["1 Attack Power"],
 					"Passives": []
