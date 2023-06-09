@@ -1199,5 +1199,336 @@ items =
 				}
 			]
 		}
+	},
+	{
+		"Dual Swords":
+		{
+			"Description": "A brutal weapon designed to apply as many double attacks as possible to whittle down opponents.",
+			"ItemList":
+			[
+				{
+					"Name": "Starsteel Twin Swords",
+					"Rarity": "Legendary",
+					"Description": "Armor Piercing Dual Sword",
+					"Image": "erwimages/items/dualswords/StarsteelTwinSwords.png",
+					"Build Path": ["Wrought Swords (Scissors + Pickaxe)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power",
+						"25% Lifesteal"],
+					"Passives": ["Armor-Piercing - Basic attacks ignore any damage resistance."]
+				},
+				{
+					"Name": "Lloigor & Zahr",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Dual Sword",
+					"Image": "erwimages/items/dualswords/Lloigor&Zahr.png",
+					"Build Path": ["Twin Blades",
+						"Tree of Life"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Spring And Autumn",
+					"Rarity": "Legendary",
+					"Description": "Slowing Dual Sword",
+					"Image": "erwimages/items/dualswords/SpringAndAutumn.png",
+					"Build Path": ["Twin Blades",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["25 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Magnetic Might (1 day cooldown) - Charge up two powerful slowing basic attacks, dealing 5 damage and slowing the target, increasing their cooldown by 10%."]
+				},
+				{
+					"Name": "Divine Dual Swords",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Dual Sword",
+					"Image": "erwimages/items/dualswords/DivineDualSwords.png",
+					"Build Path": ["Florentine (Twin Blades + Blueprint (Fountain Pen + Paper))",
+						"Spiked Plank (Mousetrap + Nail)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Asura",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Dual Sword",
+					"Image": "erwimages/items/dualswords/Asura.png",
+					"Build Path": ["Florentine (Twin Blades + Blueprint (Fountain Pen + Paper))",
+						"Buddha Sarira (Buddhist Scripture + Monk’s Robe)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "BlackButterfly",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Dual Sword",
+					"Image": "erwimages/items/dualswords/BlackButterfly.png",
+					"Build Path": ["Pocket Aces (Twin Blades + Iron Sheet (Scrap Metal + Hammer))",
+						"Hardcover (Paper + Leather)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Dioscuri",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Dual Sword",
+					"Image": "erwimages/items/dualswords/Dioscuri.png",
+					"Build Path": ["Wrought Swords (Scissors + Pickaxe)",
+						"Ion Battery (Battery + Carbonated Water)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Florentine",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Dual Swords",
+					"Image": "erwimages/items/dualswords/Florentine.png",
+					"Build Path": ["Twin Blades + Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Pocket Aces",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Dual Swords",
+					"Image": "erwimages/items/dualswords/PocketAces.png",
+					"Build Path": ["Twin Blades + Iron Sheet (Scrap Metal + Hammer)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Wrought Swords",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Dual Swords",
+					"Image": "erwimages/items/dualswords/WroughtSwords.png",
+					"Build Path": ["Scissors + Pickaxe"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Twin Blades",
+					"Rarity": "Common",
+					"Description": "Starter Dual Swords",
+					"Image": "erwimages/items/dualswords/TwinBlades.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Glove":
+		{
+			"Description": "An all-rounder weapon that can do many different tasks, depending on the end goal.",
+			"ItemList":
+			[
+				{
+					"Name": "Imperial Silk Gloves",
+					"Rarity": "Legendary",
+					"Description": "Basic Attack Glove",
+					"Image": "erwimages/items/glove/ImperialSilkGloves.png",
+					"Build Path": ["Leather Gloves (Cotton Gloves + Leather)",
+						"Mithril"],
+					"Statistics": ["25 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Focused Impact (2 day cooldown) - Deal double damage on your next basic attack."]
+				},
+				{
+					"Name": "Mark of the Phoenix",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Glove",
+					"Image": "erwimages/items/glove/MarkOfThePhoenix.png",
+					"Build Path": ["Leather Gloves (Cotton Gloves + Leather)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power",
+						"20 HP"],
+					"Passives": ["Smolder (1/2th day cooldown) - Basic attacks inflict a DoT that lasts for 1/4th day, burning the target’s HP by 5% max HP for every 1/8th of a day."]
+				},
+				{
+					"Name": "Permafrost",
+					"Rarity": "Legendary",
+					"Description": "Slowing Glove",
+					"Image": "erwimages/items/glove/Permafrost.png",
+					"Build Path": ["Leather Gloves (Cotton Gloves + Leather)",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				},
+				{
+					"Name": "One Inch Punch",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Glove",
+					"Image": "erwimages/items/glove/OneInchPunch.png",
+					"Build Path": ["Bone Gauntlet (Gauntlet (Cotton Gloves + Steel (Scrap Metal + Iron Ore)) + Turtle Shell)",
+						"Doll (Ribbon + Cloth)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Divine Fist",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Glove",
+					"Image": "erwimages/items/glove/DivineFist.png",
+					"Build Path": ["Shatter Shell Gauntlet (Gauntlet (Cotton Gloves + Steel (Scrap Metal + Iron Ore)) + Gunpowder)",
+						"Cross"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Bloodwing Knuckles",
+					"Rarity": "Epic",
+					"Description": "HP Glove",
+					"Image": "erwimages/items/glove/BloodwingKnuckles.png",
+					"Build Path": ["Wing Knuckles (Iron Knuckles (Brass Knuckles + Iron Ore) + Feather)",
+						"Ruby (Hammer + Gemstone)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Frost Petal Hand",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Glove",
+					"Image": "erwimages/items/glove/FrostPetalHand.png",
+					"Build Path": ["Phoenix Gloves (Leather Gloves (Cotton Gloves + Leather) + Ash (Paper + Lighter))",
+						"Ice"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Buddha's Palm",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Glove",
+					"Image": "erwimages/items/glove/BuddhasPalm.png",
+					"Build Path": ["Phoenix Gloves (Leather Gloves (Cotton Gloves + Leather) + Ash (Paper + Lighter))",
+						"Buddha Sarira (Buddhist Scripture + Monk’s Robe)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Brasil Gauntlet",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Glove",
+					"Image": "erwimages/items/glove/BrasilGauntlet.png",
+					"Build Path": ["Bone Gauntlet (Gauntlet (Cotton Gloves + Steel (Scrap Metal + Iron Ore)) + Turtle Shell)",
+						"Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "White Claw Punch",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Glove",
+					"Image": "erwimages/items/glove/WhiteClawPunch.png",
+					"Build Path": ["Glass Knuckles (Iron Knuckles (Brass Knuckles + Iron Ore) + Glass Pieces (Glass Bottle + Stone))",
+						"Chalk Powder (Chalk + Stone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Gauntlet",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Gloves",
+					"Image": "erwimages/items/glove/Gauntlet.png",
+					"Build Path": ["Cotton Gloves + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Wing Knuckles",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Gloves",
+					"Image": "erwimages/items/glove/WingKnuckles.png",
+					"Build Path": ["Iron Knuckles (Brass Knuckles + Iron Ore) + Feather"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Bone Gauntlet",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Gloves",
+					"Image": "erwimages/items/glove/BoneGauntlet.png",
+					"Build Path": ["Gauntlet (Cotton Gloves + Steel (Scrap Metal + Iron Ore)) + Turtle Shell"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Shatter Shell Gauntlet",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Gloves",
+					"Image": "erwimages/items/glove/ShatterShellGauntlet.png",
+					"Build Path": ["Gauntlet (Cotton Gloves + Steel (Scrap Metal + Iron Ore)) + Gunpowder"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Glass Knuckles",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Gloves",
+					"Image": "erwimages/items/glove/GlassKnuckles.png",
+					"Build Path": ["Iron Knuckles (Brass Knuckles + Iron Ore) + Glass Pieces (Glass Bottle + Stone)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Phoenix Gloves",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Gloves",
+					"Image": "erwimages/items/glove/PhoenixGloves.png",
+					"Build Path": ["Leather Gloves (Cotton Gloves + Leather) + Ash (Paper + Lighter)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Leather Gloves",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Gloves",
+					"Image": "erwimages/items/glove/LeatherGloves.png",
+					"Build Path": ["Cotton Gloves + Leather"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Iron Knuckles",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Gloves",
+					"Image": "erwimages/items/glove/IronKnuckles.png",
+					"Build Path": ["Brass Knuckles + Iron Ore"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Brass Knuckles",
+					"Rarity": "Common",
+					"Description": "Starter Glove",
+					"Image": "erwimages/items/glove/BrassKnuckles.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Cotton Gloves",
+					"Rarity": "Common",
+					"Description": "Starter Glove",
+					"Image": "erwimages/items/glove/CottonGloves.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
 	}
 ]
