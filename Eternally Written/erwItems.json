@@ -3169,12 +3169,197 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/twohandedsword/Needle.png",
+					"Name": "Laevatein",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Sword",
+					"Image": "erwimages/items/twohandedsword/Laevatein.png",
+					"Build Path": ["Shamshir (Rusty Sword + Oil)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Smolder (1/2th day cooldown) - Basic attacks inflict a DoT that lasts for 1/4th day, burning the target’s HP by 5% max HP for every 1/8th of a day."]
+				},
+				{
+					"Name": "Aurora Longsword",
+					"Rarity": "Legendary",
+					"Description": "Slowing Sword",
+					"Image": "erwimages/items/twohandedsword/AuroraLongsword.png",
+					"Build Path": ["Plasma Sword (Rusty Sword + Laser Pointer)",
+						"Meteorite"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Magnetic Might (1 day cooldown) - Charge up a powerful slowing basic attack, dealing 5 damage and slowing the target, increasing their cooldown by 10%."]
+				},
+				{
+					"Name": "Dainsleif",
+					"Rarity": "Legendary",
+					"Description": "Shielding Sword",
+					"Image": "erwimages/items/twohandedsword/Dainsleif.png",
+					"Build Path": ["Rusty Sword",
+						"VF Blood Sample"],
+					"Statistics": ["25 Attack Power",
+						"25% Lifesteal"],
+					"Passives": ["Blood Pact (2 day cooldown) - After dropping below 30% HP, give you a shield for 20 HP and 25% more Lifesteal for 1/5th of a day."]
+				},
+				{
+					"Name": "Almas",
+					"Rarity": "Legendary",
+					"Description": "Slowing Sword",
+					"Image": "erwimages/items/twohandedsword/Almas.png",
+					"Build Path": ["Shamshir (Rusty Sword + Oil)",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				},
+				{
+					"Name": "Chained Nightmare",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Sword",
+					"Image": "erwimages/items/twohandedsword/ChainedNightmare.png",
+					"Build Path": ["Rusty Sword",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["25 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Thuan Thien",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Sword",
+					"Image": "erwimages/items/twohandedsword/ThuanThien.png",
+					"Build Path": ["Bastard Sword (Rusty Sword + Steel (Scrap Metal + Iron Ore))",
+						"Turtle Dobok (Monk’s Robe + Turtle Shell)"],
+					"Statistics": ["10 Attack Power",
+						"10% Cooldown Reduction",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Arondight",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Sword",
+					"Image": "erwimages/items/twohandedsword/Arondight.png",
+					"Build Path": ["Jewel Sword (Shamshir (Rusty Sword + Oil) + Ruby (Hammer + Gemstone))",
+						"Cross"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Excalibur",
+					"Rarity": "Epic",
+					"Description": "HP Sword",
+					"Image": "erwimages/items/twohandedsword/Excalibur.png",
+					"Build Path": ["Jewel Sword (Shamshir (Rusty Sword + Oil) + Ruby (Hammer + Gemstone))",
+						"Holy Grail"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Monohoshizao",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Sword",
+					"Image": "erwimages/items/twohandedsword/Monohoshizao.png",
+					"Build Path": ["Muramasa (Katana (Rusty Sword + (Iron Sheet (Scrap Metal + Hammer))) + Gemstone)",
+						"Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Hovud",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Sword",
+					"Image": "erwimages/items/twohandedsword/Hovud.png",
+					"Build Path": ["Katana (Rusty Sword + (Iron Sheet (Scrap Metal + Hammer)))",
+						"Glass Pieces (Glass Bottle + Stone)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Arcane Edge",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Sword",
+					"Image": "erwimages/items/twohandedsword/ArcaneEdge.png",
+					"Build Path": ["Bastard Sword (Rusty Sword + Steel (Scrap Metal + Iron Ore))",
+						"Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Masamune",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Sword",
+					"Image": "erwimages/items/twohandedsword/Masamune.png",
+					"Build Path": ["Katana (Rusty Sword + (Iron Sheet (Scrap Metal + Hammer)))",
+						"Cross",
+						"Oil"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Katana",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Swords",
+					"Image": "erwimages/items/twohandedsword/Katana.png",
+					"Build Path": ["Rusty Sword + (Iron Sheet (Scrap Metal + Hammer))"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Muramasa",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Swords",
+					"Image": "erwimages/items/twohandedsword/Muramasa.png",
+					"Build Path": ["Katana (Rusty Sword + (Iron Sheet (Scrap Metal + Hammer))) + Gemstone"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Bastard Sword",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Swords",
+					"Image": "erwimages/items/twohandedsword/BastardSword.png",
+					"Build Path": ["Rusty Sword + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Jewel Sword",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Swords",
+					"Image": "erwimages/items/twohandedsword/JewelSword.png",
+					"Build Path": ["Shamshir (Rusty Sword + Oil) + Ruby (Hammer + Gemstone)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Shamshir",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Swords",
+					"Image": "erwimages/items/twohandedsword/Shamshir.png",
+					"Build Path": ["Rusty Sword + Oil"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Plasma Sword",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Swords",
+					"Image": "erwimages/items/twohandedsword/PlasmaSword.png",
+					"Build Path": ["Rusty Sword + Laser Pointer"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Rusty Sword",
+					"Rarity": "Common",
+					"Description": "Starter Sword",
+					"Image": "erwimages/items/twohandedsword/RustySword.png",
 					"Build Path": [],
-					"Statistics": [],
+					"Statistics": ["1 Attack Power"],
 					"Passives": []
 				}
 			]
@@ -3194,6 +3379,141 @@ items =
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
 				}
 			]
 		}
@@ -3204,6 +3524,105 @@ items =
 			"Description": "A supportive weapon designed to allow for displacement, specifically pull focused gameplay.",
 			"ItemList": 
 			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/whip/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
 				{
 					"Name": "",
 					"Rarity": "",
