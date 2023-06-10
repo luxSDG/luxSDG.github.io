@@ -2819,12 +2819,220 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/throw/Needle.png",
+					"Name": "Grenade of Antioch",
+					"Rarity": "Legendary",
+					"Description": "Area of Effect Throw",
+					"Image": "erwimages/items/throw/GrenadeOfAntioch.png",
+					"Build Path": ["Grenade (Iron Ball + Gunpowder)",
+						"Tree of Life"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["High Explosive - Area of effect spells explode and deal an extra 10 damage."]
+				},
+				{
+					"Name": "Fireball",
+					"Rarity": "Legendary",
+					"Description": "Slowing Throw",
+					"Image": "erwimages/items/throw/Fireball.png",
+					"Build Path": ["Autographed Baseball (Baseball + Fountain Pen)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Magnetic Might (1 day cooldown) - Charge up a powerful slowing basic attack, dealing 5 damage and slowing the target, increasing their cooldown by 10%."]
+				},
+				{
+					"Name": "Dyadic Prism",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Throw",
+					"Image": "erwimages/items/throw/DyadicPrism.png",
+					"Build Path": ["Autographed Baseball (Baseball + Fountain Pen)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Vigor (1/2th day cooldown) - Your basic attack deals 5% max HP."]
+				},
+				{
+					"Name": "Imugi's Pearl",
+					"Rarity": "Legendary",
+					"Description": "Anti Heal Throw",
+					"Image": "erwimages/items/throw/ImugisPearl.png",
+					"Build Path": ["Iron Ball",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Anti Heal - Upon damaging someone, reduce all healing effects by 25%."]
+				},
+				{
+					"Name": "Incendiary Bomb",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Throw",
+					"Image": "erwimages/items/throw/IncendiaryBomb.png",
+					"Build Path": ["Ball Lightning (Ion Battery (Battery + Carbonated Water) + Iron Ball)",
+						"Molotov Cocktail (Glass Bottle + Oil)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "David's Sling",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Throw",
+					"Image": "erwimages/items/throw/DavidsSling.png",
+					"Build Path": ["Sling (Autographed Baseball (Baseball + Fountain Pen) + Rubber)",
+						"Saint’s Relic (Cross + Holy Grail)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Smoke Bomb",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Throw",
+					"Image": "erwimages/items/throw/SmokeBomb.png",
+					"Build Path": ["Flour Bomb (Chalk Powder (Chalk + Stone) + Molotov Cocktail (Glass Bottle + Oil))",
+						"Cola (Carbonated Water + Honey)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Astrape",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Throw",
+					"Image": "erwimages/items/throw/Astrape.png",
+					"Build Path": ["Pilum (Short Spear + Marksman Handbook (Short Crossbow + Fedorova))",
+						"Glass Pieces (Glass Bottle + Stone)"],
+					"Statistics": ["10 Attack Power",
+						"10 First Basic Attack Damage",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Sticky Bomb",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Throw",
+					"Image": "erwimages/items/throw/StickyBomb.png",
+					"Build Path": ["Ball Lightning (Ion Battery (Battery + Carbonated Water) + Iron Ball)",
+						"Grenade (Iron Ball + Gunpowder)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Ruthenium Marble",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Throw",
+					"Image": "erwimages/items/throw/RutheniumMarble.png",
+					"Build Path": ["Spiky Bouncy Ball (Flubber (Baseball + Boiling Water (Lighter + Water)) + Nail)",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "High Explosive Grenade",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Throw",
+					"Image": "erwimages/items/throw/HighExplosiveGrenade.png",
+					"Build Path": ["Grenade (Iron Ball + Gunpowder)",
+						"RDX (Dynamite (Gunpowder + Piano Wire) + Scrap Metal)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Sling",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Throw",
+					"Image": "erwimages/items/throw/Sling.png",
+					"Build Path": ["Autographed Baseball (Baseball + Fountain Pen) + Rubber"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Flour Bomb",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Throw",
+					"Image": "erwimages/items/throw/FlourBomb.png",
+					"Build Path": ["Chalk Powder (Chalk + Stone) + Molotov Cocktail (Glass Bottle + Oil)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Ball Lightning",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Throw",
+					"Image": "erwimages/items/throw/BallLightning.png",
+					"Build Path": ["Ion Battery (Battery + Carbonated Water) + Iron Ball"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Flubber",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Throw",
+					"Image": "erwimages/items/throw/Flubber.png",
+					"Build Path": ["Baseball + Boiling Water (Lighter + Water)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Pilum",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Throw",
+					"Image": "erwimages/items/throw/Pilum.png",
+					"Build Path": ["Short Spear + Marksman Handbook (Short Crossbow + Fedorova)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Spiky Bouncy Ball",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Throw",
+					"Image": "erwimages/items/throw/SpikyBouncyBall.png",
+					"Build Path": ["Flubber (Baseball + Boiling Water (Lighter + Water)) + Nail"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Grenade",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Throw",
+					"Image": "erwimages/items/throw/Grenade.png",
+					"Build Path": ["Iron Ball + Gunpowder"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Molotov Cocktail",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Throw",
+					"Image": "erwimages/items/throw/MolotovCocktail.png",
+					"Build Path": ["Glass Bottle + Oil"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Autographed Baseball",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Throw",
+					"Image": "erwimages/items/throw/AutographedBaseball.png",
+					"Build Path": ["Baseball + Fountain Pen"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Iron Ball",
+					"Rarity": "Common",
+					"Description": "Starter Throw",
+					"Image": "erwimages/items/throw/IronBall.png",
 					"Build Path": [],
-					"Statistics": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Baseball",
+					"Rarity": "Common",
+					"Description": "Starter Throw",
+					"Image": "erwimages/items/throw/Baseball.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
 					"Passives": []
 				}
 			]
