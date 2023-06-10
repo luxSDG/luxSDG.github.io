@@ -2130,5 +2130,292 @@ items =
 				}
 			]
 		}
+	},
+	{
+		"Rapier":
+		{
+			"Description": "A mobile and versatile weapon allowing chasing enemies across zones, allowing for many playstyles.",
+			"ItemList": 
+			[
+				{
+					"Name": "Mistilteinn",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Rapier",
+					"Image": "erwimages/items/rapier/Mistilteinn.png",
+					"Build Path": ["Fencing Rapier (Needle + Iron Ore)",
+						"Tree of Life"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Meteor Claymore",
+					"Rarity": "Legendary",
+					"Description": "Basic Attack Rapier",
+					"Image": "erwimages/items/rapier/MeteorClaymore.png",
+					"Build Path": ["Fencing Rapier (Needle + Iron Ore)",
+						"Meteorite"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Focused Impact (2 day cooldown) - Deal double damage on your next basic attack."]
+				},
+				{
+					"Name": "Joyeuse",
+					"Rarity": "Legendary",
+					"Description": "Burst Damage Rapier",
+					"Image": "erwimages/items/rapier/Joyeuse.png",
+					"Build Path": ["Fencing Rapier (Needle + Iron Ore)",
+						"Mithril"],
+					"Statistics": ["25 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": ["Conclusion - Every 3rd basic attack or ability deals 15 damage."]
+				},
+				{
+					"Name": "Eye of Argos",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Rapier",
+					"Image": "erwimages/items/rapier/EyeOfArgos.png",
+					"Build Path": ["Needle",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Biotic Infusion (1 day cooldown) - After using an ability, the next basic attack deals 10% of the enemy’s max HP as damage."]
+				},
+				{
+					"Name": "Sword of Justice",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Rapier",
+					"Image": "erwimages/items/rapier/SwordOfJustice.png",
+					"Build Path": ["Hanbok (Patched Robe (Monk’s Robe + Bandage) + Flower)",
+						"Fencing Rapier (Needle + Iron Ore)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Durendal Mk 2",
+					"Rarity": "Epic",
+					"Description": "Burst Damage Rapier",
+					"Image": "erwimages/items/rapier/DurendalMk2.png",
+					"Build Path": ["Apricot Sword (Fencing Rapier (Needle + Iron Ore) + Flower of Fate (Flower + Playing Cards))",
+						"Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["15 Attack Power",
+						"5 First Basic Attack Damage",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Volticletto",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Rapier",
+					"Image": "erwimages/items/rapier/Volticletto.png",
+					"Build Path": ["Apricot Sword (Fencing Rapier (Needle + Iron Ore) + Flower of Fate (Flower + Playing Cards))",
+						"Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Red Panther",
+					"Rarity": "Epic",
+					"Description": "HP Rapier",
+					"Image": "erwimages/items/rapier/RedPanther.png",
+					"Build Path": ["Estoc (Needle + Fencing Rapier (Needle + Iron Ore))",
+						"Crimson Bracelet (Bracelet + Spiked Plank (Mousetrap + Nail))"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Espirit",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Rapier",
+					"Image": "erwimages/items/rapier/Espirit.png",
+					"Build Path": ["Estoc (Needle + Fencing Rapier (Needle + Iron Ore))",
+						"Marksman Handbook (Short Crossbow + Fedorova)"],
+					"Statistics": ["15 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Apricot Sword",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Rapiers",
+					"Image": "erwimages/items/rapier/ApricotSword.png",
+					"Build Path": ["Fencing Rapier (Needle + Iron Ore) + Flower of Fate (Flower + Playing Cards)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Estoc",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Rapiers",
+					"Image": "erwimages/items/rapier/Estoc.png",
+					"Build Path": ["Needle + Fencing Rapier (Needle + Iron Ore)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Fencing Rapier",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Rapiers",
+					"Image": "erwimages/items/rapier/FencingRapier.png",
+					"Build Path": ["Needle + Iron Ore"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Needle",
+					"Rarity": "Common",
+					"Description": "Starter Rapier",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Shuriken":
+		{
+			"Description": "A spell focused weapon that deals massive area of effect damage.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Sniper Rifle":
+		{
+			"Description": "A longer ranged weapon that can lay suppressing fire from adjacent zones.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Spear":
+		{
+			"Description": "A tankier weapon that relies on constantly keeping a distance and applying push statuses consistently.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Throw":
+		{
+			"Description": "A spell focused or basic attack focused weapon that grants utility and safety along with significant damage.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Tonfa":
+		{
+			"Description": "A defensive weapon that reflects damage against enemies, protecting against burst damage.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Two Handed Sword":
+		{
+			"Description": "Focused on defensive and sustain heavy gameplay, the weapon allows for playing around cautious play.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"VF Prosthetic":
+		{
+			"Description": "Why are you playing Echion, wtf is wrong with you?",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Whip":
+		{
+			"Description": "A supportive weapon designed to allow for displacement, specifically pull focused gameplay.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/rapier/Needle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
 	}
 ]
