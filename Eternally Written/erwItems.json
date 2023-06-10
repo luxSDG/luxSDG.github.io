@@ -3045,12 +3045,118 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/tonfa/Needle.png",
+					"Name": "Windrunner",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Tonfa",
+					"Image": "erwimages/items/tonfa/Windrunner.png",
+					"Build Path": ["Wooden Tonfa (Bamboo + Branch)",
+						"Mithril"],
+					"Statistics": ["25 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Streamlined (1 day cooldown) - Hitting 3 basic attacks and abilities on a single target reduces cooldowns by 10%."]
+				},
+				{
+					"Name": "Obsidian Jitte",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Tonfa",
+					"Image": "erwimages/items/tonfa/ObsidianJitte.png",
+					"Build Path": ["Bamboo",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["25 Attack Power",
+						"10 Basic Attack Reduction",
+						"10 Spell Damage Reduction"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Frozen Echo",
+					"Rarity": "Legendary",
+					"Description": "Slowing Tonfa",
+					"Image": "erwimages/items/tonfa/FrozenEcho.png",
+					"Build Path": ["Wooden Tonfa (Bamboo + Branch)",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 Attack Power",
+						"5 Basic Attack Reduction"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				},
+				{
+					"Name": "Tactical Tonfa",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Tonfa",
+					"Image": "erwimages/items/tonfa/TacticalTonfa.png",
+					"Build Path": ["Police Baton (Wooden Tonfa (Bamboo + Branch) + Stallion Medal)",
+						"Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Mai Sok",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Tonfa",
+					"Image": "erwimages/items/tonfa/MaiSok.png",
+					"Build Path": ["Ryukyu Tonfa (Wooden Tonfa (Bamboo + Branch) + Chalk Powder (Chalk + Stone))",
+						"Turtle Shell"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Plasma Tonfa",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Tonfa",
+					"Image": "erwimages/items/tonfa/PlasmaTonfa.png",
+					"Build Path": ["Ryukyu Tonfa (Wooden Tonfa (Bamboo + Branch) + Chalk Powder (Chalk + Stone))",
+						"Ion Battery (Battery + Carbonated Water)"],
+					"Statistics": ["20 Attack Power",
+						"5 Basic Attack Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Holster Tonfa",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Tonfa",
+					"Image": "erwimages/items/tonfa/HolsterTonfa.png",
+					"Build Path": ["Police Baton (Wooden Tonfa (Bamboo + Branch) + Stallion Medal)",
+						"Broken Watch (Watch + Glue)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Police Baton",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Tonfas",
+					"Image": "erwimages/items/tonfa/PoliceBaton.png",
+					"Build Path": ["Wooden Tonfa (Bamboo + Branch) + Stallion Medal"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Ryukyu Tonfa",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Tonfas",
+					"Image": "erwimages/items/tonfa/RyukyuTonfa.png",
+					"Build Path": ["Wooden Tonfa (Bamboo + Branch) + Chalk Powder (Chalk + Stone)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Wooden Tonfa",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Tonfas",
+					"Image": "erwimages/items/tonfa/WoodenTonfa.png",
+					"Build Path": ["Bamboo + Branch"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Bamboo",
+					"Rarity": "Common",
+					"Description": "Starter Tonfa",
+					"Image": "erwimages/items/tonfa/Bamboo.png",
 					"Build Path": [],
-					"Statistics": [],
+					"Statistics": ["1 Attack Power"],
 					"Passives": []
 				}
 			]
