@@ -2281,12 +2281,228 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Name": "Frost Venom Dart",
+					"Rarity": "Legendary",
+					"Description": "Slowing Shuriken",
+					"Image": "erwimages/items/shuriken/FrostVenomDart.png",
+					"Build Path": ["Dart (Needle + Feather)",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				},
+				{
+					"Name": "Death Rune",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Shuriken",
+					"Image": "erwimages/items/shuriken/DeathRune.png",
+					"Build Path": ["Vintage Cards (Playing Cards + Fountain Pen)",
+						"Meteorite"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Sudarsana",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Shuriken",
+					"Image": "erwimages/items/shuriken/Sudarsana.png",
+					"Build Path": ["Throwing Stars (Razor + Piano Wire)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 Attack Power"],
+					"Passives": ["Vigor (1/2th day cooldown) - Your basic attack deals 5% max HP."]
+				},
+				{
+					"Name": "Petal Torrent",
+					"Rarity": "Legendary",
+					"Description": "Basic Attack Shuriken",
+					"Image": "erwimages/items/shuriken/PetalTorrent.png",
+					"Build Path": ["Onyx Dagger (Razor + Cross)",
+						"Tree of Life"],
+					"Statistics": ["25 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["In Full Bloom - Every 4th basic attack or ability deals 20 damage."]
+				},
+				{
+					"Name": "Cards of Tyranny",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Shuriken",
+					"Image": "erwimages/items/shuriken/CardsOfTyranny.png",
+					"Build Path": ["Vintage Cards (Playing Cards + Fountain Pen)",
+						"Ion Battery (Battery + Carbonated Water)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Mystic Jade Charm",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Shuriken",
+					"Image": "erwimages/items/shuriken/MysticJadeCharm.png",
+					"Build Path": ["Charm (Vintage Cards (Playing Cards + Fountain Pen) + Chalk)",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Fuhma Shuriken",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Shuriken",
+					"Image": "erwimages/items/shuriken/FuhmaShuriken.png",
+					"Build Path": ["Willow Leaf Spike (Apricot Flower Tag (Onyx Dagger (Razor + Cross) + Flower) + Branch)",
+						"Alcohol"],
+					"Statistics": ["10 Attack Power",
+						"20% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Azure Dagger",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Shuriken",
+					"Image": "erwimages/items/shuriken/AzureDagger.png",
+					"Build Path": ["Apricot Flower Tag (Onyx Dagger (Razor + Cross) + Flower)",
+						"Poison (Ash (Paper + Lighter) + Water)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Flechette",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Shuriken",
+					"Image": "erwimages/items/shuriken/Flechette.png",
+					"Build Path": ["Plumbata (Dart (Needle + Feather) + Steel (Scrap Metal + Iron Ore))",
+						"Chalk Powder (Chalk + Stone)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Wind and Fire Wheels",
+					"Rarity": "Epic",
+					"Description": "Healing Power Shuriken",
+					"Image": "erwimages/items/shuriken/WindAndFireWheels.png",
+					"Build Path": ["Dharma Chakram (Chakram (Throwing Stars (Razor + Piano Wire) + Stallion Medal) + Buddhist Scripture)",
+						"Rubber"],
+					"Statistics": ["20 Attack Power",
+						"10 Healing Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Charm",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Shurikens",
+					"Image": "erwimages/items/shuriken/Charm.png",
+					"Build Path": ["Vintage Cards (Playing Cards + Fountain Pen) + Chalk"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Apricot Flower Tag",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Shurikens",
+					"Image": "erwimages/items/shuriken/ApricotFlowerTag.png",
+					"Build Path": ["Onyx Dagger (Razor + Cross) + Flower"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Chakram",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Shurikens",
+					"Image": "erwimages/items/shuriken/Chakram.png",
+					"Build Path": ["Throwing Stars (Razor + Piano Wire) + Stallion Medal"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Willow Leaf Spike",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Shurikens",
+					"Image": "erwimages/items/shuriken/WillowLeafSpike.png",
+					"Build Path": ["Apricot Flower Tag (Onyx Dagger (Razor + Cross) + Flower) + Branch"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Venom Dart",
+					"Rarity": "Rare",
+					"Description": "Fast Shuriken",
+					"Image": "erwimages/items/shuriken/VenomDart.png",
+					"Build Path": ["Razor + Ash (Paper + Lighter)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Dharma Chakram",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Shurikens",
+					"Image": "erwimages/items/shuriken/DharmaChakram.png",
+					"Build Path": ["Chakram (Throwing Stars (Razor + Piano Wire) + Stallion Medal) + Buddhist Scripture"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Plumbata",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Shurikens",
+					"Image": "erwimages/items/shuriken/Plumbata.png",
+					"Build Path": ["Dart (Needle + Feather) + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Dart",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Shurikens",
+					"Image": "erwimages/items/shuriken/Dart.png",
+					"Build Path": ["Needle + Feather"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Vintage Cards",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Shurikens",
+					"Image": "erwimages/items/shuriken/VintageCards.png",
+					"Build Path": ["Playing Cards + Fountain Pen"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Throwing Stars",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Shurikens",
+					"Image": "erwimages/items/shuriken/ThrowingStars.png",
+					"Build Path": ["Razor + Piano Wire"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Onyx Dagger",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Shurikens",
+					"Image": "erwimages/items/shuriken/OnyxDagger.png",
+					"Build Path": ["Razor + Cross"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Razor",
+					"Rarity": "Common",
+					"Description": "Starter Shuriken",
+					"Image": "erwimages/items/shuriken/Razor.png",
 					"Build Path": [],
-					"Statistics": [],
+					"Statistics": ["1 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Playing Cards",
+					"Rarity": "Common",
+					"Description": "Starter Shuriken",
+					"Image": "erwimages/items/shuriken/PlayingCards.png",
+					"Build Path": [],
+					"Statistics": ["1 Attack Power"],
 					"Passives": []
 				}
 			]
@@ -2302,7 +2518,7 @@ items =
 					"Name": "",
 					"Rarity": "",
 					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Image": "erwimages/items/sniperrifle/Needle.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
@@ -2320,7 +2536,7 @@ items =
 					"Name": "",
 					"Rarity": "",
 					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Image": "erwimages/items/spear/Needle.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
@@ -2338,7 +2554,7 @@ items =
 					"Name": "",
 					"Rarity": "",
 					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Image": "erwimages/items/throw/Needle.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
@@ -2356,7 +2572,7 @@ items =
 					"Name": "",
 					"Rarity": "",
 					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Image": "erwimages/items/tonfa/Needle.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
@@ -2374,7 +2590,7 @@ items =
 					"Name": "",
 					"Rarity": "",
 					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Image": "erwimages/items/twohandedsword/Needle.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
@@ -2392,7 +2608,7 @@ items =
 					"Name": "",
 					"Rarity": "",
 					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Image": "erwimages/items/vfprosthetic/Needle.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
@@ -2410,7 +2626,7 @@ items =
 					"Name": "",
 					"Rarity": "",
 					"Description": "",
-					"Image": "erwimages/items/rapier/Needle.png",
+					"Image": "erwimages/items/whip/Needle.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
