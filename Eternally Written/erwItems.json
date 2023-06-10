@@ -2515,12 +2515,135 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/sniperrifle/Needle.png",
+					"Name": "The Deadly Ray",
+					"Rarity": "Legendary",
+					"Description": "Spell Damage Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/TheDeadlyRay.png",
+					"Build Path": ["Springfield (Long Rifle + Laser Pointer)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Red Sprite (1 day cooldown) - Shoot lightning along with a damaging ability and deal 10 damage to the enemy."]
+				},
+				{
+					"Name": "Blackfire Cannon",
+					"Rarity": "Legendary",
+					"Description": "Slowing Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/BlackfireCannon.png",
+					"Build Path": ["Springfield (Long Rifle + Laser Pointer)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["40 Attack Power",
+						"-25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Fire! (2 day cooldown) - Charge up a powerful slowing basic attack, dealing 20 damage and slowing the target, increasing their cooldown by 10%."]
+				},
+				{
+					"Name": "Andromeda",
+					"Rarity": "Legendary",
+					"Description": "Basic Attack Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/Andromeda.png",
+					"Build Path": ["Long Rifle",
+						"Meteorite"],
+					"Statistics": ["25 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Sniper Elite - Basic attacks can reach adjacent zones."]
+				},
+				{
+					"Name": "Tac-50",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/Tac-50.png",
+					"Build Path": ["Harpoon Gun (Springfield (Long Rifle + Laser Pointer) + Short Spear)",
+						"Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["15 Attack Power",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Intervention",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/Intervention.png",
+					"Build Path": ["Harpoon Gun (Springfield (Long Rifle + Laser Pointer) + Short Spear)",
+						"Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "NTW-20",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/NTW-20.png",
+					"Build Path": ["Golden Rifle (Springfield (Long Rifle + Laser Pointer) + Gold (Pickaxe + Gemstone))",
+						"Iron Sheet (Scrap Metal + Hammer)"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Polaris",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/Polaris.png",
+					"Build Path": ["Railgun (Springfield (Long Rifle + Laser Pointer) + Electronic Parts (Battery + Piano Wire))",
+						"Chalk Powder (Chalk + Stone)"],
+					"Statistics": ["15 Attack Power",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Gauss Rifle",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/GaussRifle.png",
+					"Build Path": ["Railgun (Springfield (Long Rifle + Laser Pointer) + Electronic Parts (Battery + Piano Wire))",
+						"Hardcover (Paper + Leather)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Harpoon Gun",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Sniper Rifles",
+					"Image": "erwimages/items/sniperrifle/HarpoonGun.png",
+					"Build Path": ["Springfield (Long Rifle + Laser Pointer) + Short Spear"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Golden Rifle",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Sniper Rifles",
+					"Image": "erwimages/items/sniperrifle/GoldenRifle.png",
+					"Build Path": ["Springfield (Long Rifle + Laser Pointer) + Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Railgun",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Sniper Rifles",
+					"Image": "erwimages/items/sniperrifle/Railgun.png",
+					"Build Path": ["Springfield (Long Rifle + Laser Pointer) + Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Springfield",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Sniper Rifles",
+					"Image": "erwimages/items/sniperrifle/Springfield.png",
+					"Build Path": ["Long Rifle + Laser Pointer"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Long Rifle",
+					"Rarity": "Common",
+					"Description": "Starter Sniper Rifle",
+					"Image": "erwimages/items/sniperrifle/LongRifle.png",
 					"Build Path": [],
-					"Statistics": [],
+					"Statistics": ["1 Attack Power"],
 					"Passives": []
 				}
 			]
@@ -2533,12 +2656,157 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/spear/Needle.png",
+					"Name": "Gentian Silver Gun",
+					"Rarity": "Legendary",
+					"Description": "Armor Piercing Spear",
+					"Image": "erwimages/items/spear/GentianSilverGun.png",
+					"Build Path": ["Bamboo Spear (Short Spear + Bamboo)",
+						"Mithril"],
+					"Statistics": ["25 Attack Power"],
+					"Passives": ["Armor-Piercing - Basic attacks ignore any damage resistance."]
+				},
+				{
+					"Name": "Cosmic Bident",
+					"Rarity": "Legendary",
+					"Description": "Anti Heal Spear",
+					"Image": "erwimages/items/spear/CosmicBident.png",
+					"Build Path": ["Short Spear",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Anti Heal - Upon damaging someone, reduce all healing effects by 25%."]
+				},
+				{
+					"Name": "Blazing Lance",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Spear",
+					"Image": "erwimages/items/spear/BlazingLance.png",
+					"Build Path": ["Bamboo Spear (Short Spear + Bamboo)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 Attack Power",
+						"10 HP"],
+					"Passives": ["Smolder (1/2th day cooldown) - Basic attacks inflict a DoT that lasts for 1/4th day, burning the target’s HP by 5% max HP for every 1/8th of a day."]
+				},
+				{
+					"Name": "Spear of Longinus",
+					"Rarity": "Legendary",
+					"Description": "Shielding Spear",
+					"Image": "erwimages/items/spear/SpearOfLonginus.png",
+					"Build Path": ["Short Spear",
+						"VF Blood Sample"],
+					"Statistics": ["25 Attack Power",
+						"20 HP"],
+					"Passives": ["Blood Pact (2 day cooldown) - After dropping below 30% HP, give you a shield for 20 HP and 25% more Lifesteal for 1/5th of a day."]
+				},
+				{
+					"Name": "Star Hunter",
+					"Rarity": "Legendary",
+					"Description": "Slowing Spear",
+					"Image": "erwimages/items/spear/StarHunter.png",
+					"Build Path": ["Short Spear",
+						"Mithril"],
+					"Statistics": ["25 Attack Power",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Magnetic Might (1 day cooldown) - Charge up a powerful slowing basic attack, dealing 5 damage and slowing the target, increasing their cooldown by 10%."]
+				},
+				{
+					"Name": "Eighteen Foot Spear",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Spear",
+					"Image": "erwimages/items/spear/EighteenFootSpear.png",
+					"Build Path": ["Sharpened Spear (Bamboo Spear (Short Spear + Bamboo) + Feather)",
+						"Ion Battery (Battery + Carbonated Water)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Lance of Poseidon",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Spear",
+					"Image": "erwimages/items/spear/LanceOfPoseidon.png",
+					"Build Path": ["Bident (Bamboo Spear (Short Spear + Bamboo) + Kitchen Knife)",
+						"Pike (Short Spear + Steel (Scrap Metal + Iron Ore))"],
+					"Statistics": ["15 Attack Power",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Fangtian Huaji",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Spear",
+					"Image": "erwimages/items/spear/FangtianHuaji.png",
+					"Build Path": ["Halberd (Pike (Short Spear + Steel (Scrap Metal + Iron Ore)) + Hatchet)",
+						"Gilded Quilt Fan (Fan + Nail)"],
+					"Statistics": ["20 Attack Power",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Dragon Guandao",
+					"Rarity": "Epic",
+					"Description": "HP Spear",
+					"Image": "erwimages/items/spear/DragonGuandao.png",
+					"Build Path": ["Halberd (Pike (Short Spear + Steel (Scrap Metal + Iron Ore)) + Hatchet)",
+						"Iron Sheet (Scrap Metal + Hammer)"],
+					"Statistics": ["10 Attack Power",
+						"20 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bident",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Spears",
+					"Image": "erwimages/items/spear/Bident.png",
+					"Build Path": ["Bamboo Spear (Short Spear + Bamboo) + Kitchen Knife"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Pike",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Spears",
+					"Image": "erwimages/items/spear/Pike.png",
+					"Build Path": ["Short Spear + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Halberd",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Spears",
+					"Image": "erwimages/items/spear/Halberd.png",
+					"Build Path": ["Pike (Short Spear + Steel (Scrap Metal + Iron Ore)) + Hatchet"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Sharpened Spear",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Spears",
+					"Image": "erwimages/items/spear/SharpenedSpear.png",
+					"Build Path": ["Bamboo Spear (Short Spear + Bamboo) + Feather"],
+					"Statistics": ["10 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Bamboo Spear",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Spears",
+					"Image": "erwimages/items/spear/BambooSpear.png",
+					"Build Path": ["Short Spear + Bamboo"],
+					"Statistics": ["5 Attack Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Short Spear",
+					"Rarity": "Common",
+					"Description": "Starter Spear",
+					"Image": "erwimages/items/spear/ShortSpear.png",
 					"Build Path": [],
-					"Statistics": [],
+					"Statistics": ["1 Attack Power"],
 					"Passives": []
 				}
 			]
