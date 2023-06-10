@@ -64,6 +64,7 @@ for (let i = 0; i < items.length; i++)
 				imagePic.src = imageSource;
 				head.innerHTML += roleSearched;
 				content.innerHTML += "<h5>" + categoryName + "</h5><br>";
+				content.innerHTML += "<p>" + item["Description"] + "</p><br>";
 
 				var buildpath = item["Build Path"];
 				if (buildpath.length > 0)
@@ -87,7 +88,7 @@ for (let i = 0; i < items.length; i++)
 				var passives = item["Passives"];
 				if (passives.length > 0)
 				{
-					content.innerHTML += "<h5>Passives: </h5><br>";
+					content.innerHTML += "<h5>Passives (if Consumable, Actives): </h5><br>";
 					for (let k = 0; k < passives.length; k++)
 					{
 						content.innerHTML += passives[k] + "<br><br>";
