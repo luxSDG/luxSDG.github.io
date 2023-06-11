@@ -4,27 +4,33 @@ const searchBox = document.getElementById("searchBox");
 //For search
 var searchList = [];
 
+//For loadbalancing
+var contentList = [];
+
 //For separate item sections
 function categoryEnabled(categoryN) {
 	var intIndex = categoryN.indexOf("-");
 	var intCategory = categoryN.slice(intIndex + 1);
   var checkbox = document.getElementById(categoryN);
   var roleList = document.getElementsByClassName(intCategory);
+  var contentDivInner = document.getElementById("ChildCategoryName" + intCategory);
   if (checkbox.checked)
   {
-  	for (let i = 0; i < roleList.length; i++)
+  	contentDivInner.innerHTML += contentList[intCategory];
+  	/*for (let i = 0; i < roleList.length; i++)
   	{
   		roleList[i].classList.add("enabled");
   		roleList[i].classList.remove("disabled");
-  	}
+  	}*/
   } 
   else 
   {
-  	for (let i = 0; i < roleList.length; i++)
+  	contentDivInner.innerHTML = "";
+  	/*for (let i = 0; i < roleList.length; i++)
   	{
   		roleList[i].classList.add("disabled");
   		roleList[i].classList.remove("enabled");
-  	}
+  	}*/
   }
 }
 
@@ -36,6 +42,9 @@ for (let i = 0; i < items.length; i++)
 	var category = items[i];
 	var categoryName = Object.keys(category);
 
+	//Load Balancing creating children
+	var child = document.createElement("div");
+
 	//Restructured to fit the new json structure (description per category)
 	var innerDetails = Object.values(category)[0];
 	var categoryDesc = innerDetails["Description"];
@@ -45,6 +54,10 @@ for (let i = 0; i < items.length; i++)
 		content.innerHTML += "<p>Category Enabled <input class=\"form-check-input categoryBox\" type=\"checkbox\" id=" + "checkbox-" + categoryCount + " onclick=\"categoryEnabled(\'' + this.id + '\')\"></p>";
 	}
 	content.innerHTML += "<span class=\"roleLink enabled\" style=\"color: white\">" + categoryName + "</span><span class=\"roleSummary enabled\"> - " + categoryDesc + "</span><br><br>";
+
+	child.id = "ChildCategoryName" + i;
+	content.appendChild(child);
+	contentList.push("");
 
 	for (let j = 0; j < itemList.length; j++)
 	{
@@ -75,9 +88,12 @@ for (let i = 0; i < items.length; i++)
 			itemColor = "white";
 		}
 
-		content.innerHTML += "&emsp;<a class=\"roleLink " + categoryCount + " disabled\" href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index + "\" style=\"color:"
-		 + itemColor + "\">" + itemName + "</a><span class=\"roleSummary " + categoryCount + " disabled\" style=\"color:" + itemColor + "\"> - " + itemSummary + "</span><br class=\"" + categoryCount + " disabled\">";
-		
+		contentList[i] += "&emsp;<a class=\"roleLink " + categoryCount + "\" href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index + "\" style=\"color:"
+		 + itemColor + "\">" + itemName + "</a><span class=\"roleSummary " + categoryCount + " \" style=\"color:" + itemColor + "\"> - " + itemSummary + "</span><br class=\"" + categoryCount + " \">";
+
+		/*content.innerHTML += "&emsp;<a class=\"roleLink " + categoryCount + " disabled\" href=\"erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index + "\" style=\"color:"
+		 + itemColor + "\">" + itemName + "</a><span class=\"roleSummary " + categoryCount + " disabled\" style=\"color:" + itemColor + "\"> - " + itemSummary + "</span><br class=\"" + categoryCount + " disabled\">";*/
+
 		var link = "erwItemSpecific.html?category=" + categoryName + "&id=" + itemName + "&index=" + index;
 		searchList.push([itemName, link]);
 		searchList.push([itemName.toLowerCase(), link]);
