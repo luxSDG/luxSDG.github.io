@@ -674,7 +674,7 @@ items =
 					"Description": "Spell Damage Bow",
 					"Image": "erwimages/items/bow/ElementalBow.png",
 					"Build Path": ["Scorchbow (Long Bow (Bow + Rubber) + Lighter)",
-						"White Crane Fan (Gilded Quilt Fan (Fan + Nail) + Feather)"],
+						"White Crane Fan (Gilded Quill Fan (Fan + Nail) + Feather)"],
 					"Statistics": ["20 Attack Power",
 						"5 First Spell Damage"],
 					"Passives": []
@@ -2739,7 +2739,7 @@ items =
 					"Description": "Spell Damage Spear",
 					"Image": "erwimages/items/spear/FangtianHuaji.png",
 					"Build Path": ["Halberd (Pike (Short Spear + Steel (Scrap Metal + Iron Ore)) + Hatchet)",
-						"Gilded Quilt Fan (Fan + Nail)"],
+						"Gilded Quill Fan (Fan + Nail)"],
 					"Statistics": ["20 Attack Power",
 						"5 First Spell Damage"],
 					"Passives": []
