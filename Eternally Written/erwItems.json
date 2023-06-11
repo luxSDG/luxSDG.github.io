@@ -4225,14 +4225,552 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/food/Whip.png",
-					"Build Path": [],
-					"Statistics": [],
+					"Name": "Zen Vitality",
+					"Rarity": "Legendary",
+					"Description": "HP Food- Food Channel!",
+					"Image": "erwimages/items/food/ZenVitality.png",
+					"Build Path": ["Buddhist Scripture",
+						"Tree of Life"],
+					"Statistics": ["40 HP Gain",
+						"3 Charges",
+						"Gain 5 HP permanently"],
 					"Passives": []
 				},
+				{
+					"Name": "Combat Epinephrine",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Food- Food Channel!",
+					"Image": "erwimages/items/food/CombatEpinephrine.png",
+					"Build Path": ["Oriental Herb",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["40 HP Gain",
+						"3 Charges",
+						"Gain 5% Lifesteal Permanently"],
+					"Passives": []
+				},
+				{
+					"Name": "First Aid Kit",
+					"Rarity": "Epic",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/FirstAidKit.png",
+					"Build Path": ["Disinfectant (Orchid (Oriental Herb + Flower) + Alcohol)",
+						"Healing Potion (Orchid (Oriental Herb + Flower) + Glass Bottle)"],
+					"Statistics": ["40 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Fish and Chips",
+					"Rarity": "Epic",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/FishAndChips.png",
+					"Build Path": ["French Fries (Potato + Heated Oil (Oil + Lighter))",
+						"Fish Cutlet (Carp + Heated Oil (Oil + Lighter))"],
+					"Statistics": ["40 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "#11 Combo Meal",
+					"Rarity": "Epic",
+					"Description": "Eleven Specific Food- Food Channel!",
+					"Image": "erwimages/items/food/11ComboMeal.png",
+					"Build Path": ["ONLY BUILDABLE BY ELEVEN",
+						"French Fries (Potato + Heated Oil (Oil + Lighter))",
+						"Hamburger (Meat + Bread)"],
+					"Statistics": ["50 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Disinfectant",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Disinfectant.png",
+					"Build Path": ["Orchid (Oriental Herb + Flower) + Alcohol"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Spicy Fish Stew",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/SpicyFishStew.png",
+					"Build Path": ["Cod + Boiling Water (Lighter + Water)"],
+					"Statistics": ["25 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "French Fries",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/FrenchFries.png",
+					"Build Path": ["Potato + Heated Oil (Oil + Lighter)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Baked Potato",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/BakedPotato.png",
+					"Build Path": ["Potato + Heated Stone (Lighter + Stone)"],
+					"Statistics": ["25 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Baked Carp",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/BakedCarp.png",
+					"Build Path": ["Carp + Heated Stone (Lighter + Stone)"],
+					"Statistics": ["25 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Grilled Chilean Sea Bass",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/GrilledChileanSeaBass.png",
+					"Build Path": ["Cod + Heated Stone (Lighter + Stone)"],
+					"Statistics": ["25 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Hot Ramen",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/HotRamen.png",
+					"Build Path": ["Ramen + Boiling Water (Lighter + Water)"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Mocha Bread",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/MochaBread.png",
+					"Build Path": ["Bread + Coffee Liqueur (Coffee + Alcohol)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Scrambled Eggs",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/ScrambledEggs.png",
+					"Build Path": ["Egg + Heated Oil (Oil + Lighter)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Chocolate Chip Cookies",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/ChocolateChipCookies.png",
+					"Build Path": ["Chocolate + Butter (Milk + Branch)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Choco Pie Box",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/ChocoPieBox.png",
+					"Build Path": ["Choco Pie (Chocolate + Bread) + Box"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Oriental Concoction",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/OrientalConcoction.png",
+					"Build Path": ["Oriental Herb + Boiling Water (Lighter + Water)"],
+					"Statistics": ["25 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Honey Butter",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/HoneyButter.png",
+					"Build Path": ["Honey + Butter (Milk + Branch)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Fried Chicken",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/FriedChicken.png",
+					"Build Path": ["Meat + Heated Oil (Oil + Lighter)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Healing Potion",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/HealingPotion.png",
+					"Build Path": ["Orchid (Oriental Herb + Flower) + Glass Bottle"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Hard Boiled Egg",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/HardBoiledEgg.png",
+					"Build Path": ["Egg + Boiling Water (Lighter + Water)"],
+					"Statistics": ["25 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Rum Raisin Bread",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/RumRaisinBread.png",
+					"Build Path": ["Bread + Soju (Alcohol + Water)"],
+					"Statistics": ["20 HP Gain",
+						"4 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Steak",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Steak.png",
+					"Build Path": ["Meat + Heated Stone (Lighter + Stone)"],
+					"Statistics": ["20 HP Gain",
+						"4 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Butter-Fried Potatoes",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Butter-FriedPotatoes.png",
+					"Build Path": ["Potato + Butter (Milk + Branch)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Fish Cutlet",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/FishCutlet.png",
+					"Build Path": ["Carp + Heated Oil (Oil + Lighter)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Stir Fried Ramen",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/StirFriedRamen.png",
+					"Build Path": ["Ramen + Heated Oil (Oil + Lighter)"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Cold Noodles",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/ColdNoodles.png",
+					"Build Path": ["Ramen + Ice Water (Ice + Water)"],
+					"Statistics": ["25 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Birthday Cake",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/BirthdayCake.png",
+					"Build Path": ["Egg + Citrus Cake (Lemon + Bread)"],
+					"Statistics": ["20 HP Gain",
+						"4 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Garlic Ramen",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/GarlicRamen.png",
+					"Build Path": ["Hot Ramen (Ramen + Boiling Water (Lighter + Water)) + Garlic"],
+					"Statistics": ["30 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Honey Cod Steak",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/HoneyCodSteak.png",
+					"Build Path": ["Cod + Honey"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Canned Cod Liver",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/CannedCodLiver.png",
+					"Build Path": ["Cod + Can"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Garlic Bread",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/GarlicBread.png",
+					"Build Path": ["Garlic + Bread"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Butter",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Butter.png",
+					"Build Path": ["Milk + Branch"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Carp Bread",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/CarpBread.png",
+					"Build Path": ["Carp + Bread"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Choco Pie",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/ChocoPie.png",
+					"Build Path": ["Chocolate + Bread"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Orchid",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Orchid.png",
+					"Build Path": ["Oriental Herb + Flower"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Bacon and Garlic Sticks",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/BaconAndGarlicSticks.png",
+					"Build Path": ["Meat + Garlic"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Bun",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Bun.png",
+					"Build Path": ["Coffee + Bread"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Hamburger",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Hamburger.png",
+					"Build Path": ["Meat + Bread"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Fish Fillet with Egg",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/FishFilletWithEgg.png",
+					"Build Path": ["Carp + Egg"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Citrus Cake",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/CitrusCake.png",
+					"Build Path": ["Lemon + Bread"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Honey Garlic",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/HoneyGarlic.png",
+					"Build Path": ["Honey + Garlic"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Egg Bun",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/EggBun.png",
+					"Build Path": ["Egg + Bread"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Choco Ice Cream",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/ChocoIceCream.png",
+					"Build Path": ["Ice + Chocolate"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Potato",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Potato.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Cod",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Cod.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Garlic",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Garlic.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Lemon",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Lemon.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Carp",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Carp.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Bread",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Bread.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Meat",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Meat.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Egg",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Egg.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Ramen",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Ramen.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Oriental Herb",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/OrientalHerb.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Chocolate",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/food/Chocolate.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				}
 			]
 		}
 	},
@@ -4245,7 +4783,7 @@ items =
 				{
 					"Name": "",
 					"Rarity": "",
-					"Description": "",
+					"Description": "Food Channel!",
 					"Image": "erwimages/items/drink/Whip.png",
 					"Build Path": [],
 					"Statistics": [],
