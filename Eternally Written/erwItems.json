@@ -3962,14 +3962,259 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/traps/Whip.png",
-					"Build Path": [],
-					"Statistics": [],
-					"Passives": []
+					"Name": "Stingburst",
+					"Rarity": "Epic",
+					"Description": "Slowing Trap",
+					"Image": "erwimages/items/traps/Stingburst.png",
+					"Build Path": ["RDX (Dynamite (Gunpowder + Piano Wire) + Scrap Metal)",
+						"Spiked Plank (Mousetrap + Nail)"],
+					"Statistics": ["2 Charges",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Slows the first enemy walking into it, increasing 25% Cooldown."]
 				},
+				{
+					"Name": "C-4",
+					"Rarity": "Epic",
+					"Description": "Damage Trap",
+					"Image": "erwimages/items/traps/C-4.png",
+					"Build Path": ["RDX (Dynamite (Gunpowder + Piano Wire) + Scrap Metal)",
+						"Chalk Powder (Chalk + Stone)"],
+					"Statistics": ["2 Charges",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Explodes and deals 30 damage to the first enemy walking into it."]
+				},
+				{
+					"Name": "Double Guillotine",
+					"Rarity": "Epic",
+					"Description": "Rooting Trap",
+					"Image": "erwimages/items/traps/DoubleGuillotine.png",
+					"Build Path": ["Pendulum Axe (Bamboo Trap (Snare + Bamboo) + Hatchet)",
+						"Jungle Guillotine (Mousetrap + Rusty Sword)"],
+					"Statistics": ["2 Charges",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Roots the first enemy walking into it for 1/4th of a day."]
+				},
+				{
+					"Name": "Claymore",
+					"Rarity": "Epic",
+					"Description": "Stunning Trap",
+					"Image": "erwimages/items/traps/Claymore.png",
+					"Build Path": ["Mine (Booby Trap (Snare + Glue) + Gunpowder)",
+						"Explosive Trap (Mousetrap + Gunpowder)"],
+					"Statistics": ["2 Charges",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Stuns the first enemy walking into it for 1/4th of a day."]
+				},
+				{
+					"Name": "Smart Bomb",
+					"Rarity": "Epic",
+					"Description": "Damage Trap",
+					"Image": "erwimages/items/traps/SmartBomb.png",
+					"Build Path": ["RDX (Dynamite (Gunpowder + Piano Wire) + Scrap Metal)",
+						"Cell Phone (Blueprint (Fountain Pen + Paper) + Electronic Parts (Battery + Piano Wire))"],
+					"Statistics": ["2 Charges",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Explodes and deals 40 damage to the first enemy walking into it."]
+				},
+				{
+					"Name": "Mine",
+					"Rarity": "Rare",
+					"Description": "Stunning Trap",
+					"Image": "erwimages/items/traps/Mine.png",
+					"Build Path": ["Booby Trap (Snare + Glue) + Gunpowder"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Stuns the first enemy walking into it for 1/6th of a day."]
+				},
+				{
+					"Name": "Pendulum Axe",
+					"Rarity": "Rare",
+					"Description": "Rooting Trap",
+					"Image": "erwimages/items/traps/PendulumAxe.png",
+					"Build Path": ["Bamboo Trap (Snare + Bamboo) + Hatchet"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Roots the first enemy walking into it for 1/6th of a day."]
+				},
+				{
+					"Name": "RDX",
+					"Rarity": "Rare",
+					"Description": "Damage Trap",
+					"Image": "erwimages/items/traps/RDX.png",
+					"Build Path": ["Dynamite (Gunpowder + Piano Wire) + Scrap Metal"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Explodes and deals 20 damage to the first enemy walking into it."]
+				},
+				{
+					"Name": "EMP Drone",
+					"Rarity": "Rare",
+					"Description": "Drone that disables traps",
+					"Image": "erwimages/items/traps/EMPDrone.png",
+					"Build Path": ["Recon Drone (Surveillance Camera + Gunpowder) + Battery"],
+					"Statistics": ["2 Charges"],
+					"Passives": ["Reveals all players in the zone placed for 1 day, disables all traps in the zone, and can be placed in an adjacent zone."]
+				},
+				{
+					"Name": "Fire Trap",
+					"Rarity": "Rare",
+					"Description": "Damage Trap",
+					"Image": "erwimages/items/traps/FireTrap.png",
+					"Build Path": ["Explosive Trap (Mousetrap + Gunpowder) + Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Explodes and deals 20 damage to the first enemy walking into it."]
+				},
+				{
+					"Name": "Hidden Maiden",
+					"Rarity": "Rare",
+					"Description": "Slowing Trap",
+					"Image": "erwimages/items/traps/HiddenMaiden.png",
+					"Build Path": ["Enhanced Mousetrap (Mousetrap + Iron Ore) + Jungle Guillotine (Mousetrap + Rusty Sword)"],
+					"Statistics": ["2 Charges",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Slows the first enemy walking into it, increasing 20% Cooldown."]
+				},
+				{
+					"Name": "Spiked Plank",
+					"Rarity": "Uncommon",
+					"Description": "Slowing Trap",
+					"Image": "erwimages/items/traps/SpikedPlank.png",
+					"Build Path": ["Mousetrap + Nail"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Slows the first enemy walking into it, increasing 10% Cooldown."]
+				},
+				{
+					"Name": "Enhanced Mousetrap",
+					"Rarity": "Uncommon",
+					"Description": "Slowing Trap",
+					"Image": "erwimages/items/traps/EnhancedMousetrap.png",
+					"Build Path": ["Mousetrap + Iron Ore"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Slows the first enemy walking into it, increasing 10% Cooldown."]
+				},
+				{
+					"Name": "Dynamite",
+					"Rarity": "Uncommon",
+					"Description": "Damage Trap",
+					"Image": "erwimages/items/traps/Dynamite.png",
+					"Build Path": ["Gunpowder + Piano Wire"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Explodes and deals 10 damage to the first enemy walking into it."]
+				},
+				{
+					"Name": "Bamboo Trap",
+					"Rarity": "Uncommon",
+					"Description": "Rooting Trap",
+					"Image": "erwimages/items/traps/BambooTrap.png",
+					"Build Path": ["Snare + Bamboo"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Roots the first enemy walking into it for 1/10th of a day."]
+				},
+				{
+					"Name": "Booby Trap",
+					"Rarity": "Uncommon",
+					"Description": "Stunning Trap",
+					"Image": "erwimages/items/traps/BoobyTrap.png",
+					"Build Path": ["Snare + Glue"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Stuns the first enemy walking into it for 1/10th of a day."]
+				},
+				{
+					"Name": "Clang Clatter",
+					"Rarity": "Uncommon",
+					"Description": "Revealing Trap",
+					"Image": "erwimages/items/traps/ClangClatter.png",
+					"Build Path": ["Can + Iron Ball"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Reveals the player that steps in it and pokes them, dealing 5 damage to the first enemy walking into it."]
+				},
+				{
+					"Name": "Telephoto Camera",
+					"Rarity": "Uncommon",
+					"Description": "Vision Ward",
+					"Image": "erwimages/items/traps/TelephotoCamera.png",
+					"Build Path": ["Surveillance Camera + Binoculars"],
+					"Statistics": ["2 Charges",
+						"1 HP"],
+					"Passives": ["Reveals all players and invisible players in the zone placed in. Can only be placed in the current zone."]
+				},
+				{
+					"Name": "Recon Drone",
+					"Rarity": "Uncommon",
+					"Description": "Drone that grants vision",
+					"Image": "erwimages/items/traps/ReconDrone.png",
+					"Build Path": ["Surveillance Camera + Gunpowder"],
+					"Statistics": ["2 Charges"],
+					"Passives": ["Reveals all players in the zone placed for 1 day, and can be placed in an adjacent zone."]
+				},
+				{
+					"Name": "Trail Camera",
+					"Rarity": "Uncommon",
+					"Description": "Vision Ward specific to Camera characters",
+					"Image": "erwimages/items/traps/TrailCamera.png",
+					"Build Path": ["ONLY BUILDABLE BY CAMERA CHARACTERS",
+						"Surveillance Camera + Branch"],
+					"Statistics": ["3 Charges",
+						"1 HP"],
+					"Passives": ["Reveals all players and invisible players in the zone placed in. Can only be placed in the current zone."]
+				},
+				{
+					"Name": "Jungle Guillotine",
+					"Rarity": "Uncommon",
+					"Description": "Rooting Trap",
+					"Image": "erwimages/items/traps/JungleGuillotine.png",
+					"Build Path": ["Mousetrap + Rusty Sword"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Roots the first enemy walking into it for 1/10th of a day."]
+				},
+				{
+					"Name": "Explosive Trap",
+					"Rarity": "Uncommon",
+					"Description": "Damage Trap",
+					"Image": "erwimages/items/traps/ExplosiveTrap.png",
+					"Build Path": ["Mousetrap + Gunpowder"],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Explodes and deals 10 damage to the first enemy walking into it."]
+				},
+				{
+					"Name": "Surveillance Camera",
+					"Rarity": "Common",
+					"Description": "Vision Ward",
+					"Image": "erwimages/items/traps/SurveillanceCamera.png",
+					"Build Path": [],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Reveals all players and invisible players in the zone placed in. Can only be placed in the current zone."]
+				},
+				{
+					"Name": "Snare",
+					"Rarity": "Common",
+					"Description": "Slowing Trap",
+					"Image": "erwimages/items/traps/Snare.png",
+					"Build Path": [],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Slows the first enemy walking into it, increasing 5% Cooldown."]
+				},
+				{
+					"Name": "Mousetrap",
+					"Rarity": "Common",
+					"Description": "Slowing Trap",
+					"Image": "erwimages/items/traps/Mousetrap.png",
+					"Build Path": [],
+					"Statistics": ["1 Charge",
+						"1 HP"],
+					"Passives": ["Place a trap in the current zone. Slows the first enemy walking into it, increasing 5% Cooldown."]
+				}
 			]
 		}
 	},
