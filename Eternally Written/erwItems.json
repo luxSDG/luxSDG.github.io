@@ -5147,14 +5147,500 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/materials/Whip.png",
+					"Name": "Glacial Ice",
+					"Rarity": "Epic",
+					"Description": "Craftable epic resource. Built from Tree of Life.",
+					"Image": "erwimages/items/materials/GlacialIce.png",
+					"Build Path": ["Tree of Life + Ice"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "True Samadhi Fire",
+					"Rarity": "Epic",
+					"Description": "Craftable epic resource. Built from Tree of Life.",
+					"Image": "erwimages/items/materials/TrueSamadhiFire.png",
+					"Build Path": ["Tree of Life + Lighter"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Moonstone",
+					"Rarity": "Epic",
+					"Description": "Craftable epic resource. Built from Meteorite.",
+					"Image": "erwimages/items/materials/Moonstone.png",
+					"Build Path": ["Meteorite + Stone"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Tree of Life",
+					"Rarity": "Epic",
+					"Description": "Epic resource found in specific zones and animals.",
+					"Image": "erwimages/items/materials/TreeOfLife.png",
 					"Build Path": [],
 					"Statistics": [],
 					"Passives": []
 				},
+				{
+					"Name": "Meteorite",
+					"Rarity": "Epic",
+					"Description": "Epic resource found in specific zones and animals.",
+					"Image": "erwimages/items/materials/Meteorite.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Mithril",
+					"Rarity": "Epic",
+					"Description": "Epic resource found in specific zones, through Alpha, and animals.",
+					"Image": "erwimages/items/materials/Mithril.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "VF Blood Sample",
+					"Rarity": "Epic",
+					"Description": "Epic resource found through Wickedline and animals.",
+					"Image": "erwimages/items/materials/VFBloodSample.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Force Core",
+					"Rarity": "Epic",
+					"Description": "Epic resource found through Omega and animals. Can be built through a Tree of Life and Meteorite.",
+					"Image": "erwimages/items/materials/ForceCore.png",
+					"Build Path": ["Meteorite + Tree of Life"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Escape Cuff",
+					"Rarity": "Epic",
+					"Description": "Epic resource found through animals. A way to escape from the game.",
+					"Image": "erwimages/items/materials/EscapeCuff.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Code of Knowledge",
+					"Rarity": "Epic",
+					"Description": "Epic resource found through animals. Can be consumed to gain 1 level.",
+					"Image": "erwimages/items/materials/CodeOfKnowledge.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Motor",
+					"Rarity": "Rare",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Motor.png",
+					"Build Path": ["Electronic Parts (Battery + Piano Wire) + Scrap Metal"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Poison",
+					"Rarity": "Rare",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Poison.png",
+					"Build Path": ["Ash (Paper + Lighter) + Water"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Glass Panel",
+					"Rarity": "Rare",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/GlassPanel.png",
+					"Build Path": ["Glass Pieces (Glass Bottle + Stone) + Glue"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Cell Phone",
+					"Rarity": "Rare",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/CellPhone.png",
+					"Build Path": ["Blueprint (Fountain Pen + Paper) + Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Glass Pieces",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/GlassPieces.png",
+					"Build Path": ["Glass Bottle + Stone"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Steel",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Steel.png",
+					"Build Path": ["Scrap Metal + Iron Ore"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Oil Cloth",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/OilCloth.png",
+					"Build Path": ["Oil + Bandage"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Heated Oil",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/HeatedOil.png",
+					"Build Path": ["Lighter + Oil"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Chalk Powder",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/ChalkPowder.png",
+					"Build Path": ["Chalk + Stone"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Ash",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Ash.png",
+					"Build Path": ["Paper + Lighter"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Electronic Parts",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/ElectronicParts.png",
+					"Build Path": ["Battery + Piano Wire"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Blueprint",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Blueprint.png",
+					"Build Path": ["Fountain Pen + Paper"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Iron Sheet",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/IronSheet.png",
+					"Build Path": ["Scrap Metal + Hammer"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Gold",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Gold.png",
+					"Build Path": ["Pickaxe + Gemstone"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Heated Stone",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/HeatedStone.png",
+					"Build Path": ["Lighter + Stone"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Barbed Wire",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/BarbedWire.png",
+					"Build Path": ["Piano Wire + Hammer"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Ruby",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Ruby.png",
+					"Build Path": ["Hammer + Gemstone"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Hardcover",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Hardcover.png",
+					"Build Path": ["Paper + Leather"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Ion Battery",
+					"Rarity": "Uncommon",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/IonBattery.png",
+					"Build Path": ["Battery + Carbonated Water"],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Fountain Pen",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/FountainPen.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Pickaxe",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Pickaxe.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Branch",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Branch.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Stone",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Stone.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Glass Bottle",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/GlassBottle.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Chalk",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Chalk.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Flower",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Flower.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Nail",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Nail.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Leather",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Leather.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Turtle Shell",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/TurtleShell.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Rubber",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Rubber.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Scrap Metal",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/ScrapMetal.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Lighter",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Lighter.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Laser Pointer",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/LaserPointer.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Stallion Medal",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/StallionMedal.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Battery",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Battery.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Alcohol",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Alcohol.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Oil",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Oil.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Cloth",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Cloth.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Gemstone",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Gemstone.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Glue",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Glue.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Paper",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Paper.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Iron Ore",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/IronOre.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Can",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Can.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Gunpowder",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/Gunpowder.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "Piano Wire",
+					"Rarity": "Common",
+					"Description": "Build something out of me",
+					"Image": "erwimages/items/materials/PianoWire.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
 			]
 		}
 	}
