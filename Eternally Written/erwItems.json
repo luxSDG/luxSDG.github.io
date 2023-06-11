@@ -3671,5 +3671,343 @@ items =
 				}
 			]
 		}
+	},
+	{
+		"Armor":
+		{
+			"Description": "Not unique to any character, each character can fit a total of 5 slots of gear (Chest, Head, Arm, Legs, Accessory).",
+			"ItemList": []
+		}
+	},
+	{
+		"Chest":
+		{
+			"Description": "Generally the most defensive option of the armor slots, keeps users safe.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/chest/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Head":
+		{
+			"Description": "More utility focused armor slot, with more versatile options and defensive capabilities.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/head/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Arm":
+		{
+			"Description": "An armor slot based on defense generally, with some strong defensive passives.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/arm/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Legs":
+		{
+			"Description": "The armor slot with the most focus on initiative and mobility.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/legs/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Accessory":
+		{
+			"Description": "This is the grab-bag armor slot, which can fit many kinds of items to round out your build.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Consumables":
+		{
+			"Description": "Can be crafted and used to get some sort of benefit.",
+			"ItemList": []
+		}
+	},
+	{
+		"Reusables":
+		{
+			"Description": "Use infinite times to get some sort of game changing play.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/reusables/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				}
+			]
+		}
+	},
+	{
+		"Traps and Wards":
+		{
+			"Description": "Vision, Area control, and other tools.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/traps/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Food":
+		{
+			"Description": "Gives healing and/or other benefits.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/food/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Drink":
+		{
+			"Description": "Gives healing and/or other benefits.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/drink/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
+	},
+	{
+		"Materials":
+		{
+			"Description": "Epic materials are only gainable under special conditions, like objectives.<br>The rest are gathered through search or specific actions.",
+			"ItemList": 
+			[
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/materials/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+			]
+		}
 	}
 ]
