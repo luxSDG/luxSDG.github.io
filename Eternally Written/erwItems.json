@@ -4988,7 +4988,7 @@ items =
 					"Name": "Cola",
 					"Rarity": "Uncommon",
 					"Description": "Food Channel!",
-					"Image": "erwimages/items/drink/Whip.png",
+					"Image": "erwimages/items/drink/Cola.png",
 					"Build Path": ["Carbonated Water + Honey"],
 					"Statistics": ["10 HP Gain",
 						"2 Charges"],
