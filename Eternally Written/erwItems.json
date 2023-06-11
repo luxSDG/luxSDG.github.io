@@ -4781,14 +4781,362 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "Food Channel!",
-					"Image": "erwimages/items/drink/Whip.png",
-					"Build Path": [],
-					"Statistics": [],
+					"Name": "Holy Water",
+					"Rarity": "Legendary",
+					"Description": "Attack Power Drink- Food Channel!",
+					"Image": "erwimages/items/drink/HolyWater.png",
+					"Build Path": ["Water",
+						"Mithril"],
+					"Statistics": ["40 HP Gain",
+						"3 Charges",
+						"Gain 5 Attack Power permanently"],
 					"Passives": []
 				},
+				{
+					"Name": "Tear of Selene",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Drink- Food Channel!",
+					"Image": "erwimages/items/drink/TearOfSelene.png",
+					"Build Path": ["Water",
+						"Meteorite"],
+					"Statistics": ["40 HP Gain",
+						"3 Charges",
+						"Gain 5% Cooldown Reduction permanently"],
+					"Passives": []
+				},
+				{
+					"Name": "Kaoliang Liquor",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/KaoliangLiquor.png",
+					"Build Path": ["Baijiu (Alcohol + Glass Bottle) + Lighter"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Hot Honey Water",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/HotHoneyWater.png",
+					"Build Path": ["Boiling Water (Lighter + Water) + Honey"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Flower Liquor",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/FlowerLiquor.png",
+					"Build Path": ["Baijiu (Alcohol + Glass Bottle) + Flower"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Americano",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Americano.png",
+					"Build Path": ["Boiling Water (Lighter + Water) + Coffee"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Herbal Liquor",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/HerbalLiquor.png",
+					"Build Path": ["Baijiu (Alcohol + Glass Bottle) + Oriental Herb"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Whiskey Cocktail",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/WhiskeyCocktail.png",
+					"Build Path": ["Cola (Carbonated Water + Honey) + Whiskey"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Purified Water",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/PurifiedWater.png",
+					"Build Path": ["Boiling Water (Lighter + Water) + Ice"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Can of Cola",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/CanOfCola.png",
+					"Build Path": ["Cola (Carbonated Water + Honey) + Can"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Hot Chocolate",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/HotChocolate.png",
+					"Build Path": ["Boiling Water (Lighter + Water) + Chocolate"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "White Russian",
+					"Rarity": "Rare",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/WhiteRussian.png",
+					"Build Path": ["Coffee Liqueur (Coffee + Alcohol) + Milk"],
+					"Statistics": ["30 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Boiling Water",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/BoilingWater.png",
+					"Build Path": ["Lighter + Water"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Lemonade",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Lemonade.png",
+					"Build Path": ["Carbonated Water + Lemon"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Water Bottle",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/WaterBottle.png",
+					"Build Path": ["Glass Bottle + Water"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Baijiu",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Baijiu.png",
+					"Build Path": ["Alcohol + Glass Bottle"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Soju",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Soju.png",
+					"Build Path": ["Alcohol + Water"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Iced Coffee",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/IcedCoffee.png",
+					"Build Path": ["Ice + Coffee"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Cocktail",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Cocktail.png",
+					"Build Path": ["Whiskey + Lemon"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Coffee Liqueur",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/CoffeeLiqueur.png",
+					"Build Path": ["Coffee + Alcohol"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Cola",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Whip.png",
+					"Build Path": ["Carbonated Water + Honey"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Latte",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Latte.png",
+					"Build Path": ["Coffee + Milk"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Honey Milk",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/HoneyMilk.png",
+					"Build Path": ["Honey + Milk"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Highball",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Highball.png",
+					"Build Path": ["Carbonated Water + Whiskey"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Chocolate Milk",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/ChocolateMilk.png",
+					"Build Path": ["Chocolate + Milk"],
+					"Statistics": ["10 HP Gain",
+						"3 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Honey Water",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/HoneyWater.png",
+					"Build Path": ["Honey + Water"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Ice Water",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/IceWater.png",
+					"Build Path": ["Ice + Water"],
+					"Statistics": ["10 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "On The Rocks",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/OnTheRocks.png",
+					"Build Path": ["Ice + Whiskey"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Cowboy",
+					"Rarity": "Uncommon",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Cowboy.png",
+					"Build Path": ["Milk + Whiskey"],
+					"Statistics": ["20 HP Gain",
+						"2 Charges"],
+					"Passives": []
+				},
+				{
+					"Name": "Honey",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Honey.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Water",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Water.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Ice",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Ice.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Whiskey",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Whiskey.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Coffee",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Coffee.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Carbonated Water",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/CarbonatedWater.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				},
+				{
+					"Name": "Milk",
+					"Rarity": "Common",
+					"Description": "Food Channel!",
+					"Image": "erwimages/items/drink/Milk.png",
+					"Build Path": [],
+					"Statistics": ["5 HP Gain"],
+					"Passives": []
+				}
 			]
 		}
 	},
