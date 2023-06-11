@@ -3783,157 +3783,174 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Remote Mine",
+					"Rarity": "Legendary",
+					"Description": "Plant mines",
+					"Image": "erwimages/items/reusables/RemoteMine.png",
+					"Build Path": ["Enhanced Mousetrap (Mousetrap + Iron Ore)",
+						"Force Core (Meteorite + Tree of Life)"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Plant Mine (1 day cooldown) - Place a trap in the current zone. Explodes and deals 30 damage to the first enemy walking into it."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Mithril String",
+					"Rarity": "Legendary",
+					"Description": "Plant slowing traps",
+					"Image": "erwimages/items/reusables/MithrilString.png",
+					"Build Path": ["Piano Wire",
+						"Mithril"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Plant String (1 day cooldown) - Place a trap in the current zone. Slows the first enemy walking into it, increasing 25% Cooldown."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Totem",
+					"Rarity": "Legendary",
+					"Description": "Put yourself in stasis",
+					"Image": "erwimages/items/reusables/Totem.png",
+					"Build Path": ["Iron Ore",
+						"Mithril"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Respite (1 day cooldown) - Rest peacefully, putting yourself in stasis for 1/10th of a day."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Magic Lamp",
+					"Rarity": "Legendary",
+					"Description": "Push someone away",
+					"Image": "erwimages/items/reusables/MagicLamp.png",
+					"Build Path": ["Gold (Pickaxe + Gemstone)",
+						"Mithril"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Fantastical Punch (1 day cooldown) - Push someone from the current zone to an adjacent zone."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Star Fragment",
+					"Rarity": "Legendary",
+					"Description": "Deal damage after some time to all enemies in a zone",
+					"Image": "erwimages/items/reusables/StarFragment.png",
+					"Build Path": ["Hammer",
+						"Meteorite"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Meteor (1 day cooldown) - Summon a meteor to any zone, dealing 25% max HP damage to all enemies in the selected zone after 1/5th of a day."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "The Dragon's Fury",
+					"Rarity": "Legendary",
+					"Description": "Give a shield to someone that deals damage after depleting",
+					"Image": "erwimages/items/reusables/TheDragonsFury.png",
+					"Build Path": ["Nail",
+						"Force Core (Meteorite + Tree of Life)"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Lightning Shield (1 day cooldown) - Shield a player for 50 HP, curing them from any statuses. If the shield is depleted, the shielded player explodes, dealing 20 damage to all enemies in the current zone."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Solar System Minature",
+					"Rarity": "Legendary",
+					"Description": "Pull everyone to your zone",
+					"Image": "erwimages/items/reusables/SolarSystemMinature.png",
+					"Build Path": ["Glass Panel (Glass Pieces (Glass Bottle + Stone) + Glue)",
+						"VF Blood Sample"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Gravitational Field (1 day cooldown) - Create a black hole, sucking in and pulling everyone from every adjacent zone to your current zone."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Cobalt Blue",
+					"Rarity": "Legendary",
+					"Description": "Reduce everyone's cooldowns by 50% and shield them",
+					"Image": "erwimages/items/reusables/CobaltBlue.png",
+					"Build Path": ["Blueprint (Fountain Pen + Paper)",
+						"Force Core (Meteorite + Tree of Life)"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Rolling Thunder (1 day cooldown) - Grant every ally a shield globally, protecting them for 30 HP each, and reduce their current cooldowns by 50%."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Burning Heart",
+					"Rarity": "Legendary",
+					"Description": "Deal damage over time around yourself",
+					"Image": "erwimages/items/reusables/BurningHeart.png",
+					"Build Path": ["Heated Stone (Lighter + Stone)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Truth Explosion (1 day cooldown) - Burn in a consuming flame for 1/2th of a day, damaging all enemies around you for 10 damage per 1/6th of a day."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Claddagh Ring",
+					"Rarity": "Legendary",
+					"Description": "Reveal players in a zone",
+					"Image": "erwimages/items/reusables/CladdaghRing.png",
+					"Build Path": ["Recon Drone (Surveillance Camera + Gunpowder)",
+						"Meteorite"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Tether (1 day cooldown) - Reveals all players in the zone placed for 1 day, and can be placed in an adjacent zone."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Mercury",
+					"Rarity": "Legendary",
+					"Description": "Heal everyone",
+					"Image": "erwimages/items/reusables/Mercury.png",
+					"Build Path": ["Orchid (Oriental Herb + Flower)",
+						"Force Core (Meteorite + Tree of Life)"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Prayer (1 day cooldown) - Pray, healing every ally for 40 HP globally."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Arc Reactor",
+					"Rarity": "Legendary",
+					"Description": "Push yourself away",
+					"Image": "erwimages/items/reusables/ArcReactor.png",
+					"Build Path": ["Ion Battery (Battery + Carbonated Water)",
+						"Mithril"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Impulse (1 day cooldown) - Push yourself into an adjacent zone of choice."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Smash Totem",
+					"Rarity": "Legendary",
+					"Description": "Stun everyone in two zones",
+					"Image": "erwimages/items/reusables/SmashTotem.png",
+					"Build Path": ["Hammer",
+						"VF Blood Sample"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Fissure (1 day cooldown) - Smash the ground, creating a fissure in the current zone and adjacent zone. In 1/4th of a day, stun any enemy in either zone and deal 10% max HP damage."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Pharaoh's Artifact",
+					"Rarity": "Legendary",
+					"Description": "Stun someone who attacks you in the next 3 attacks",
+					"Image": "erwimages/items/reusables/PharaohsArtifact.png",
+					"Build Path": ["Holy Grail",
+						"Glacial Ice (Tree of Life + Ice)"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Mind Reader (1 day cooldown) - Predict the next three attacks over 1/3rd of a day, blocking the next three attacks and stunning the targets who attack you for 1/5th of a day."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Psyche's Blade",
+					"Rarity": "Legendary",
+					"Description": "Deal damage and heal yourself",
+					"Image": "erwimages/items/reusables/PsychesBlade.png",
+					"Build Path": ["Rusty Sword",
+						"Moonstone (Meteorite + Stone)"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["Blade of Truth (1 day cooldown) - Swing your blade at a player, dealing 20 damage and healing yourself for 20 HP."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "Hero's Record",
+					"Rarity": "Legendary",
+					"Description": "Deal damage to yourself and give yourself lifesteal",
+					"Image": "erwimages/items/reusables/HerosRecord.png",
+					"Build Path": ["Cross",
+						"Tree of Life"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["False Oath (1 day cooldown) - Pledge to an oath, dealing 10% max HP damage to yourself and grant yourself 50% Lifesteal."]
 				},
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/reusables/Whip.png",
-					"Build Path": [],
+					"Name": "E.M.O.T.E",
+					"Rarity": "Legendary",
+					"Description": "Slow enemies or heal yourself depending on your HP",
+					"Image": "erwimages/items/reusables/E.M.O.T.E.png",
+					"Build Path": ["Electronic Parts (Battery + Piano Wire)",
+						"Mithril"],
 					"Statistics": [],
-					"Passives": []
+					"Passives": ["E.M.O.T.E. (1 day cooldown) - Drop a drone named E.M.O.T.E. down, if you have more than 50% HP, slow all enemies in the zone for 20% cooldown reduction, else heal all allies in the zone for 20% max HP."]
 				}
 			]
 		}
