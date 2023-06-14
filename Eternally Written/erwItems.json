@@ -3686,14 +3686,554 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/chest/Whip.png",
-					"Build Path": [],
-					"Statistics": [],
+					"Name": "Mithril Armor",
+					"Rarity": "Legendary",
+					"Description": "Status Immune Chest",
+					"Image": "erwimages/items/chest/MithrilArmor.png",
+					"Build Path": ["Leather Armor (Fabric Armor + Leather)",
+						"Mithril"],
+					"Statistics": ["25 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Mithril Chains - Immune to one status immunities of your choice.",
+						"Mithril Golem - If all 5 Armor pieces are Mithril, become immune to all statuses and gain 30 HP."]
+				},
+				{
+					"Name": "Blazing Dress",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Chest",
+					"Image": "erwimages/items/chest/BlazingDress.png",
+					"Build Path": ["Dress (Scissors + Cloth)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Flame Barrier - Inflict a DoT that lasts for 1/4th of a day, burning all enemies’ HP every 1/8th of a day in the zone by 5% of their max HP."]
+				},
+				{
+					"Name": "Mithril Crop",
+					"Rarity": "Legendary",
+					"Description": "Mai Specific- Status Immune Chest",
+					"Image": "erwimages/items/chest/MithrilCrop.png",
+					"Build Path": ["ONLY BUILDABLE BY MAI",
+						"Bikini (Wetsuit + Scissors)",
+						"Mithril"],
+					"Statistics": ["30 HP",
+						"10 Basic Attack Reduction",
+						"10 Spell Damage Reduction"],
+					"Passives": ["Mithril Chains - Immune to one status immunities of your choice.",
+						"Mithril Golem - If all 5 Armor pieces are Mithril, become immune to all statuses and gain 30 HP."]
+				},
+				{
+					"Name": "Kabana",
+					"Rarity": "Legendary",
+					"Description": "Spell Damage Chest",
+					"Image": "erwimages/items/chest/Kabana.png",
+					"Build Path": ["Leather Armor (Fabric Armor + Leather)",
+						"Meteorite"],
+					"Statistics": ["25 HP",
+						"5 First Spell Damage"],
+					"Passives": ["Red Sprite (1 day cooldown) - Shoot lightning along with a damaging ability and deal 10 damage to the enemy."]
+				},
+				{
+					"Name": "Queen of Hearts",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Chest",
+					"Image": "erwimages/items/chest/QueenOfHearts.png",
+					"Build Path": ["Patched Robe (Monk’s Robe + Bandage)",
+						"VF Blood Sample"],
+					"Statistics": ["30 HP",
+						"10% Cooldown Reduction"],
+					"Passives": ["Queen’s Gift - Reduce all cooldowns by 1 day permanently."]
+				},
+				{
+					"Name": "Holy Orders",
+					"Rarity": "Legendary",
+					"Description": "Spell Shield Chest",
+					"Image": "erwimages/items/chest/HolyOrders.png",
+					"Build Path": ["Deacon Robes (Cross + Cloth)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 Spell Damage Reduction"],
+					"Passives": ["Temporal Refraction (1 day cooldown) - Block the first spell that deals damage done to you entirely."]
+				},
+				{
+					"Name": "Burgundy 47",
+					"Rarity": "Legendary",
+					"Description": "Shielding Chest",
+					"Image": "erwimages/items/chest/Burgundy47.png",
+					"Build Path": ["Suit (Leather Jacket (Windbreaker + Leather) + Ribbon)",
+						"VF Blood Sample"],
+					"Statistics": ["30 HP",
+						"10 First Basic Attack Damage",
+						"25% Lifesteal"],
+					"Passives": ["Panic Button (2 day cooldown) - After dropping below 30% HP, give you a shield for 20 HP and 25% more Lifesteal for 1/5th of a day."]
+				},
+				{
+					"Name": "Ao Dai",
+					"Rarity": "Legendary",
+					"Description": "Mai Specific- Attack Power Chest",
+					"Image": "erwimages/items/chest/AoDai.png",
+					"Build Path": ["ONLY BUILDABLE BY MAI",
+						"Dress (Scissors + Cloth)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 Attack Power"],
+					"Passives": ["Armored - Basic attack damage is reduced by 50% against you."]
+				},
+				{
+					"Name": "Phantom Jacket",
+					"Rarity": "Legendary",
+					"Description": "Mai Specific- Damage over Time Chest",
+					"Image": "erwimages/items/chest/PhantomJacket.png",
+					"Build Path": ["ONLY BUILDABLE BY MAI",
+						"Rider Jacket (Leather Jacket (Windbreaker + Leather) + Steel Chain)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["30 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": ["Flame Barrier - Inflict a DoT that lasts for 1/4th of a day, burning all enemies’ HP every 1/8th of a day in the zone by 5% of their max HP."]
+				},
+				{
+					"Name": "Guardian Suit",
+					"Rarity": "Legendary",
+					"Description": "Damage Reduction Chest",
+					"Image": "erwimages/items/chest/GuardianSuit.png",
+					"Build Path": ["Military Suit (Windbreaker + Branch)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 Basic Attack Reduction",
+						"10 Spell Damage Reduction"],
+					"Passives": ["Armored - Basic attack damage is reduced by 50% against you."]
+				},
+				{
+					"Name": "Elegant Gown",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Chest",
+					"Image": "erwimages/items/chest/ElegantGown.png",
+					"Build Path": ["Dress (Scissors + Cloth)",
+						"Mithril"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Primordial Hex (1/2th day cooldown) - The first spell applies a damage over time hex that deals an extra 20 damage in 1/10th of a day."]
+				},
+				{
+					"Name": "Beautiful Garment",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Chest",
+					"Image": "erwimages/items/chest/BeautifulGarment.png",
+					"Build Path": ["Cloth",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 HP",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Vigor (1/2th day cooldown) - Your basic attack deals 5% max HP."]
+				},
+				{
+					"Name": "Spectre",
+					"Rarity": "Legendary",
+					"Description": "Invisible Chest",
+					"Image": "erwimages/items/chest/Spectre.png",
+					"Build Path": ["Diving Suit (Wetsuit + Rubber)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 HP",
+						"10 Basic Attack Reduction"],
+					"Passives": ["Invisible (2 day cooldown) - After dropping below 30% HP, make you invisible for 1/5th of a day."]
+				},
+				{
+					"Name": "Blood Cloak",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Chest",
+					"Image": "erwimages/items/chest/BloodCloak.png",
+					"Build Path": ["Monk’s Robe",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 HP",
+						"25% Lifesteal"],
+					"Passives": ["Blood Pact (2 day cooldown) - After dropping below 30% HP, give you 25% more Lifesteal for 1/5th of a day."]
+				},
+				{
+					"Name": "Omerta",
+					"Rarity": "Legendary",
+					"Description": "Damage Reflection Chest",
+					"Image": "erwimages/items/chest/Omerta.png",
+					"Build Path": ["Leather Jacket",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10% Cooldown Reduction"],
+					"Passives": ["Reflection - All basic attacks to you return 25% damage to the player who attacked you."]
+				},
+				{
+					"Name": "Shooting Star Jacket",
+					"Rarity": "Legendary",
+					"Description": "Anti Heal Chest",
+					"Image": "erwimages/items/chest/ShootingStarJacket.png",
+					"Build Path": ["Leather Jacket",
+						"Meteorite"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Anti Heal - Upon damaging someone, reduce all healing effects by 25%."]
+				},
+				{
+					"Name": "Inquisitor",
+					"Rarity": "Legendary",
+					"Description": "Execution Chest",
+					"Image": "erwimages/items/chest/Inquisitor.png",
+					"Build Path": ["Monk’s Robe",
+						"VF Blood Sample"],
+					"Statistics": ["40 HP"],
+					"Passives": ["Reaper’s Scythe - Dealing damage to anyone at 10% max HP or lower will summon a reaper’s scythe, instantly downing them."]
+				},
+				{
+					"Name": "Cardinal Robes",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Chest",
+					"Image": "erwimages/items/chest/CardinalRobes.png",
+					"Build Path": ["Deacon Robes (Cross + Cloth)",
+						"Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["20 HP",
+						"5 First Spell Damage"],
 					"Passives": []
 				},
+				{
+					"Name": "Sunset Armor",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Chest",
+					"Image": "erwimages/items/chest/SunsetArmor.png",
+					"Build Path": ["Chain Armor (Leather Armor (Fabric Armor + Leather) + Steel Chain)",
+						"Ruby (Hammer + Gemstone)"],
+					"Statistics": ["15 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Covert Agent Uniform",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Chest",
+					"Image": "erwimages/items/chest/CovertAgentUniform.png",
+					"Build Path": ["Hanbok (Patched Robe (Monk’s Robe + Bandage) + Flower)",
+						"Stallion Medal"],
+					"Statistics": ["10 HP",
+						"10 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Optical Camouflage Suit",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Chest",
+					"Image": "erwimages/items/chest/OpticalCamouflageSuit.png",
+					"Build Path": ["Diving Suit (Wetsuit + Rubber)",
+						"Glass Panel (Glass Pieces (Glass Bottle + Stone) + Glue)"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Rocker's Jacket",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Chest",
+					"Image": "erwimages/items/chest/RockersJacket.png",
+					"Build Path": ["Rider Jacket (Leather Jacket (Windbreaker + Leather) + Steel Chain)",
+						"Iron Ball"],
+					"Statistics": ["10 HP",
+						"10 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Crusader Armor",
+					"Rarity": "Epic",
+					"Description": "Healing Power Chest",
+					"Image": "erwimages/items/chest/CrusaderArmor.png",
+					"Build Path": ["Steel Metal Armor (Fabric Armor + Steel (Scrap Metal + Iron Ore))",
+						"Saint’s Relic (Cross + Holy Grail)"],
+					"Statistics": ["20 HP",
+						"10 Healing Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Amazoness Armor",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Reduction Chest",
+					"Image": "erwimages/items/chest/AmazonessArmor.png",
+					"Build Path": ["Steel Metal Armor (Fabric Armor + Steel (Scrap Metal + Iron Ore))",
+						"Bikini (Wetsuit + Scissors)"],
+					"Statistics": ["20 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Dragon Dobok",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Chest",
+					"Image": "erwimages/items/chest/DragonDobok.png",
+					"Build Path": ["Qipao (Dress (Scissors + Cloth) + Razor)",
+						"Monk’s Robe"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Commander's Armor",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Chest",
+					"Image": "erwimages/items/chest/CommandersArmor.png",
+					"Build Path": ["Chain Armor (Leather Armor (Fabric Armor + Leather) + Steel Chain)",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 HP",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Butler's Suit",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Chest",
+					"Image": "erwimages/items/chest/ButlersSuit.png",
+					"Build Path": ["Suit (Leather Jacket (Windbreaker + Leather) + Ribbon)",
+						"Feather Duster (Short Rod + Feather)"],
+					"Statistics": ["10 HP",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Battle Suit",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Reduction Chest",
+					"Image": "erwimages/items/chest/BattleSuit.png",
+					"Build Path": ["Bulletproof Vest (Military Suit (Windbreaker + Branch) + Iron Sheet (Scrap Metal + Hammer))",
+						"Diving Suit (Wetsuit + Rubber)"],
+					"Statistics": ["20 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "EOD Suit",
+					"Rarity": "Epic",
+					"Description": "Trap Damage Reduction Chest",
+					"Image": "erwimages/items/chest/EODSuit.png",
+					"Build Path": ["Bulletproof Vest (Military Suit (Windbreaker + Branch) + Iron Sheet (Scrap Metal + Hammer))",
+						"Patched Robe (Monk’s Robe + Bandage)"],
+					"Statistics": ["20 HP",
+						"5 Trap Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Tuxedo",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Chest",
+					"Image": "erwimages/items/chest/Tuxedo.png",
+					"Build Path": ["Suit (Leather Jacket (Windbreaker + Leather) + Ribbon)",
+						"Dress (Scissors + Cloth)"],
+					"Statistics": ["10 HP",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "High Priest Robes",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Chest",
+					"Image": "erwimages/items/chest/HighPriestRobes.png",
+					"Build Path": ["Hanbok (Patched Robe (Monk’s Robe + Bandage) + Flower)",
+						"Purified Water (Boiling Water (Lighter + Water) + Ice)"],
+					"Statistics": ["10 HP",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Changpao",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Chest",
+					"Image": "erwimages/items/chest/Changpao.png",
+					"Build Path": ["Qipao (Dress (Scissors + Cloth) + Razor)",
+						"Flower Liquor (Baijiu (Alcohol + Glass Bottle) + Flower)"],
+					"Statistics": ["10 HP",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Turnout Coat",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Chest",
+					"Image": "erwimages/items/chest/TurnoutCoat.png",
+					"Build Path": ["Suit (Leather Jacket (Windbreaker + Leather) + Ribbon)",
+						"Wetsuit"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Rider Jacket",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Chests",
+					"Image": "erwimages/items/chest/RiderJacket.png",
+					"Build Path": ["Leather Jacket (Windbreaker + Leather) + Steel Chain"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Chain Armor",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Chests",
+					"Image": "erwimages/items/chest/ChainArmor.png",
+					"Build Path": ["Leather Armor (Fabric Armor + Leather) + Steel Chain"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Suit",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Chests",
+					"Image": "erwimages/items/chest/Suit.png",
+					"Build Path": ["Leather Jacket (Windbreaker + Leather) + Ribbon"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Qipao",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Chests",
+					"Image": "erwimages/items/chest/Qipao.png",
+					"Build Path": ["Dress (Scissors + Cloth) + Razor"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Sheet Metal Armor",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Chests",
+					"Image": "erwimages/items/chest/SheetMetalArmor.png",
+					"Build Path": ["Fabric Armor + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Hanbok",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Chests",
+					"Image": "erwimages/items/chest/Hanbok.png",
+					"Build Path": ["Patched Robe (Monk’s Robe + Bandage) + Flower"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bulletproof Vest",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Chests",
+					"Image": "erwimages/items/chest/BulletproofVest.png",
+					"Build Path": ["Military Suit (Windbreaker + Branch) + Iron Sheet (Scrap Metal + Hammer)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Leather Armor",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Chests",
+					"Image": "erwimages/items/chest/LeatherArmor.png",
+					"Build Path": ["Fabric Armor + Leather"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Leather Jacket",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Chests",
+					"Image": "erwimages/items/chest/LeatherJacket.png",
+					"Build Path": ["Windbreaker + Leather"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Turtle Dobok",
+					"Rarity": "Uncommon",
+					"Description": "Builds into other items (not Chests)",
+					"Image": "erwimages/items/chest/TurtleDobok.png",
+					"Build Path": ["Monk’s Robe + Turtle Shell"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Military Suit",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Chests",
+					"Image": "erwimages/items/chest/MilitarySuit.png",
+					"Build Path": ["Windbreaker + Branch"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Patched Robe",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Chests",
+					"Image": "erwimages/items/chest/PatchedRobe.png",
+					"Build Path": ["Monk’s Robe + Bandage"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Dress",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Chests",
+					"Image": "erwimages/items/chest/Dress.png",
+					"Build Path": ["Scissors + Cloth"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bikini",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Chests",
+					"Image": "erwimages/items/chest/Bikini.png",
+					"Build Path": ["Wetsuit + Scissors"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Diving Suit",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Chests",
+					"Image": "erwimages/items/chest/DivingSuit.png",
+					"Build Path": ["Wetsuit + Rubber"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Deacon Robes",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Chests",
+					"Image": "erwimages/items/chest/DeaconRobes.png",
+					"Build Path": ["Cross + Cloth"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Windbreaker",
+					"Rarity": "Common",
+					"Description": "Builds into many Chests",
+					"Image": "erwimages/items/chest/Windbreaker.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Monk's Robe",
+					"Rarity": "Common",
+					"Description": "Builds into many Chests",
+					"Image": "erwimages/items/chest/MonksRobe.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Wetsuit",
+					"Rarity": "Common",
+					"Description": "Builds into many Chests",
+					"Image": "erwimages/items/chest/Wetsuit.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Fabric Armor",
+					"Rarity": "Common",
+					"Description": "Builds into many Chests",
+					"Image": "erwimages/items/chest/FabricArmor.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				}
 			]
 		}
 	},
