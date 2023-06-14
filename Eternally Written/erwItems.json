@@ -4244,14 +4244,401 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/head/Whip.png",
-					"Build Path": [],
-					"Statistics": [],
+					"Name": "Mithril Helm",
+					"Rarity": "Legendary",
+					"Description": "Status Immune Head",
+					"Image": "erwimages/items/head/MithrilHelm.png",
+					"Build Path": ["Chain Coif (Hat + Steel Chain)",
+						"Mithril"],
+					"Statistics": ["25 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Mithril Chains - Immune to one status immunities of your choice.",
+						"Mithril Golem - If all 5 Armor pieces are Mithril, become immune to all statuses and gain 30 HP."]
+				},
+				{
+					"Name": "Laurel Wreath",
+					"Rarity": "Legendary",
+					"Description": "Damage over Time Head",
+					"Image": "erwimages/items/head/LaurelWreath.png",
+					"Build Path": ["Circlet (Hairband + Branch)",
+						"True Samadhi Fire (Tree of Life + Lighter)"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Smolder (1/2th day cooldown) - Basic attacks inflict a DoT that lasts for 1/4th day, burning the target’s HP by 5% max HP for every 1/8th of a day."]
+				},
+				{
+					"Name": "Chinese Opera Mask",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Head",
+					"Image": "erwimages/items/head/ChineseOperaMask.png",
+					"Build Path": ["Mask (Hairband + Feather)",
+						"VF Blood Sample"],
+					"Statistics": ["25 HP",
+						"25% Lifesteal"],
+					"Passives": ["Omnisyphon - Heal for 5 HP per basic attack or ability use."]
+				},
+				{
+					"Name": "Elysian Halo",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Head",
+					"Image": "erwimages/items/head/ElysianHalo.png",
+					"Build Path": ["Circlet (Hairband + Branch)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["25 HP",
+						"10 Attack Power"],
+					"Passives": ["Biotic Infusion (1 day cooldown) - After using an ability, the next basic attack deals 10% of the enemy’s max HP as damage."]
+				},
+				{
+					"Name": "Fallen Pegasus",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Head",
+					"Image": "erwimages/items/head/FallenPegasus.png",
+					"Build Path": ["Circlet (Hairband + Branch)",
+						"Meteorite"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Streamlined (1 day cooldown) - Hitting 3 basic attacks and abilities on a single target reduces cooldowns by 10%."]
+				},
+				{
+					"Name": "Persona",
+					"Rarity": "Legendary",
+					"Description": "Spell Damage Head",
+					"Image": "erwimages/items/head/Persona.png",
+					"Build Path": ["Mask (Hairband + Feather)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 First Spell Damage"],
+					"Passives": ["Red Sprite (1 day cooldown) - Shoot lightning along with a damaging ability and deal 10 damage to the enemy."]
+				},
+				{
+					"Name": "Sultan's Turban",
+					"Rarity": "Legendary",
+					"Description": "Anti Heal Head",
+					"Image": "erwimages/items/head/SultansTurban.png",
+					"Build Path": ["Chain Coif (Hat + Steel Chain)",
+						"Tree of Life"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Anti Heal - Upon damaging someone, reduce all healing effects by 25%."]
+				},
+				{
+					"Name": "Racing Helmet",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Head",
+					"Image": "erwimages/items/head/RacingHelmet.png",
+					"Build Path": ["Safety Helmet (Bike Helmet + Stone)",
+						"Mithril"],
+					"Statistics": ["30 HP"],
+					"Passives": ["Swift Strides (1 day cooldown) - Reduce cooldowns by 10% upon moving or using a movement ability."]
+				},
+				{
+					"Name": "The Star of the Wilds",
+					"Rarity": "Legendary",
+					"Description": "Shield Damage Head",
+					"Image": "erwimages/items/head/TheStarOfTheWilds.png",
+					"Build Path": ["Beret (Hat + Scissors)",
+						"Meteorite"],
+					"Statistics": ["25 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": ["Electric Shock (1 day cooldown) - Shock an enemy, dealing 20 damage extra to shields with a basic attack. In addition, deal 10 damage with a basic attack."]
+				},
+				{
+					"Name": "Astronaut's Helmet",
+					"Rarity": "Legendary",
+					"Description": "Damage Reflection Head",
+					"Image": "erwimages/items/head/AstronautsHelmet.png",
+					"Build Path": ["Safety Helmet (Bike Helmet + Stone)",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Reflection - All basic attacks to you return 25% damage to the player who attacked you."]
+				},
+				{
+					"Name": "Tactical Visor",
+					"Rarity": "Legendary",
+					"Description": "Spell Shield Head",
+					"Image": "erwimages/items/head/TacticalVisor.png",
+					"Build Path": ["Beret (Hat + Scissors)",
+						"Tree of Life"],
+					"Statistics": ["25 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Temporal Refraction (1 day cooldown) - Block the first spell that deals damage done to you entirely."]
+				},
+				{
+					"Name": "Virtuous Outlaw",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Head",
+					"Image": "erwimages/items/head/VirtuousOutlaw.png",
+					"Build Path": ["Aether Fringe (Feather + Flower of Fate (Flower + Playing Cards))",
+						"Cloth"],
+					"Statistics": ["20 HP",
+						"5 First First Attack Damage"],
 					"Passives": []
 				},
+				{
+					"Name": "Crystal Tiara",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Head",
+					"Image": "erwimages/items/head/CrystalTiara.png",
+					"Build Path": ["Tiara (Circlet (Hairband + Branch) + Stallion Medal)",
+						"Glass Pieces (Glass Bottle + Stone)"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Motorcycle Helmet",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Reduction Helmet",
+					"Image": "erwimages/items/head/MotorcycleHelmet.png",
+					"Build Path": ["Safety Helmet (Bike Helmet + Stone)",
+						"Motor (Electronic Parts (Battery + Piano Wire) + Scrap Metal)"],
+					"Statistics": ["20 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Tactical Ops Helmet",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Reduction Helmet",
+					"Image": "erwimages/items/head/TacticalOpsHelmet.png",
+					"Build Path": ["Ballistic Helmet (Beret (Hat + Scissors) + Bike Helmet)",
+						"Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["20 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Helm of Banneret",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Head",
+					"Image": "erwimages/items/head/HelmOfBanneret.png",
+					"Build Path": ["Close Helm (Chain Coif (Hat + Steel Chain) + Mask (Hairband + Feather))",
+						"Rubber"],
+					"Statistics": ["10 HP",
+						"10 Basic Attack Reduction",
+						"10 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Imperial Crown",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Head",
+					"Image": "erwimages/items/head/ImperialCrown.png",
+					"Build Path": ["Crown (Beret (Hat + Scissors) + Gold (Pickaxe + Gemstone))",
+						"Gemstone"],
+					"Statistics": ["20 HP",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Imperial Burgeonet",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Head",
+					"Image": "erwimages/items/head/ImperialBurgeonet.png",
+					"Build Path": ["Close Helm (Chain Coif (Hat + Steel Chain) + Mask (Hairband + Feather))",
+						"Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["20 HP",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Mohawk Headgear",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Reduction Head",
+					"Image": "erwimages/items/head/MohawkHeadgear.png",
+					"Build Path": ["Fire Helmet (Safety Helmet (Bike Helmet + Stone) + Boiling Water (Lighter + Water))",
+						"Spiked Plank (Mousetrap + Nail)"],
+					"Statistics": ["20 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Vigilante",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Reduction Head",
+					"Image": "erwimages/items/head/Vigilante.png",
+					"Build Path": ["Fire Helmet (Safety Helmet (Bike Helmet + Stone) + Boiling Water (Lighter + Water))",
+						"Iron Ore"],
+					"Statistics": ["20 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Diadem",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Head",
+					"Image": "erwimages/items/head/Diadem.png",
+					"Build Path": ["Circlet (Hairband + Branch)",
+						"Barbed Blossom (Flower + Barbed Wire (Piano Wire + Hammer))"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Crusader Helmet",
+					"Rarity": "Epic",
+					"Description": "Healing Power Head",
+					"Image": "erwimages/items/head/CrusaderHelmet.png",
+					"Build Path": ["Crown (Beret (Hat + Scissors) + Gold (Pickaxe + Gemstone))",
+						"Cross"],
+					"Statistics": ["20 HP",
+						"10 Healing Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Harmony in Full Bloom",
+					"Rarity": "Epic",
+					"Description": "Priya Specific- Spell Damage Head",
+					"Image": "erwimages/items/head/HarmonyInFullBloom.png",
+					"Build Path": ["ONLY BUILDABLE BY PRIYA"],
+					"Statistics": ["20 HP",
+						"10 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Cowboy Hat",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Reduction Head",
+					"Image": "erwimages/items/head/CowboyHat.png",
+					"Build Path": ["Beret (Hat + Scissors)",
+						"Marksman Handbook (Short Crossbow + Fedorova)"],
+					"Statistics": ["20 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Ballistic Helmet",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Heads",
+					"Image": "erwimages/items/head/BallisticHelmet.png",
+					"Build Path": ["Beret (Hat + Scissors) + Bike Helmet"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Fire Helmet",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Heads",
+					"Image": "erwimages/items/head/FireHelmet.png",
+					"Build Path": ["Safety Helmet (Bike Helmet + Stone) + Boiling Water (Lighter + Water)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Tiara",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Heads",
+					"Image": "erwimages/items/head/Tiara.png",
+					"Build Path": ["Circlet (Hairband + Branch) + Stallion Medal"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Garland of Petals",
+					"Rarity": "Rare",
+					"Description": "Priya Specific- Builds into offensive Heads",
+					"Image": "erwimages/items/head/GarlandOfPetals.png",
+					"Build Path": ["ONLY BUILDABLE BY PRIYA"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Crown",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Heads",
+					"Image": "erwimages/items/head/Crown.png",
+					"Build Path": ["Beret (Hat + Scissors) + Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Close Helm",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Heads",
+					"Image": "erwimages/items/head/CloseHelm.png",
+					"Build Path": ["Chain Coif (Hat + Steel Chain) + Mask (Hairband + Feather)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Mask",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Heads",
+					"Image": "erwimages/items/head/Mask.png",
+					"Build Path": ["Hairband + Feather"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Circlet",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Heads",
+					"Image": "erwimages/items/head/Circlet.png",
+					"Build Path": ["Hairband + Branch"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Beret",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Heads",
+					"Image": "erwimages/items/head/Beret.png",
+					"Build Path": ["Hat + Scissors"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Chain Coif",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Heads",
+					"Image": "erwimages/items/head/ChainCoif.png",
+					"Build Path": ["Hat + Steel Chain"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Safety Helmet",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Heads",
+					"Image": "erwimages/items/head/SafetyHelmet.png",
+					"Build Path": ["Bike Helmet + Stone"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Crown of Buds",
+					"Rarity": "Uncommon",
+					"Description": "Priya Specific- Builds into offensive Heads",
+					"Image": "erwimages/items/head/CrownOfBuds.png",
+					"Build Path": ["ONLY BUILDABLE BY PRIYA"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Hairband",
+					"Rarity": "Common",
+					"Description": "Builds into many Heads",
+					"Image": "erwimages/items/head/Hairband.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Hat",
+					"Rarity": "Common",
+					"Description": "Builds into many Heads",
+					"Image": "erwimages/items/head/Hat.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bike Helmet",
+					"Rarity": "Common",
+					"Description": "Builds into many Heads",
+					"Image": "erwimages/items/head/BikeHelmet.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				}
 			]
 		}
 	},
@@ -4262,14 +4649,417 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/arm/Whip.png",
-					"Build Path": [],
-					"Statistics": [],
+					"Name": "Mithril Shield",
+					"Rarity": "Legendary",
+					"Description": "Status Immune Arm",
+					"Image": "erwimages/items/arm/MithrilShield.png",
+					"Build Path": ["Leather Shield (Turtle Shell + Leather)",
+						"Mithril"],
+					"Statistics": ["25 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Mithril Chains - Immune to one status immunities of your choice.",
+						"Mithril Golem - If all 5 Armor pieces are Mithril, become immune to all statuses and gain 30 HP."]
+				},
+				{
+					"Name": "Cube Watch",
+					"Rarity": "Legendary",
+					"Description": "Shield Damage Arm",
+					"Image": "erwimages/items/arm/CubeWatch.png",
+					"Build Path": ["Watch",
+						"Moonstone (Meteorite + Stone)"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Electric Shock (1 day cooldown) - Shock an enemy, dealing 20 damage extra to shields with a basic attack. In addition, deal 10 damage with a basic attack."]
+				},
+				{
+					"Name": "Tellurian Timepiece",
+					"Rarity": "Legendary",
+					"Description": "Spell Shield Arm",
+					"Image": "erwimages/items/arm/TellurianTimepiece.png",
+					"Build Path": ["Watch",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 Spell Damage Reduction"],
+					"Passives": ["Temporal Refraction (1 day cooldown) - Block the first spell that deals damage done to you entirely."]
+				},
+				{
+					"Name": "Bracelet of Skadi",
+					"Rarity": "Legendary",
+					"Description": "Slowing Arm",
+					"Image": "erwimages/items/arm/BraceletOfSkadi.png",
+					"Build Path": ["Bracelet",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				},
+				{
+					"Name": "Radar",
+					"Rarity": "Legendary",
+					"Description": "Vision Arm",
+					"Image": "erwimages/items/arm/Radar.png",
+					"Build Path": ["Broken Watch (Watch + Glue)",
+						"Tree of Life"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Radar (1 day cooldown) - See invisible players in your current zone."]
+				},
+				{
+					"Name": "Auto-arms",
+					"Rarity": "Legendary",
+					"Description": "Attack Power Arm",
+					"Image": "erwimages/items/arm/Auto-arms.png",
+					"Build Path": ["Bracer (Bandage + Leather)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 Attack Power"],
+					"Passives": ["Armored - Basic attack damage is reduced by 50% against you."]
+				},
+				{
+					"Name": "Prominence",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Arm",
+					"Image": "erwimages/items/arm/Prominence.png",
+					"Build Path": ["Bracelet",
+						"VF Blood Sample"],
+					"Statistics": ["30 HP",
+						"10% Cooldown Reduction"],
+					"Passives": ["Queen’s Gift - Reduce all cooldowns by 1 day permanently."]
+				},
+				{
+					"Name": "Centipede's Pauldron",
+					"Rarity": "Legendary",
+					"Description": "Damage Reflection Arm",
+					"Image": "erwimages/items/arm/CentipedesPauldron.png",
+					"Build Path": ["Bracer (Bandage + Leather)",
+						"Meteorite"],
+					"Statistics": ["30 HP",
+						"20 Basic Attack Reduction"],
+					"Passives": ["Reflection - All basic attacks to you return 25% damage to the player who attacked you."]
+				},
+				{
+					"Name": "Tindalos Monarch",
+					"Rarity": "Legendary",
+					"Description": "Cooldown Reduction Arm",
+					"Image": "erwimages/items/arm/TindalosMonarch.png",
+					"Build Path": ["Bracelet",
+						"Mithril"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Streamlined (1 day cooldown) - Hitting 3 basic attacks and abilities on a single target reduces cooldowns by 10%."]
+				},
+				{
+					"Name": "Shield of Kings",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Arm",
+					"Image": "erwimages/items/arm/ShieldOfKings.png",
+					"Build Path": ["Leather Shield (Turtle Shell + Leather)",
+						"Meteorite"],
+					"Statistics": ["25 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": ["Biotic Infusion (1 day cooldown) - After using an ability, the next basic attack deals 10% of the enemy’s max HP as damage."]
+				},
+				{
+					"Name": "Bloodripper",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Arm",
+					"Image": "erwimages/items/arm/Bloodripper.png",
+					"Build Path": ["Brass Knuckles",
+						"VF Blood Sample"],
+					"Statistics": ["30 HP",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": ["Vigor (1/2th day cooldown) - Your basic attack deals 5% max HP."]
+				},
+				{
+					"Name": "Dragon Scale",
+					"Rarity": "Legendary",
+					"Description": "Spell Damage Arm",
+					"Image": "erwimages/items/arm/DragonScale.png",
+					"Build Path": ["Squad Leader Armband (Bandage + Needle)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 First Spell Damage"],
+					"Passives": ["Red Sprite (1 day cooldown) - Shoot lightning along with a damaging ability and deal 10 damage to the enemy."]
+				},
+				{
+					"Name": "Chain of Thorns",
+					"Rarity": "Legendary",
+					"Description": "Armor Piercing Arm",
+					"Image": "erwimages/items/arm/ChainOfThorns.png",
+					"Build Path": ["Barbed Wire (Piano Wire + Hammer)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"10 First Basic Attack Damage"],
+					"Passives": ["Armor-Piercing - Basic attacks ignore any damage resistance."]
+				},
+				{
+					"Name": "Nightmare Nails",
+					"Rarity": "Legendary",
+					"Description": "Anti Heal Arm",
+					"Image": "erwimages/items/arm/NightmareNails.png",
+					"Build Path": ["Nails",
+						"Meteorite"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Anti Heal - Upon damaging someone, reduce all healing effects by 25%."]
+				},
+				{
+					"Name": "Corrupting Touch",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Arm",
+					"Image": "erwimages/items/arm/CorruptingTouch.png",
+					"Build Path": ["Poison (Ash (Paper + Lighter) + Water)",
+						"Cotton Gloves"],
+					"Statistics": ["20 HP",
+						"5 First Spell Damage"],
 					"Passives": []
 				},
+				{
+					"Name": "Sword Stopper",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Reduction Arm",
+					"Image": "erwimages/items/arm/SwordStopper.png",
+					"Build Path": ["Bazuband (Bracer (Bandage + Leather) + Iron Sheet (Scrap Metal + Hammer))",
+						"Nail"],
+					"Statistics": ["20 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Draupnir",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Arm",
+					"Image": "erwimages/items/arm/Draupnir.png",
+					"Build Path": ["Golden Bracelet (Bracelet + Gold (Pickaxe + Gemstone))",
+						"Bracer (Bandage + Leather)"],
+					"Statistics": ["20 HP",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Vital Sign Sensor",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Arm",
+					"Image": "erwimages/items/arm/VitalSignSensor.png",
+					"Build Path": ["Broken Watch (Watch + Glue)",
+						"Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["15 HP",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Creed of the Knight",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Arm",
+					"Image": "erwimages/items/arm/CreedOfTheKnight.png",
+					"Build Path": ["Steel Shield (Leather Shield (Turtle Shield + Leather) + Steel (Scrap Metal + Iron Ore))",
+						"Squad Leader Armband (Bandage + Needle)"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Sheath of Shah Jahan",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Reduction Arm",
+					"Image": "erwimages/items/arm/SheathOfShahJahan.png",
+					"Build Path": ["Sheath (Leather + Iron Sheet (Scrap Metal + Hammer))",
+						"Ruby (Hammer + Gemstone)"],
+					"Statistics": ["20 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Burnished Aegis",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Arm",
+					"Image": "erwimages/items/arm/BurnishedAegis.png",
+					"Build Path": ["Crimson Bracelet (Bracelet + Spiked Plank (Mousetrap + Nail))",
+						"Leather Shield (Turtle Shell + Leather)"],
+					"Statistics": ["15 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Tindalos Band",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Arm",
+					"Image": "erwimages/items/arm/TindalosBand.png",
+					"Build Path": ["Golden Bracelet (Bracelet + Gold (Pickaxe + Gemstone))",
+						"Broken Watch (Watch + Glue)"],
+					"Statistics": ["10 HP",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Nightingale",
+					"Rarity": "Epic",
+					"Description": "Healing Power Arm",
+					"Image": "erwimages/items/arm/Nightingale.png",
+					"Build Path": ["Healing Potion (Orchid (Oriental Herb + Flower) + Glass Bottle)",
+						"Bandage"],
+					"Statistics": ["20 HP",
+						"10 Healing Power"],
+					"Passives": []
+				},
+				{
+					"Name": "Plasma Arc",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Arm",
+					"Image": "erwimages/items/arm/PlasmaArc.png",
+					"Build Path": ["Steel Shield (Leather Shield (Turtle Shield + Leather) + Steel (Scrap Metal + Iron Ore))",
+						"Electronic Parts (Battery + Piano Wire)"],
+					"Statistics": ["15 HP",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Smart Band",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Arm",
+					"Image": "erwimages/items/arm/SmartBand.png",
+					"Build Path": ["Barbed Blossom (Flower + Barbed Wire (Piano Wire + Hammer))",
+						"Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["10 HP",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Minuteman Armband",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Arm",
+					"Image": "erwimages/items/arm/MinutemanArmband.png",
+					"Build Path": ["Squad Leader Armband (Bandage + Needle)",
+						"Flower of Fate (Flower + Playing Cards)"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Sports Watch",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Reduction Arm",
+					"Image": "erwimages/items/arm/SportsWatch.png",
+					"Build Path": ["Barbed Wire (Piano Wire + Hammer)",
+						"Broken Watch (Watch + Glue)"],
+					"Statistics": ["20 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Sheath",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Arms",
+					"Image": "erwimages/items/arm/Sheath.png",
+					"Build Path": ["Leather + Iron Sheet (Scrap Metal + Hammer)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Golden Bracelet",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Arms",
+					"Image": "erwimages/items/arm/GoldenBracelet.png",
+					"Build Path": ["Bracelet + Gold (Pickaxe + Gemstone)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bazuband",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Arms",
+					"Image": "erwimages/items/arm/Bazuband.png",
+					"Build Path": ["Bracer (Bandage + Leather) + Iron Sheet (Scrap Metal + Hammer)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Crimson Bracelet",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Arms",
+					"Image": "erwimages/items/arm/CrimsonBracelet.png",
+					"Build Path": ["Bracelet + Spiked Plank (Mousetrap + Nail)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Barbed Blossom",
+					"Rarity": "Rare",
+					"Description": "Builds into utility Arms",
+					"Image": "erwimages/items/arm/BarbedBlossom.png",
+					"Build Path": ["Flower + Barbed Wire (Piano Wire + Hammer)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Steel Shield",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Arms",
+					"Image": "erwimages/items/arm/SteelShield.png",
+					"Build Path": ["Leather Shield (Turtle Shield + Leather) + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Leather Shield",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Arms",
+					"Image": "erwimages/items/arm/LeatherShield.png",
+					"Build Path": ["Turtle Shield + Leather"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Squad Leader Armband",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Arms",
+					"Image": "erwimages/items/arm/SquadLeaderArmband.png",
+					"Build Path": ["Bandage + Needle"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bracer",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Arms",
+					"Image": "erwimages/items/arm/Bracer.png",
+					"Build Path": ["Bandage + Leather"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Broken Watch",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Arms",
+					"Image": "erwimages/items/arm/BrokenWatch.png",
+					"Build Path": ["Watch + Glue"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Watch",
+					"Rarity": "Common",
+					"Description": "Builds into many Arms",
+					"Image": "erwimages/items/arm/Watch.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bandage",
+					"Rarity": "Common",
+					"Description": "Builds into many Arms",
+					"Image": "erwimages/items/arm/Bandage.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Bracelet",
+					"Rarity": "Common",
+					"Description": "Builds into many Arms",
+					"Image": "erwimages/items/arm/Bracelet.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				}
 			]
 		}
 	},
