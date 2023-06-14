@@ -5070,14 +5070,320 @@ items =
 			"ItemList": 
 			[
 				{
-					"Name": "",
-					"Rarity": "",
-					"Description": "",
-					"Image": "erwimages/items/legs/Whip.png",
-					"Build Path": [],
-					"Statistics": [],
+					"Name": "Mithril Boots",
+					"Rarity": "Legendary",
+					"Description": "Status Immune Legs",
+					"Image": "erwimages/items/legs/MithrilBoots.png",
+					"Build Path": ["Chain Leggings (Tights + Steel Chain)",
+						"Mithril"],
+					"Statistics": ["25 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Mithril Chains - Immune to one status immunities of your choice.",
+						"Mithril Golem - If all 5 Armor pieces are Mithril, become immune to all statuses and gain 30 HP."]
+				},
+				{
+					"Name": "Glacial Shoes",
+					"Rarity": "Legendary",
+					"Description": "Slowing Legs",
+					"Image": "erwimages/items/legs/GlacialShoes.png",
+					"Build Path": ["Repaired Slippers (Slippers + Cloth)",
+						"Glacial Ice (Tree of Life + Ice)"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
+				},
+				{
+					"Name": "Taproots",
+					"Rarity": "Legendary",
+					"Description": "Healing Power Legs",
+					"Image": "erwimages/items/legs/Taproots.png",
+					"Build Path": ["Clogs (Branch + Pickaxe)",
+						"VF Blood Sample"],
+					"Statistics": ["30 HP",
+						"10 Healing Power"],
+					"Passives": ["Nature’s Call - Immune to roots and slows.",
+						"Healing Factor - Healing is increased by 10 HP for each instance of healing."]
+				},
+				{
+					"Name": "Iron Maiden",
+					"Rarity": "Legendary",
+					"Description": "Armor Piercing Legs",
+					"Image": "erwimages/items/legs/IronMaiden.png",
+					"Build Path": ["Clogs (Branch + Pickaxe)",
+						"Meteorite"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Armor-Piercing - Basic attacks ignore any damage resistance."]
+				},
+				{
+					"Name": "Boots of Hermes",
+					"Rarity": "Legendary",
+					"Description": "Tenacity Legs",
+					"Image": "erwimages/items/legs/BootsOfHermes.png",
+					"Build Path": ["Heelys (Running Shoes + Iron Ball)",
+						"Force Core (Meteorite + Tree of Life)"],
+					"Statistics": ["30 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": ["Tenacity - Reduce all statuses inflicted on you by 50% duration."]
+				},
+				{
+					"Name": "Red Shoes",
+					"Rarity": "Legendary",
+					"Description": "Lifesteal Legs",
+					"Image": "erwimages/items/legs/RedShoes.png",
+					"Build Path": ["Slippers",
+						"VF Blood Sample"],
+					"Statistics": ["30 HP",
+						"25% Lifesteal"],
+					"Passives": ["Omnisyphon - Heal for 5 HP per basic attack or ability use."]
+				},
+				{
+					"Name": "Blade Boots",
+					"Rarity": "Legendary",
+					"Description": "Anti Heal Legs",
+					"Image": "erwimages/items/legs/BladeBoots.png",
+					"Build Path": ["Running Shoes",
+						"Meteorite"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Anti Heal - Upon damaging someone, reduce all healing effects by 25%."]
+				},
+				{
+					"Name": "Alexander",
+					"Rarity": "Legendary",
+					"Description": "Percent Damage Legs",
+					"Image": "erwimages/items/legs/Alexander.png",
+					"Build Path": ["High Heels (Slippers + Scrap Metal)",
+						"Tree of Life"],
+					"Statistics": ["25 HP"],
+					"Passives": ["Biotic Infusion (1 day cooldown) - After using an ability, the next basic attack deals 10% of the enemy’s max HP as damage."]
+				},
+				{
+					"Name": "Glacier Crampons",
+					"Rarity": "Epic",
+					"Description": "Burst Damage Legs",
+					"Image": "erwimages/items/legs/GlacierCrampons.png",
+					"Build Path": ["Clogs (Branch + Pickaxe)",
+						"Barbed Wire (Piano Wire + Hammer)"],
+					"Statistics": ["15 HP",
+						"5 First Basic Attack Damage",
+						"5 First Spell Damage"],
 					"Passives": []
 				},
+				{
+					"Name": "Feather Boots",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Legs",
+					"Image": "erwimages/items/legs/FeatherBoots.png",
+					"Build Path": ["Combat Boots (Boots (Running Shoes + Oil Cloth (Oil + Bandage)) + Leather)",
+						"Feather"],
+					"Statistics": ["15 HP",
+						"25% Basic Attack Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Maverick Runner",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Reduction Legs",
+					"Image": "erwimages/items/legs/MaverickRunner.png",
+					"Build Path": ["Heelys (Running Shoes + Iron Ball)",
+						"Blueprint (Fountain Pen + Paper)"],
+					"Statistics": ["20 HP",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Straitjacket Sneakers",
+					"Rarity": "Epic",
+					"Description": "Spell Damage Legs",
+					"Image": "erwimages/items/legs/StraitjacketSneakers.png",
+					"Build Path": ["Repaired Slippers (Slippers + Cloth)",
+						"Ash (Paper + Lighter)"],
+					"Statistics": ["20 HP",
+						"5 First Spell Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "Bucephalus",
+					"Rarity": "Epic",
+					"Description": "Basic Attack Legs",
+					"Image": "erwimages/items/legs/Bucephalus.png",
+					"Build Path": ["Killer Heels (High Heels (Slippers + Scrap Metal) + Glass Pieces (Glass Bottle + Stone))",
+						"Chain Leggings (Tights + Steel Chain)"],
+					"Statistics": ["20 HP",
+						"5 First Basic Attack Damage"],
+					"Passives": []
+				},
+				{
+					"Name": "EOD Boots",
+					"Rarity": "Epic",
+					"Description": "Trap Reduction Legs",
+					"Image": "erwimages/items/legs/EODBoots.png",
+					"Build Path": ["Boots (Running Shoes + Oil Cloth (Oil + Bandage))",
+						"Steel Knee Pads (Knee Pads (Tights + Glue) + Steel (Scrap Metal + Iron Ore))"],
+					"Statistics": ["20 HP",
+						"5 Trap Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "White Rhinos",
+					"Rarity": "Epic",
+					"Description": "Damage Reduction Legs",
+					"Image": "erwimages/items/legs/WhiteRhinos.png",
+					"Build Path": ["Combat Boots (Boots (Running Shoes + Oil Cloth (Oil + Bandage)) + Leather)",
+						"Nail"],
+					"Statistics": ["15 HP",
+						"5 Basic Attack Reduction",
+						"5 Spell Damage Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "Tachyon Brace",
+					"Rarity": "Epic",
+					"Description": "Cooldown Reduction Legs",
+					"Image": "erwimages/items/legs/TachyonBrace.png",
+					"Build Path": ["Knee Pads (Tights + Glue)",
+						"Motor (Electronic Parts (Battery + Piano Wire) + Scrap Metal)"],
+					"Statistics": ["15 HP",
+						"10% Cooldown Reduction"],
+					"Passives": []
+				},
+				{
+					"Name": "SCV",
+					"Rarity": "Epic",
+					"Description": "Lifesteal Legs",
+					"Image": "erwimages/items/legs/SCV.png",
+					"Build Path": ["Clogs (Branch + Pickaxe)",
+						"Motor (Electronic Parts (Battery + Piano Wire) + Scrap Metal)"],
+					"Statistics": ["10 HP",
+						"25% Lifesteal"],
+					"Passives": []
+				},
+				{
+					"Name": "Hiking Boots",
+					"Rarity": "Rare",
+					"Description": "Fast Legs",
+					"Image": "erwimages/items/legs/HikingBoots.png",
+					"Build Path": ["Clogs (Branch + Pickaxe) + Stone"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Steel Knee Pads",
+					"Rarity": "Rare",
+					"Description": "Builds into defensive Legs",
+					"Image": "erwimages/items/legs/SteelKneePads.png",
+					"Build Path": ["Knee Pads (Tights + Glue) + Steel (Scrap Metal + Iron Ore)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Combat Boots",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Legs",
+					"Image": "erwimages/items/legs/CombatBoots.png",
+					"Build Path": ["Boots (Running Shoes + Oil Cloth (Oil + Bandage)) + Leather"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Killer Heels",
+					"Rarity": "Rare",
+					"Description": "Builds into offensive Legs",
+					"Image": "erwimages/items/legs/KillerHeels.png",
+					"Build Path": ["High Heels (Slippers + Scrap Metal) + Glass Pieces (Glass Bottle + Stone)"],
+					"Statistics": ["10 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Knee Pads",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Legs",
+					"Image": "erwimages/items/legs/KneePads.png",
+					"Build Path": ["Tights + Glue"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Chain Leggings",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Legs",
+					"Image": "erwimages/items/legs/ChainLeggings.png",
+					"Build Path": ["Tights + Steel Chain"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "High Heels",
+					"Rarity": "Uncommon",
+					"Description": "Builds into offensive Legs",
+					"Image": "erwimages/items/legs/HighHeels.png",
+					"Build Path": ["Slippers + Scrap Metal"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Heelys",
+					"Rarity": "Uncommon",
+					"Description": "Builds into defensive Legs",
+					"Image": "erwimages/items/legs/Heelys.png",
+					"Build Path": ["Running Shoes + Iron Ball"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Clogs",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Legs",
+					"Image": "erwimages/items/legs/Clogs.png",
+					"Build Path": ["Branch + Pickaxe"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Repaired Slippers",
+					"Rarity": "Uncommon",
+					"Description": "Builds into utility Legs",
+					"Image": "erwimages/items/legs/RepairedSlippers.png",
+					"Build Path": ["Slippers + Cloth"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Boots",
+					"Rarity": "Uncommon",
+					"Description": "Builds into many Legs",
+					"Image": "erwimages/items/legs/Boots.png",
+					"Build Path": ["Running Shoes + Oil Cloth (Oil + Bandage)"],
+					"Statistics": ["5 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Slippers",
+					"Rarity": "Common",
+					"Description": "Builds into many Legs",
+					"Image": "erwimages/items/legs/Slippers.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Running Shoes",
+					"Rarity": "Common",
+					"Description": "Builds into many Legs",
+					"Image": "erwimages/items/legs/RunningShoes.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "Tights",
+					"Rarity": "Common",
+					"Description": "Builds into many Legs",
+					"Image": "erwimages/items/legs/Tights.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				}
 			]
 		}
 	},
@@ -5096,6 +5402,393 @@ items =
 					"Statistics": [],
 					"Passives": []
 				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": [],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				},
+				{
+					"Name": "",
+					"Rarity": "",
+					"Description": "",
+					"Image": "erwimages/items/accessory/Whip.png",
+					"Build Path": [],
+					"Statistics": ["1 HP"],
+					"Passives": []
+				}
 			]
 		}
 	},
