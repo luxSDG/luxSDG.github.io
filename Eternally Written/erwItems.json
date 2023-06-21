@@ -4343,12 +4343,12 @@ items =
 				{
 					"Name": "Astronaut's Helmet",
 					"Rarity": "Legendary",
-					"Description": "Damage Reflection Head",
+					"Description": "Slowing Head",
 					"Image": "erwimages/items/head/AstronautsHelmet.png",
 					"Build Path": ["Safety Helmet (Bike Helmet + Stone)",
 						"Moonstone (Meteorite + Stone)"],
 					"Statistics": ["25 HP"],
-					"Passives": ["Reflection - All basic attacks to you return 25% damage to the player who attacked you."]
+					"Passives": ["Lich’s Grasp (1/2th day cooldown) - Basic attacks and abilities slow the target, increasing cooldowns by 10%."]
 				},
 				{
 					"Name": "Tactical Visor",
@@ -4360,6 +4360,17 @@ items =
 					"Statistics": ["25 HP",
 						"5 Spell Damage Reduction"],
 					"Passives": ["Temporal Refraction (1 day cooldown) - Block the first spell that deals damage done to you entirely."]
+				},
+				{
+					"Name": "Dwarf's Helmet",
+					"Rarity": "Legendary",
+					"Description": "Damage Reflection Head",
+					"Image": "erwimages/items/head/DwarfsHelmet.png",
+					"Build Path": ["Safety Helmet (Bike Helmet + Stone)",
+						"Tree of Life"],
+					"Statistics": ["25 HP",
+						"5 Basic Attack Reduction"],
+					"Passives": ["Reflection - All basic attacks to you return 25% damage to the player who attacked you."]
 				},
 				{
 					"Name": "Virtuous Outlaw",
@@ -5156,6 +5167,16 @@ items =
 						"Tree of Life"],
 					"Statistics": ["25 HP"],
 					"Passives": ["Biotic Infusion (1 day cooldown) - After using an ability, the next basic attack deals 10% of the enemy’s max HP as damage."]
+				},
+				{
+					"Name": "Legs of Steel",
+					"Rarity": "Legendary",
+					"Description": "Damage Reflection Legs",
+					"Image": "erwimages/items/legs/LegsOfSteel.png",
+					"Build Path": ["Knee Pads (Tights + Glue)",
+						"Mithril"],
+					"Statistics": ["30 HP"],
+					"Passives": ["Reflection - All basic attacks to you return 25% damage to the player who attacked you."]
 				},
 				{
 					"Name": "Glacier Crampons",
