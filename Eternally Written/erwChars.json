@@ -1464,6 +1464,7 @@ chars =
 						"Denial of Service (1 day cooldown) - Spam a target with internet traffic to stun a target for 1/10th of a day.",
 						"Upload Ransomware (Network Connection Established, 2 day cooldown) - Upload Ransomware into the network, applying a stasis to an ally and an enemy. This stasis cannot be broken by any means until the ransom of 5 credits is paid. The stasis automatically ends after 1 day.",
 						"Upload Adware (Network Connection Established, 2 day cooldown) - Upload Adware into the network, causing 2 targets to have a 50% chance for their next action to fail. If the action does not fail, they will be silenced for 1/10th of a day. (This ability acts as if the target's ability went through, applying cooldowns, charge removal, etc.)",
+						"Install Spyware (1 day cooldown) - Spy on a target with spyware, following them and finding all their actions today.",
 						"Unlock Spoofing.",
 						"Unlock Phishing."],
 					"Level 7": ["Cola Run! (2 day cooldown) - Order cola from the island drones that are delivered to two random zones not adjacent to each other. If you have \"Network Connection\" and move to a zone with a cola, \"Network Connection\" isn't lost. Once you collect a cola, you gain a shield that blocks the next attack. This shield lasts for 1 day and automatically breaks at the end of the day or when attacked.",
