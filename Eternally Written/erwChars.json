@@ -1413,7 +1413,7 @@ chars =
 					"HP": "100",
 					"Basic Attack": "None",
 					"Basic Attack Cooldown": "N/A",
-					"Level 1": ["Zone Hacking (1/2th day cooldown) - Hack a zone, increasing your Detection and decreasing their Security Meter in the zone. This enters the matrix, putting yourself in stasis for 1/5th of a day. The matrix is a unique map that has security measures and defenses. Your character must leave the matrix in 1/5th of a day, or else you will be out of stasis and vulnerable. Making it through the matrix gives 1 level.",
+					"Level 1": ["Zone Hacking (1 day cooldown) - Hack a zone, increasing your Detection and decreasing their Security Meter in the zone. This enters the matrix, putting yourself in stasis for 1/5th of a day. The matrix is a unique map that has security measures and defenses. Your character must leave the matrix in 1/5th of a day, or else you will be out of stasis and vulnerable. Making it through the matrix gives 1 level.",
 						"Reward Hacking (1 day cooldown) - Hack a target, confusing them and making them forget who their allies are for 1/6th of a day.",
 						"SQL Injection (1 day cooldown) - Hack a target by adding a row to the database, giving them an extra stat of choice for 1 day between 10 HP, 2 Attack Power, or 5 Credits.",
 						"Matrix Only:",
