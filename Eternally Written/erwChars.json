@@ -1251,7 +1251,7 @@ chars =
 						"Girl in a Bubble (1 day cooldown) - Enter a bubble with Wilson, becoming invulnerable and immune to all statuses for 1/6th of a day, unable to do anything in the bubble.",
 						"Play With Us! (5 HP, 1 day cooldown) - Send Wilson to play, dealing 20 damage to the target in a zone adjacent to Wilson’s zone, and pulling them to Wilson. If you pull yourself or an ally, give a shield of 10 HP.",
 						"Back To Me Wilson! (1/4th day cooldown) - Move Wilson back to the current zone you are in."],
-					"Level 4": ["Free at Last (20 HP, 3 day cooldown) - Set yourself free, dealing 15 + (attack power) damage to all enemies on the map..",
+					"Level 4": ["Free at Last (20 HP, 3 day cooldown) - Set yourself free, dealing 15 + (attack power) damage to all enemies on the map.",
 						"Caltrops (2 day cooldown) - Drop a field of caltrops in the current zone, dealing 10 damage to all enemies and slows them, increasing their cooldowns by 10%.",
 						"Wilson, Slay! (5 HP, 1 day cooldown) - Send Wilson to slay, disrupting a target in Wilson’s current zone for 1/10th of a day and dealing 10 damage to them 3 times there with 1/8th of a day separations."],
 					"Level 7": ["Wilson, Smash! (5 HP, 1 day cooldown) - Wilson smashes the ground every other time Sissela casts an ability for 1/6th of a day, dealing 0 + (attack power) damage to all enemies in Wilson’s zone.",
