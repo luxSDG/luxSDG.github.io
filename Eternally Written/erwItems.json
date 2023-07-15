@@ -4717,7 +4717,7 @@ items =
 					"Name": "Auto-arms",
 					"Rarity": "Legendary",
 					"Description": "Attack Power Arm",
-					"Image": "erwimages/items/arm/Auto-arms.png",
+					"Image": "erwimages/items/arm/Auto-Arms.png",
 					"Build Path": ["Bracer (Bandage + Leather)",
 						"Force Core (Meteorite + Tree of Life)"],
 					"Statistics": ["30 HP",
