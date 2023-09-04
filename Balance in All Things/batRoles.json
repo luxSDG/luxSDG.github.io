@@ -332,6 +332,26 @@ data =
 				"Passives": ["Topology Knowledge - Know what abilities are used today on anyone you use an ability on."]
 			},
 			{
+				"Name":"Poison Crossbowman",
+				"Color": "white",
+				"Image": "batImages/poisoncrossbowman.png",
+				"Description": "A powerful berzerker with the biggest of swords, was last seen defending a group of mages using their last spell. Credit to Rafi for this role.",
+				"HP": "10 HP",
+				"Difficulty": "Medium",
+				"Tags": "Human",
+				"Actives": ["Poison Bolt (2 day cooldown) - Shoot a poisonous arrow, dealing 1 damage to them initially and leaving a poison that deals 3 damage per day for 2 days.",
+					"Crossbow Fire (1 day cooldown) - Shoot someone with a crossbow, dealing 5 damage.",
+					"Bullseye (2 charges) - Shoot a target’s vital spot, wounding them for 5 damage and making them unable to heal or buff themselves.",
+					"Contagion (2 charges) - Spread the poisonous love from one target to all others, spreading all negative effects to all enemies that visit a target.",
+					"Explosive Bolt (1 charge) - Shoot an explosive arrow, dealing 10 damage to the target and all enemies that visit the target."
+				],
+				"Passives": ["Extreme Poison - Every attack has a 30% chance to daze a target (forcing the target to misuse their actions) upon applying poison to an already poisoned target.",
+					"Ranged - Any attempts to inflict damage via counterattack made by characters using melee weapons are rendered useless due to range advantage.",
+					"High Mobility - Speeding through the battlefield, you are harder to hit, having a 30% chance to dodge non-aoe attacks.",
+					"Adrenaline Rush - Whenever you dodge an attack, you evade another attack on the same day, thus receiving no damage or negative effects."
+				]
+			},
+			{
 				"Name":"Possessor",
 				"Color": "white",
 				"Image": "",
@@ -358,6 +378,22 @@ data =
 					"Oil Leak (1 charge) - Douse all living players.",
 					"Napalm Strike (2 day cooldown) - Launch napalm at someone, burning them for 3 days, dealing 2 damage per day."],
 				"Passives": ["Fight Fire with Fire - Burning yourself heals you for 3 HP."]
+			},
+			{
+				"Name":"Reaper from Overwatch",
+				"Color": "white",
+				"Image": "",
+				"Description": "He took \"just a phase\" too seriously and became edginess itself. Credit to Progamer for this role.",
+				"HP": "10 HP",
+				"Difficulty": "Easy",
+				"Tags": "Creature",
+				"Actives": ["Hellfire Shotguns (1 day cooldown) - You shoot twice with your shotguns (why are you using two at the same time), and deal 3 damage to 2 different targets (can be the same target).",
+					"Shadow Step (1 day cooldown) - You teleport in front of an enemy to scare the shit out of them, increasing the damage they take by 2 for 1 day.",
+					"Wraith Form (2 day cooldown) - Become mist and cleanse yourself of any negative statuses affecting you. You also don't take damage from attacks for 1 day, and can use Hellfire Shotguns again.",
+					"Death Blossom (must deal 20 damage to become usable) - You deal 5 damage to a target, and the 2 people above and below them on the player list. You can also use Hellfire Shotguns again."
+				],
+				"Passives": ["The Reaping - For every 3 damage you deal, heal for 1 HP.",
+				]
 			},
 			{
 				"Name":"Regular Dude with Banjo and Kazoo",
