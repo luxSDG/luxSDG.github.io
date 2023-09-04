@@ -986,7 +986,7 @@ data =
 					"Get Dirt - Select a target operative. You will get one of two class types that they can be and gain 1 scoop. Do not go through frames or cover.",
 					"Stakeout for Scoops - Select a target operative. If they are arrested tonight, gain 2 scoops.",
 					"Destroy Intel - Select a green node, if you find intel that is of class intel, target node, or faction intel, destroy it, give yourself the intel, and gain 1 scoop."],
-				"Night": ["Murder Journalist (1 charge) - Select a target operative. If the target is a journalist, visit, occupy, and murder them, gain 1 scoop, and remove Unrespected, becoming unarrestable. Otherwise, do nothing.",
+				"Night": ["Murder Journalist (1 charge) - Select a target operative. If the target is a journalist, paragon journalist, sympathetic reporter, or persuaded news reporter, visit, occupy, and murder them, gain 1 scoop, and remove Unrespected, becoming unarrestable. Otherwise, do nothing.",
 					"Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout. Gain 1 scoop if they visit someone.",
 					"Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them. Gain 1 scoop if they attempt to do an action.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target. Gain 1 scoop if successful.",
@@ -1980,6 +1980,26 @@ data =
 				"Passives": ["Agent on the Field - You are a Field Agent role.",
 					"Wasn’t Me Netsec - The first time you are voted, select someone else to be voted this round.",
 					"Call Assassin - Paid Assassin can be used alongside any other action at night."]
+			},
+			{
+				"Name":"Persuaded News Reporter",
+				"Color": "orange",
+				"Summary":"Journalist for agents, a core neutral role that is an agent",
+				"Image": "persuadednewsreporter.png",
+				"Description": "This role is supposed to be unique, depending on the ruleset.<br>“Truth is nothing but subjective, it’s not about what happens, it’s about what appears to happen, Persuaded News Reporter.”",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
+					"Upload Fake Intel (1 charge) - Select a green node and upload intel that is downloadable by others. You can write what intel you want to leave. Leaves a log.",
+					"Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
+					"Derail News (1 charge) - For the next night, any operatives arrested and murdered will have their roles hidden and logs wiped, including through voting.",
+					"All in (1 charge) - Turn into a Field Agent. Can only be done if there are no Agent on the Field roles."],
+				"Night": ["Get Scoop (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them. If the target is not a neutral, gain 1 scoop.",
+					"Ambush (N1 -> N4 cooldown) - Select a target operative. Visit them, if they are arrested or killed during the remainder of the game, their role will be hidden.",
+					"Perform Fake Headline (N1 -> N4 cooldown, 2 charges) - Select a target operative. Visit and occupy them, performing a fake headline on them. If they are arrested or murdered tonight, they will be framed as the role you select."],
+				"Passives": ["Not Agent - Any doxx attempts on you doxx you as Neutral.",
+					"In The Business - You will learn if any Journalists have spawned, including Sympathetic Reporter, Journalist, Shamed Journalist, and Paragon Journalist.",
+					"Fake News Script - All roles hidden, framed, and logs wiped will be revealed and recovered upon your arrest/death."]
 			}
 		]
 	},

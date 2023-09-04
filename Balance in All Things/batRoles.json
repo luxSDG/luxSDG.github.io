@@ -335,7 +335,7 @@ data =
 				"Name":"Poison Crossbowman",
 				"Color": "white",
 				"Image": "batImages/poisoncrossbowman.png",
-				"Description": "A powerful berzerker with the biggest of swords, was last seen defending a group of mages using their last spell. Credit to Rafi for this role.",
+				"Description": "Has been seen defending a city, where mages have been working on a spell that made a pillar of light, protecting that place from the horrors that were residing within a dark purple mist. Credit to Rafi for making this role.",
 				"HP": "10 HP",
 				"Difficulty": "Medium",
 				"Tags": "Human",
