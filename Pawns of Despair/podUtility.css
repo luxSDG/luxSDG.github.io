@@ -1,0 +1,36 @@
+
+body {
+  background-color: #212121;
+  color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px white; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #171717;
+    -webkit-box-shadow: inset 0 0 1px white; 
+}
+
+.topBar {
+  background-color: #111111;
+}
+
+.topBarInner {
+  margin-bottom: -20px;
+}
+
+#topBarLinks, #topBarLinks:link, #topBarLinks:visited, #topBarLinks:active {
+  color: white;
+}
+
+#topBarLinks:hover {
+  color: green;
+}
