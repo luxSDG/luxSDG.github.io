@@ -34,3 +34,23 @@ body {
 #topBarLinks:hover {
   color: green;
 }
+
+.grid-container {
+  display: grid;
+  column-gap: 10%;
+  grid-template-columns: 45% 45%
+}
+
+.card {
+  background-color: #1B1B1B;
+}
+
+.toolSearch {
+  color: white;
+  background-color: #111111;
+}
+
+.toolSearch:focus {
+  color: white;
+  background-color: #303030;
+}
