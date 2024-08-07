@@ -56,7 +56,7 @@ const resultsD = document.getElementById("resultsD");
 
 function Calculate()
 {
-	var resA = "";
+	var resA = "Attacker: " + "<br>";
 	resA += HPDmgChangeAtt() + "<br>";
 	resA += HPHealChangeAtt() + "<br>";
 	resA += APChangeAtt() + "<br>";
@@ -68,7 +68,7 @@ function Calculate()
 	resA += PositionChangeAtt() + "<br>";
 	resultsA.innerHTML = resA;
 
-	var resD = "";
+	var resD = "Defender: " + "<br>";
 	resD += HPChangeDef() + "<br>";
 	resD += APChangeDef() + "<br>";
 	resD += RangeChangeDef() + "<br>";

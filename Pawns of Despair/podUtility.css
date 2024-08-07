@@ -25,6 +25,7 @@ body {
 
 .topBarInner {
   margin-bottom: -20px;
+  max-width: 100%;
 }
 
 #topBarLinks, #topBarLinks:link, #topBarLinks:visited, #topBarLinks:active {
