@@ -8,7 +8,6 @@ const empower = document.getElementById("empower");
 const exhaust = document.getElementById("exhaust");
 const heal = document.getElementById("heal");
 const shieldA = document.getElementById("shieldA");
-const apCost = document.getElementById("apCost");
 
 //Status
 const slowA = document.getElementById("slowA");
@@ -57,12 +56,54 @@ const resultsD = document.getElementById("resultsD");
 const clearButton = document.getElementById("clearButton");
 const calculateButton = document.getElementById("calculateButton");
 
-function Clear()
+function Calculate()
 {
 	
 }
 
-function Calculate()
+function Clear()
 {
+	dmg.value = '';
+	maxHPdmg.value = '';
+	curHPdmg.value = '';
+	empower.value = '';
+	exhaust.value = '';
+	heal.value = '';
+	shieldA.value = '';
 
+	slowA.value = '';
+	disruptA.value = '';
+	vulnerableA.value = '';
+	exhaustA.value = '';
+	weakenA.value = '';
+	suppressA.value = '';
+	push.value = '';
+	pull.value = '';
+
+	hasteA.value = '';
+	clarityA.value = '';
+	braceA.value = '';
+	empowerA.value = '';
+	strengthenA.value = '';
+	tenacityA.value = '';
+
+	hp.value = '';
+	maxHP.value = '';
+	shieldD.value = '';
+	ap.value = '';
+	range.value = '';
+
+	hasteD.value = '';
+	clarityD.value = '';
+	braceD.value = '';
+	empowerD.value = '';
+	strengthenD.value = '';
+	tenacityD.value = '';
+
+	slowD.value = '';
+	disruptD.value = '';
+	vulnerableD.value = '';
+	exhaustD.value = '';
+	weakenD.value = '';
+	suppressD.value = '';
 }
