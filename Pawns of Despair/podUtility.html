@@ -25,7 +25,7 @@
 
     <div class="px-4 py-2 my-5 text-center">
       <h1 class="display-5 fw-bold">Tools</h1>
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-10 mx-auto">
 
         <div class="card">
           <div class="card-body">
@@ -33,62 +33,95 @@
             <br>
             <div class="grid-container">
               <div class="grid-item">
-                <h5 class="fw-bold">Attacker</h5>
+                <h5 class="fw-bold">Attack/Heal</h5>
                 <input type="search" class="form-control toolSearch" id="dmg" placeholder="Damage">
                 <br>
                 <input type="search" class="form-control toolSearch" id="empower" placeholder="Empower">
                 <br>
-                <input type="search" class="form-control toolSearch" id="exhaustA" placeholder="Exhaust">
+                <input type="search" class="form-control toolSearch" id="exhaust" placeholder="Exhaust">
                 <br>
-                <input type="search" class="form-control toolSearch" id="slowA" placeholder="Slow">
+                <input type="search" class="form-control toolSearch" id="heal" placeholder="Healing">
                 <br>
-                <input type="search" class="form-control toolSearch" id="disruptA" placeholder="Disrupt">
-                <br>
-                <input type="search" class="form-control toolSearch" id="vulnerableA" placeholder="Vulnerable">
-                <br>
-                <input type="search" class="form-control toolSearch" id="weakenA" placeholder="Weaken">
-                <br>
-                <input type="search" class="form-control toolSearch" id="suppressA" placeholder="Suppress">
+                <input type="search" class="form-control toolSearch" id="shieldA" placeholder="Shielding">
                 <br>
                 <input type="search" class="form-control toolSearch" id="push" placeholder="Push">
                 <br>
                 <input type="search" class="form-control toolSearch" id="pull" placeholder="Pull">
                 <br>
-                <h5 class="fw-bold">Healer</h5>
-                <input type="search" class="form-control toolSearch" id="healing" placeholder="Healing">
+              </div>
+              <div class="grid-item">
+                <h5 class="fw-bold">Status</h5>
+                <input type="search" class="form-control toolSearch" id="slowA" placeholder="Slow Apply">
                 <br>
-                <input type="search" class="form-control toolSearch" id="hasteA" placeholder="Haste">
+                <input type="search" class="form-control toolSearch" id="disruptA" placeholder="Disrupt Apply">
                 <br>
-                <input type="search" class="form-control toolSearch" id="braceA" placeholder="Brace">
+                <input type="search" class="form-control toolSearch" id="vulnerableA" placeholder="Vulnerable Apply">
                 <br>
-                <input type="search" class="form-control toolSearch" id="strengthenA" placeholder="Strengthen">
+                <input type="search" class="form-control toolSearch" id="exhaustA" placeholder="Exhaust Apply">
                 <br>
-                <input type="search" class="form-control toolSearch" id="tenacityA" placeholder="Tenacity">
+                <input type="search" class="form-control toolSearch" id="weakenA" placeholder="Weaken Apply">
+                <br>
+                <input type="search" class="form-control toolSearch" id="suppressA" placeholder="Suppress Apply">
                 <br>
               </div>
               <div class="grid-item">
-                <h5 class="fw-bold">Defender</h5>
+                <h5 class="fw-bold">Buff</h5>
+                <input type="search" class="form-control toolSearch" id="hasteA" placeholder="Haste Apply">
+                <br>
+                <input type="search" class="form-control toolSearch" id="clarityA" placeholder="Clarity Apply">
+                <br>
+                <input type="search" class="form-control toolSearch" id="braceA" placeholder="Brace Apply">
+                <br>
+                <input type="search" class="form-control toolSearch" id="empowerA" placeholder="Empower Apply">
+                <br>
+                <input type="search" class="form-control toolSearch" id="strengthenA" placeholder="Strengthen Apply">
+                <br>
+                <input type="search" class="form-control toolSearch" id="tenacityA" placeholder="Tenacity Apply">
+                <br>
+              </div>
+              <div class="grid-item">
+                <p class="lead mb-4" id="resultsA">Results<br>Hi<small>
+                </small></p>
+              </div>
+              <div class="grid-item">
+                <p class="lead mb-4" id="resultsD">Results<br>Hi<small>
+                </small></p>
+              </div>
+              <div class="grid-item">
+                <h5 class="fw-bold">Defend</h5>
                 <input type="search" class="form-control toolSearch" id="hp" placeholder="HP">
+                <br>
+                <input type="search" class="form-control toolSearch" id="shieldD" placeholder="Shield">
                 <br>
                 <input type="search" class="form-control toolSearch" id="ap" placeholder="AP">
                 <br>
                 <input type="search" class="form-control toolSearch" id="range" placeholder="Range">
                 <br>
+              </div>
+              <div class="grid-item">
+                <h5 class="fw-bold">Buffs</h5>
                 <input type="search" class="form-control toolSearch" id="hasteD" placeholder="Haste">
                 <br>
+                <input type="search" class="form-control toolSearch" id="clarityD" placeholder="Clarity">
+                <br>
                 <input type="search" class="form-control toolSearch" id="braceD" placeholder="Brace">
+                <br>
+                <input type="search" class="form-control toolSearch" id="empowerD" placeholder="Empower">
                 <br>
                 <input type="search" class="form-control toolSearch" id="strengthenD" placeholder="Strengthen">
                 <br>
                 <input type="search" class="form-control toolSearch" id="tenacityD" placeholder="Tenacity">
                 <br>
+              </div>
+              <div class="grid-item">
                 <h5 class="fw-bold">Statuses</h5>
-                <br>
                 <input type="search" class="form-control toolSearch" id="slowD" placeholder="Slow">
                 <br>
                 <input type="search" class="form-control toolSearch" id="disruptD" placeholder="Disrupt">
                 <br>
                 <input type="search" class="form-control toolSearch" id="vulnerableD" placeholder="Vulnerable">
+                <br>
+                <input type="search" class="form-control toolSearch" id="exhaustD" placeholder="Exhaust">
                 <br>
                 <input type="search" class="form-control toolSearch" id="weakenD" placeholder="Weaken">
                 <br>
@@ -97,14 +130,8 @@
               </div>
             </div>
             </small></p>
-            <p class="lead mb-4" id="results"><small>
-            </small></p>
             <button type="button" class="btn btn-dark" id="" onclick="">Clear</button>
             <button type="button" class="btn btn-dark" id="" onclick="">Calculate</button>
-            <br>
-            <br>
-            <p class="lead mb-4" id="coinResults"><small>
-            </small></p>
           </div>
         </div>
 
