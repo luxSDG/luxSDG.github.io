@@ -53,12 +53,128 @@ const suppressD = document.getElementById("suppressD");
 //Results
 const resultsA = document.getElementById("resultsA");
 const resultsD = document.getElementById("resultsD");
-const clearButton = document.getElementById("clearButton");
-const calculateButton = document.getElementById("calculateButton");
 
 function Calculate()
 {
-	
+	var resA = "";
+	resA += HPDmgChangeAtt() + "<br>";
+	resA += HPHealChangeAtt() + "<br>";
+	resA += APChangeAtt() + "<br>";
+	resA += RangeChangeAtt() + "<br>";
+	resA += ReductionChangeAtt() + "<br>";
+	resD += DmgChangeAtt() + "<br>";
+	resA += BuffChangeAtt() + "<br>";
+	resA += StatusChangeAtt() + "<br>";
+	resA += PositionChangeAtt() + "<br>";
+	resultsA.innerHTML = resA;
+
+	var resD = "";
+	resD += HPChangeDef() + "<br>";
+	resD += APChangeDef() + "<br>";
+	resD += RangeChangeDef() + "<br>";
+	resD += ReductionChangeDef() + "<br>";
+	resD += DmgChangeDef() + "<br>";
+	resD += BuffChangeDef() + "<br>";
+	resD += StatusChangeDef() + "<br>";
+	resultsD.innerHTML = resD;
+}
+
+//Attacker
+function HPDmgChangeAtt()
+{
+	var damageChangeAtt = "";
+	return damageChangeAtt;
+}
+
+function HPHealChangeAtt()
+{
+	var healChangeAtt = "";
+	return healChangeAtt;
+}
+
+function APChangeAtt()
+{
+	var apChangeAtt = "";
+	return apChangeAtt;
+}
+
+function RangeChangeAtt()
+{
+	var rangeChangeAtt = "";
+	return rangeChangeAtt;
+}
+
+function ReductionChangeAtt()
+{
+	var reductChangeAtt = "";
+	return reductChangeAtt;
+}
+
+function DmgChangeAtt()
+{
+	var dmgChangeAtt = "";
+	return dmgChangeAtt;
+}
+
+function BuffChangeAtt()
+{
+	var buffChangeAtt = "";
+	return buffChangeAtt;
+}
+
+function StatusChangeAtt()
+{
+	var statusChangeAtt = "";
+	return statusChangeAtt;
+}
+
+function PositionChangeAtt()
+{
+	var posChangeAtt = "";
+	return posChangeAtt;
+}
+
+//Defender
+function HPChangeDef()
+{
+	var hpChangeDef = "";
+	return hpChangeDef;
+}
+
+function APChangeDef()
+{
+	var apChangeDef = "";
+	return apChangeDef;
+}
+
+function RangeChangeDef()
+{
+	var rangeChangeDef = "";
+	return rangeChangeDef;
+}
+
+function ReductionChangeDef()
+{
+	var reductChangeDef = "";
+	return reductChangeDef;
+}
+
+function DmgChangeDef()
+{
+	var dmgChangeDef = "";
+	return dmgChangeDef;
+}
+
+function BuffChangeDef()
+{
+	var buffChangeDef = "";
+	return buffChangeDef;
+}
+
+function StatusChangeDef()
+{
+	var statusChangeDef = "";
+	return statusChangeDef;
 }
 
 function Clear()
