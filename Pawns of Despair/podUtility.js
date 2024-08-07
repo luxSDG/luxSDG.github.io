@@ -51,3 +51,18 @@ const exhaustD = document.getElementById("exhaustD");
 const weakenD = document.getElementById("weakenD");
 const suppressD = document.getElementById("suppressD");
 
+//Results
+const resultsA = document.getElementById("resultsA");
+const resultsD = document.getElementById("resultsD");
+const clearButton = document.getElementById("clearButton");
+const calculateButton = document.getElementById("calculateButton");
+
+function Clear()
+{
+	
+}
+
+function Calculate()
+{
+
+}
