@@ -54,127 +54,177 @@ const suppressD = document.getElementById("suppressD");
 const resultsA = document.getElementById("resultsA");
 const resultsD = document.getElementById("resultsD");
 
+//Temp vars to calc the buffs/debuffs
+var buffCalc = 0;
+var debuffCalc = 0;
+
 function Calculate()
 {
+	NumericalCalcs();
+
 	var resA = "Attacker: " + "<br>";
-	resA += HPDmgChangeAtt() + "<br>";
-	resA += HPHealChangeAtt() + "<br>";
-	resA += APChangeAtt() + "<br>";
-	resA += RangeChangeAtt() + "<br>";
-	resA += ReductionChangeAtt() + "<br>";
-	resD += DmgChangeAtt() + "<br>";
-	resA += BuffChangeAtt() + "<br>";
-	resA += StatusChangeAtt() + "<br>";
-	resA += PositionChangeAtt() + "<br>";
+	resA += HPDmgChangeAtt();
+	resA += HPHealChangeAtt();
+	resA += APChangeAtt();
+	resA += RangeChangeAtt();
+	resA += ReductionChangeAtt();
+	resD += DmgChangeAtt();
+	resA += BuffChangeAtt();
+	resA += StatusChangeAtt();
+	resA += PositionChangeAtt();
 	resultsA.innerHTML = resA;
 
 	var resD = "Defender: " + "<br>";
-	resD += HPChangeDef() + "<br>";
-	resD += APChangeDef() + "<br>";
-	resD += RangeChangeDef() + "<br>";
-	resD += ReductionChangeDef() + "<br>";
-	resD += DmgChangeDef() + "<br>";
-	resD += BuffChangeDef() + "<br>";
-	resD += StatusChangeDef() + "<br>";
+	resD += HPChangeDef();
+	resD += APChangeDef();
+	resD += RangeChangeDef();
+	resD += ReductionChangeDef();
+	resD += DmgChangeDef();
+	resD += BuffChangeDef();
+	resD += StatusChangeDef();
 	resultsD.innerHTML = resD;
+}
+
+function NumericalCalcs()
+{
+	buffCalc = ((utilityInputFieldCalc(strengthenD) + utilityInputFieldCalc(strengthenA))
+	 - (utilityInputFieldCalc(weakenD) + utilityInputFieldCalc(weakenA))) / 100;
+	debuffCalc = ((utilityInputFieldCalc(suppressD) + utilityInputFieldCalc(suppressA))
+	 - (utilityInputFieldCalc(tenacityD) + utilityInputFieldCalc(tenacityA))) / 100;
+}
+
+function utilityInputFieldCalc(value)
+{
+	if (value.value == "")
+	{
+		return 0;
+	}
+	return parseInt(value.value);
 }
 
 //Attacker
 function HPDmgChangeAtt()
 {
 	var damageChangeAtt = "";
-	return damageChangeAtt;
+	return damageChangeAtt + "<br>";
 }
 
 function HPHealChangeAtt()
 {
 	var healChangeAtt = "";
-	return healChangeAtt;
+	return healChangeAtt + "<br>";
 }
 
 function APChangeAtt()
 {
+	if (hasteA.value == "" && slowA.value == "")
+	{
+		return "";
+	}
 	var apChangeAtt = "";
-	return apChangeAtt;
+	var curHasteA = utilityInputFieldCalc(hasteA);
+	var curSlowA = utilityInputFieldCalc(slowA);
+	var innerHaste = curHasteA + (curHasteA * buffCalc);
+	var innerSlow = curSlowA + (curSlowA * debuffCalc);
+	var formula = parseInt(innerHaste) - parseInt(innerSlow);
+	apChangeAtt = "AP Change: " + formula.toString();
+	return apChangeAtt + "<br>";
 }
 
 function RangeChangeAtt()
 {
 	var rangeChangeAtt = "";
-	return rangeChangeAtt;
+	return rangeChangeAtt + "<br>";
 }
 
 function ReductionChangeAtt()
 {
 	var reductChangeAtt = "";
-	return reductChangeAtt;
+	return reductChangeAtt + "<br>";
 }
 
 function DmgChangeAtt()
 {
 	var dmgChangeAtt = "";
-	return dmgChangeAtt;
+	return dmgChangeAtt + "<br>";
 }
 
 function BuffChangeAtt()
 {
 	var buffChangeAtt = "";
-	return buffChangeAtt;
+	return buffChangeAtt + "<br>";
 }
 
 function StatusChangeAtt()
 {
 	var statusChangeAtt = "";
-	return statusChangeAtt;
+	return statusChangeAtt + "<br>";
 }
 
 function PositionChangeAtt()
 {
 	var posChangeAtt = "";
-	return posChangeAtt;
+	return posChangeAtt + "<br>";
 }
 
 //Defender
 function HPChangeDef()
 {
 	var hpChangeDef = "";
-	return hpChangeDef;
+	return hpChangeDef + "<br>";
 }
 
 function APChangeDef()
 {
+	if (ap.value == "")
+	{
+		return "";
+	}
 	var apChangeDef = "";
-	return apChangeDef;
+	var apVal = utilityInputFieldCalc(ap);
+	var curHasteA = utilityInputFieldCalc(hasteA);
+	var curSlowA = utilityInputFieldCalc(slowA);
+	var curHasteD = utilityInputFieldCalc(hasteD);
+	var curSlowD = utilityInputFieldCalc(slowD);
+	var innerHaste = curHasteA + (curHasteA * buffCalc);
+	var innerSlow = curSlowA + (curSlowA * debuffCalc);
+
+	var formula = (parseInt(curHasteD) - parseInt(curSlowD))
+	 + (parseInt(innerHaste) - parseInt(innerSlow));
+	var curAP = apVal + formula;
+	var origAP = apVal;
+	apChangeDef = "Cur/Orig AP: " + curAP.toString() + "/" + origAP.toString();
+	return apChangeDef + "<br>";
 }
 
 function RangeChangeDef()
 {
 	var rangeChangeDef = "";
-	return rangeChangeDef;
+	return rangeChangeDef + "<br>";
 }
 
 function ReductionChangeDef()
 {
 	var reductChangeDef = "";
-	return reductChangeDef;
+	return reductChangeDef + "<br>";
 }
 
 function DmgChangeDef()
 {
 	var dmgChangeDef = "";
-	return dmgChangeDef;
+	return dmgChangeDef + "<br>";
 }
 
 function BuffChangeDef()
 {
 	var buffChangeDef = "";
-	return buffChangeDef;
+	return buffChangeDef + "<br>";
 }
 
 function StatusChangeDef()
 {
 	var statusChangeDef = "";
-	return statusChangeDef;
+	return statusChangeDef + "<br>";
 }
 
 function Clear()
