@@ -54,12 +54,10 @@ const suppressD = document.getElementById("suppressD");
 const resultsA = document.getElementById("resultsA");
 const resultsD = document.getElementById("resultsD");
 
-//Vars to calc the dmg, heal, shield, reduct, amp, buffs, debuffs
+//Vars to calc the dmg, heal, shield, buffs, debuffs
 var dmgCalc = 0;
 var healCalc = 0;
 var shieldCalc = 0;
-var reductCalc = 0;
-var ampCalc = 0;
 var buffCalc = 0;
 var debuffCalc = 0;
 
@@ -97,12 +95,18 @@ function NumericalCalcs()
 	debuffCalc = ((utilityInputFieldCalc(suppressD) + utilityInputFieldCalc(suppressA))
 	 - (utilityInputFieldCalc(tenacityD) + utilityInputFieldCalc(tenacityA))) / 100;
 
-	reductCalc = 0;
-	ampCalc = 0;
+	var reductCalc = ((utilityInputFieldCalc(vulnerableD) + utilityInputFieldCalc(vulnerableA))
+	 - (utilityInputFieldCalc(braceD) + utilityInputFieldCalc(braceA))) / 100;
+	var ampCalc = (utilityInputFieldCalc(empower) - utilityInputFieldCalc(exhaust)) / 100;
 
-	dmgCalc = 0;
-	healCalc = ((utilityInputFieldCalc(heal)));
-	shieldCalc = ((utilityInputFieldCalc(shieldA)));
+	var dmgTemp = utilityInputFieldCalc(dmg) + 
+	((utilityInputFieldCalc(maxHPdmg) / 100) * utilityInputFieldCalc(maxHP)) + 
+	((utilityInputFieldCalc(curHPdmg) / 100) * utilityInputFieldCalc(hp));
+	dmgCalc = dmgTemp + (dmgTemp * ampCalc) + (dmgTemp * reductCalc);
+	var healTemp = utilityInputFieldCalc(heal);
+	healCalc = healTemp + (healTemp * ampCalc) + (healTemp * buffCalc);
+	var shieldTemp = utilityInputFieldCalc(shieldA);
+	shieldCalc = shieldTemp + (shieldTemp * ampCalc) + (shieldTemp * buffCalc);
 }
 
 function utilityInputFieldCalc(value)
@@ -118,12 +122,14 @@ function utilityInputFieldCalc(value)
 function HPDmgChangeAtt()
 {
 	var damageChangeAtt = "";
+	damageChangeAtt += dmgCalc;
 	return damageChangeAtt + "<br>";
 }
 
 function HPHealChangeAtt()
 {
 	var healChangeAtt = "";
+	healChangeAtt += healCalc;
 	return healChangeAtt + "<br>";
 }
 
@@ -183,6 +189,7 @@ function PositionChangeAtt()
 function HPChangeDef()
 {
 	var hpChangeDef = "";
+	hpChangeDef += shieldCalc;
 	return hpChangeDef + "<br>";
 }
 
