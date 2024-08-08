@@ -70,21 +70,21 @@ function Calculate()
 	resA += HPHealChangeAtt();
 	resA += APChangeAtt();
 	resA += RangeChangeAtt();
-	resA += ReductionChangeAtt();
-	resD += AmpChangeAtt();
+	resA += ReductChangeAtt();
+	resA += AmpChangeAtt();
 	resA += BuffChangeAtt();
-	resA += StatusChangeAtt();
-	resA += PositionChangeAtt();
+	resA += DebuffChangeAtt();
+	resA += PosChangeAtt();
 	resultsA.innerHTML = resA;
 
 	var resD = "Defender: " + "<br>";
 	resD += HPChangeDef();
 	resD += APChangeDef();
 	resD += RangeChangeDef();
-	resD += ReductionChangeDef();
+	resD += ReductChangeDef();
 	resD += AmpChangeDef();
 	resD += BuffChangeDef();
-	resD += StatusChangeDef();
+	resD += DebuffChangeDef();
 	resultsD.innerHTML = resD;
 }
 
@@ -118,6 +118,16 @@ function utilityInputFieldCalc(value)
 	return parseInt(value.value);
 }
 
+function utilityAttackCalc(buff, debuff)
+{
+	var curBuff = utilityInputFieldCalc(buff);
+	var curDebuff = utilityInputFieldCalc(debuff);
+	var innerBuff = curBuff + (curBuff * buffCalc);
+	var innerDebuff = curDebuff + (curDebuff * debuffCalc);
+	var formula = parseInt(innerBuff) - parseInt(innerDebuff);
+	return formula;
+}
+
 //Attacker
 function HPDmgChangeAtt()
 {
@@ -148,12 +158,7 @@ function APChangeAtt()
 	{
 		return apChangeAtt;
 	}
-
-	var curHasteA = utilityInputFieldCalc(hasteA);
-	var curSlowA = utilityInputFieldCalc(slowA);
-	var innerHaste = curHasteA + (curHasteA * buffCalc);
-	var innerSlow = curSlowA + (curSlowA * debuffCalc);
-	var formula = parseInt(innerHaste) - parseInt(innerSlow);
+	var formula = utilityAttackCalc(hasteA, slowA);
 	apChangeAtt = "AP Change: " + formula.toString();
 	return apChangeAtt + "<br>";
 }
@@ -161,36 +166,80 @@ function APChangeAtt()
 function RangeChangeAtt()
 {
 	var rangeChangeAtt = "";
+	if (clarityA.value == "" && disruptA.value == "")
+	{
+		return rangeChangeAtt;
+	}
+	var formula = utilityAttackCalc(clarityA, disruptA);
+	rangeChangeAtt = "Range Change: " + formula.toString();
 	return rangeChangeAtt + "<br>";
 }
 
-function ReductionChangeAtt()
+function ReductChangeAtt()
 {
 	var reductChangeAtt = "";
+	if (braceA.value == "" && vulnerableA.value == "")
+	{
+		return reductChangeAtt;
+	}
+	var formula = utilityAttackCalc(braceA, vulnerableA);
+	reductChangeAtt = "Reduct Change: " + formula.toString() + "%";
 	return reductChangeAtt + "<br>";
 }
 
 function AmpChangeAtt()
 {
 	var ampChangeAtt = "";
+	if (empowerA.value == "" && exhaustA.value == "")
+	{
+		return ampChangeAtt;
+	}
+	var formula = utilityAttackCalc(empowerA, exhaustA);
+	ampChangeAtt = "Amp Change: " + formula.toString() + "%";
 	return ampChangeAtt + "<br>";
 }
 
 function BuffChangeAtt()
 {
 	var buffChangeAtt = "";
+	if (strengthenA.value == "" && weakenA.value == "")
+	{
+		return buffChangeAtt;
+	}
+	var formula = utilityAttackCalc(strengthenA, weakenA);
+	buffChangeAtt = "Buff Change: " + formula.toString() + "%";
 	return buffChangeAtt + "<br>";
 }
 
-function StatusChangeAtt()
+function DebuffChangeAtt()
 {
 	var statusChangeAtt = "";
+	if (tenacityA.value == "" && suppressA.value == "")
+	{
+		return statusChangeAtt;
+	}
+	var formula = utilityAttackCalc(tenacityA, suppressA);
+	statusChangeAtt = "Debuff Change: " + formula.toString() + "%";
 	return statusChangeAtt + "<br>";
 }
 
-function PositionChangeAtt()
+function PosChangeAtt()
 {
 	var posChangeAtt = "";
+	if (push.value == "" && pull.value == "")
+	{
+		return posChangeAtt;
+	}
+	var formula = utilityAttackCalc(push, pull);
+	//Push is positive, pull is negative
+	if (formula > 0)
+	{
+		posChangeAtt = "Pushed: " + formula.toString();
+	}
+	else
+	{
+		posChangeAtt = "Pulled: " + (-formula).toString();
+	}
 	return posChangeAtt + "<br>";
 }
 
@@ -253,7 +302,7 @@ function RangeChangeDef()
 	return rangeChangeDef + "<br>";
 }
 
-function ReductionChangeDef()
+function ReductChangeDef()
 {
 	var reductChangeDef = "";
 	return reductChangeDef + "<br>";
@@ -271,7 +320,7 @@ function BuffChangeDef()
 	return buffChangeDef + "<br>";
 }
 
-function StatusChangeDef()
+function DebuffChangeDef()
 {
 	var statusChangeDef = "";
 	return statusChangeDef + "<br>";
@@ -322,4 +371,7 @@ function Clear()
 	exhaustD.value = '';
 	weakenD.value = '';
 	suppressD.value = '';
+
+	resultsA.innerHTML = "";
+	resultsD.innerHTML = "";
 }
