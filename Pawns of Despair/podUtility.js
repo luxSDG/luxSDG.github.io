@@ -54,7 +54,12 @@ const suppressD = document.getElementById("suppressD");
 const resultsA = document.getElementById("resultsA");
 const resultsD = document.getElementById("resultsD");
 
-//Temp vars to calc the buffs/debuffs
+//Vars to calc the dmg, heal, shield, reduct, amp, buffs, debuffs
+var dmgCalc = 0;
+var healCalc = 0;
+var shieldCalc = 0;
+var reductCalc = 0;
+var ampCalc = 0;
 var buffCalc = 0;
 var debuffCalc = 0;
 
@@ -68,7 +73,7 @@ function Calculate()
 	resA += APChangeAtt();
 	resA += RangeChangeAtt();
 	resA += ReductionChangeAtt();
-	resD += DmgChangeAtt();
+	resD += AmpChangeAtt();
 	resA += BuffChangeAtt();
 	resA += StatusChangeAtt();
 	resA += PositionChangeAtt();
@@ -79,7 +84,7 @@ function Calculate()
 	resD += APChangeDef();
 	resD += RangeChangeDef();
 	resD += ReductionChangeDef();
-	resD += DmgChangeDef();
+	resD += AmpChangeDef();
 	resD += BuffChangeDef();
 	resD += StatusChangeDef();
 	resultsD.innerHTML = resD;
@@ -91,6 +96,13 @@ function NumericalCalcs()
 	 - (utilityInputFieldCalc(weakenD) + utilityInputFieldCalc(weakenA))) / 100;
 	debuffCalc = ((utilityInputFieldCalc(suppressD) + utilityInputFieldCalc(suppressA))
 	 - (utilityInputFieldCalc(tenacityD) + utilityInputFieldCalc(tenacityA))) / 100;
+
+	reductCalc = 0;
+	ampCalc = 0;
+
+	dmgCalc = 0;
+	healCalc = ((utilityInputFieldCalc(heal)));
+	shieldCalc = ((utilityInputFieldCalc(shieldA)));
 }
 
 function utilityInputFieldCalc(value)
@@ -143,10 +155,10 @@ function ReductionChangeAtt()
 	return reductChangeAtt + "<br>";
 }
 
-function DmgChangeAtt()
+function AmpChangeAtt()
 {
-	var dmgChangeAtt = "";
-	return dmgChangeAtt + "<br>";
+	var ampChangeAtt = "";
+	return ampChangeAtt + "<br>";
 }
 
 function BuffChangeAtt()
@@ -209,10 +221,10 @@ function ReductionChangeDef()
 	return reductChangeDef + "<br>";
 }
 
-function DmgChangeDef()
+function AmpChangeDef()
 {
-	var dmgChangeDef = "";
-	return dmgChangeDef + "<br>";
+	var ampChangeDef = "";
+	return ampChangeDef + "<br>";
 }
 
 function BuffChangeDef()
