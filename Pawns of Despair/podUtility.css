@@ -38,8 +38,8 @@ body {
 
 .grid-container {
   display: grid;
-  column-gap: 2.5%;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%
+  column-gap: 2%;
+  grid-template-columns: 10% 10% 10% 12% 12% 10% 10% 10%
 }
 
 .card {

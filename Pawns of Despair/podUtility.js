@@ -122,24 +122,33 @@ function utilityInputFieldCalc(value)
 function HPDmgChangeAtt()
 {
 	var damageChangeAtt = "";
-	damageChangeAtt += dmgCalc;
+	if (dmg.value == "" && maxHPdmg.value == "" && curHPdmg.value == "")
+	{
+		return damageChangeAtt;
+	}
+	damageChangeAtt = "Attack: " + dmgCalc.toString();
 	return damageChangeAtt + "<br>";
 }
 
 function HPHealChangeAtt()
 {
 	var healChangeAtt = "";
-	healChangeAtt += healCalc;
+	if (heal.value == "" && shieldA.value == "")
+	{
+		return healChangeAtt;
+	}
+	healChangeAtt = "Heal: " + healCalc.toString() + " Shield: " + shieldCalc.toString();
 	return healChangeAtt + "<br>";
 }
 
 function APChangeAtt()
 {
+	var apChangeAtt = "";
 	if (hasteA.value == "" && slowA.value == "")
 	{
-		return "";
+		return apChangeAtt;
 	}
-	var apChangeAtt = "";
+
 	var curHasteA = utilityInputFieldCalc(hasteA);
 	var curSlowA = utilityInputFieldCalc(slowA);
 	var innerHaste = curHasteA + (curHasteA * buffCalc);
@@ -189,17 +198,39 @@ function PositionChangeAtt()
 function HPChangeDef()
 {
 	var hpChangeDef = "";
-	hpChangeDef += shieldCalc;
+	var maxHPVal = utilityInputFieldCalc(maxHP);
+	var shieldVal = utilityInputFieldCalc(shieldD) + shieldCalc - dmgCalc;
+	var curHPVal = utilityInputFieldCalc(hp) + healCalc;
+
+	//Damage remaining damage after damaging through shield
+	if (shieldVal > 0)
+	{
+		curHPVal -= dmgCalc;
+	}
+	else
+	{
+		curHPVal -= shieldVal;
+		shieldVal = 0;
+	}
+
+	//Healing over max HP
+	if (curHPVal > maxHPVal)
+	{
+		curHPVal = maxHPVal;
+	}
+
+	hpChangeDef = "Cur/Max HP/Shield: " + curHPVal.toString() + "/" + maxHPVal.toString() + "/" + shieldVal.toString();
 	return hpChangeDef + "<br>";
 }
 
 function APChangeDef()
 {
+	var apChangeDef = "";
 	if (ap.value == "")
 	{
-		return "";
+		return apChangeDef;
 	}
-	var apChangeDef = "";
+
 	var apVal = utilityInputFieldCalc(ap);
 	var curHasteA = utilityInputFieldCalc(hasteA);
 	var curSlowA = utilityInputFieldCalc(slowA);
