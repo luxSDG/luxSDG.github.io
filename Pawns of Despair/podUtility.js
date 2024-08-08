@@ -149,7 +149,7 @@ function HPDmgChangeAtt()
 	{
 		return damageChangeAtt;
 	}
-	damageChangeAtt = "Attack: " + dmgCalc.toString();
+	damageChangeAtt = "Attack: " + parseInt(dmgCalc).toString();
 	return damageChangeAtt + "<br>";
 }
 
@@ -160,7 +160,7 @@ function HPHealChangeAtt()
 	{
 		return healChangeAtt;
 	}
-	healChangeAtt = "Heal: " + healCalc.toString() + " Shield: " + shieldCalc.toString();
+	healChangeAtt = "Heal: " + parseInt(healCalc).toString() + " Shield: " + parseInt(shieldCalc).toString();
 	return healChangeAtt + "<br>";
 }
 
@@ -265,13 +265,9 @@ function HPChangeDef()
 	var curHPVal = utilityInputFieldCalc(hp) + healCalc;
 
 	//Damage remaining damage after damaging through shield
-	if (shieldVal > 0)
+	if (shieldVal < 0)
 	{
-		curHPVal -= dmgCalc;
-	}
-	else
-	{
-		curHPVal -= shieldVal;
+		curHPVal += shieldVal;
 		shieldVal = 0;
 	}
 
@@ -281,7 +277,13 @@ function HPChangeDef()
 		curHPVal = maxHPVal;
 	}
 
-	hpChangeDef = "Cur/Max HP/Shield: " + curHPVal.toString() + "/" + maxHPVal.toString() + "/" + shieldVal.toString();
+	//Dead
+	if (curHPVal < 0)
+	{
+		curHPVal = 0;
+	}
+
+	hpChangeDef = "Cur/Max HP/Shield: " + parseInt(curHPVal).toString() + "/" + parseInt(maxHPVal).toString() + "/" + parseInt(shieldVal).toString();
 	return hpChangeDef + "<br>";
 }
 
