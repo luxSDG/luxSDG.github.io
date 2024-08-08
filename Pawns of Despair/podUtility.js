@@ -128,6 +128,19 @@ function utilityAttackCalc(buff, debuff)
 	return formula;
 }
 
+function utilityDefendCalc(buffA, debuffA, buffD, debuffD)
+{
+	var curBuffA = utilityInputFieldCalc(buffA);
+	var curDebuffA = utilityInputFieldCalc(debuffA);
+	var curBuffD = utilityInputFieldCalc(buffD);
+	var curDebuffD = utilityInputFieldCalc(debuffD);
+	var innerBuff = curBuffA + (curBuffA * buffCalc);
+	var innerDebuff = curDebuffA + (curDebuffA * debuffCalc);
+	var formula = (parseInt(curBuffD) - parseInt(curDebuffD))
+	 + (parseInt(innerBuff) - parseInt(innerDebuff));
+	 return formula;
+}
+
 //Attacker
 function HPDmgChangeAtt()
 {
@@ -279,17 +292,8 @@ function APChangeDef()
 	{
 		return apChangeDef;
 	}
-
+	var formula = utilityDefendCalc(hasteA, slowA, hasteD, slowD);
 	var apVal = utilityInputFieldCalc(ap);
-	var curHasteA = utilityInputFieldCalc(hasteA);
-	var curSlowA = utilityInputFieldCalc(slowA);
-	var curHasteD = utilityInputFieldCalc(hasteD);
-	var curSlowD = utilityInputFieldCalc(slowD);
-	var innerHaste = curHasteA + (curHasteA * buffCalc);
-	var innerSlow = curSlowA + (curSlowA * debuffCalc);
-
-	var formula = (parseInt(curHasteD) - parseInt(curSlowD))
-	 + (parseInt(innerHaste) - parseInt(innerSlow));
 	var curAP = apVal + formula;
 	var origAP = apVal;
 	apChangeDef = "Cur/Orig AP: " + curAP.toString() + "/" + origAP.toString();
@@ -299,30 +303,62 @@ function APChangeDef()
 function RangeChangeDef()
 {
 	var rangeChangeDef = "";
+	if (range.value == "")
+	{
+		return rangeChangeDef;
+	}
+	var formula = utilityDefendCalc(clarityA, disruptA, clarityD, disruptD);
+	var rangeVal = utilityInputFieldCalc(range);
+	var curRange = rangeVal + formula;
+	rangeChangeDef = "Cur Range: " + curRange.toString();
 	return rangeChangeDef + "<br>";
 }
 
 function ReductChangeDef()
 {
 	var reductChangeDef = "";
+	if (braceA.value == "" && vulnerableA.value == "" && braceD.value == "" && vulnerableD.value == "")
+	{
+		return reductChangeDef;
+	}
+	var formula = utilityDefendCalc(braceA, vulnerableA, braceD, vulnerableD);
+	reductChangeDef = "Cur Reduction: " + formula.toString() + "%";
 	return reductChangeDef + "<br>";
 }
 
 function AmpChangeDef()
 {
 	var ampChangeDef = "";
+	if (empowerA.value == "" && exhaustA.value == "" && empowerD.value == "" && exhaustD.value == "")
+	{
+		return ampChangeDef;
+	}
+	var formula = utilityDefendCalc(empowerA, exhaustA, empowerD, exhaustD);
+	ampChangeDef = "Cur Amplification: " + formula.toString() + "%";
 	return ampChangeDef + "<br>";
 }
 
 function BuffChangeDef()
 {
 	var buffChangeDef = "";
+	if (strengthenA.value == "" && weakenA.value == "" && strengthenD.value == "" && weakenD.value == "")
+	{
+		return buffChangeDef;
+	}
+	var formula = utilityDefendCalc(strengthenA, weakenA, strengthenD, weakenD);
+	buffChangeDef = "Cur Buff: " + formula.toString() + "%";
 	return buffChangeDef + "<br>";
 }
 
 function DebuffChangeDef()
 {
 	var statusChangeDef = "";
+	if (tenacityA.value == "" && suppressA.value == "" && tenacityD.value == "" && suppressD.value == "")
+	{
+		return statusChangeDef;
+	}
+	var formula = utilityDefendCalc(tenacityA, suppressA, tenacityD, suppressD);
+	statusChangeDef = "Cur Debuff: " + formula.toString() + "%";
 	return statusChangeDef + "<br>";
 }
 
