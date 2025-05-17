@@ -9,7 +9,7 @@ data =
 				"Summary":"The majority faction that wants to eliminate all other factions",
 				"Image": "netsec.png",
 				"Description": "“We’re here to hack to the final target. Surely everyone here is here for hacking right?”",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).<br><br>Note the difference in win condition. You cannot hack to win anymore.",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).<br><br>Note the difference in win condition. You cannot hack to win anymore.<br><br>Opsec R: Hack the target node.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -31,7 +31,7 @@ data =
 					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
 				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
 					"Emergency Extraction (N1 -> N3 cooldown, 3 charges) - Select an operative to escort, does not occupy them and makes them immune to everything unless otherwise stated."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+				"Passives": ["Authority - You have two votes.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Operation Leader - You are one of the leading roles and should spawn every operation."]
 			},
@@ -47,7 +47,7 @@ data =
 					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
 				"Night": ["Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Investigation (N1 -> N3 cooldown) - Select a target operative. Learn between three subclasses. One is the real subclass, which pierces any cover and frame. Visit them."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+				"Passives": ["Authority - You have two votes.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Operation Leader - You are one of the leading roles and should spawn every operation.",
 					"Topology Access - You can access the full topology and connection logs as if you were an agent.",
@@ -64,7 +64,7 @@ data =
 					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
 				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
 					"Gift Computer (2 charges) - Select a target operative. Permanently grants target operative High hack chance, even if it lowers their hack chance. Visit them."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+				"Passives": ["Authority - You have two votes.",
 					"Ghost in the System - You can choose whether or not to leave connection logs upon hacking.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Operation Leader - You are one of the leading roles and should spawn every operation.",
@@ -102,7 +102,7 @@ data =
 					"Desperate Measures (1 charge) - Turn into an Improvised Hacker. Breaks previous cameras."],
 				"Night": ["Install CCTV Surveillance (D1 -> D3 cooldown, 2 charges) - Selects a target operative and places a camera on their hideout. The camera is destroyed upon moving hideout or getting escorted. Visit the target.",
 					"Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied."],
-				"Passives": ["Perform CCTV Surveillance - Passively see who visits the target operatives that the cameras are attached to."]
+				"Passives": ["Perform CCTV Surveillance - Passively see who visits the target operatives that only your cameras are attached to."]
 			},
 			{
 				"Name":"Rookie Hacker",
@@ -253,7 +253,7 @@ data =
 					"Insider Knowledge (D1 -> D3 cooldown, 2 charges) - Tells you the IP of a node with downloadable intel on it."],
 				"Night": ["Throw Under the Bus (2 charges) - Select a target operative. All skills used on you will be used on the target operative.",
 					"Investigation (N1 -> N3 cooldown) - Select a target operative. Learn between three subclasses. One is the real subclass, which pierces any cover and frame. Visit them."],
-				"Passives": ["Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked."]
+				"Passives": ["Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked. This is the win condition for Opsec R."]
 			},			
 			{
 				"Name":"Dark Web Contact",
@@ -291,8 +291,8 @@ data =
 				"Description": "“You know how to analyze pictures using machine learning models and computer vision, Computer Vision Engineer.”",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
-					"Image Recognition (0 charges) - Predict what the earliest operative is doing at night, gives three actions which could be what he did last night. Doing nothing may be an action. Goes through frames and cover.",
-					"Image Classification (0 charges) - Predict what the earliest operative did in the day, gives three actions which could be what he did yesterday. Doing nothing may be an action. Goes through frames and cover."],
+					"Image Recognition (0 charges) - Predict what the first operative that you gathered data did last night, gives three actions which could be what he did last night. Doing nothing may be an action. Goes through frames and cover.",
+					"Image Classification (0 charges) - Predict what the first operative that you gathered data did today, gives three actions which could be what he did yesterday. Doing nothing may be an action. Goes through frames and cover."],
 				"Night": ["Data Gathering - Select a target operative and take a picture of their hideout. Grants one charge of Image Recognition or Image Classification targeting this operative- your choice. Visit them.",
 					"Study (N1 -> N3 cooldown) - Increases your hacking stage by one the following day."],
 				"Passives": ["None."]
@@ -403,8 +403,8 @@ data =
 					"Determined<br>=======================================================================<br>Disorganized Murder - Select an operative and attempt to murder them. Visit the target. Only usable when Determined.",
 					"Experienced Hiding (3 charges) - Move your hideout, protecting yourself unless you are occupied. Only usable when Determined.",
 					"Weathering the Storm<br>=======================================================================<br>Murder (1 charge) - Select an operative and murder them. Cannot be dodged in any way. Occupies and visits the target. Only usable when Weathering the Storm."],
-				"Passives": ["Determined - If approximately one third of the operatives have fallen, become Determined.",
-					"Weathering the Storm - If approximately two thirds of the operatives have fallen, become Weathering the Storm."]
+				"Passives": ["Determined - If approximately one third of the operatives have fallen, become Determined. Opsec R only requires their starting role to be gone.",
+					"Weathering the Storm - If approximately two thirds of the operatives have fallen, become Weathering the Storm. Opsec R only requires their starting role to be gone."]
 			},
 			{
 				"Name":"Network Architect",
@@ -433,7 +433,7 @@ data =
 					"Plant Keylogger (1 charge) - Grants you one charge of Retrieve Keylogger."],
 				"Night": ["Retrieve Keylogger (1 charge) - Select a node, making it easier to hack. Grants you one charge of Plant Keylogger.",
 					"Replace Server (N1 -> N3 cooldown, 2 charges) - Replace a selected server with a laptop by connecting a company laptop to future nodes and disconnecting the server."],
-				"Passives": ["Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked."]
+				"Passives": ["Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked. This is the win condition for Opsec R."]
 			},
 			{
 				"Name":"Graph Theorist",
@@ -483,7 +483,7 @@ data =
 				"Night": ["Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
 					"Retrieve Keylogger (1 charge) - Select a node, making it easier to hack. Grants you one charge of Plant Keylogger.",
 					"Dumpster Dive - Increases hacking chances on a random node."],
-				"Passives": ["Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked."]
+				"Passives": ["Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked. This is the win condition for Opsec R."]
 			},
 			{
 				"Name":"Hacking Instructor",
@@ -495,7 +495,7 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log. (You know how to hack, but you don’t want to do it unless absolutely necessary.)",
 					"Desperate 0-day (1 charge) -  Select a white node and instantly hack it. Leaves a log.",
 					"Desperate Measures (1 charge) - Turn into an Improvised Hacker. Automatically start with Very High hacking chances."],
-				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them.",
+				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them. Opsec R checks if they changed their win condition tonight.",
 					"Pair Programming (1 charge) - Select a target operative, their hacking chance permanently increases by one stage. Visit them.",
 					"Advisor (N1 -> N3 cooldown) - Select a target operative, their hacking chance temporarily increases by one stage. Visit them."],
 				"Passives": ["Old Guard - If asked the right question, they will receive a Very High hacking chance result."]
@@ -544,7 +544,7 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log."],
-				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them.",
+				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them. Opsec R checks if they changed their win condition tonight.",
 					"Preach Netsec Superiority (N1 -> N3 cooldown) - Select a target operative, tonight they are immune to occupation. Visit them.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
 				"Passives": ["None."]
@@ -624,7 +624,7 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing).",
 				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
 					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log."],
-				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them.",
+				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them. Opsec R checks if they changed their win condition tonight.",
 					"Ultimate Sacrifice - Tonight, you can sacrifice yourself for anyone who gets arrested or murdered tonight of your choice.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
 				"Passives": ["Not Netsec - Any doxx attempts on you doxx you as Neutral."]
@@ -667,7 +667,7 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a (non-unique) random skill that they have, either day or night. Do not go through frames or cover.",
 					"Onboarding Process - Force someone to vote for someone of your choice."],
-				"Night": ["Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them.",
+				"Night": ["Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Onboarding Process - Force someone to vote for someone of your choice."],
 				"Passives": ["People Person - You know how to navigate the sausage fest known as Netsec. You can force one person to vote for who you are voting every round without anyone knowing."]
 			},
@@ -835,8 +835,8 @@ data =
 				"Night": ["Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Emergency Extraction (N1 -> N3 cooldown, 3 charges) - Select an operative to escort, does not occupy them and makes them immune to everything unless otherwise stated.",
 					"Special Orders (1 charge) - Select an operative and murder them. Cannot be dodged in any way. Occupies but does NOT visit the target."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
-					"Lack of Leadership -  If you are rooted and the original Operation Leader dies, instead of becoming the Operation Leader, gain a charge of Give Root Access.",
+				"Passives": ["Authority - You have two votes.",
+					"Lack of Leadership - If you are rooted and the original Operation Leader dies, instead of becoming the Operation Leader, gain a charge of Give Root Access.",
 					"No Dirt On Me - You are unarrestable unless framed.",
 					"The Big Fish - Whoever arrests you gets two STING charges. Doesn’t have to be an agent.",
 					"Employer’s Camouflage - Pick your class that you are entirely framed as, which you will then have all intel abilities follow that frame. This does not remove No Dirt On Me."]
@@ -898,7 +898,7 @@ data =
 					"Blackmail (3 charges) - Select a target operative. They cannot vote for two phases. If successful, gain one payment, or if the target operative is an agent, gain 2 payments and become “Criminal”."],
 				"Night": ["Sell Illicit Arms (N1 -> N3 cooldown) - Select a target operative. If they do not have access to the skill Disorganized Murder, give them 1 charge of Disorganized Murder the following night. This charge of Disorganized Murder is removed if it is not used the night it is given. Gain 1 payment if successful, or if the target operative is Netsec, gain 2 payments and become “Criminal”. Visit them.",
 					"Getaway Driver (N1 -> N3 cooldown) - Escort a target operative, protecting the operative from arrests and murders. Both targets are immune to arrests and murders this round. Gain 1 payment, or if someone attempts to arrest the target operative, gain 2 payments and become “Criminal”. Visit and occupy them.",
-					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them.",
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target. Gain 1 payment, or if the target operative is an agent, gain 2 payments and become “Criminal”."],
 				"Passives": ["No Dirt On Me - You are unarrestable unless framed. If you become “Criminal”, you will lose this passive.",
 					"Unknown Criminal - Become a “Criminal” upon doing certain actions, like selling arms to a Netsec operative, escorting someone who is targeted by an arrest, killing an agent, or blackmailing an agent."]
@@ -909,12 +909,12 @@ data =
 				"Summary":"Role that needs to kill a mole and become mole",
 				"Image": "insaneofficer.png",
 				"Description": "This role is supposed to be unique, depending on the ruleset.<br>“You have to rejoin the force no matter what, Insane Officer.”",
-				"Win Condition": "Become a mole for the agents, and win with agents.",
+				"Win Condition": "Become a mole for the agents, and win with agents. Opsec R is to kill the Core Agent and become the agent.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Wireshark (D1 -> D4 cooldown) - Tells you the name of any operative that did a Denial of Service.",
-					"Steal Secured Channel Connection - Select a white node. If there is a dead mole, you can hack into ASC by trying to hack a node with a dead mole’s connection and become the mole. Leaves a log."],
-				"Night": ["Murder (1 charge) - Select an operative and murder them. Cannot be dodged in any way. Occupies and visits the target. If the target operative is a mole, kill them and become the mole.",
-					"For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them.",
+					"Steal Secured Channel Connection - Select a white node. If there is a dead mole, you can hack into ASC by trying to hack a node with a dead mole’s connection and become the mole. Leaves a log. Opsec R does the same if you hack an agent’s connection, becoming the Field Agent."],
+				"Night": ["Murder (1 charge) - Select an operative and murder them. Cannot be dodged in any way. Occupies and visits the target. If the target operative is a mole, kill them and become the mole. Opsec R allows you to become a Field Agent if you kill the core agent.",
+					"For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them. Opsec R checks if they changed their win condition tonight.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them."],
 				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent."]
 			},
@@ -967,10 +967,10 @@ data =
 				"Description": "“You’ve worked with Netsec for a long time, but you question if the cause is worth it, maybe it is time to take the easy way out, Double Crosser.”",
 				"Win Condition": "Guess a target operative’s role through Turn Yourself In and get both of you arrested.",
 				"Day": ["Hack Target (Very Low) - Select a white node and attempt to hack it. Leaves a log.",
-					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log. If successful, gain a piece of information.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
 					"Review TCP Packets (N1 -> N4 cooldown, 2 charges) - Select a target operative and check if they used a hack today."],
-				"Night": ["Obtain Evidence (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Give some intel, similar to Download Intel, getting class intel, target node, or faction intel. Do not go through frames or cover. Do not reveal yourself to them.",
-					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them.",
+				"Night": ["Obtain Evidence (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Gain some intel, similar to Download Intel, getting class intel, target node, or faction intel. Do not go through frames or cover. Do not reveal yourself to them.",
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Review Specialization (N1 -> N4 cooldown, 2 charges) - Select a target operative. Learn their subclass, or framed or cover subclass. Do not go through frames or cover. Visit them.",
 					"Turn Yourself In - Select a target operative and guess their role. If you guess right, they get arrested no matter what, no matter the alignment. You are also arrested too. Removes all frames and covers."],
 				"Passives": ["One of Us - Any doxx attempts on you doxx you as Netsec."]
@@ -1017,7 +1017,7 @@ data =
 				"Summary":"Make sure at least one other operative survives, can learn from dead players and push Global Intel.",
 				"Image": "repressedrefugee.png",
 				"Description": "“You and your family escaped persecution thanks to some less than legal methods. However, they are in danger, as they picked to work with Netsec, Repressed Refugee.”",
-				"Win Condition": "Protect at least one of your other operatives at all costs.",
+				"Win Condition": "Protect at least one of your other operatives at all costs. Opsec R requires you to die or get arrested for a specific operative.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
 					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
@@ -1033,7 +1033,7 @@ data =
 				"Summary":"Evil Guesser + Inquisitor",
 				"Image": "vengefulassassin.png",
 				"Description": "“You were a mainstay assassin until certain Netsec members betrayed you, so it’s time for some vengeance, Vengeful Assassin.”",
-				"Win Condition": "Guess, vote, or get the 2 target operatives killed or arrested. Can be any faction.",
+				"Win Condition": "You are given 2 target operatives. Guess, vote, or get the 2 target operatives killed or arrested. Can be any faction.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
 					"Rerouted Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Select a target operative to make this show up as the operative who used the denial of service with Wireshark. Do not leave a log.",
@@ -1069,7 +1069,7 @@ data =
 				"Color": "white",
 				"Summary":"Easier to turn into, needs to kill and leave",
 				"Image": "panickedblabbermouth.png",
-				"Description": "This role is only supposed to be in the game if a Script Kiddie becomes this role.<br>“You realized your inevitable fate of staying here, Panicked Blabbermouth.”",
+				"Description": "“You realized your inevitable fate of staying here, Panicked Blabbermouth.”",
 				"Win Condition": "Kill 2 Netsec operatives and extract, or make sure Netsec loses.",
 				"Day": ["Create Hideout (D1 -> D4 cooldown, 2 charges) - Grants you one charge of Move Hideout.",
 					"Unskilled Attack - Select a node, green or white. Leaves a log.",
@@ -1093,7 +1093,7 @@ data =
 					"Jam Network (2 charges) - Select a target operative and disable all day actions related to the topology done by them.",
 					"Hit the Books (D1 -> D3 cooldown, 2 charges) - Increases your hacking stage by one, permanently."],
 				"Night": ["Experienced Hiding (3 charges) - Move your hideout, protecting yourself unless you are occupied.",
-					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them.",
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Wipe (1 charge) - Select a white node. Remove all connection logs and intel to the node."],
 				"Passives": ["Blackmailed Informant - Any time Informant is used by an Agent Leader, or an operative uses Deductive Reasoning, you will get information that agents get. Do not go through frames or cover.",
 					"W3C Origin - If W3C spawned, you’ll know about it."]
@@ -1104,7 +1104,7 @@ data =
 				"Summary":"Needs to hack nodes to win",
 				"Image": "hacknethacker.png",
 				"Description": "“You learned to hack from the game Hacknet, now it’s time to prove your worth outside of games, Hacknet Hacker.”",
-				"Win Condition": "Hack 2 separate nodes without getting arrested or killed before then.",
+				"Win Condition": "Hack 2 separate nodes without getting arrested or killed.",
 				"Day": ["Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
 					"Exploit Vulnerability (2 charges) - Select a white node and attempt to hack it with a low hack chance and increasing hacking chances of getting this node.",
 					"Hit the Books (D1 -> D3 cooldown, 2 charges) - Increases your hacking stage by one, permanently."],
@@ -1162,12 +1162,12 @@ data =
 				"Win Condition": "Survive and don’t get arrested, or win with the chosen faction.",
 				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
 					"Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
-					"Desperate Measures (1 charge) - Turn into a Prodigy. If an agent is in the player’s lineup, this is disabled."],
+					"Desperate Measures (1 charge) - Turn into a Prodigy. If an agent is in the player’s lineup, this is disabled. Opsec R turns you into a Prodigy."],
 				"Night": ["Contact Law Enforcement (N1 -> N3 cooldown, 3 charges) - Select a target operative. If they are an agent, learn their role, they will learn yours. Goes through cover or frames. Visit them.",
 					"Contact W.P.P. (N1 -> N4 cooldown, 2 charges) - If any operative visits you tonight, they will be arrested. Dodge any attempts to arrest you.",
 					"Old Friends (3 charges) - Select a target operative. If they are a Netsec member, you and agents will learn their role. Goes through cover or frames. Visit them.",
-					"Runaway Operative (1 charge) - Turn into a mole of your choice. If Netsec is in the player’s lineup, this is disabled."],
-				"Passives": ["On the Run - If you are murdered (not by vote), the Operation Leader will learn the identity of two Netsec members that are not owned by that player. Goes through cover or frames."]
+					"Runaway Operative (1 charge) - Turn into a mole of your choice. If Netsec is in the player’s lineup, this is disabled. Opsec R turns you into a Field Agent if there is none on the field."],
+				"Passives": ["On the Run - If you are murdered (not by vote), the Operation Leader will learn the identity of two Netsec members that are not owned by that player. Goes through cover or frames. Opsec R will just reveal two Netsec members to the OL."]
 			},
 			{
 				"Name":"Former Bodyguard",
@@ -1240,12 +1240,12 @@ data =
 				"Summary":"Wins only if Agent wins, doesn’t spawn with Agent (or W3C, or NK, or Netsec)",
 				"Image": "abandonedagent.png",
 				"Description": "“You are an agent recruit, but for some reason the agent recruiting process didn’t go as planned, connect back to agents again, Abandoned Agent.”",
-				"Win Condition": "Ensure agents win.",
+				"Win Condition": "Ensure agents win. Opsec R requires you to simply find an agent.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Wireshark (D1 -> D4 cooldown) - Tells you the name of any operative that did a Denial of Service.",
 					"Emergency Repairs (1 charge) - Select a green or white node and block all connections to the node this day. Lets you know if a rollback was used on the node. Do not leave a log.",
 					"Upload Fake Intel (1 charge) - Select a green node and upload intel that is downloadable by others. You can write what intel you want to leave. Leaves a log."],
-				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them.",
+				"Night": ["For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them. Opsec R checks if they changed their win condition tonight.",
 					"Contact Law Enforcement (N1 -> N3 cooldown, 3 charges) - Select a target operative. If they are an agent, learn their role, they will learn yours. Goes through cover or frames. Visit them.",
 					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send."],
 				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent.",
@@ -1263,7 +1263,7 @@ data =
 				"Summary":"Executioner",
 				"Image": "corruptdetective.png",
 				"Description": "This role is supposed to be unique, depending on the ruleset.<br>“The Operation Leader wants you to solve this case, but he won’t know who is truly a traitor, Corrupt Detective.”",
-				"Win Condition": "Frame two operatives that aren’t yours and get them both voted out.",
+				"Win Condition": "Frame two operatives that aren’t yours and get them both voted out. Opsec R requires you to frame and vote out another operative.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Upload Fake Intel (1 charge) - Select a green node and upload intel that is downloadable by others. You can write what intel you want to leave. Leaves a log.",
 					"Jam Network (2 charges) - Select a target operative and disable all day actions related to the topology done by them."],
@@ -1279,7 +1279,7 @@ data =
 				"Summary":"wins based on X’s win condition",
 				"Image": "waxmartmanager.png",
 				"Description": "This role is supposed to be unique, depending on the ruleset.<br>“You were surprised when an old friend threatened you to help them or die, as they wanted your Waxmart connections to steal electronic equipment, help your friend, Waxmart Manager.”",
-				"Win Condition": "You are assigned a Netsec or mole operative to win with, make sure they win.",
+				"Win Condition": "You are assigned a Netsec or mole operative to win with, make sure they win. Opsec R assigns a Netsec or neutral operative.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
 					"Computer Hotwiring (2 charges) - Make all hack chances increased by one stage today.",
@@ -1287,7 +1287,7 @@ data =
 				"Night": ["DM Sliding (1 charge) - Check your “friend”, target operative’s exact role through social media. Do not visit them.",
 					"Fake 911 Call (1 charge) - Select a target operative. They will be attempted to be arrested. Visit them.",
 					"Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
-					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them.",
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Wipe (1 charge) - Select a white node. Remove all connection logs and intel to the node."],
 				"Passives": ["Friend in Need - Know who your “friend”, target operative is and know their faction."]
 			},
@@ -1307,7 +1307,7 @@ data =
 					"Act as Defense - Select a target operative. The operative will have an extra vote (-1) with them next phase, not shown to the Opsec.",
 					"Objection! - Force someone to vote for someone of your choice.",
 					"Paid Frame (N1 -> N3 cooldown) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them."],
-				"Passives": ["Loyal to the End - If your target is voted out, die. If your target is murdered or arrested, you will randomly get another target that the owner of the first operative has to win with.",
+				"Passives": ["Loyal to the End - If your target is voted out, die. If your target is murdered or arrested, you will randomly get another target that the owner of the first operative has to win with. Opsec R is just any random operative.",
 					"No Dirt On Me - You are unarrestable unless framed."]
 			},
 			{
