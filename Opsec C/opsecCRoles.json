@@ -1376,7 +1376,7 @@ data =
 				"Summary":"Powerful interlopers that have incredible power but are solo for the entire game",
 				"Image": "neutralkilling.png",
 				"Description": "“I’m here to kill everyone, you all wronged me and I will get my revenge.”",
-				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C).<br><br>These roles have significant power, given that they are basically entirely alone. They are singly stronger than most roles in the game. All these roles are designed to be unique, depending on the ruleset.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agents, and W3C). Opsec R requires you to kill all operatives from the time you became the Neutral Killing role.<br><br>These roles have significant power, given that they are basically entirely alone. They are singly stronger than most roles in the game. All these roles are designed to be unique, depending on the ruleset.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1397,7 +1397,7 @@ data =
 					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in."],
 				"Night": ["Murder with Goons - Select an operative and murder them. Cannot be dodged in any way, and cannot be occupied. Occupies the target.",
 					"Fake Emergency Extraction (N1 -> N3 cooldown, 3 charges) - Select an operative to fake escort, does not occupy them and doesn’t actually do anything except leaving escort feedback."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+				"Passives": ["Authority - You have two votes.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Raid Boss - Avoid the first two arrest or murder attempts on you.",
 					"Operation Leader - You are one of the leading roles and should spawn every operation."]
@@ -1534,7 +1534,7 @@ data =
 				"Summary":"The minority faction that has raw kill power, communication, and information",
 				"Image": "agent.png",
 				"Description": "“We need to shut this hacking operation down.”",
-				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).<br><br>Agents have more ways to directly arrest and kill than other factions. Agents have access to the topology and a unique chat (ASC).<br><br>Note that Agents cannot win on a single root from Netsec, instead moles turn into a Blackmailed Leader, and other roles turn into an agent with broadcast access and authority.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.<br><br>Agents have more ways to directly arrest and kill than other factions. Agents have access to the topology and a unique chat (ASC).<br><br>Note that Agents cannot win on a single root from Netsec, instead moles turn into a Blackmailed Leader, and other roles turn into an agent with broadcast access and authority.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -1557,7 +1557,7 @@ data =
 				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
 					"Fake Emergency Extraction (N1 -> N3 cooldown, 3 charges) - Select an operative to fake escort, does not occupy them and doesn’t actually do anything except leaving escort text.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+				"Passives": ["Authority - You have two votes.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Operation Leader - You are one of the leading roles and should spawn every operation."]
 			},
@@ -1566,7 +1566,7 @@ data =
 				"Color": "orange",
 				"Summary":"Way more utility including midnight meet and follow",
 				"Image": "runawaysnitch.png",
-				"Description": "This role is ONLY if there are no more Core roles left and there are moles left, not a starting role. The agents may pick one mole to become this role.<br>“You are panicking and not thinking straight, Netsec is out to get you and other agents believe you were behind it all, get out alive, Runaway Snitch.”",
+				"Description": "This role is ONLY if there are no more Core roles left and there are moles left, not a starting role. The agents may pick one mole to become this role. Opsec R can have this role at any point.<br>“You are panicking and not thinking straight, Netsec is out to get you and other agents believe you were behind it all, get out alive, Runaway Snitch.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"ISP Isolation (3 charges) - Select a target operative and disable all day actions related to the topology done by them."],
@@ -1617,7 +1617,7 @@ data =
 					"Blowout Arrest (N1 -> N4 cooldown, 2 charges) - Select a target operative. Bypass all defensive skills, including Throw under the Bus and Misdirection. Can only be stopped if occupied. Visit, occupy, and arrest them.",
 					"Bouncer (N1 -> N3 cooldown, 2 charges) - Select a target operative. You will visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection."],
 				"Passives": ["Agent on the Field - You are a Field Agent role.",
-					"Local Legend - You are known too well in the community. If you are murdered (not by vote), you can occupy someone in the Opsec of your choice, as they will be hosting your funeral."]
+					"Local Legend - You are known too well in the community. If you are murdered (not by vote), you can occupy someone in the Opsec of your choice in the next phase, as they will be hosting your funeral."]
 			},
 			{
 				"Name":"Drone Operator",
@@ -1628,12 +1628,13 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
 					"Internet of Things Breach - Select a white node, increasing hacking chances of getting this node. This does not leave a log.",
-					"Charge Batteries - Remove the cooldown on Drone Reconnaissance or Drone Mark for the next night."],
+					"Charge Batteries - Remove the cooldown on Drone Reconnaissance or Drone Mark for the next night.",
+					"Fabricate Evidence (0 charges) - Have an agent lawyer fabricate evidence after killing to set another operative to be arrested at night. This protects you tonight."],
 				"Night": ["Drone Reconnaissance (N1 -> N3 cooldown) - Select a target operative. Learn the exact ability they use tonight. Goes through cover or frames. If they did nothing, say they did nothing. Visit the operative.",
 					"Drone Mark (N1 -> N3 cooldown) - Select a target operative and leave a follow notification. Tomorrow they will be arrested by local cops. Visit them.",
 					"Drone Bomb (1 charge) - Select two target operatives. Send your two drones out and bomb their hideouts, killing both of them. Do not visit them."],
 				"Passives": ["Agent on the Field - You are a Field Agent role.",
-					"Do the Crime, Do the Time - If you kill someone with a Drone Bomb, you get arrested immediately that night. Can be dodged by escorting or protecting the operative."]
+					"Do the Crime, Do the Time - If you kill someone, you get arrested the next night. Can be dodged by escorting or protecting the operative."]
 			},
 			{
 				"Name":"K-9 Unit",
@@ -1648,7 +1649,7 @@ data =
 				"Night": ["Sniff-out (N1 -> N3 cooldown) - Select a target operative. If the operative is a drug dealer or has the potential to murder or disorganized murder in any way, let you know. Goes through cover or frames. Visit them.",
 					"Trained Assist (N1 -> N4 cooldown) - Select an agent operative. If they are arresting someone, make them immune to occupation. Visit them.",
 					"Trained Escort - Select an agent operative and escort them, protecting the operative from arrests and murders. Arrest attempts will be dodged, and anyone attempting to murder the protected operative will be killed. Visit your fellow agent, but do not occupy.",
-					"Guard Dog - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative."],
+					"Guard Dog (N1 -> N3 cooldown) - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative."],
 				"Passives": ["Good Boy - You are protected by the first arrest or murder attempt.",
 					"Protective Boy - Guard Dog can be used along with any other ability at night."]
 			}
@@ -1780,7 +1781,7 @@ data =
 					"Caesar Cipher (1 charge) - Select a layer, removing all intel on this layer. Do not leave a log."],
 				"Night": ["Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Encrypt Killswitch (2 charges) - Select a target operative. Upon death or arrest, the target’s role and logs will be encrypted and unable to be read.",
-					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them."],
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night."],
 				"Passives": ["Deep Fake Disguise - You can pick any class to frame yourself as until Day 4. Cannot be arrested unless you are framed.",
 					"Encryption Tactics - Pick one ability from Firewall Layer, Encrypt Intel, and Caesar Cipher."]
 			},
@@ -1994,7 +1995,7 @@ data =
 					"Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
 					"Derail News (1 charge) - For the next night, any operatives arrested and murdered will have their roles hidden and logs wiped, including through voting.",
 					"All in (1 charge) - Turn into a Field Agent. Can only be done if there are no Agent on the Field roles."],
-				"Night": ["Get Scoop (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them. If the target is not a neutral, gain 1 scoop.",
+				"Night": ["Get Scoop (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them. Find if the target is not neutral.",
 					"Ambush (N1 -> N4 cooldown) - Select a target operative. Visit them, if they are arrested or killed during the remainder of the game, their role will be hidden.",
 					"Perform Fake Headline (N1 -> N4 cooldown, 2 charges) - Select a target operative. Visit and occupy them, performing a fake headline on them. If they are arrested or murdered tonight, they will be framed as the role you select."],
 				"Passives": ["Not Agent - Any doxx attempts on you doxx you as Neutral.",
