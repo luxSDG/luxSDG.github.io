@@ -1706,6 +1706,7 @@ data =
 				"Description": "This role is supposed to be unique, depending on the ruleset; one Agent on the Field must spawn.<br>“It’s time to take this case a step further, Cybercrime Investigator.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
 					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
 					"Background Search (D1 -> D3 cooldown) - Check a target operative’s background. You’ll be given a (non-unique) random skill that they have, either day or night.",
 					"Plan B (1 charge) - If there is no Agent Leader, turn into an Agent Leader."],
@@ -1726,6 +1727,7 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
 					"Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
 					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
 					"Rerouted Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Select a target operative to make this show up as the operative who used the denial of service with Wireshark. Do not leave a log.",
 					"All in (1 charge) - Turn into a Field Agent. Can only be done if there are no Agent on the Field roles."],
@@ -1751,6 +1753,7 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
 					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
 					"Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
 					"All in (1 charge) - Turn into a Field Agent. Can only be done if there are no Agent on the Field roles.",
@@ -1775,6 +1778,7 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
 					"All in (1 charge) - Turn into a Field Agent. Can only be done if there are no Agent on the Field roles.",
 					"Encryption Tactics (Pick 1)<br>=======================================================================<br>Firewall Layer (D1 -> D3 cooldown, 2 charges) - Select a layer, decreasing hacking chances of getting any node on this layer. Do not leave a log.",
 					"Encrypt Intel - Select a green node and attempt to erase intel from it. If there is intel, and you remove it first, you will get class intel, target node, or faction intel. Goes through cover or frames. Leaves a log.",
@@ -2015,7 +2019,7 @@ data =
 				"Description": "“In order to escape prison, you took a plea deal as an Enforcer. Agents could use your enforcing and kill potential, Agent Enforcer.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
-					"Redirection (1 charge) - Select two target operatives, all skills used on the first operative will be used on the second operative, works similar to Throw Under the Bus."],
+					"Redirection (1 charge) - Select two target operatives, all skills used on the first operative at night will be used on the second operative, works similar to Throw Under the Bus."],
 				"Night": ["Bouncer (N1 -> N3 cooldown, 2 charges) - Select a target operative. You will visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection.",
 					"Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
@@ -2058,11 +2062,11 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log."],
 				"Night": ["Bodyblock (3 charges) - Select a target operative. Occupy anyone that visits the target, but does not occupy the target operative themselves. Visit them.",
-					"Scapegoat - Select two target operatives, all skills used on the first operative will be used on the second operative, works similar to Throw Under the Bus.",
+					"Scapegoat - Select two target operatives, all skills used on the first operative this night will be used on the second operative, works similar to Throw Under the Bus.",
 					"Setup (2 charges) - Select two operatives. The first operative will visit and occupy the second operative, occupying both operatives. You may be the first target. Visits the first operative.",
 					"Attempt Murder - Select an operative and attempt to murder them. Visit the target."],
 				"Passives": ["Aggressor - You may attempt to use attempt murder and another skill on the same night.",
-					"Counterkill - If any murdering or arresting skill was used on an agent, you will attempt to kill the attacker or murderer."]
+					"Counterkill - If any murdering or arresting skill was used on an agent, you will attempt to kill the murderer or arrester."]
 			}
 		]
 	},
@@ -2077,6 +2081,7 @@ data =
 				"Description": "“In order to escape prison, you took a plea deal as a Data Scientist. Agents could use your analysis and PhD study, Agent Data Scientist.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
 				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log.",
 					"Alter Logs (D1 -> D3 cooldown) - Select a white or green node and either leave a singular fake connection log of one operative, or leave a few random connection logs.",
 					"Upload Fake Intel (1 charge) - Select a green node and upload intel that is downloadable by others. You can write what intel you want to leave. Leaves a log."],
 				"Night": ["Setup (2 charges) - Select two operatives. The first operative will visit and occupy the second operative, occupying both operatives. You may be the first target. Visits the first operative.",
@@ -2211,7 +2216,7 @@ data =
 					"Plant Fake Info - Decreases hacking chances on a random node.",
 					"Destroy Keyloggers - Make all uses of planting and retrieving keyloggers fail. Does not reveal that you had destroyed the keyloggers."],
 				"Night": ["Setup (2 charges) - Select two operatives. The first operative will visit and occupy the second operative, occupying both operatives. You may be the first target. Visits the first operative.",
-					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them."],
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night."],
 				"Passives": ["None."]
 			},
 			{
@@ -2221,11 +2226,12 @@ data =
 				"Image": "graphtheorist.png",
 				"Description": "“In order to escape prison, you took a plea deal as a Graph Theorist. Agents could use your powerful graph topology predicting, Agent Graph Theorist.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing).",
-				"Day": ["Hack Target (High) - Select a white node and attempt to hack it. Leaves a log."],
+				"Day": ["Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
+					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Do not go through frames or cover. Leaves a log."],
 				"Night": ["Pair Programming (1 charge) - Select a target operative, their hacking chance permanently increases by one stage. Visit them.",
 					"Advisor (N1 -> N3 cooldown) - Select a target operative, their hacking chance temporarily increases by one stage. Visit them.",
 					"Study (N1 -> N3 cooldown) - Increases your hacking stage by one the following day."],
-				"Passives": ["Depth Prediction - You gain the intel first if you hack into a layer first.",
+				"Passives": ["Depth Prediction - You gain the intel first if you hack into a layer first. Opsec R allows you to download intel first before others.",
 					"Node Prediction - You know which nodes can be downloaded for intel."]
 			},
 			{
@@ -2286,7 +2292,7 @@ data =
 				"Summary":"The minority faction that has indirect kill power and scale to become stronger later",
 				"Image": "w3c.png",
 				"Description": "“We are here to get rid of NETSEC scum. Let’s get rid of these guys, and let’s get rid of agents or we’ll have problems later.”",
-				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).<br><br>Main difference from Agent is that Agent has more direct ways of killing (singular killer/FA usually), whereas W3C needs to kill sporadically using specific niche ways to kill. W3C also doesn’t have topology access, but still maintains a connected chat. W3C gains more power the less operatives they have, or gains power with more kills.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing). Opsec R requires you to acquire and hold root for 3 day/night cycles.<br><br>Main difference from Agent is that Agent has more direct ways of killing (singular killer/FA usually), whereas W3C needs to kill sporadically using specific niche ways to kill. W3C also doesn’t have topology access, but still maintains a connected chat. W3C gains more power the less operatives they have, or gains power with more kills.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -2306,19 +2312,19 @@ data =
 				"Day": ["Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
 					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in.",
 					"Cultist Sacrifice - Select a W3C operative and murder him.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>0-Day Exploit (1 charge) - Select a white node and instantly hack it. Leaves a log."],
 				"Night": ["Murder with Goons (N1 -> N3 cooldown) - Select an operative and murder them. Do not occupy them. Visit them.",
 					"Fake Emergency Extraction (N1 -> N3 cooldown, 3 charges) - Select an operative to fake escort, does not occupy them and doesn’t actually do anything except leaving escort feedback.",
 					"Cultist Sacrifice - Select a W3C operative and murder him.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Murder with Goons has no cooldown.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Murder with Goons has no cooldown.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Murder with Goons occupies the target operative."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+				"Passives": ["Authority - You have two votes.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Unstable Mind - Whoever arrests you gets an extra STING charge. Doesn’t have to be an agent.",
 					"Rent Free - Avoid the first arrest attempt and murder attempt on you.",
 					"Operation Leader - You are one of the leading roles and should spawn every operation.",
-					"Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			},			
 			{
@@ -2331,11 +2337,12 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
 					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
+					"Take Root - Select a target operative. If the target operative has root, give yourself root.",
 					"Computer Forensics Background (Pick 1)<br>=======================================================================<br>Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
 					"Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
 					"0-Day Exploit (1 charge) - Select a white node and instantly hack it. Leaves a log.",
 					"Cultist Sacrifice - Select a W3C operative and murder him.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Gain another charge of any selected Computer Forensics Background ability.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Gain another charge of any selected Computer Forensics Background ability.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Increase Hack Target skill to Very High."],
 				"Night": ["Murder with Goons (N1 -> N3 cooldown) - Select an operative and murder them. Do not occupy them. Visit them.",
 					"Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
@@ -2343,14 +2350,14 @@ data =
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Goes through cover or frames. Learn this operative’s faction alignment and visit them.",
 					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Goes through cover or frames. Visit them.",
 					"Cultist Sacrifice - Select a W3C operative and murder him.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Murder with Goons has no cooldown.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Murder with Goons has no cooldown.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Murder with Goons occupies the target operative."],
 				"Passives": ["Unstable Mind - Whoever arrests you gets an extra STING charge. Doesn’t have to be an agent.",
 					"Rent Free - Avoid the first arrest attempt and murder attempt on you.",
 					"Computer Forensics Background - Pick one of the three abilities between Denial of Service, Rollback, and 0-Day Exploit.",
 					"Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question.",
 					"Cover Checks Out - You can pick a Netsec class to frame yourself as until Day 4. Can be arrested after Rent Free is triggered.",
-					"Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			}
 		]
@@ -2370,10 +2377,10 @@ data =
 				"Night": ["Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them.",
 					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send.",
 					"Assault and Battery - Select an operative and attempt to murder them. Visit the target.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Assault and Battery is guaranteed to kill now.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Assault and Battery is guaranteed to kill now.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Fake Escort becomes real Escort for W3C operatives and does not occupy W3C operatives."],
 				"Passives": ["Last Ditch Attempt - If the W3C Leader is arrested, you will be arrested instead of the W3C Leader.",
-					"Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			},		
 			{
@@ -2389,8 +2396,8 @@ data =
 				"Night": ["Smash Hardware (N1 -> N3 cooldown) - Select an operative and disable all day actions related to the topology. Occupies and visits them. (Same as Midnight Meet).",
 					"Frame (N1 -> N3 cooldown, 2 charges) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them.",
 					"Assault and Battery - Select an operative and attempt to murder them. Visit the target.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Assault and Battery is guaranteed to kill now."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Assault and Battery is guaranteed to kill now."],
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			}
 		]
@@ -2412,8 +2419,8 @@ data =
 				"Night": ["Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them.",
 					"Review Specialization (N1 -> N4 cooldown, 2 charges) - Select a target operative. Learn their subclass, or framed or cover subclass. Do not go through frames or cover. Visit them.",
 					"Misdirection (1 charge) - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Throw Under the Bus (2 charges) - Select a target operative. All skills used on you will be used on the target operative."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Throw Under the Bus (2 charges) - Select a target operative. All skills used on you will be used on the target operative."],
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			},
 			{
@@ -2431,8 +2438,8 @@ data =
 				"Night": ["Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
 					"Frame (N1 -> N3 cooldown, 2 charges) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them.",
 					"Plant Agent Documentation (3 charges) - Select a target operative. If the operative is doxxed this round, they will be seen as an agent. If the operative is specialization reviewed, they will be seen as special. If the operative is asked the right question, they will be seen as unable to hack. If the operative is speech analyzed, they will be seen as unable to win with anyone. Visit them.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			},
 			{
@@ -2449,9 +2456,9 @@ data =
 				"Night": ["Sell Illicit Arms (N1 -> N3 cooldown) - Select a target operative. If they do not have access to the skill Disorganized Murder, give them 1 charge of Disorganized Murder the following night. This charge of Disorganized Murder is removed if it is not used the night it is given. Visit them.",
 					"Ambush (2 charges) - Select a target operative. Attempt to murder anyone who visits them. Visit them.",
 					"Install Sound Trap (D1 -> D3 cooldown, 2 charges) - Selects a target operative and places a trap on the operative. The trap is not destroyed upon moving hideout or getting escorted, staying on the target. Visit the target.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Ambush has infinite charges now and can select yourself."],
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Ambush has infinite charges now and can select yourself."],
 				"Passives": ["Perform Trap Surveillance - Passively see who visits the target operatives that the traps are attached to.",
-					"Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			}
 		]
@@ -2470,11 +2477,11 @@ data =
 					"Hack Target (Very High) - Select a white node and attempt to hack it. Leaves a log.",
 					"Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
 					"Encrypt Intel - Select a green node and attempt to erase intel from it. If there is intel, and you remove it first, you will get class intel, target node, or faction intel. Goes through cover or frames. Leaves a log.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Firewall Layer (D1 -> D3 cooldown, 2 charges) - Select a layer, decreasing hacking chances of getting any node on this layer. Do not leave a log.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Firewall Layer (D1 -> D3 cooldown, 2 charges) - Select a layer, decreasing hacking chances of getting any node on this layer. Do not leave a log.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Caesar Cipher (1 charge) - Select a layer, removing all intel on this layer. Do not leave a log."],
 				"Night": ["Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Prepare Sprint (1 charge) - The next day you can do two different day actions."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			},
 			{
@@ -2485,15 +2492,15 @@ data =
 				"Description": "“You were assigned to disrupt Netsec in their operation, and that’s what you are going to do, W3C Disruptor.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing).",
 				"Day": ["Hack Target (Moderate) - Select a white node and attempt to hack it. Leaves a log.",
-					"Hack ROOT Access - Select a white node. If there is no rooted operative or OL, you can hack into root access by trying to hack a node with the OL’s connection and become an Operation Leader. Leaves a log.",
+					"Hack ROOT Access - Select a white node. If there is no rooted operative or OL, you can hack into root access by trying to hack a node with the OL’s connection and become a W3C Operation Leader. Leaves a log.",
 					"Harden Node (D1 -> D3 cooldown, 2 charges) - Select a white node. Decreasing hacking chances of getting this node. Strongest hacking chance nerf. Leaves a log.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Jam Network (2 charges) - Select a target operative and disable all day actions related to the topology done by them."],
 				"Night": ["Cover Your Tracks (2 charges) - Move your hideout, protecting yourself unless you are occupied. Arrest attempts will show a result similar to a target that is immune to arrest, like No Dirt On Me.",
 					"Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Glimpse (N1 -> N3 cooldown) - Select a target operative, any operative targeting action will be done on themselves, but they will not know about it. Visit them.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Glimpse has no cooldown now."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Glimpse has no cooldown now."],
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			},
 			{
@@ -2509,8 +2516,8 @@ data =
 				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
 					"Elaborative Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack and knowledge of graphs. Do not reveal yourself to them.",
 					"Graph Theory Lecture (1 charge) - Occupy all operatives that have been given knowledge of graphs previously with Elaborative Meet.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Graph Theory Lecture has 2 more charges now."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Graph Theory Lecture has 2 more charges now."],
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Node Prediction - You know which nodes can be downloaded for intel."]
 			}
@@ -2531,10 +2538,10 @@ data =
 				"Night": ["Sell Meth (1 charge) - Select a target operative. Sell them Methamphetamine and make them immune to occupation for this turn. Visit them.",
 					"Sell Adderall (1 charge) - Select a target operative. Sell them Adderall, and give them one extra action in the day. Visit them.",
 					"Sell Cocaine (1 charge) - Select a target operative. Sell them Cocaine, and make them dodge arrests or murder attempts for this turn (that are not guaranteed murders). Visit them.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Overdose Immediately (2 charges) - Select a target operative. Sell them intense drugs, immediately overdosing and killing them. Visit them.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Overdose Immediately (2 charges) - Select a target operative. Sell them intense drugs, immediately overdosing and killing them. Visit them.",
 					"Overdose passive happens upon giving someone drugs twice.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Plant Drug (2 charges) - Select a target operative. Plant a drug on the operative and remove No Dirt on Me."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers.",
 					"Overdose - If you give someone drugs three times in a row, they overdose and immediately die."]
 			},
@@ -2551,11 +2558,11 @@ data =
 					"Replace Server (N1 -> N3 cooldown, 2 charges) - Replace a selected server with a laptop by connecting a company laptop to future nodes and disconnecting the server.",
 					"Hostage Operative (N1 -> N3 cooldown) - Select a target operative and hold them hostage tonight. Choose a night ability the next day to use from the operative’s role for the next phases. Occupy and visit them like a Midnight Meet.",
 					"Scout Dead Operative (2 charges) - Select a murdered or arrested operative. Choose an ability from the operative to use from the operative’s role, and use it this phase. Do not visit them.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Hostage Operative has no cooldown now.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Hostage Operative has no cooldown now.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Scout Dead Operative has infinite charges now."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers.",
-					"Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked."]
+					"Target Knowledge - You can see which node is the final target."]
 			},
 			{
 				"Name":"W3C Janitor",
@@ -2567,12 +2574,12 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Log Analysis - Select a green node and clear any fake logs from Alter Logs or Rollback.",
 					"Emergency Repairs (1 charge) - Select a green or white node and block all connections to the node this day. Lets you know if a rollback was used on the node. Do not leave a log.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Emergency Repairs has 2 more charges now."],
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Emergency Repairs has 2 more charges now."],
 				"Night": ["Clean Up Crew (N1 -> N4 cooldown) - Remove the operative’s role and logs on their death or arrest. Visit them.",
 					"Check Maintenance Logs - Select a green or white node. Check if there were any difficulty decreasing or increasing actions done on this node, telling you separately if the node security had been increased or decreased.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Review Connection Logs (2 charges) - Selects a target operative. Check if their connection was altered through ISP Isolation or Jam Network the previous day, and make them immune to ISP Isolation or Jam Network the following day. Visit them."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			}
 		]
@@ -2593,12 +2600,12 @@ data =
 					"Act as Defense - Select a target operative. The operative will have an extra vote (-1) with them next phase, not shown to the Opsec.",
 					"Onboarding Process - Force someone to vote for someone of your choice.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Rerouted Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Select a target operative to make this show up as the operative who used the denial of service with Wireshark. Do not leave a log."],
-				"Night": ["Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them.",
+				"Night": ["Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Act as Prosecution - Select a target operative. The operative will have an extra vote (+1) against them in the next phase, not shown to the Opsec.",
 					"Act as Defense - Select a target operative. The operative will have an extra vote (-1) with them next phase, not shown to the Opsec.",
 					"Onboarding Process - Force someone to vote for someone of your choice.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Paid Assassin - Anyone who is voted during this phase will die at the end of the phase. Can be blocked using defensive abilities."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Paid Assassin - Anyone who is voted during this phase will die at the end of the phase. Can be blocked using defensive abilities."],
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers.",
 					"People Person - You know how to navigate the sausage fest known as Netsec. You can force one person to vote for who you are voting every round without anyone knowing."]
 			},
@@ -2612,13 +2619,13 @@ data =
 				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
 					"Sacrificial Shot - Select a target operative and guess their role. If you guess right, attempt to shoot the target operative tonight. If you guess wrong, take your own life instead. Removes all frames and covers. You will know if you guessed right or wrong.",
 					"Prepare Murder (1 charge) - Gives you one charge of murder.",
-					"Altar of Heresy (50% W3C operatives left)<br>=======================================================================<br>Prepare Murder has 2 more charges now."],
+					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Prepare Murder has 2 more charges now."],
 				"Night": ["Sacrificial Shot - Select a target operative and guess their role. If you guess right, attempt to shoot the target operative. If you guess wrong, take your own life instead. Removes all frames and covers.",
 					"Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
 					"Misdirection (1 charge) - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative.",
 					"Murder (0 charges) - Select an operative and murder them. Cannot be dodged in any way. Occupies and visits the target.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Investigation (N1 -> N3 cooldown) - Select a target operative. Learn between three subclasses. One is the real subclass, which pierces any cover and frame. Visit them."],
-				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left, gain these powers.",
+				"Passives": ["Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
 			}
 		]
@@ -2632,7 +2639,7 @@ data =
 				"Summary":"A group of interlopers that want to play with the minority faction to win",
 				"Image": "paragon.png",
 				"Description": "“We’re here to establish a presence and assert dominance on the dark web as the biggest hacking team.”",
-				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents.<br><br>Paragon is sorta a neutral faction that needs to kill off half of every faction. Can win with any faction and will lose if all other factions besides one lose before they win. This faction should spawn with SOME kill power, not necessarily a ton, but enough to be able to force a 50% on all other factions. Paragon will be notified if a faction reaches under 50% of their total operatives.",
+				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents. Opsec R requires the current W3C and agent operative to die once.<br><br>Paragon is sorta a neutral faction that needs to kill off half of every faction. Can win with any faction and will lose if all other factions besides one lose before they win. This faction should spawn with SOME kill power, not necessarily a ton, but enough to be able to force a 50% on all other factions. Paragon will be notified if a faction reaches under 50% of their total operatives.",
 				"Day": [],
 				"Night": [],
 				"Passives": []
@@ -2655,7 +2662,7 @@ data =
 					"Cover Your Tracks (2 charges) - Move your hideout, protecting yourself unless you are occupied. Arrest attempts will show a result similar to a target that is immune to arrest, like No Dirt On Me.",
 					"Paragon Goons (1 charge) - Select a target operative to escort, does not occupy them and makes them immune to everything unless otherwise stated. This ability is toggleable, once you have selected a target operative, you must Redirect Goons to leave the operative before sending them out again. Grants a charge of Redirect Goons.",
 					"Redirect Goons (0 charges) - Stops the Paragon Goons from escorting tonight. Grants a charge of Paragon Goons."],
-				"Passives": ["Authority - You have two votes. Only the starting Operation Leader role has this passive.",
+				"Passives": ["Authority - You have two votes.",
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Operation Leader - You are one of the leading roles and should spawn every operation."]
 			},			
@@ -2807,7 +2814,7 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a (non-unique) random skill that they have, either day or night. Do not go through frames or cover."],
 				"Night": ["Paragon Inspiration (N1 -> N3 cooldown, 2 charges) - Select a Paragon operative and choose a skill they have to give them a skill charge. Visit them.",
-					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them."],
+					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night."],
 				"Passives": ["None."]
 			},			
 			{
@@ -2823,7 +2830,7 @@ data =
 				"Night": ["Plant Agent Documentation (3 charges) - Select a target operative. If the operative is doxxed this round, they will be seen as an agent. If the operative is specialization reviewed, they will be seen as special. If the operative is asked the right question, they will be seen as unable to hack. If the operative is speech analyzed, they will be seen as unable to win with anyone. Visit them.",
 					"Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied."],
 				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent.",
-					"Moled - For the Cause will pin you as a mole."]
+					"Moled - For the Cause will pin you as a mole. Opsec R For the Cause will always show that you changed your win condition."]
 			}
 		]
 	},
@@ -2840,7 +2847,7 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
 					"Prepare Murder (1 charge) - Gives you one charge of murder.",
-					"Redirect Assassin (1 charge) - Select a target operative. For the rest of the game, if the target operative was voted off, you will die in their place."],
+					"Redirect Assassin (1 charge) - Select a target operative. For the rest of the game, if the target operative was voted off, you will die in their place. Opsec R will just call the assassin off."],
 				"Night": ["Disorganized Murder - Select an operative and attempt to murder them. Visit the target.",
 					"Murder (0 charges) - Select an operative and murder them. Cannot be dodged in any way. Occupies and visits the target."],
 				"Passives": ["Working with Death - Every vote kill increases your chances of success in disorganized murder."]
