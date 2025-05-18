@@ -2337,7 +2337,7 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Hack Target (High) - Select a white node and attempt to hack it. Leaves a log.",
 					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
-					"Take Root - Select a target operative. If the target operative has root, give yourself root.",
+					"Take Root - Select a target operative. If the target operative has the Root Access, give yourself Root Access and remove any charges of Give Root Access.",
 					"Computer Forensics Background (Pick 1)<br>=======================================================================<br>Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
 					"Rollback (1 charge) - Select a green node, return the node to a white node, un-hacking the node. Connections to nodes ahead fail.",
 					"0-Day Exploit (1 charge) - Select a white node and instantly hack it. Leaves a log.",
