@@ -84,7 +84,7 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Desperate Measures (1 charge) - Turn into an Improvised Hacker."],
-				"Night": ["Escort - Escort a target operative, protecting the operative from arrests and murders. Arrest attempts will arrest this operative instead, and anyone attempting to murder the protected operative will be killed. Visit and occupy them.",
+				"Night": ["Escort - Escort a target operative, protecting the operative from arrests and murders. Arrest attempts will arrest this operative instead, and anyone attempting to murder the protected operative will be killed. Visit and occupy them. Must select a different target the next night.",
 					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
 				"Passives": ["None."]
@@ -854,7 +854,7 @@ data =
 				"Description": "“You’ve got an agenda to carry out, Loose Cannon.”",
 				"Win Condition": "Win on the three of your objectives.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log."],
-				"Night": ["Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them.",
+				"Night": ["Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them. Must select a different target the next night.",
 					"Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
 					"Assault and Battery - Select an operative and attempt to murder them. Visit the target.",
 					"Citizen’s Arrest (N1 -> N3 cooldown, 3 charges) - Select a target operative and arrest them. Visit them."],
@@ -879,7 +879,7 @@ data =
 				"Night": ["Spill the Beans - Select a target operative, inform agents that the target is one working for Netsec. If the target is arrested, gain a bounty.",
 					"Citizen’s Arrest (N1 -> N3 cooldown, 3 charges) - Select a target operative and arrest them. Visit them.",
 					"Frame (N1 -> N3 cooldown, 2 charges) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them.",
-					"In the Force (Pick 1)<br>=======================================================================<br>Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them.",
+					"In the Force (Pick 1)<br>=======================================================================<br>Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them. Must select a different target the next night.",
 					"Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
 					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send."],
 				"Passives": ["No Dirt On Me - You are unarrestable unless framed.",
@@ -917,6 +917,20 @@ data =
 					"For the Cause (N1 -> N4 cooldown, 2 charges) - Find out if the target operative is a mole. Do not go through frames or cover. Visit them. Opsec R checks if they changed their win condition tonight.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them."],
 				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent."]
+			},
+			{
+				"Name":"Former Bodyguard",
+				"Color": "white",
+				"Summary":"Gains bait, angel",
+				"Image": "formerbodyguard.png",
+				"Description": "“You were once a bodyguard of a high-profile agency, but after an assassination on your target’s life succeeded, you went to Netsec, Former Bodyguard.”",
+				"Win Condition": "Protect 3 Netsec targets, or protect a target from arrest or murder. (This can include blocking an arrest or murder attempt with Bouncer). Or win as an enforcer.",
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Bait Law Enforcement (D1 -> D3 cooldown) - Select a target operative, inform agents that the target is one working for Netsec. (Leaves the same message as Bounty Hunter’s Spill the Beans).",
+					"Join the Force (1 charge) - Become an enforcer, only usable at Day 4 or later."],
+				"Night": ["Escort - Escort a target operative, protecting the operative from arrests and murders. Arrest attempts will arrest this operative instead, and anyone attempting to murder the protected operative will be killed. Visit and occupy them. Must select a different target the next night.",
+					"Bouncer (N1 -> N3 cooldown, 2 charges) - Select a target operative. You will visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection."],
+				"Passives": ["Bulletproof Vest - Avoid the first arrest or murder attempt on you. After being arrested or murder attempted, become immune to occupation."]
 			},
 			{
 				"Name":"Political Campaigner",
@@ -1168,20 +1182,6 @@ data =
 					"Old Friends (3 charges) - Select a target operative. If they are a Netsec member, you and agents will learn their role. Goes through cover or frames. Visit them.",
 					"Runaway Operative (1 charge) - Turn into a mole of your choice. If Netsec is in the player’s lineup, this is disabled. Opsec R turns you into a Field Agent if there is none on the field."],
 				"Passives": ["On the Run - If you are murdered (not by vote), the Operation Leader will learn the identity of two Netsec members that are not owned by that player. Goes through cover or frames. Opsec R will just reveal two Netsec members to the OL."]
-			},
-			{
-				"Name":"Former Bodyguard",
-				"Color": "white",
-				"Summary":"Gains bait, angel",
-				"Image": "formerbodyguard.png",
-				"Description": "“You were once a bodyguard of a high-profile agency, but after an assassination on your target’s life succeeded, you went to Netsec, Former Bodyguard.”",
-				"Win Condition": "Protect 3 Netsec targets, or protect a target from arrest or murder. (This can include blocking an arrest or murder attempt with Bouncer). Or win as an enforcer.",
-				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
-					"Bait Law Enforcement (D1 -> D3 cooldown) - Select a target operative, inform agents that the target is one working for Netsec. (Leaves the same message as Bounty Hunter’s Spill the Beans).",
-					"Join the Force (1 charge) - Become an enforcer, only usable at Day 4 or later."],
-				"Night": ["Escort - Escort a target operative, protecting the operative from arrests and murders. Arrest attempts will arrest this operative instead, and anyone attempting to murder the protected operative will be killed. Visit and occupy them.",
-					"Bouncer (N1 -> N3 cooldown, 2 charges) - Select a target operative. You will visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection."],
-				"Passives": ["Bulletproof Vest - Avoid the first arrest or murder attempt on you. After being arrested or murder attempted, become immune to occupation."]
 			},
 			{
 				"Name":"Insane Drug Dealer",
@@ -1594,7 +1594,7 @@ data =
 					"ISP Isolation (3 charges) - Select a target operative and disable all day actions related to the topology done by them."],
 				"Night": ["Arrest - Select a target operative and arrest them. Visit them.",
 					"Sting (1 charge) - Select a target operative and arrest them, along with anyone that visits them. Do not visit them.",
-					"Planned Raid - Select a target operative and escort them. Choose whether tomorrow they will be arrested, or that you want to hold the arrests until you execute a raid, or until the operative moves hideout. Visit and occupy them.",
+					"Planned Raid - Select a target operative and escort them. Choose whether tomorrow they will be arrested, or that you want to hold the arrests until you execute a raid, or until the operative moves hideout. Visit and occupy them. Must select a different target the next night.",
 					"Execute Raid - Arrest all raided operatives that are still in the same hideout. This skill cannot be occupied.",
 					"Agent Training (Pick one)<br>=======================================================================<br>Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
 					"Throw Under the Bus (2 charges) - Select a target operative. All skills used on you will be used on the target operative.",
@@ -1652,6 +1652,23 @@ data =
 					"Guard Dog (N1 -> N3 cooldown) - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative."],
 				"Passives": ["Good Boy - You are protected by the first arrest or murder attempt.",
 					"Protective Boy - Guard Dog can be used along with any other ability at night."]
+			},
+			{
+				"Name":"Police Chief",
+				"Color": "orange",
+				"Summary":"Multiple actions at night, more utility focused",
+				"Image": "policechief.png",
+				"Description": "This role is supposed to be unique, depending on the ruleset; one Agent on the Field must spawn.<br>“Lead this team to victory, Police Chief.”",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
+				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log."],
+				"Night": ["Execute Raid - All operatives who have been raided will be arrested. Do not visit them.",
+					"Timed Planned Raid - Select a target operative and escort them. They will be targeted for a raid unless they move hideout or are escorted again. Visit and occupy them. Must select a different target the next night.",
+					"Hidden Officers - Select a target operative and watch them, planting a beacon. They will be targeted for a raid unless they move hideout or are escorted. Visit them.",
+					"Camouflage Net (N1 -> N3 cooldown) - Select an agent operative. They will not be seen visiting anywhere tonight. Visit them.",
+					"Defensive Arresting (N1 -> N4 cooldown) - Select a target operative. If they attempt to visit you, you will arrest them and wipe their logs.",
+					"Plant Drug (2 charges) - Select a target operative. Plant a drug on the operative and remove No Dirt on Me."],
+				"Passives": ["Agent on the Field - You are a Field Agent role.",
+					"Night Shift - Do two actions a night. Your first action will be followed/investigated."]
 			}
 		]
 	},
@@ -1678,25 +1695,6 @@ data =
 					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Do not go through frames or cover. Visit them."],
 				"Passives": ["Perform CCTV Surveillance - Passively see who visits the target operatives that the cameras are attached to.",
 					"Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question."]
-			},
-			{
-				"Name":"Jail Warden",
-				"Color": "orange",
-				"Summary":"Jailor, can choose arrest or not",
-				"Image": "jailwarden.png",
-				"Description": "This role is supposed to be unique, depending on the ruleset; one Agent on the Field must spawn.<br>“You might be a slimy prison guard who wants to execute every prisoner to sate your sadism, but you were hired by agents anyway, Jail Warden.”",
-				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
-				"Day": ["Create Hideout (D1 -> D4 cooldown, 2 charges) - Grants you one charge of Move Hideout.",
-					"Unskilled Attack - Select a node, green or white. Leaves a log.",
-					"Plant Fake Info - Decreases hacking chances on a random node.",
-					"Temporary Jail Time - Select a target operative and jail them for the night. They will receive the same outcome as Bouncer, like if you visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection. Gain a charge of Arrest on Warrant."],
-				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
-					"Dumpster Dive - Increases hacking chances on a random node.",
-					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send.",
-					"Torture (N1 -> N4 cooldown) - Select a target operative and occupy them. Torture the operative enough in which they cannot do anything the next day or night, as they will be in severe pain. Visit and occupy them like Midnight Meet.",
-					"Arrest on Warrant (0 charges) - Arrest the target in jail, as you have determined them guilty. If you do not do this, the operative will be released tomorrow. Cannot arrest unarrestable targets, since they will either escape or are legally unarrestable."],
-				"Passives": ["Agent on the Field - You are a Field Agent role.",
-					"Prison Guard - You can send someone to jail or arrest them and do an extra action per day or night."]
 			},
 			{
 				"Name":"Cybercrime Investigator",
@@ -1810,7 +1808,8 @@ data =
 					"Defend<br>=======================================================================<br>Signal Jammer (2 charges) - Select a target operative and disable all day actions related to the topology done by them. Won’t reveal that their connection was severed."],
 				"Passives": ["Agent on the Field - You are a Field Agent role.",
 					"Metal Skin - Decreases the chances of dying to murder.",
-					"Mode Starter - Choose a mode to start with."]
+					"Mode Starter - Choose a mode to start with.",
+					"Flip of a Switch - Switch Mode can be done alongside any other action."]
 			},
 			{
 				"Name":"Expert Whitehat",
@@ -1885,21 +1884,23 @@ data =
 				"Passives": ["Cover Checks Out - You can pick a Netsec class to frame yourself as until Day 4. Cannot be arrested unless you are framed."]
 			},
 			{
-				"Name":"Police Chief",
+				"Name":"Jail Warden",
 				"Color": "orange",
-				"Summary":"Multiple actions at night, more utility focused",
-				"Image": "policechief.png",
-				"Description": "This role is supposed to be unique, depending on the ruleset; one Agent on the Field must spawn.<br>“Lead this team to victory, Police Chief.”",
+				"Summary":"Jailor, can choose arrest or not",
+				"Image": "jailwarden.png",
+				"Description": "This role is supposed to be unique, depending on the ruleset; one Agent on the Field must spawn.<br>“You might be a slimy prison guard who wants to execute every prisoner to sate your sadism, but you were hired by agents anyway, Jail Warden.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
-				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log."],
-				"Night": ["Execute Raid - All operatives who have been raided will be arrested. Do not visit them.",
-					"Timed Planned Raid - Select a target operative and escort them. They will be targeted for a raid unless they move hideout or are escorted again. Visit and occupy them.",
-					"Hidden Officers - Select a target operative and watch them, planting a beacon. They will be targeted for a raid unless they move hideout or are escorted. Visit them.",
-					"Camouflage Net (N1 -> N3 cooldown) - Select an agent operative. They will not be seen visiting anywhere tonight. Visit them.",
-					"Defensive Arresting (N1 -> N4 cooldown) - Select a target operative. If they attempt to visit you, you will arrest them and wipe their logs.",
-					"Plant Drug (2 charges) - Select a target operative. Plant a drug on the operative and remove No Dirt on Me."],
+				"Day": ["Create Hideout (D1 -> D4 cooldown, 2 charges) - Grants you one charge of Move Hideout.",
+					"Unskilled Attack - Select a node, green or white. Leaves a log.",
+					"Plant Fake Info - Decreases hacking chances on a random node.",
+					"Temporary Jail Time - Select a target operative and jail them for the night. They will receive the same outcome as Bouncer, like if you visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection. Gain a charge of Arrest on Warrant."],
+				"Night": ["Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
+					"Dumpster Dive - Increases hacking chances on a random node.",
+					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send.",
+					"Torture (N1 -> N4 cooldown) - Select a target operative and occupy them. Torture the operative enough in which they cannot do anything the next day or night, as they will be in severe pain. Visit and occupy them like Midnight Meet.",
+					"Arrest on Warrant (0 charges) - Arrest the target in jail, as you have determined them guilty. If you do not do this, the operative will be released tomorrow. Cannot arrest unarrestable targets, since they will either escape or are legally unarrestable."],
 				"Passives": ["Agent on the Field - You are a Field Agent role.",
-					"Night Shift - Do two actions a night. Your first action will be followed/investigated."]
+					"Prison Guard - You can send someone to jail or arrest them and do an extra action per day or night."]
 			},
 			{
 				"Name":"Animal Tamer",
@@ -2021,7 +2022,7 @@ data =
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Redirection (1 charge) - Select two target operatives, all skills used on the first operative at night will be used on the second operative, works similar to Throw Under the Bus."],
 				"Night": ["Bouncer (N1 -> N3 cooldown, 2 charges) - Select a target operative. You will visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection.",
-					"Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them.",
+					"Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them. Must select a different target the next night.",
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target."],
 				"Passives": ["None."]
 			},
@@ -2374,7 +2375,7 @@ data =
 				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing). Opsec R requires you to acquire and hold root for N day/night cycles.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Alter Logs (D1 -> D3 cooldown) - Select a white or green node and either leave a singular fake connection log of one operative, or leave a few random connection logs."],
-				"Night": ["Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them.",
+				"Night": ["Fake Escort - Escort a target operative, but leave as soon as trouble comes, letting the original target die or get arrested. Visit and occupy them. Must select a different target the next night.",
 					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send.",
 					"Assault and Battery - Select an operative and attempt to murder them. Visit the target.",
 					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Assault and Battery is guaranteed to kill now.",
