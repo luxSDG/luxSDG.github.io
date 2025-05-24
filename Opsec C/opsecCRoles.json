@@ -537,7 +537,7 @@ data =
 					"Plant Keylogger (1 charge) - Grants you one charge of Retrieve Keylogger.",
 					"Desperate Measures (1 charge) - Turn into an Improvised Hacker."],
 				"Night": ["Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
-					"Retrieve Keylogger (1 charge) - Select a node, making it easier to hack. Grants you one charge of Plant Keylogger.",
+					"Retrieve Keylogger (0 charges) - Select a node, making it easier to hack. Grants you one charge of Plant Keylogger.",
 					"Dumpster Dive - Increases hacking chances on a random node."],
 				"Passives": ["Target Knowledge - You can see which node is the final target. This target will not win the game outright, but will allow you to gain significant global intel if hacked. This is the win condition for Opsec R."]
 			},
@@ -564,7 +564,7 @@ data =
 				"Description": "“Your ability to crack passwords and convince people to give you information has gotten you a position in Netsec, Spearphisher.”",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
 				"Day": ["Hack Target (Very Low) - Select a white node and attempt to hack it. Leaves a log.",
-					"Spearphisher Execution (0 charges) - Select a white node, increasing hacking chances of getting this node. Also finds out if there is intel on this node. Leaves a log.",
+					"Spearphisher Execution (0 charges) - Select a white node, increasing hacking chances of getting this node. Also finds out if there is intel on this node. Leaves a log. Gives back a charge of Spearphisher Preparation.",
 					"Download Intel - Select a green node and attempt to download from it. If there is intel, and you download and remove it first, you will get class intel, target node, or faction intel. Leaves a log.",
 					"Impersonate (1 charge) - Permanently rename your operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name."],
 				"Night": ["Spearphisher Preparation (1 charge) - Grants one charge of Spearphisher Execution.",
