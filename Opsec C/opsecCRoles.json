@@ -165,16 +165,16 @@ data =
 				"Passives": ["None."]
 			},			
 			{
-				"Name":"Brothel Owner",
+				"Name":"Entertainer",
 				"Color": "lime",
 				"Summary":"Loan Shark previous concept without move/emergency",
-				"Image": "brothelowner.png",
+				"Image": "entertainer.png",
 				"Description": "“You can help calm Netsec’s anxiety over this difficult hack, Brother Owner.”",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Desperate Measures (1 charge) - Turn into an Improvised Hacker."],
-				"Night": ["Send Entertainment (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, doing some dirty deeds. (Same as Midnight Meet). Leave a “present” for them.",
-					"Extra Presents (2 charges) - Occupy all operatives that have been given a “present” previously with Send Entertainment.",
+				"Night": ["Send Entertainment (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, entertaining them. (Same as Midnight Meet).",
+					"Extra Presents (2 charges) - Occupy all operatives that have been given entertainment previously with Send Entertainment.",
 					"Throw Under the Bus (2 charges) - Select a target operative. All skills used on you will be used on the target operative."],
 				"Passives": ["None."]
 			},
@@ -1266,12 +1266,12 @@ data =
 				"Win Condition": "Frame two operatives that aren’t yours and get them both voted out. Opsec R requires you to frame and vote out another operative.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Upload Fake Intel (1 charge) - Select a green node and upload intel that is downloadable by others. You can write what intel you want to leave. Leaves a log.",
-					"Jam Network (2 charges) - Select a target operative and disable all day actions related to the topology done by them."],
+					"Jam Network (2 charges) - Select a target operative and disable all day actions related to the topology done by them.",
+					"Rerouted Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Select a target operative to make this show up as the operative who used the denial of service with Wireshark. Do not leave a log."],
 				"Night": ["Paid Frame (N1 -> N3 cooldown) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them.",
 					"Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
 					"Throw Under the Bus (2 charges) - Select a target operative. All skills used on you will be used on the target operative."],
-				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent.",
-					"Insurance - If you are voted out, the Operation Leader’s identity is revealed globally."]
+				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent."]
 			},
 			{
 				"Name":"Waxmart Manager",
@@ -1284,7 +1284,7 @@ data =
 					"Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
 					"Computer Hotwiring (2 charges) - Make all hack chances increased by one stage today.",
 					"Rummage Customer Info - Instead of downloading, you can try rummaging customer info. Goes through cover or frames. (Download Intel without leaving a connection log.)"],
-				"Night": ["DM Sliding (1 charge) - Check your “friend”, target operative’s exact role through social media. Do not visit them.",
+				"Night": ["DM Sliding (1 charge) - Check your “friend”, target operative’s exact role through social media. Goes through cover or frames. Do not visit them.",
 					"Fake 911 Call (1 charge) - Select a target operative. They will be attempted to be arrested. Visit them.",
 					"Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
 					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
