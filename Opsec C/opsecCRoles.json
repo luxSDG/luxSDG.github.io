@@ -379,7 +379,7 @@ data =
 			{
 				"Name":"Laptop Specialist",
 				"Color": "lime",
-				"Summary":"% chances on override is gone and root is attainable all game",
+				"Summary":"Hacker for laptops, % chances on override is gone and root is attainable all game",
 				"Image": "laptopspecialist.png",
 				"Description": "“You’ve broken into hundreds of personal computers, Laptop Specialist.”",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
@@ -689,6 +689,20 @@ data =
 				"Passives": ["Agent Blackmailed - You cannot vote."]
 			},
 			{
+				"Name":"Rookie Assassin",
+				"Color": "lime",
+				"Summary":"Nice Guesser, can shoot people based on roles",
+				"Image": "rookieassassin.png",
+				"Description": "“You are supposed to be on the Operation Leader’s payroll, but you needed to train up as one of the operatives first, Rookie Assassin.”",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
+					"Proving Shot - Select a target operative and guess their role. If you guess right, attempt to shoot the target operative tonight. If you guess wrong, take your own life instead. Removes all frames and covers. You will know if you guessed right or wrong."],
+				"Night": ["Proving Shot - Select a target operative and guess their role. If you guess right, attempt to shoot the target operative. If you guess wrong, take your own life instead. Removes all frames and covers.",
+					"Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
+					"Misdirection (1 charge) - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative."],
+				"Passives": ["Assassin’s Creed - If you are voted, the veteran assassin will kill you and feel guilty the next phase, making there be no voting on the next phase."]
+			},
+			{
 				"Name":"NFT Scammer",
 				"Color": "lime",
 				"Summary":"Alter Logs, Frame, Impersonate on a Netsec role",
@@ -703,20 +717,6 @@ data =
 					"Frame (N1 -> N3 cooldown, 2 charges) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them.",
 					"Pull the Rug (1 charge) - Pull the rug, scamming everyone in the game and making everyone’s hack chance less by 1 stage for 1 round."],
 				"Passives": ["Metaverse Enjoyer - You can choose to frame yourself as any role in the game."]
-			},
-			{
-				"Name":"Rookie Assassin",
-				"Color": "lime",
-				"Summary":"Nice Guesser, can shoot people based on roles",
-				"Image": "rookieassassin.png",
-				"Description": "“You are supposed to be on the Operation Leader’s payroll, but you needed to train up as one of the operatives first, Rookie Assassin.”",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
-				"Day": ["Hack Target (Low) - Select a white node and attempt to hack it. Leaves a log.",
-					"Proving Shot - Select a target operative and guess their role. If you guess right, attempt to shoot the target operative tonight. If you guess wrong, take your own life instead. Removes all frames and covers. You will know if you guessed right or wrong."],
-				"Night": ["Proving Shot - Select a target operative and guess their role. If you guess right, attempt to shoot the target operative. If you guess wrong, take your own life instead. Removes all frames and covers.",
-					"Follow (2 charges) - Select a target operative and follow them, visiting them and checking if they left their hideout and met anyone. If they were occupied, you’d only know that they could not leave their hideout.",
-					"Misdirection (1 charge) - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative."],
-				"Passives": ["Assassin’s Creed - If you are voted, the veteran assassin will kill you and feel guilty the next phase, making there be no voting on the next phase."]
 			}
 		]
 	},
