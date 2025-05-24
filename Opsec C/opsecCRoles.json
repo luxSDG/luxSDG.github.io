@@ -69,6 +69,28 @@ data =
 					"Covert Broadcast - You should be given access to talk to all players in a specialized channel (global Opsec info).",
 					"Operation Leader - You are one of the leading roles and should spawn every operation.",
 					"Worship Me - Upon arrest or murder (not from vote), every operative gets a hacking chance increase by one stage."]
+			},
+			{
+				"Name":"Infamous Cybercriminal",
+				"Color": "lime",
+				"Summary":"Field operations Operation Leader",
+				"Image": "infamouscybercriminal.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
+			},
+			{
+				"Name":"Old Friend",
+				"Color": "lime",
+				"Summary":"Non-Operation Leader special Netsec role",
+				"Image": "oldfriend.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -192,6 +214,17 @@ data =
 					"Setup (2 charges) - Select two operatives. The first operative will visit and occupy the second operative, occupying both operatives. You may be the first target. Visits the first operative.",
 					"Ramming Speed (1 charge) - Select an operative and murder them. Cannot be dodged in any way, and cannot be occupied. Occupies and visits the target. Also kills yourself. Can only be used past night 2 onwards."],
 				"Passives": ["Hit the Nitrous - The first time you are arrested or murder attempted, hit the nitrous, dodging the arrest or murder."]
+			},
+			{
+				"Name":"Arms Dealer",
+				"Color": "lime",
+				"Summary":"Emergency extract + sell illicit arms",
+				"Image": "armsdealer.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -326,6 +359,17 @@ data =
 					"Overload Website (2 charges) - Select a green node, increasing hacking chances of getting this node permanently. Strongest hacking chance buff. Do not leave a log."],
 				"Night": ["Cover Your Tracks (2 charges) - Move your hideout, protecting yourself unless you are occupied. Arrest attempts will show a result similar to a target that is immune to arrest, like No Dirt On Me."],
 				"Passives": ["Linear Runtime - You are extremely optimized, you know how to optimize your code. If you hack, download intel, or retrieve info, you can do another action."]
+			},
+			{
+				"Name":"AI Generalist",
+				"Color": "lime",
+				"Summary":"Uses generative AI (LLMs) to investigate the opsec",
+				"Image": "aigeneralist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -388,6 +432,17 @@ data =
 				"Night": ["Research Servers (2 charges) - Increases your hacking stage by one against servers the following day.",
 					"Overdrive (1 charge) - Tomorrow, you can select a white laptop and instantly hack it, or select a server and have a very high chance to hack a server. Leaves a log."],
 				"Passives": ["Laptop Expert - You have high hack chances on laptops, and low hack chances on servers. You will be known as someone with a low hack chance."]
+			},
+			{
+				"Name":"Server Specialist",
+				"Color": "lime",
+				"Summary":"Hacker for servers, prevent rollback and DDOS",
+				"Image": "serverspecialist.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			},
 			{
 				"Name":"Steadfast Student",
@@ -610,6 +665,17 @@ data =
 					"Sell Adderall (1 charge) - Select a target operative. Sell them Adderall, and give them one extra action in the day. Visit them.",
 					"Sell Cocaine (1 charge) - Select a target operative. Sell them Cocaine, and make them dodge arrests or murder attempts for this turn (that are not guaranteed murders). Visit them."],
 				"Passives": ["Overdose - If you give someone drugs three times in a row, they overdose and immediately die."]
+			},
+			{
+				"Name":"Criminal Coroner",
+				"Color": "lime",
+				"Summary":"Retributionist that can use arrested and dead operative abilities",
+				"Image": "criminalcoroner.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -703,6 +769,17 @@ data =
 				"Passives": ["Assassin’s Creed - If you are voted, the veteran assassin will kill you and feel guilty the next phase, making there be no voting on the next phase."]
 			},
 			{
+				"Name":"Social Media Manager",
+				"Color": "lime",
+				"Summary":"Taking pictures/videos/social media shitposting",
+				"Image": "socialmediamanager.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
+			},
+			{
 				"Name":"NFT Scammer",
 				"Color": "lime",
 				"Summary":"Alter Logs, Frame, Impersonate on a Netsec role",
@@ -717,6 +794,17 @@ data =
 					"Frame (N1 -> N3 cooldown, 2 charges) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them.",
 					"Pull the Rug (1 charge) - Pull the rug, scamming everyone in the game and making everyone’s hack chance less by 1 stage for 1 round."],
 				"Passives": ["Metaverse Enjoyer - You can choose to frame yourself as any role in the game."]
+			},
+			{
+				"Name":"Vibe Coder",
+				"Color": "lime",
+				"Summary":"Hacker that is very weak but sometimes hacks well",
+				"Image": "vibecoder.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -935,6 +1023,17 @@ data =
 				"Night": ["Escort - Escort a target operative, protecting the operative from arrests and murders. Arrest attempts will arrest this operative instead, and anyone attempting to murder the protected operative will be killed. Visit and occupy them. Must select a different target the next night.",
 					"Bouncer (N1 -> N3 cooldown, 2 charges) - Select a target operative. You will visit and occupy them like a Midnight Meet, and anyone who visits them will be occupied, like a Misdirection."],
 				"Passives": ["Bulletproof Vest - Avoid the first arrest or murder attempt on you. After being arrested or murder attempted, become immune to occupation."]
+			},
+			{
+				"Name":"Contracted Headhunter",
+				"Color": "white",
+				"Summary":"Inquisitor hunt subclass/faction pairs only (any), must kill by your hand",
+				"Image": "contractedheadhunter.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -1008,6 +1107,17 @@ data =
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them. If successful, gain a piece of information."],
 				"Passives": ["No Dirt On Me - You are unarrestable unless framed.",
 					"Unsecured Investigation - After gathering 3 pieces of information, you lose No Dirt On Me."]
+			},
+			{
+				"Name":"Private Investigator",
+				"Color": "white",
+				"Summary":"Tip off roles to agent by using intel",
+				"Image": "privateinvestigator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			},
 			{
 				"Name":"Repressed Refugee",
@@ -1367,6 +1477,17 @@ data =
 					"Throw Under the Bus (2 charges) - Select a target operative. All skills used on you will be used on the target operative."],
 				"Passives": ["Rent Free - Avoid the first arrest attempt and murder attempt on you.",
 					"Choose Your Own Adventure - Pick an extra day ability and an extra night ability of your choice between the three options for both."]
+			},
+			{
+				"Name":"Drunken Agent",
+				"Color": "white",
+				"Summary":"Pirate from ToS",
+				"Image": "drunkenagent.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -1580,6 +1701,17 @@ data =
 					"Disorganized Murder - Select an operative and attempt to murder them. Visit the target.",
 					"Experienced Hiding (3 charges) - Move your hideout, protecting yourself unless you are occupied."],
 				"Passives": ["Moled - Your specialization is the same as whatever mole you previously were."]
+			},
+			{
+				"Name":"Founder of Agent",
+				"Color": "orange",
+				"Summary":"2 agents in 1, 2 actions per phase",
+				"Image": "founderofagent.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -1673,6 +1805,17 @@ data =
 					"Guard Dog (N1 -> N3 cooldown) - Occupy anyone that visits you directly, blocking any attempts to visit, occupy, and kill directly. Does not save you from Raids, Stings, and other indirect methods of killing this operative."],
 				"Passives": ["Good Boy - You are protected by the first arrest or murder attempt.",
 					"Protective Boy - Guard Dog can be used along with any other ability at night."]
+			},
+			{
+				"Name":"Police Car Driver",
+				"Color": "orange",
+				"Summary":"Getaway driver except agent",
+				"Image": "policecardriver.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
@@ -1740,6 +1883,28 @@ data =
 					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Goes through cover or frames. Visit them."],
 				"Passives": ["Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question.",
 					"True Sight - All investigative abilities go through all frames and covers."]
+			},
+			{
+				"Name":"Helicopter Operator",
+				"Color": "orange",
+				"Summary":"Scan hideouts with helicopter",
+				"Image": "helicopteroperator.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
+			},
+			{
+				"Name":"Drug Patrol Captain",
+				"Color": "orange",
+				"Summary":"Check drugs, unframe people, DEA agent role",
+				"Image": "drugpatrolcaptain.png",
+				"Description": "",
+				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Day": [""],
+				"Night": [""],
+				"Passives": [""]
 			}
 		]
 	},
