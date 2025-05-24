@@ -853,6 +853,7 @@ data =
 				"Day": ["Feeling Lucky (2 charges) - Randomize your win condition to a faction to win with.",
 					"Hack Target (Random) - Select a white node and attempt to hack it. Randomly rolls a hacking chance every time the ability is used. If you are asked the right question, the operative who did that will get the hack chance you had today. Leaves a log.",
 					"Roll the Dice - Select a white node and randomly instantly hack it or use a denial of service on it, stopping all connections to the node.  Do not leave a log.",
+					"Google RNG - Select a green node and randomly upload intel that is downloadable by others, or use a rollback, returning the node to a white node, un-hacking the node, with connections to nodes ahead failing. If you uploaded intel, whoever downloading will get class intel, target node, or faction intel. Do not leave a log.",
 					"Give Root Access (1 charge) - Select an operative to give root to. They become any of Operation Leader, Blackmailed Leader, Sociopath Leader, W3C Operation Leader, Paragon Operation Leader, or are simply an agent, neutral, Paragon Leader, or W3C Leader with access to the special channel. A Neutral Leader can only spawn in.",
 					"Give Assassin Access (1 charge) - Select an operative to give assassin access to. They can choose a target operative to kill the next night temporarily."],
 				"Night": ["Feeling Lucky (2 charges) - Randomize your win condition to a faction to win with.",
