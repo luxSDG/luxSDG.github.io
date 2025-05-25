@@ -212,7 +212,7 @@ data =
 					"Desperate Measures (1 charge) - Turn into an Improvised Hacker."],
 				"Night": ["Switch Gears (N1 -> N3 cooldown) - Select two operatives, all abilities that were used on the first player will be used on the second player, and vice versa. Visits the first operative.",
 					"Setup (2 charges) - Select two operatives. The first operative will visit and occupy the second operative, occupying both operatives. You may be the first target. Visits the first operative.",
-					"Ramming Speed (1 charge) - Select an operative and murder them. Cannot be dodged in any way, and cannot be occupied. Occupies and visits the target. Also kills yourself. Can only be used past night 2 onwards."],
+					"Ramming Speed (1 charge) - Select an operative and murder them. Cannot be dodged in any way, and cannot be occupied. Occupies and visits the target. Also kills yourself."],
 				"Passives": ["Hit the Nitrous - The first time you are arrested or murder attempted, hit the nitrous, dodging the arrest or murder."]
 			},
 			{
@@ -1811,7 +1811,7 @@ data =
 			{
 				"Name":"Police Car Driver",
 				"Color": "orange",
-				"Summary":"Getaway driver except agent",
+				"Summary":"Arrest capabilities based on patrol routes, stinging along a certain set of operatives",
 				"Image": "policecardriver.png",
 				"Description": "“Agents need a driver, and you are the fastest in the west, Police Car Driver.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
@@ -1891,7 +1891,7 @@ data =
 			{
 				"Name":"Helicopter Operator",
 				"Color": "orange",
-				"Summary":"Scan hideouts with helicopter",
+				"Summary":"Scan hideouts with helicopter, make allied roles shown as not leaving hideout",
 				"Image": "helicopteroperator.png",
 				"Description": "“No criminal will remain undetected from your flying machine, Helicopter Operator.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
