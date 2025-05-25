@@ -1204,7 +1204,7 @@ data =
 				"Night": ["Experienced Hiding (3 charges) - Move your hideout, protecting yourself unless you are occupied.",
 					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Wipe (1 charge) - Select a white node. Remove all connection logs and intel to the node."],
-				"Passives": ["Blackmailed Informant - Any time Informant is used by an Agent Leader, or an Agent uses Deductive Reasoning, you will get information that agents get. Do not go through frames or cover.",
+				"Passives": ["Blackmailed Informant - Any time an Agent uses Deductive Reasoning or Informant, you will get information that agents get. Do not go through frames or cover.",
 					"W3C Origin - If W3C spawned, you’ll know about it."]
 			},
 			{
@@ -1344,7 +1344,7 @@ data =
 					"Contact Law Enforcement (N1 -> N3 cooldown, 3 charges) - Select a target operative. If they are an agent, learn their role, they will learn yours. Goes through cover or frames. Visit them.",
 					"Interrogate (3 charges) - Select a target operative and occupy them. The host will ask them for their logs, giving you what they send."],
 				"Passives": ["Agent Scum - Any doxx attempts on you doxx you as Agent.",
-					"Blackmailed Informant - Any time Informant is used by an Agent Leader, or an Agent uses Deductive Reasoning, you will get information that agents get. Do not go through frames or cover.",
+					"Blackmailed Informant - Any time an Agent uses Deductive Reasoning or Informant, you will get information that agents get. Do not go through frames or cover.",
 					"No Dirt On Me - You are unarrestable unless framed."]
 			},
 			{
@@ -1929,7 +1929,7 @@ data =
 					"Computer Forensics Background (Pick 1)<br>=======================================================================<br>Denial of Service (2 charges) - Select a green or white node and block all connections to the node this day. Do not leave a log.",
 					"Harden Node (D1 -> D3 cooldown, 2 charges) - Select a white node. Decreasing hacking chances of getting this node. Strongest hacking chance nerf. Leaves a log.",
 					"Algorithmic Connections - Select a white or green node. If alter logs or rollback is used, double the amount of random connection logs. Do not leave a log."],
-				"Night": ["Informant (N1 -> N3 cooldown, 2 charges) - Select a target operative. Choose to visit or not, and reveal their faction and subclass to you.",
+				"Night": ["Informant (N1 -> N3 cooldown, 2 charges) - Select a target operative. Choose to visit or not, and reveal their faction and subclass to you. Goes through cover or frames.",
 					"Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Driven Investigator (Pick 1)<br>=======================================================================<br>Speech Analysis (N1 -> N3 cooldown) - Start with a random operative. Select a target operative and compare their speech, checking if they can win together. Do not go through frames or cover. Visit them.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them.",
@@ -2852,7 +2852,7 @@ data =
 					"Harden Node (D1 -> D3 cooldown, 2 charges) - Select a white node. Decreasing hacking chances of getting this node. Strongest hacking chance nerf. Leaves a log.",
 					"Probe Node - Select a white node, increasing hacking chances of getting this node. Strongest hacking chance buff. Leaves a log."],
 				"Night": ["Cover Your Tracks (2 charges) - Move your hideout, protecting yourself unless you are occupied. Arrest attempts will show a result similar to a target that is immune to arrest, like No Dirt On Me.",
-					"Paragon Informant (N1 -> N4 cooldown) - Select a target operative. Choose to visit or not, and reveal their faction and subclass to you.",
+					"Paragon Informant (N1 -> N4 cooldown) - Select a target operative. Choose to visit or not, and reveal their faction and subclass to you. Goes through cover or frames.",
 					"Assault and Battery - Select an operative and attempt to murder them. Visit the target."],
 				"Passives": ["Computer Forensics Background - Pick one of the three abilities between Denial of Service, Harden Node, and Probe Node.",
 					"Cover Checks Out - You can pick a Netsec class to frame yourself as until Day 4. Can be arrested after Rent Free is triggered.",
