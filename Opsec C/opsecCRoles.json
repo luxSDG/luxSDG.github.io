@@ -1841,9 +1841,10 @@ data =
 					"Frame (N1 -> N3 cooldown, 2 charges) - Select a target operative. Change their role to be anything you want, which they will then have all intel abilities follow that frame. Removes No Dirt On Me and can be used on Agents, making them arrestable. Visit them.",
 					"Driven Investigator (Pick 1)<br>=======================================================================<br>Speech Analysis (N1 -> N3 cooldown) - Start with a random operative. Select a target operative and compare their speech, checking if they can win together. Do not go through frames or cover. Visit them.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them.",
-					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Do not go through frames or cover. Visit them."],
+					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Do not go through frames or cover. Visit them.",
+					"Review Specialization (N1 -> N4 cooldown, 2 charges) - Select a target operative. Learn their subclass, or framed or cover subclass. Do not go through frames or cover. Visit them."],
 				"Passives": ["Perform CCTV Surveillance - Passively see who visits the target operatives that the cameras are attached to.",
-					"Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question."]
+					"Driven Investigator - Pick one of the four abilities between Speech Analysis, Doxx and Stalk, Ask the Right Question, and Review Specialization."]
 			},
 			{
 				"Name":"Cybercrime Investigator",
@@ -1882,8 +1883,9 @@ data =
 					"Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Driven Investigator (Pick 1)<br>=======================================================================<br>Speech Analysis (N1 -> N3 cooldown) - Start with a random operative. Select a target operative and compare their speech, checking if they can win together. Goes through cover or frames. Visit them.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Goes through cover or frames. Learn this operative’s faction alignment and visit them.",
-					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Goes through cover or frames. Visit them."],
-				"Passives": ["Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question.",
+					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Goes through cover or frames. Visit them.",
+					"Review Specialization (N1 -> N4 cooldown, 2 charges) - Select a target operative. Learn their subclass, or framed or cover subclass. Do not go through frames or cover. Visit them."],
+				"Passives": ["Driven Investigator - Pick one of the four abilities between Speech Analysis, Doxx and Stalk, Ask the Right Question, and Review Specialization.",
 					"True Sight - All investigative abilities go through all frames and covers."]
 			},
 			{
@@ -1933,9 +1935,10 @@ data =
 					"Midnight Meet (N1 -> N3 cooldown) - Select a target operative. Visit and occupy them, talking about the hack. Do not reveal yourself to them.",
 					"Driven Investigator (Pick 1)<br>=======================================================================<br>Speech Analysis (N1 -> N3 cooldown) - Start with a random operative. Select a target operative and compare their speech, checking if they can win together. Do not go through frames or cover. Visit them.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them.",
-					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Do not go through frames or cover. Visit them."],
+					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Do not go through frames or cover. Visit them.",
+					"Review Specialization (N1 -> N4 cooldown, 2 charges) - Select a target operative. Learn their subclass, or framed or cover subclass. Do not go through frames or cover. Visit them."],
 				"Passives": ["Computer Forensics Background - Pick one of the three abilities between Denial of Service, Harden Node, and Algorithmic Connections.",
-					"Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question.",
+					"Driven Investigator - Pick one of the four abilities between Speech Analysis, Doxx and Stalk, Ask the Right Question, and Review Specialization.",
 					"Cover Checks Out - You can pick a Netsec class to frame yourself as until Day 4. Cannot be arrested unless you are framed."]
 			},
 			{
@@ -2116,8 +2119,9 @@ data =
 					"Setup (2 charges) - Select two operatives. The first operative will visit and occupy the second operative, occupying both operatives. You may be the first target. Visits the first operative.",
 					"Driven Investigator (Pick 1)<br>=======================================================================<br>Speech Analysis (N1 -> N3 cooldown) - Start with a random operative. Select a target operative and compare their speech, checking if they can win together. Do not go through frames or cover. Visit them.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Do not go through frames or cover. Learn this operative’s faction alignment and visit them.",
-					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Do not go through frames or cover. Visit them."],
-				"Passives": ["Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question.",
+					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Do not go through frames or cover. Visit them.",
+					"Review Specialization (N1 -> N4 cooldown, 2 charges) - Select a target operative. Learn their subclass, or framed or cover subclass. Do not go through frames or cover. Visit them."],
+				"Passives": ["Driven Investigator - Pick one of the four abilities between Speech Analysis, Doxx and Stalk, Ask the Right Question, and Review Specialization.",
 					"Cover Checks Out - You can pick a Netsec class to frame yourself as until Day 4. Cannot be arrested unless you are framed.",
 					"Closing Argument - In an event of a tie, you can choose if you would like to save both operatives, kill one operative, or kill both operatives.",
 					"Argument Specialist - You can choose to defend or prosecute during the day and do another action. Grant Immunity can only be used once, regardless of phase."]
@@ -2521,13 +2525,14 @@ data =
 					"Driven Investigator (Pick 1)<br>=======================================================================<br>Speech Analysis (N1 -> N3 cooldown) - Start with a random operative. Select a target operative and compare their speech, checking if they can win together. Goes through cover or frames. Visit them.",
 					"Doxx and Stalk (N1 -> N4 cooldown, 2 charges) - Select a target operative. Goes through cover or frames. Learn this operative’s faction alignment and visit them.",
 					"Ask the Right Question (N1 -> N4 cooldown, 2 charges) - Select a target operative, find their hacking chance. Goes through cover or frames. Visit them.",
+					"Review Specialization (N1 -> N4 cooldown, 2 charges) - Select a target operative. Learn their subclass, or framed or cover subclass. Do not go through frames or cover. Visit them.",
 					"Cultist Sacrifice - Select a W3C operative and murder him.",
 					"Altar of Heresy (50% W3C operatives left or obtained Root Access)<br>=======================================================================<br>Murder with Goons has no cooldown.",
 					"Blood for the Blood God (Killed 3 operatives manually)<br>=======================================================================<br>Murder with Goons occupies the target operative."],
 				"Passives": ["Unstable Mind - Whoever arrests you gets an extra STING charge. Doesn’t have to be an agent.",
 					"Rent Free - Avoid the first arrest attempt and murder attempt on you.",
 					"Computer Forensics Background - Pick one of the three abilities between Denial of Service, Rollback, and 0-Day Exploit.",
-					"Driven Investigator - Pick one of the three abilities between Speech Analysis, Doxx and Stalk, and Ask the Right Question.",
+					"Driven Investigator - Pick one of the four abilities between Speech Analysis, Doxx and Stalk, Ask the Right Question, and Review Specialization.",
 					"Cover Checks Out - You can pick a Netsec class to frame yourself as until Day 4. Can be arrested after Rent Free is triggered.",
 					"Altar of Heresy - If W3C have only 50% of your operatives left or obtained Root Access, gain these powers.",
 					"Blood for the Blood God - If W3C has directly killed 3 operatives this Opsec, gain these powers."]
