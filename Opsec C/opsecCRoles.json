@@ -84,7 +84,7 @@ data =
 			{
 				"Name":"Old Friend",
 				"Color": "lime",
-				"Summary":"Non-Operation Leader special Netsec role",
+				"Summary":"Non-Operation Leader special Netsec role focused on root",
 				"Image": "oldfriend.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
@@ -363,7 +363,7 @@ data =
 			{
 				"Name":"AI Generalist",
 				"Color": "lime",
-				"Summary":"Uses generative AI (LLMs) to investigate the opsec",
+				"Summary":"Uses LLMs to randomly get intel with ways to offset the rng",
 				"Image": "aigeneralist.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
@@ -734,7 +734,7 @@ data =
 				"Description": "“You were hired to hire people into Netsec, but now we need every last man, Technical Recruiter.”",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
-					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a (non-unique) random skill that they have, either day or night. Do not go through frames or cover.",
+					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a random skill that they have, either day or night. Do not go through frames or cover.",
 					"Onboarding Process - Force someone to vote for someone of your choice."],
 				"Night": ["Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night.",
 					"Onboarding Process - Force someone to vote for someone of your choice."],
@@ -772,7 +772,7 @@ data =
 			{
 				"Name":"Social Media Manager",
 				"Color": "lime",
-				"Summary":"Taking pictures/videos/social media shitposting",
+				"Summary":"Taking pictures/videos/social media shitposting, rename self every other day",
 				"Image": "socialmediamanager.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
@@ -799,7 +799,7 @@ data =
 			{
 				"Name":"Vibe Coder",
 				"Color": "lime",
-				"Summary":"Hacker that is very weak but sometimes hacks well",
+				"Summary":"Hacker that randomly hardens and is always known as nonhacker",
 				"Image": "vibecoder.png",
 				"Description": "",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
@@ -1032,7 +1032,7 @@ data =
 				"Summary":"Inquisitor hunt subclass/faction pairs only (any), must kill by your hand",
 				"Image": "contractedheadhunter.png",
 				"Description": "",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Win Condition": "You are given 2 target subclass and faction pairs. Kill the two requested subclass and faction pairs manually. Can be any subclass and faction.",
 				"Day": [""],
 				"Night": [""],
 				"Passives": [""]
@@ -1116,7 +1116,7 @@ data =
 				"Summary":"Tip off roles to agent by using intel",
 				"Image": "privateinvestigator.png",
 				"Description": "",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Win Condition": "Tip Off 3 pieces of information to Agents.",
 				"Day": [""],
 				"Night": [""],
 				"Passives": [""]
@@ -1486,7 +1486,7 @@ data =
 				"Summary":"Pirate from ToS",
 				"Image": "drunkenagent.png",
 				"Description": "",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Win Condition": "Win 2 duels against anyone.",
 				"Day": [""],
 				"Night": [""],
 				"Passives": [""]
@@ -1710,7 +1710,7 @@ data =
 				"Summary":"2 agents in 1, 2 actions per phase",
 				"Image": "founderofagent.png",
 				"Description": "",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
 				"Day": [""],
 				"Night": [""],
 				"Passives": [""]
@@ -1814,7 +1814,7 @@ data =
 				"Summary":"Getaway driver except agent",
 				"Image": "policecardriver.png",
 				"Description": "",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
 				"Day": [""],
 				"Night": [""],
 				"Passives": [""]
@@ -1892,7 +1892,7 @@ data =
 				"Summary":"Scan hideouts with helicopter",
 				"Image": "helicopteroperator.png",
 				"Description": "",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
 				"Day": [""],
 				"Night": [""],
 				"Passives": [""]
@@ -1903,7 +1903,7 @@ data =
 				"Summary":"Check drugs, unframe people, DEA agent role",
 				"Image": "drugpatrolcaptain.png",
 				"Description": "",
-				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
+				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
 				"Day": [""],
 				"Night": [""],
 				"Passives": [""]
@@ -2446,7 +2446,7 @@ data =
 				"Description": "“In order to escape prison, you took a plea deal as a Technical Recruiter. Agents could use your people skills and recruiting, Agent Technical Recruiter.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, W3C, and Neutral Killing). Opsec R requires the hack to not be complete in time.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
-					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a (non-unique) random skill that they have, either day or night. Do not go through frames or cover.",
+					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a random skill that they have, either day or night. Do not go through frames or cover.",
 					"Troll Operative (2 charges) - Permanently rename another operative to whatever name you want. If you name it the same as another operative, targeting that operative will randomly target either operative of the same name.",
 					"Onboarding Process - Force someone to vote for someone of your choice."],
 				"Night": ["Final Gambit (1 charge) - Frame yourself as any role in the game and frame your own death or arrest.",
@@ -2986,7 +2986,7 @@ data =
 				"Description": "“I’m relying on you to keep your fellow operatives in check, Paragon Head of Personnel.”",
 				"Win Condition": "Make all factions have only 50% of their operatives, including Netsec, W3C, and agents. Opsec R requires the current W3C and agent operative to die once.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
-					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a (non-unique) random skill that they have, either day or night. Do not go through frames or cover."],
+					"Hiring Check (D1 -> D3 cooldown) - Check how an operative was hired. You’ll be given a random skill that they have, either day or night. Do not go through frames or cover."],
 				"Night": ["Paragon Inspiration (N1 -> N3 cooldown, 2 charges) - Select a Paragon operative and choose a skill they have to give them a skill charge. Visit them.",
 					"Wiretap (N1 -> N4 cooldown) - Select a target operative. Check the operative’s outgoing and ingoing communications to check for operatives that potentially are of the same owner. Gives three potential operatives that could be linked to the target operative. Visit them. Opsec R checks if they were offered a deal this day or night."],
 				"Passives": ["None."]
