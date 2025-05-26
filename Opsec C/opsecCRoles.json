@@ -158,7 +158,7 @@ data =
 			{
 				"Name":"Improvised Hacker",
 				"Color": "lime",
-				"Summary":"Same",
+				"Summary":"Doesn't change subclass",
 				"Image": "improvisedhacker.png",
 				"Description": "This role is ONLY through desperate measures, not a starting role. Do NOT claim this role.<br>“Desperate times call for desperate measures, Improvised Hacker.”",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
@@ -167,7 +167,7 @@ data =
 				"Night": ["Study (N1 -> N3 cooldown) - Increases your hacking stage by one the following day.",
 					"Move Hideout (1 charge) - Move your hideout, protecting yourself unless you are occupied.",
 					"Dumpster Dive - Increases hacking chances on a random node."],
-				"Passives": ["None."]
+				"Passives": ["Same Old Me - Keep your original subclass from the role you turned from."]
 			},
 			{
 				"Name":"Nightclub Guard",
