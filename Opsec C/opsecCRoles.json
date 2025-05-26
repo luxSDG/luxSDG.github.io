@@ -919,7 +919,7 @@ data =
 			{
 				"Name":"Sociopath",
 				"Color": "white",
-				"Summary":"Kills OL to become Neut leader with same win condition, or sociopath leader to kill everyone, also has Broadcast",
+				"Summary":"Kills OL to become Neut leader to get arrested, or sociopath leader to kill everyone, also has Broadcast",
 				"Image": "sociopath.png",
 				"Description": "This role is supposed to be unique, depending on the ruleset.<br>“You will become the most famous hacker to ever live, Sociopath.”",
 				"Win Condition": "Shoot the Operation Leader and become the Neutral Leader or Sociopath Leader, your choice. If you become the Neutral Leader, get arrested, if you become the Sociopath Leader, eliminate all W3C, Netsec, Paragon, and agents.",
@@ -2823,7 +2823,7 @@ data =
 			{
 				"Name":"W3C Insider",
 				"Color": "magenta",
-				"Summary":"server/laptop replacer, has possible kill power with using dead operative abilities and other operative abilities",
+				"Summary":"server/laptop replacer, has possible kill power with using dead operative abilities",
 				"Image": "insidemanassistant.png",
 				"Description": "“You’ve tricked the client into letting you inside, but how much of that will you use for W3C, W3C Insider.”",
 				"Win Condition": "Eliminate ALL hostile units (Netsec, Agent, and Neutral Killing). Opsec R requires you to acquire and hold root for N day/night cycles.",
