@@ -203,7 +203,7 @@ data =
 				"Color": "lime",
 				"Summary":"Loan Shark previous concept without move/emergency",
 				"Image": "entertainer.png",
-				"Description": "“You can help calm Netsec’s anxiety over this difficult hack, Brother Owner.”",
+				"Description": "“You can help calm Netsec’s anxiety over this difficult hack, Entertainer.”",
 				"Win Condition": "Eliminate ALL hostile units (Agents, W3C, and Neutral Killing). Opsec R needs to hack the target node.",
 				"Day": ["Unskilled Attack - Select a node, green or white. Leaves a log.",
 					"Desperate Measures (1 charge) - Turn into an Improvised Hacker."],
